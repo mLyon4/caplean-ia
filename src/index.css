@@ -17,17 +17,24 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 80% 45%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 20% 92%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 45 90% 60%;
     --accent-foreground: 222.2 47.4% 11.2%;
+
+    /* Couleurs personnalisées pour le design */
+    --hero-bg: linear-gradient(135deg, 210 80% 50%, 210 70% 35%);
+    --gold: 45 90% 60%;
+    --gold-light: 45 85% 75%;
+    --blue-deep: 210 80% 35%;
+    --blue-light: 210 50% 85%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -56,26 +63,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 210 80% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 210 80% 10%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 210 80% 10%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 70% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 210 50% 20%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 210 50% 15%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 85% 65%;
+    --accent-foreground: 210 80% 8%;
+
+    /* Dark mode versions */
+    --hero-bg: linear-gradient(135deg, 210 80% 15%, 210 90% 8%);
+    --gold: 45 85% 65%;
+    --gold-light: 45 80% 75%;
+    --blue-deep: 210 70% 55%;
+    --blue-light: 210 50% 25%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
