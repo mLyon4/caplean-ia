@@ -45,9 +45,7 @@ const AboutSection = () => {
 
         {/* Special Recognition */}
         <div className="text-center mb-16">
-          <Card className="max-w-3xl mx-auto border-primary/20 bg-primary/5">
-            
-          </Card>
+          
         </div>
 
         {/* Clients */}
