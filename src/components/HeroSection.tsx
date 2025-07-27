@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, Star } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { Sparkles } from "lucide-react";
+import heroBanner from "@/assets/hero-banner.png";
 
 const HeroSection = () => {
   return (
@@ -8,18 +8,18 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${heroBanner})` }}
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-blue-deep/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/50 to-primary/70" />
       
-      {/* Floating Stars */}
+      {/* Floating Sparkles */}
       <div className="absolute inset-0 overflow-hidden">
         <Sparkles className="absolute top-20 left-20 h-8 w-8 text-accent animate-pulse" />
-        <Star className="absolute top-32 right-32 h-6 w-6 text-accent/60 animate-pulse" style={{ animationDelay: '1s' }} />
+        <Sparkles className="absolute top-32 right-32 h-6 w-6 text-accent/60 animate-pulse" style={{ animationDelay: '1s' }} />
         <Sparkles className="absolute bottom-40 left-1/4 h-10 w-10 text-accent/80 animate-pulse" style={{ animationDelay: '2s' }} />
-        <Star className="absolute bottom-20 right-20 h-8 w-8 text-accent animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <Sparkles className="absolute bottom-20 right-20 h-8 w-8 text-accent animate-pulse" style={{ animationDelay: '0.5s' }} />
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
