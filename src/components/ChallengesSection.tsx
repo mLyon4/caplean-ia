@@ -47,7 +47,7 @@ const ChallengesSection = () => {
         </div>
 
         {/* Challenges Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 justify-items-center">
           {challenges.map((challenge, index) => (
             <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-8">
