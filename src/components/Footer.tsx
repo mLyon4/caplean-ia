@@ -1,14 +1,12 @@
 import { Sparkles } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground py-12">
+  return <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Sparkles className="h-6 w-6 text-accent" />
-              <span className="text-lg font-bold">Christelle Picault</span>
+              <span className="text-lg font-bold">Cap Lean IA</span>
             </div>
             <p className="text-primary-foreground/80">
               Transformation digitale et optimisation des processus pour TPE, PME et start-ups.
@@ -38,8 +36,6 @@ const Footer = () => {
           <p>&copy; 2024 Christelle Picault. Tous droits réservés.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
