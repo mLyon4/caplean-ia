@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Header = () => {
   return (
@@ -26,9 +27,12 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            Prendre RDV
-          </Button>
+          <div className="flex items-center space-x-2">
+            <ThemeToggle />
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              Prendre RDV
+            </Button>
+          </div>
         </div>
       </div>
     </header>
