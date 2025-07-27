@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>© 2025 Christelle Picault. Tous droits réservés.</p>
+          <p>© 2025 Tous droits réservés.</p>
         </div>
       </div>
     </footer>;
