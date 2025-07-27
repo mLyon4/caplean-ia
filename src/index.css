@@ -17,17 +17,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 80% 45%;
+    --primary: 207 54% 44%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 207 10% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 20% 92%;
+    --muted: 207 10% 92%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 45 90% 60%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 207 54% 44%;
+    --accent-foreground: 0 0% 100%;
 
     /* Couleurs personnalisées pour le design */
     --hero-bg: linear-gradient(135deg, 210 80% 50%, 210 70% 35%);
