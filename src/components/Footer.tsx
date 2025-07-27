@@ -27,7 +27,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="text-primary-foreground/80 space-y-2">
               <p>Email: contact@christellepicault.fr</p>
-              <p>Téléphone: +33 X XX XX XX XX</p>
+              
             </div>
           </div>
         </div>
