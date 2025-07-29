@@ -40,7 +40,7 @@ const AboutSection = () => {
       description: "Logiciel de planification et optimisation des ressources"
     }
   ];
-  return <section className="py-20 bg-background">
+  return <section id="qui-sommes-nous" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* About Header */}
         <div className="text-center mb-16">
@@ -74,7 +74,7 @@ const AboutSection = () => {
         </div>
 
         {/* Clients */}
-        <div className="text-center">
+        <div id="references" className="text-center">
           <h3 className="text-2xl font-bold text-foreground mb-12">
             Ils nous font confiance
           </h3>

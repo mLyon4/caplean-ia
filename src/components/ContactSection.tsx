@@ -32,7 +32,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section id="contacts" className="py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
