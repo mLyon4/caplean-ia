@@ -1,5 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Award, Users, Zap } from "lucide-react";
+import upNeoLogo from "@/assets/logos/up-neo-logo.png";
+import zdecLogo from "@/assets/logos/zdec-logo.png";
+import ac2rLogo from "@/assets/logos/ac2r-logo.png";
+import rosalogLogo from "@/assets/logos/rosalog-logo.png";
 const AboutSection = () => {
   const qualifications = [{
     icon: <User className="h-8 w-8 text-primary" />,
@@ -14,7 +18,28 @@ const AboutSection = () => {
     icon: <Users className="h-8 w-8 text-primary" />,
     text: "Appartenance à un collectif d'experts"
   }];
-  const clients = ["Up Neo", "ZDEC", "AC2R"];
+  const clients = [
+    {
+      name: "Up Neo",
+      logo: upNeoLogo,
+      description: "Accompagnement en pilotage de rentabilité et développement d'entreprise"
+    },
+    {
+      name: "ZDEC",
+      logo: zdecLogo,
+      description: "Solutions d'électricité et maintenance industrielle"
+    },
+    {
+      name: "AC2R",
+      logo: ac2rLogo,
+      description: "Expert en construction et rénovation avec quatre cœurs de métier"
+    },
+    {
+      name: "Rosa Log",
+      logo: rosalogLogo,
+      description: "Logiciel de planification et optimisation des ressources"
+    }
+  ];
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* About Header */}
@@ -50,15 +75,29 @@ const AboutSection = () => {
 
         {/* Clients */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-8">
+          <h3 className="text-2xl font-bold text-foreground mb-12">
             Ils nous font confiance
           </h3>
-          <div className="flex flex-wrap justify-center gap-8">
-            {clients.map((client, index) => <div key={index} className="bg-white/50 backdrop-blur-sm rounded-lg px-6 py-3 border border-border/30">
-                <span className="text-lg font-semibold text-foreground">
-                  {client}
-                </span>
-              </div>)}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {clients.map((client, index) => (
+              <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <img 
+                      src={client.logo} 
+                      alt={`${client.name} logo`}
+                      className="h-16 w-auto mx-auto object-contain"
+                    />
+                  </div>
+                  <h4 className="text-xl font-semibold text-foreground mb-3">
+                    {client.name}
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {client.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
