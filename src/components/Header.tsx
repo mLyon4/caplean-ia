@@ -22,6 +22,16 @@ const Header = () => {
               Services
             </a>
             <a 
+              href="#methode" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('methode')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Méthode
+            </a>
+            <a 
               href="#qui-sommes-nous" 
               className="text-foreground hover:text-primary transition-colors cursor-pointer"
               onClick={(e) => {
