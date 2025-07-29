@@ -11,16 +11,44 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#services" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Services
             </a>
-            <a href="#qui-sommes-nous" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#qui-sommes-nous" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('qui-sommes-nous')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Qui sommes-nous
             </a>
-            <a href="#references" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#references" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('references')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Références
             </a>
-            <a href="#contacts" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#contacts" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Contacts
             </a>
           </nav>
