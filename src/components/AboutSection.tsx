@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Award, Users, Zap } from "lucide-react";
-import upNeoLogo from "@/assets/logos/up-neo-logo.png";
+import upNeoLogo from "@/assets/logos/up-neo-logo-clean.png";
 import zdecLogo from "@/assets/logos/zdec-logo.png";
 import ac2rLogo from "@/assets/logos/ac2r-logo.png";
 import rosalogLogo from "@/assets/logos/rosalog-logo.png";
