@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Award, Users, Zap } from "lucide-react";
-import upNeoLogo from "@/assets/logos/up-neo-logo-clean.png";
+import upNeoLogo from "@/assets/logos/up-neo-logo.png";
 import zdecLogo from "@/assets/logos/zdec-logo.png";
 import ac2rLogo from "@/assets/logos/ac2r-logo.png";
 import rosalogLogo from "@/assets/logos/rosalog-logo.png";
@@ -82,13 +82,19 @@ const AboutSection = () => {
             {clients.map((client, index) => (
               <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
                 <CardContent className="p-8 text-center">
-                  <div className="h-20 flex items-center justify-center">
+                  <div className="mb-6">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`}
-                      className="max-h-16 w-auto mx-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      className="h-16 w-auto mx-auto object-contain"
                     />
                   </div>
+                  <h4 className="text-xl font-semibold text-foreground mb-3">
+                    {client.name}
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {client.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
