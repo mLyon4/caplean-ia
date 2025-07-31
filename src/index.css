@@ -35,6 +35,7 @@ All colors MUST be HSL.
     --gold-light: 45 85% 75%;
     --blue-deep: 210 80% 35%;
     --blue-light: 210 50% 85%;
+    --custom-blue: 203 43% 44%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -90,6 +91,7 @@ All colors MUST be HSL.
     --gold-light: 45 80% 75%;
     --blue-deep: 210 70% 55%;
     --blue-light: 210 50% 25%;
+    --custom-blue: 203 43% 44%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
