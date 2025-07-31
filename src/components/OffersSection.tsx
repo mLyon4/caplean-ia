@@ -71,7 +71,7 @@ const OffersSection = () => {
                   </div>}
 
                 {offer.highlight && <div className={`p-4 rounded-lg border-l-4 ${offer.isSpecial ? 'bg-accent/10 border-accent' : 'bg-primary/10 border-primary'}`}>
-                    <p className={`font-semibold ${offer.isSpecial ? 'text-accent-foreground' : 'text-primary'}`}>
+                    <p className={`font-semibold ${offer.isSpecial ? 'text-blue-600' : 'text-blue-600'}`}>
                       {offer.highlight}
                     </p>
                   </div>}
