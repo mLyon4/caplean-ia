@@ -66,7 +66,7 @@ const ContactSection = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-primary w-full"
+                  className="border-white text-black dark:text-white hover:bg-white hover:text-primary w-full"
                   onClick={() => window.open(method.link, '_blank')}
                 >
                   {method.linkText}
