@@ -18,28 +18,23 @@ const AboutSection = () => {
     icon: <Users className="h-8 w-8 text-primary" />,
     text: "Appartenance à un collectif d'experts"
   }];
-  const clients = [
-    {
-      name: "Up Neo",
-      logo: upNeoLogo,
-      description: "Accompagnement en pilotage de rentabilité et développement d'entreprise"
-    },
-    {
-      name: "ZDEC",
-      logo: zdecLogo,
-      description: "Solutions d'électricité et maintenance industrielle"
-    },
-    {
-      name: "AC2R",
-      logo: ac2rLogo,
-      description: "Expert en construction et rénovation avec quatre cœurs de métier"
-    },
-    {
-      name: "Rosa Log",
-      logo: rosalogLogo,
-      description: "Logiciel de planification et optimisation des ressources"
-    }
-  ];
+  const clients = [{
+    name: "Up Neo",
+    logo: upNeoLogo,
+    description: "Accompagnement en pilotage de rentabilité et développement d'entreprise"
+  }, {
+    name: "ZDEC",
+    logo: zdecLogo,
+    description: "Solutions d'électricité et maintenance industrielle"
+  }, {
+    name: "AC2R",
+    logo: ac2rLogo,
+    description: "Expert en construction et rénovation avec quatre cœurs de métier"
+  }, {
+    name: "Rosa Log",
+    logo: rosalogLogo,
+    description: "Logiciel de planification et optimisation des ressources"
+  }];
   return <section id="qui-sommes-nous" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* About Header */}
@@ -79,16 +74,9 @@ const AboutSection = () => {
             Ils nous font confiance
           </h3>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {clients.map((client, index) => (
-              <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
+            {clients.map((client, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
                 <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <img 
-                      src={client.logo} 
-                      alt={`${client.name} logo`}
-                      className="h-16 w-auto mx-auto object-contain"
-                    />
-                  </div>
+                  
                   <h4 className="text-xl font-semibold text-foreground mb-3">
                     {client.name}
                   </h4>
@@ -96,8 +84,7 @@ const AboutSection = () => {
                     {client.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </div>
