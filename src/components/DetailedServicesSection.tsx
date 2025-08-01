@@ -83,10 +83,10 @@ const DetailedServicesSection = () => {
                     </ul>
                     
                     <div className="flex items-start space-x-2 p-4 bg-accent/10 rounded-lg border-l-4 border-accent">
-                      <span className="text-accent font-bold">→</span>
+                      <span className="text-blue-600 font-bold">→</span>
                       <div>
-                        <span className="font-semibold text-accent-foreground">Résultat : </span>
-                        <span className="text-accent-foreground">{service.result}</span>
+                        <span className="font-semibold text-blue-600">Résultat : </span>
+                        <span className="text-blue-600">{service.result}</span>
                       </div>
                     </div>
                   </div>
