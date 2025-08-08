@@ -31,7 +31,7 @@ const AboutSection = () => {
     logo: ac2rLogo,
     description: "Expert en construction et rénovation avec quatre cœurs de métier"
   }, {
-    name: "Rosa Log",
+    name: "RosaLog",
     logo: rosalogLogo,
     description: "Logiciel de planification et optimisation des ressources"
   }];
