@@ -6,10 +6,6 @@ const ChallengesSection = () => {
     title: "Transformation digitale",
     description: "Comment piloter un projet majeur (ERP, CRM) tout en garantissant l'adhésion de vos équipes ?"
   }, {
-    icon: <Users className="h-8 w-8 text-primary" />,
-    title: "Collaboration",
-    description: "L'information circule-t-elle efficacement et la collaboration est-elle fluide dans votre organisation ?"
-  }, {
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
     title: "Efficacité opérationnelle",
     description: "Vos processus internes sont-ils un moteur ou un frein à votre croissance ?"
@@ -21,6 +17,10 @@ const ChallengesSection = () => {
     icon: <BarChart className="h-8 w-8 text-primary" />,
     title: "Performance",
     description: "Comment améliorer la productivité tout en réduisant les coûts et les délais ?"
+  }, {
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: "Collaboration",
+    description: "L'information circule-t-elle efficacement et la collaboration est-elle fluide dans votre organisation ?"
   }];
   return <section className="py-20 bg-blue-light/20">
       <div className="container mx-auto px-6">
@@ -32,7 +32,7 @@ const ChallengesSection = () => {
         </div>
 
         {/* Challenges Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 [&>*:nth-child(4)]:lg:col-start-2 [&>*:nth-child(5)]:lg:col-start-3">
           {challenges.map((challenge, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-8">
                 {/* Icon */}
