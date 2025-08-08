@@ -92,7 +92,7 @@ const ContactSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4"
+              className="border-white text-black dark:text-white hover:bg-white hover:text-primary font-semibold px-8 py-4"
               onClick={() => window.open('mailto:contact@christelle-picault.fr', '_blank')}
             >
               Nous écrire
