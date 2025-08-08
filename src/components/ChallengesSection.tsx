@@ -32,7 +32,7 @@ const ChallengesSection = () => {
         </div>
 
         {/* Challenges Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 [&>*:nth-child(n+4)]:lg:col-start-2 [&>*:nth-child(n+4)]:lg:col-span-1 [&>*:nth-child(4)]:lg:justify-self-end [&>*:nth-child(5)]:lg:justify-self-start">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 [&>*:nth-child(n+4)]:md:col-start-2">
           {challenges.map((challenge, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-8">
                 {/* Icon */}
