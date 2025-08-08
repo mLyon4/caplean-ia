@@ -87,7 +87,7 @@ const ContactSection = () => {
               className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-4"
               onClick={() => window.open('https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange', '_blank')}
             >
-              Réserver un diagnostic gratuit
+              Réserver un pré-diagnostic gratuit
             </Button>
             <Button 
               size="lg" 
