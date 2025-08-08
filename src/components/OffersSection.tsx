@@ -70,7 +70,7 @@ const OffersSection = () => {
                     </Badge>
                   </div>}
 
-                {offer.highlight && <div className={`p-4 rounded-lg border-l-4 ${offer.isSpecial ? 'bg-accent/10 border-accent' : 'bg-primary/10 border-primary'}`}>
+                {offer.highlight && <div className="p-4 rounded-lg border-l-4 bg-accent/10 border-accent">
                     <p className="font-semibold" style={{ color: 'hsl(var(--custom-blue))' }}>
                       {offer.highlight}
                     </p>
