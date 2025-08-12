@@ -58,19 +58,7 @@ const ContactSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
-          <p className="text-lg text-primary-foreground/80 mb-6">
-            Pour nous contacter :
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-4" onClick={() => window.open('https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange', '_blank')}>
-              Réserver un pré-diagnostic gratuit
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-black dark:text-white hover:bg-white hover:text-primary font-semibold px-8 py-4" onClick={() => window.open('mailto:contact@christelle-picault.fr', '_blank')}>
-              Nous écrire
-            </Button>
-          </div>
-        </div>
+        
       </div>
     </section>;
 };
