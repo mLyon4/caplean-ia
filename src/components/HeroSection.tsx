@@ -33,9 +33,7 @@ const HeroSection = () => {
             <Button asChild size="lg" className="font-semibold px-8 py-4 text-lg">
               <a href="#contacts">Prendre RDV</a>
             </Button>
-            <Button size="lg" variant="outline" className="font-semibold px-8 py-4 text-lg">
-              Nos services
-            </Button>
+            
           </div>
         </div>
       </div>
