@@ -87,8 +87,8 @@ const OffersSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            Discutons de votre projet
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <a href="#contacts">Discutons de votre projet</a>
           </Button>
         </div>
       </div>
