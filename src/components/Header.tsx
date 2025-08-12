@@ -22,6 +22,16 @@ const Header = () => {
               Services
             </a>
             <a 
+              href="#offres" 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Offres
+            </a>
+            <a 
               href="#methode" 
               className="text-foreground hover:text-primary transition-colors cursor-pointer"
               onClick={(e) => {
@@ -40,16 +50,6 @@ const Header = () => {
               }}
             >
               Qui sommes-nous
-            </a>
-            <a 
-              href="#references" 
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('references')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Références
             </a>
             <a 
               href="#contacts" 

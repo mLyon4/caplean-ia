@@ -25,7 +25,7 @@ const OffersSection = () => {
     highlight: "Intervention possible d'un collectif d'experts.",
     features: []
   }];
-  return <section className="py-20 bg-muted/20">
+  return <section id="offres" className="py-20 bg-muted/20">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
