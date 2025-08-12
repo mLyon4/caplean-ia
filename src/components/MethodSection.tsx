@@ -1,43 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Eye, 
-  Map, 
-  Beaker, 
-  Trophy 
-} from "lucide-react";
-
+import { Eye, Map, Beaker, Trophy } from "lucide-react";
 const MethodSection = () => {
-  const steps = [
-    {
-      icon: <Eye className="h-8 w-8 text-primary" />,
-      title: "Observer",
-      description: "Un regard extérieur pour détecter ce qui fonctionne, ce qui freine, et ce qui peut être simplifié."
-    },
-    {
-      icon: <Map className="h-8 w-8 text-primary" />,
-      title: "Stratégie & Simplification", 
-      description: "Une feuille de route claire et priorisée selon vos moyens. Évaluation des outils, intégration de solutions digitales et IA."
-    },
-    {
-      icon: <Beaker className="h-8 w-8 text-primary" />,
-      title: "Expérimenter ensemble pour plus d'Efficience",
-      description: "Lancement d'actions, accompagnement du changement, implication des équipes, transfert de compétences."
-    },
-    {
-      icon: <Trophy className="h-8 w-8 text-primary" />,
-      title: "Résultats",
-      description: "En 3 mois, une organisation structurée, une charge mentale allégée, des marges plus lisibles, une entreprise qui avance sans vous solliciter à chaque instant."
-    }
-  ];
-
-  return (
-    <section id="methode" className="py-20 bg-background">
+  const steps = [{
+    icon: <Eye className="h-8 w-8 text-primary" />,
+    title: "Observer",
+    description: "Un regard extérieur pour détecter ce qui fonctionne, ce qui freine, et ce qui peut être simplifié."
+  }, {
+    icon: <Map className="h-8 w-8 text-primary" />,
+    title: "Stratégie & Simplification",
+    description: "Une feuille de route claire et priorisée selon vos moyens. Évaluation des outils, intégration de solutions digitales et IA."
+  }, {
+    icon: <Beaker className="h-8 w-8 text-primary" />,
+    title: "Expérimenter ensemble pour plus d'Efficience",
+    description: "Lancement d'actions, accompagnement du changement, implication des équipes, transfert de compétences."
+  }, {
+    icon: <Trophy className="h-8 w-8 text-primary" />,
+    title: "Résultats",
+    description: "En 3 mois, une organisation structurée, une charge mentale allégée, des marges plus lisibles, une entreprise qui avance sans vous solliciter à chaque instant."
+  }];
+  return <section id="methode" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-lg px-4 py-2 mb-6">
-            <span className="text-primary font-medium">Notre méthode</span>
-          </div>
+          
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             OSER
           </h2>
@@ -45,8 +30,7 @@ const MethodSection = () => {
 
         {/* Method Steps */}
         <div className="grid md:grid-cols-2 gap-8">
-          {steps.map((step, index) => (
-            <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+          {steps.map((step, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-8">
                 {/* Icon */}
                 <div className="flex items-center mb-6">
@@ -63,12 +47,9 @@ const MethodSection = () => {
                   {step.description}
                 </blockquote>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MethodSection;
