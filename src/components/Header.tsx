@@ -65,8 +65,21 @@ const Header = () => {
 
           <div className="flex items-center space-x-2">
             <ThemeToggle />
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              Prendre RDV
+            <Button
+              asChild
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            >
+              <a
+                href="#contacts"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                aria-label="Prendre rendez-vous - Aller à la section Contacts"
+              >
+                Prendre RDV
+              </a>
             </Button>
           </div>
         </div>
