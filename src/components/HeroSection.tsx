@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+
 const HeroSection = () => {
-  return <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-background to-secondary">
+  return (
+    <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-background to-secondary">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
@@ -26,7 +28,13 @@ const HeroSection = () => {
           </p>
 
           {/* Problem Statement */}
-          
+          <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-border">
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Vous êtes dirigeant de TPE, PME ou start-up ?</h3>
+            <p className="text-muted-foreground">
+              L'impression que tout repose sur vous ? Les urgences s'enchaînent, 
+              les informations sont dispersées et vos marges restent floues ?
+            </p>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -39,6 +47,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
