@@ -17,9 +17,9 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-foreground">
             Transformez votre organisation pour retrouver{" "}
-            <span className="text-primary">sérénité</span>,{" "}
-            <span className="text-primary">clarté</span> et{" "}
-            <span className="text-primary">rentabilité</span>
+            <span className="text-primary">clarté</span>,{" "}
+            <span className="text-primary">rentabilité</span> et{" "}
+            <span className="text-primary">sérénité</span>
           </h1>
 
           {/* Subtitle */}
