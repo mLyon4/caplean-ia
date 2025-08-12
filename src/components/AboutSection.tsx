@@ -69,24 +69,7 @@ const AboutSection = () => {
         </div>
 
         {/* Clients */}
-        <div id="references" className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-12">
-            Ils nous font confiance
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {clients.map((client, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-card">
-                <CardContent className="p-8 text-center">
-                  
-                  <h4 className="text-xl font-semibold text-foreground mb-3">
-                    {client.name}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {client.description}
-                  </p>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
+        
       </div>
     </section>;
 };
