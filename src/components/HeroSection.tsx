@@ -30,8 +30,8 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="font-semibold px-8 py-4 text-lg">
-              Prendre RDV
+            <Button asChild size="lg" className="font-semibold px-8 py-4 text-lg">
+              <a href="#contacts">Prendre RDV</a>
             </Button>
             <Button size="lg" variant="outline" className="font-semibold px-8 py-4 text-lg">
               Nos services
