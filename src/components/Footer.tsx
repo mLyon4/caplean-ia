@@ -23,13 +23,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <div className="text-primary-foreground/80 space-y-2">
-              <p>Email: contact@christellepicault.fr</p>
-              
-            </div>
-          </div>
+          
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
