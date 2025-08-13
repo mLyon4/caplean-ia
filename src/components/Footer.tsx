@@ -2,7 +2,7 @@ import { Sparkles } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Sparkles className="h-6 w-6 text-accent" />
