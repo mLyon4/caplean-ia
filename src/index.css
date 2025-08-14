@@ -8,34 +8,36 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 50% 98%;
+    --foreground: 210 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 15%;
 
     --primary: 207 54% 44%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 207 10% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 210 40% 20%;
 
-    --muted: 207 10% 92%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 30% 94%;
+    --muted-foreground: 210 20% 55%;
 
-    --accent: 207 54% 44%;
+    --accent: 15 90% 55%;
     --accent-foreground: 0 0% 100%;
 
-    /* Couleurs personnalisées pour le design */
-    --hero-bg: linear-gradient(135deg, 210 80% 50%, 210 70% 35%);
+    /* Couleurs personnalisées inspirées d'eurekia */
+    --hero-bg: linear-gradient(135deg, 210 60% 96%, 210 30% 92%);
     --gold: 45 90% 60%;
     --gold-light: 45 85% 75%;
-    --blue-deep: 210 80% 35%;
+    --blue-deep: 207 54% 44%;
     --blue-light: 210 50% 85%;
     --custom-blue: 203 43% 44%;
+    --orange-accent: 15 90% 55%;
+    --gradient-hero: linear-gradient(135deg, 210 60% 96% 0%, 210 40% 94% 50%, 210 30% 92% 100%);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;

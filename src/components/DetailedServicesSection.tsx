@@ -47,46 +47,48 @@ const DetailedServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            Nos services pour transformer durablement votre entreprise
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground leading-tight">
+            Nos Services
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Des accompagnements et solutions sur mesure qui s'adaptent parfaitement aux besoins spécifiques de votre entreprise.
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            Des solutions sur mesure qui s'adaptent parfaitement aux besoins spécifiques de votre entreprise.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+            <Card key={index} className="group border-0 shadow-sm hover:shadow-xl transition-all duration-500 rounded-2xl bg-white overflow-hidden">
               <CardContent className="p-8">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 p-3 bg-primary/10 rounded-lg">
-                    {service.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-4 text-foreground">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="flex-shrink-0 p-4 bg-primary/10 rounded-2xl group-hover:bg-primary/20 transition-colors duration-300">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground leading-tight">
                       {service.title}
                     </h3>
-                    
-                    <ul className="space-y-2 mb-6">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start space-x-2">
-                          <span className="text-primary font-bold mt-1">•</span>
-                          <span className="text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    <div className="flex items-start space-x-2 p-4 bg-accent/10 rounded-lg border-l-4 border-accent">
-                      <span className="text-[#3f779d] font-bold">→</span>
+                  </div>
+                  
+                  <ul className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start space-x-3">
+                        <span className="text-primary font-bold mt-1.5 text-sm">✓</span>
+                        <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="p-6 bg-gradient-to-r from-accent/5 to-accent/10 rounded-xl border-l-4 border-accent">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-accent font-bold text-lg">→</span>
                       <div>
-                        <span className="font-semibold text-[#3f779d]">Résultat : </span>
-                        <span className="text-[#3f779d]">{service.result}</span>
+                        <span className="font-semibold text-accent">Résultat : </span>
+                        <span className="text-accent/90">{service.result}</span>
                       </div>
                     </div>
                   </div>

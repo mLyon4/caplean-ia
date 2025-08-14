@@ -2,18 +2,18 @@ import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 const Header = () => {
-  return <header className="w-full bg-background/80 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
-      <div className="container mx-auto px-6 py-4">
+  return <header className="w-full bg-white/95 backdrop-blur-lg border-b border-border/30 sticky top-0 z-50 shadow-sm">
+      <div className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <Sparkles className="h-8 w-8 text-accent" />
-            <span className="text-xl font-bold text-foreground">Cap Lean IA</span>
+            <span className="text-2xl font-bold text-foreground">Cap Lean IA</span>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             <a 
               href="#services" 
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
@@ -23,7 +23,7 @@ const Header = () => {
             </a>
             <a 
               href="#offres" 
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' });
@@ -33,7 +33,7 @@ const Header = () => {
             </a>
             <a 
               href="#methode" 
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('methode')?.scrollIntoView({ behavior: 'smooth' });
@@ -43,32 +43,31 @@ const Header = () => {
             </a>
             <a 
               href="#qui-sommes-nous" 
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('qui-sommes-nous')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Qui sommes-nous
+              Expertise
             </a>
             <a 
               href="#contacts" 
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Contacts
+              Contact
             </a>
           </nav>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Button
               asChild
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
             >
               <a
                 href="#contacts"
@@ -78,7 +77,7 @@ const Header = () => {
                 }}
                 aria-label="Prendre rendez-vous - Aller à la section Contacts"
               >
-                Prendre RDV
+                Prendre rendez-vous
               </a>
             </Button>
           </div>
