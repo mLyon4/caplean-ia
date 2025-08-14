@@ -26,13 +26,13 @@ All colors MUST be HSL.
     --muted: 207 65% 88%;
     --muted-foreground: 205 20% 55%;
 
-    --accent: 38 90% 60%; /* #F6B93B - Jaune doré chaleureux */
-    --accent-foreground: 205 33% 26%;
+    --accent: 205 43% 43%; /* #3F779D - Bleu-gris élégant */
+    --accent-foreground: 0 0% 100%;
 
     /* Couleurs personnalisées avec nouvelle palette */
     --hero-bg: linear-gradient(135deg, 210 33% 98%, 207 65% 95%);
-    --gold: 38 90% 60%; /* #F6B93B */
-    --gold-light: 38 85% 75%;
+    --gold: 205 43% 43%; /* #3F779D - Bleu-gris remplace le jaune */
+    --gold-light: 205 43% 55%;
     --blue-deep: 205 43% 43%; /* #3F779D */
     --blue-light: 207 65% 78%; /* #A1C6EA */
     --blue-pastel: 207 65% 78%; /* #A1C6EA */
@@ -84,13 +84,13 @@ All colors MUST be HSL.
     --muted: 205 33% 20%;
     --muted-foreground: 207 20% 65%;
 
-    --accent: 38 85% 65%; /* Version légèrement plus claire du jaune doré */
-    --accent-foreground: 205 33% 15%;
+    --accent: 205 43% 55%; /* Version bleu-gris pour le dark mode */
+    --accent-foreground: 0 0% 100%;
 
     /* Dark mode versions avec nouvelle palette */
     --hero-bg: linear-gradient(135deg, 205 33% 15%, 205 33% 8%);
-    --gold: 38 85% 65%;
-    --gold-light: 38 80% 75%;
+    --gold: 205 43% 55%; /* Bleu-gris remplace le jaune en dark mode */
+    --gold-light: 205 43% 65%;
     --blue-deep: 205 43% 55%;
     --blue-light: 207 45% 35%;
     --blue-pastel: 207 45% 35%;
