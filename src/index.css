@@ -8,36 +8,36 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 50% 98%;
-    --foreground: 210 40% 15%;
+    --background: 210 33% 98%; /* #F7F9FB - Blanc cassé lumineux */
+    --foreground: 205 33% 26%; /* #2E4057 - Bleu nuit profond */
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 40% 15%;
+    --card: 210 33% 98%;
+    --card-foreground: 205 33% 26%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 15%;
+    --popover: 210 33% 98%;
+    --popover-foreground: 205 33% 26%;
 
-    --primary: 207 54% 44%;
+    --primary: 205 43% 43%; /* #3F779D - Bleu-gris élégant */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 98%;
-    --secondary-foreground: 210 40% 20%;
+    --secondary: 207 65% 78%; /* #A1C6EA - Bleu pastel apaisant */
+    --secondary-foreground: 205 33% 26%;
 
-    --muted: 210 30% 94%;
-    --muted-foreground: 210 20% 55%;
+    --muted: 207 65% 88%;
+    --muted-foreground: 205 20% 55%;
 
-    --accent: 15 90% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 38 90% 60%; /* #F6B93B - Jaune doré chaleureux */
+    --accent-foreground: 205 33% 26%;
 
-    /* Couleurs personnalisées inspirées d'eurekia */
-    --hero-bg: linear-gradient(135deg, 210 60% 96%, 210 30% 92%);
-    --gold: 45 90% 60%;
-    --gold-light: 45 85% 75%;
-    --blue-deep: 207 54% 44%;
-    --blue-light: 210 50% 85%;
-    --custom-blue: 203 43% 44%;
-    --orange-accent: 15 90% 55%;
-    --gradient-hero: linear-gradient(135deg, 210 60% 96% 0%, 210 40% 94% 50%, 210 30% 92% 100%);
+    /* Couleurs personnalisées avec nouvelle palette */
+    --hero-bg: linear-gradient(135deg, 210 33% 98%, 207 65% 95%);
+    --gold: 38 90% 60%; /* #F6B93B */
+    --gold-light: 38 85% 75%;
+    --blue-deep: 205 43% 43%; /* #3F779D */
+    --blue-light: 207 65% 78%; /* #A1C6EA */
+    --blue-pastel: 207 65% 78%; /* #A1C6EA */
+    --blue-night: 205 33% 26%; /* #2E4057 */
+    --gradient-hero: linear-gradient(135deg, 210 33% 98% 0%, 207 65% 95% 50%, 207 65% 92% 100%);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -66,34 +66,35 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 80% 8%;
-    --foreground: 210 40% 98%;
+    --background: 205 33% 12%; /* Version sombre du bleu nuit */
+    --foreground: 210 33% 95%; /* Blanc cassé pour le texte */
 
-    --card: 210 80% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 205 33% 15%;
+    --card-foreground: 210 33% 95%;
 
-    --popover: 210 80% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 205 33% 15%;
+    --popover-foreground: 210 33% 95%;
 
-    --primary: 210 70% 55%;
+    --primary: 205 43% 55%; /* Version plus claire du bleu-gris pour le dark mode */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 50% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 207 45% 35%; /* Version sombre du bleu pastel */
+    --secondary-foreground: 210 33% 95%;
 
-    --muted: 210 50% 15%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 205 33% 20%;
+    --muted-foreground: 207 20% 65%;
 
-    --accent: 45 85% 65%;
-    --accent-foreground: 210 80% 8%;
+    --accent: 38 85% 65%; /* Version légèrement plus claire du jaune doré */
+    --accent-foreground: 205 33% 15%;
 
-    /* Dark mode versions */
-    --hero-bg: linear-gradient(135deg, 210 80% 15%, 210 90% 8%);
-    --gold: 45 85% 65%;
-    --gold-light: 45 80% 75%;
-    --blue-deep: 210 70% 55%;
-    --blue-light: 210 50% 25%;
-    --custom-blue: 203 43% 44%;
+    /* Dark mode versions avec nouvelle palette */
+    --hero-bg: linear-gradient(135deg, 205 33% 15%, 205 33% 8%);
+    --gold: 38 85% 65%;
+    --gold-light: 38 80% 75%;
+    --blue-deep: 205 43% 55%;
+    --blue-light: 207 45% 35%;
+    --blue-pastel: 207 45% 35%;
+    --blue-night: 205 33% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
