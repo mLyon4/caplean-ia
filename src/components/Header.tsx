@@ -7,76 +7,61 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <Sparkles className="h-8 w-8 text-accent" />
-            <span className="text-2xl font-bold text-foreground">Cap Lean IA</span>
+            
           </div>
           
           <nav className="hidden md:flex items-center space-x-10">
-            <a 
-              href="#services" 
-              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
+            <a href="#services" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
+            e.preventDefault();
+            document.getElementById('services')?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }}>
               Services
             </a>
-            <a 
-              href="#offres" 
-              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('offres')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
+            <a href="#offres" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
+            e.preventDefault();
+            document.getElementById('offres')?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }}>
               Offres
             </a>
-            <a 
-              href="#methode" 
-              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('methode')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
+            <a href="#methode" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
+            e.preventDefault();
+            document.getElementById('methode')?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }}>
               Méthode
             </a>
-            <a 
-              href="#qui-sommes-nous" 
-              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('qui-sommes-nous')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
+            <a href="#qui-sommes-nous" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
+            e.preventDefault();
+            document.getElementById('qui-sommes-nous')?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }}>
               Expertise
             </a>
-            <a 
-              href="#contacts" 
-              className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
+            <a href="#contacts" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
+            e.preventDefault();
+            document.getElementById('contacts')?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }}>
               Contact
             </a>
           </nav>
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
-            >
-              <a
-                href="#contacts"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                aria-label="Prendre rendez-vous - Aller à la section Contacts"
-              >
+            <Button asChild className="bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="#contacts" onClick={e => {
+              e.preventDefault();
+              document.getElementById('contacts')?.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }} aria-label="Prendre rendez-vous - Aller à la section Contacts">
                 Prendre rendez-vous
               </a>
             </Button>
