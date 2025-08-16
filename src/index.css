@@ -8,108 +8,115 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 33% 98%; /* #F7F9FB - Blanc cassé lumineux */
-    --foreground: 205 33% 26%; /* #2E4057 - Bleu nuit profond */
+    /* Base colors - Modern professional palette */
+    --background: 0 0% 100%; /* Pure white for clean modern look */
+    --foreground: 222 84% 4.9%; /* Deep navy for high contrast text */
 
-    --card: 210 33% 98%;
-    --card-foreground: 205 33% 26%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
 
-    --popover: 210 33% 98%;
-    --popover-foreground: 205 33% 26%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
 
-    --primary: 205 43% 43%; /* #3F779D - Bleu-gris élégant */
+    /* Primary - Premium blue gradient tones */
+    --primary: 215 75% 45%; /* Professional blue */
+    --primary-light: 215 85% 65%; /* Lighter variant */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 207 65% 78%; /* #A1C6EA - Bleu pastel apaisant */
-    --secondary-foreground: 205 33% 26%;
+    /* Secondary - Soft complementary */
+    --secondary: 210 40% 96%; /* Very light blue-grey */
+    --secondary-foreground: 222 84% 4.9%;
 
-    --muted: 207 65% 88%;
-    --muted-foreground: 205 20% 55%;
+    /* Muted tones */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 205 43% 43%; /* #3F779D - Bleu-gris élégant */
+    /* Accent - Premium gradient accent */
+    --accent: 215 75% 45%;
     --accent-foreground: 0 0% 100%;
 
-    /* Couleurs personnalisées avec nouvelle palette */
-    --hero-bg: linear-gradient(135deg, 210 33% 98%, 207 65% 95%);
-    --gold: 205 43% 43%; /* #3F779D - Bleu-gris remplace le jaune */
-    --gold-light: 205 43% 55%;
-    --blue-deep: 205 43% 43%; /* #3F779D */
-    --blue-light: 207 65% 78%; /* #A1C6EA */
-    --blue-pastel: 207 65% 78%; /* #A1C6EA */
-    --blue-night: 205 33% 26%; /* #2E4057 */
-    --gradient-hero: linear-gradient(135deg, 210 33% 98% 0%, 207 65% 95% 50%, 207 65% 92% 100%);
+    /* Design system colors */
+    --surface: 0 0% 98%; /* Subtle background variant */
+    --surface-foreground: 222 84% 4.9%;
+    
+    /* Premium gradient definitions */
+    --gradient-primary: linear-gradient(135deg, hsl(215 75% 45%) 0%, hsl(215 85% 65%) 100%);
+    --gradient-surface: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 75% 45%) 0%, hsl(215 85% 65%) 50%, hsl(210 40% 96%) 100%);
+    
+    /* Premium shadow system */
+    --shadow-sm: 0 1px 2px 0 hsl(215 75% 45% / 0.05);
+    --shadow-base: 0 4px 6px -1px hsl(215 75% 45% / 0.1), 0 2px 4px -1px hsl(215 75% 45% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(215 75% 45% / 0.1), 0 4px 6px -2px hsl(215 75% 45% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(215 75% 45% / 0.1), 0 10px 10px -5px hsl(215 75% 45% / 0.04);
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 215 75% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Increased for modern look */
 
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-foreground: 222 84% 4.9%;
+    --sidebar-primary: 215 75% 45%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 84% 4.9%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 215 75% 45%;
   }
 
   .dark {
-    --background: 205 33% 12%; /* Version sombre du bleu nuit */
-    --foreground: 210 33% 95%; /* Blanc cassé pour le texte */
+    --background: 222 84% 4.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 205 33% 15%;
-    --card-foreground: 210 33% 95%;
+    --card: 222 84% 7%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 205 33% 15%;
-    --popover-foreground: 210 33% 95%;
+    --popover: 222 84% 7%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 205 43% 55%; /* Version plus claire du bleu-gris pour le dark mode */
-    --primary-foreground: 0 0% 100%;
+    --primary: 215 85% 65%;
+    --primary-light: 215 75% 75%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 207 45% 35%; /* Version sombre du bleu pastel */
-    --secondary-foreground: 210 33% 95%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 205 33% 20%;
-    --muted-foreground: 207 20% 65%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 205 43% 55%; /* Version bleu-gris pour le dark mode */
-    --accent-foreground: 0 0% 100%;
+    --accent: 215 85% 65%;
+    --accent-foreground: 222 84% 4.9%;
 
-    /* Dark mode versions avec nouvelle palette */
-    --hero-bg: linear-gradient(135deg, 205 33% 15%, 205 33% 8%);
-    --gold: 205 43% 55%; /* Bleu-gris remplace le jaune en dark mode */
-    --gold-light: 205 43% 65%;
-    --blue-deep: 205 43% 55%;
-    --blue-light: 207 45% 35%;
-    --blue-pastel: 207 45% 35%;
-    --blue-night: 205 33% 95%;
+    --surface: 222 84% 6%;
+    --surface-foreground: 0 0% 98%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 65%) 0%, hsl(215 75% 75%) 100%);
+    --gradient-surface: linear-gradient(135deg, hsl(222 84% 4.9%) 0%, hsl(222 84% 7%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 65%) 0%, hsl(215 75% 75%) 50%, hsl(217 32% 17%) 100%);
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 215 85% 65%;
+
+    /* Dark sidebar */
+    --sidebar-background: 222 84% 4.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 215 85% 65%;
+    --sidebar-primary-foreground: 222 84% 4.9%;
+    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: 215 85% 65%;
   }
 }
 
@@ -119,6 +126,48 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Premium components base styles */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-surface {
+    background: var(--gradient-surface);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .shadow-premium-xl {
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+@layer components {
+  /* Premium card styles */
+  .card-premium {
+    @apply bg-card border border-border/50 rounded-xl shadow-premium hover:shadow-premium-xl transition-all duration-500 hover:border-primary/30;
+  }
+  
+  /* Modern section spacing */
+  .section-premium {
+    @apply py-24 lg:py-32;
+  }
+  
+  /* Premium text styles */
+  .heading-premium {
+    @apply text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight;
+  }
+  
+  .subheading-premium {
+    @apply text-xl lg:text-2xl text-muted-foreground leading-relaxed;
   }
 }

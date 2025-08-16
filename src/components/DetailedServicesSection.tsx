@@ -47,54 +47,70 @@ const DetailedServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="section-premium bg-surface/50">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground leading-tight">
+        <div className="max-w-4xl mx-auto text-center mb-20 animate-fade-up">
+          <div className="inline-flex items-center space-x-2 mb-8">
+            <div className="w-12 h-1 bg-gradient-primary rounded-full"></div>
+            <span className="text-primary font-semibold tracking-wide uppercase text-sm">Services</span>
+            <div className="w-12 h-1 bg-gradient-primary rounded-full"></div>
+          </div>
+          <h2 className="heading-premium gradient-primary bg-clip-text text-transparent mb-8">
             Nos Services
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="subheading-premium max-w-3xl mx-auto">
             Des solutions sur mesure qui s'adaptent parfaitement aux besoins spécifiques de votre entreprise.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="group border-0 shadow-sm hover:shadow-xl transition-all duration-500 rounded-2xl bg-white overflow-hidden">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="flex-shrink-0 p-4 bg-primary/10 rounded-2xl group-hover:bg-primary/20 transition-colors duration-300">
-                      {service.icon}
+            <div key={index} className="group animate-scale-up" style={{animationDelay: `${index * 0.1}s`}}>
+              <div className="card-premium p-8 h-full hover:scale-[1.02] transition-all duration-500">
+                <div className="space-y-8">
+                  {/* Header */}
+                  <div className="flex items-start space-x-6">
+                    <div className="flex-shrink-0 p-4 gradient-primary rounded-2xl group-hover:scale-110 transition-transform duration-300">
+                      <div className="text-white">
+                        {service.icon}
+                      </div>
                     </div>
-                    <h3 className="text-xl font-bold text-foreground leading-tight">
-                      {service.title}
-                    </h3>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-foreground leading-tight mb-3">
+                        {service.title}
+                      </h3>
+                    </div>
                   </div>
                   
-                  <ul className="space-y-3">
+                  {/* Features */}
+                  <div className="space-y-4">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start space-x-3">
-                        <span className="text-primary font-bold mt-1.5 text-sm">✓</span>
-                        <span className="text-muted-foreground leading-relaxed">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <div className="p-6 bg-gradient-to-r from-accent/5 to-accent/10 rounded-xl border-l-4 border-accent">
-                    <div className="flex items-start space-x-3">
-                      <span className="text-accent font-bold text-lg">→</span>
-                      <div>
-                        <span className="font-semibold text-accent">Résultat : </span>
-                        <span className="text-accent/90">{service.result}</span>
+                      <div key={featureIndex} className="flex items-start space-x-4">
+                        <div className="flex-shrink-0 w-6 h-6 gradient-primary rounded-full flex items-center justify-center mt-0.5">
+                          <span className="text-white font-bold text-xs">✓</span>
+                        </div>
+                        <span className="text-muted-foreground leading-relaxed text-lg">{feature}</span>
                       </div>
+                    ))}
+                  </div>
+                  
+                  {/* Result */}
+                  <div className="relative p-6 bg-gradient-to-br from-surface to-secondary/20 rounded-2xl border border-primary/10">
+                    <div className="absolute top-4 left-4">
+                      <div className="w-8 h-8 gradient-primary rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">→</span>
+                      </div>
+                    </div>
+                    <div className="pl-12">
+                      <span className="font-bold text-primary text-lg">Résultat : </span>
+                      <span className="text-foreground/90 text-lg leading-relaxed">{service.result}</span>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

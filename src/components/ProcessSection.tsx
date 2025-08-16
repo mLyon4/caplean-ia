@@ -35,34 +35,44 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="section-premium bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20 animate-fade-up">
+          <div className="inline-flex items-center space-x-2 mb-8">
+            <div className="w-12 h-1 bg-gradient-primary rounded-full"></div>
+            <span className="text-primary font-semibold tracking-wide uppercase text-sm">Démarche</span>
+            <div className="w-12 h-1 bg-gradient-primary rounded-full"></div>
+          </div>
+          <h2 className="heading-premium gradient-primary bg-clip-text text-transparent mb-8">
             La démarche
           </h2>
+          <p className="subheading-premium max-w-3xl mx-auto">
+            Un processus structuré en 4 étapes pour assurer le succès de votre transformation
+          </p>
         </div>
 
         {/* Process Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-16">
           {steps.map((step, index) => (
-            <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg relative">
-              <CardContent className="p-8 text-center">
+            <div key={index} className="group animate-scale-up" style={{animationDelay: `${index * 0.1}s`}}>
+              <div className="card-premium p-8 text-center h-full group-hover:scale-[1.05] transition-all duration-500 relative">
                 {/* Step Number */}
-                <div className="text-4xl mb-4">
+                <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {step.number}
                 </div>
                 
                 {/* Icon */}
-                <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    {step.icon}
+                <div className="flex justify-center mb-6">
+                  <div className="p-4 gradient-primary rounded-2xl group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-white">
+                      {step.icon}
+                    </div>
                   </div>
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-lg font-bold mb-4 text-foreground">
+                <h3 className="text-xl font-bold mb-4 text-foreground">
                   {step.title}
                 </h3>
                 
@@ -73,21 +83,21 @@ const ProcessSection = () => {
 
                 {/* Connector Arrow (except for last item) */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <div className="w-8 h-0.5 bg-primary/30"></div>
-                    <div className="absolute -right-1 -top-1 w-0 h-0 border-l-2 border-l-primary/30 border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
+                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <div className="w-8 h-1 bg-gradient-primary rounded-full"></div>
+                    <div className="absolute -right-1 -top-1.5 w-0 h-0 border-l-4 border-l-primary border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
                   </div>
                 )}
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Bottom Message */}
-        <div className="text-center mt-16">
-          <div className="max-w-2xl mx-auto p-6 bg-blue-light/20 rounded-2xl border border-primary/20">
-            <p className="text-lg text-foreground">
-              Une approche méthodique et personnalisée pour garantir le succès de votre transformation digitale
+        <div className="text-center animate-fade-up">
+          <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-surface to-secondary/20 rounded-2xl border border-primary/10">
+            <p className="text-xl text-foreground leading-relaxed">
+              ✨ <strong>Une approche méthodique et personnalisée</strong> pour garantir le succès de votre transformation digitale
             </p>
           </div>
         </div>
