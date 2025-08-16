@@ -7,10 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Sparkles className="h-5 w-5 text-primary" />
-            <span className="text-foreground font-medium">© 2024 Tous droits réservés</span>
-          </div>
-          <div className="text-muted-foreground text-sm">
-            Fait avec passion
+            <span className="text-foreground font-medium">© 2025 Tous droits réservés</span>
           </div>
         </div>
       </div>
