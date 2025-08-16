@@ -21,74 +21,45 @@ const ContactSection = () => {
     link: "mailto:contact@christelle-picault.fr",
     linkText: "Envoyer un email"
   }];
-  return (
-    <section id="contacts" className="section-premium gradient-primary text-white relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary opacity-95"></div>
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 transform skew-x-12"></div>
-      
-      <div className="container mx-auto px-6 relative z-10">
+  return <section id="contacts" className="py-20 bg-primary text-primary-foreground">
+      <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20 animate-fade-up">
-          <div className="inline-flex items-center space-x-2 mb-8">
-            <div className="w-12 h-1 bg-white/30 rounded-full"></div>
-            <span className="text-white/80 font-semibold tracking-wide uppercase text-sm">Contact</span>
-            <div className="w-12 h-1 bg-white/30 rounded-full"></div>
-          </div>
-          <h2 className="text-5xl lg:text-6xl font-bold mb-8 text-white">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Discutons de vos besoins
           </h2>
-          <p className="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
             Profitez d'un pré-diagnostic d'une heure offert et sans engagement.
             Discutons de vos besoins et objectifs afin de déterminer ensemble les meilleures solutions pour la transformation de votre entreprise.
           </p>
         </div>
 
         {/* Contact Methods */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
-          {contactMethods.map((method, index) => (
-            <div key={index} className="group animate-scale-up" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center h-full hover:bg-white/20 hover:scale-[1.05] transition-all duration-500 group-hover:shadow-2xl">
-                <div className="space-y-6">
-                  <div className="flex justify-center">
-                    <div className="p-4 bg-white/20 rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                      <div className="text-white">
-                        {method.icon}
-                      </div>
-                    </div>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {contactMethods.map((method, index) => <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="flex justify-center mb-6">
+                  <div className="p-4 bg-white/20 rounded-lg">
+                    {method.icon}
                   </div>
-                  
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    {method.title}
-                  </h3>
-                  
-                  <p className="text-white/80 text-lg leading-relaxed">
-                    {method.description}
-                  </p>
-                  
-                  <Button 
-                    variant="outline" 
-                    className="border-2 border-white text-white hover:bg-white hover:text-primary w-full text-lg py-6 font-semibold transition-all duration-300" 
-                    onClick={() => window.open(method.link, '_blank')}
-                  >
-                    {method.linkText}
-                  </Button>
                 </div>
-              </div>
-            </div>
-          ))}
+                
+                <h3 className="text-xl font-bold mb-4 text-primary-foreground">
+                  {method.title}
+                </h3>
+                
+                
+                
+                <Button variant="outline" className="border-white text-black dark:text-white hover:bg-white hover:text-primary dark:hover:text-blue-500 w-full" onClick={() => window.open(method.link, '_blank')}>
+                  {method.linkText}
+                </Button>
+              </CardContent>
+            </Card>)}
         </div>
 
-        {/* CTA Message */}
-        <div className="text-center animate-fade-up">
-          <div className="max-w-3xl mx-auto p-8 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl">
-            <p className="text-xl text-white/90 leading-relaxed">
-              💡 <strong>Première consultation offerte</strong> - Commençons par échanger sur vos enjeux
-            </p>
-          </div>
-        </div>
+        {/* CTA */}
+        
       </div>
-    </section>
-  );
+    </section>;
 };
 export default ContactSection;

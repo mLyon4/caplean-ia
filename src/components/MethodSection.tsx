@@ -18,58 +18,38 @@ const MethodSection = () => {
     title: "Résultats",
     description: "En 3 mois, une organisation structurée, une charge mentale allégée, des marges plus lisibles, une entreprise qui avance sans vous solliciter à chaque instant."
   }];
-  return (
-    <section id="methode" className="section-premium bg-background">
+  return <section id="methode" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20 animate-fade-up">
-          <div className="inline-flex items-center space-x-2 mb-8">
-            <div className="w-12 h-1 bg-gradient-primary rounded-full"></div>
-            <span className="text-primary font-semibold tracking-wide uppercase text-sm">Méthode</span>
-            <div className="w-12 h-1 bg-gradient-primary rounded-full"></div>
-          </div>
-          <h2 className="heading-premium gradient-primary bg-clip-text text-transparent mb-8">
+        <div className="text-center mb-16">
+          
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Notre méthode : OSER
           </h2>
-          <p className="subheading-premium max-w-3xl mx-auto">
-            Une approche éprouvée en 4 étapes pour transformer durablement votre organisation
-          </p>
         </div>
 
         {/* Method Steps */}
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {steps.map((step, index) => (
-            <div key={index} className="group animate-scale-up" style={{animationDelay: `${index * 0.15}s`}}>
-              <div className="card-premium p-8 h-full group-hover:scale-[1.02] transition-all duration-500">
-                <div className="space-y-6">
-                  {/* Header with Icon */}
-                  <div className="flex items-center space-x-6">
-                    <div className="flex-shrink-0 p-4 gradient-primary rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                      <div className="text-white">
-                        {step.icon}
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-foreground mb-2">
-                        {step.title}
-                      </h3>
-                    </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {steps.map((step, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+              <CardContent className="p-8">
+                {/* Icon */}
+                <div className="flex items-center mb-6">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    {step.icon}
                   </div>
-                  
-                  {/* Description */}
-                  <div className="relative pl-6">
-                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-primary rounded-full"></div>
-                    <p className="text-muted-foreground leading-relaxed text-lg italic">
-                      {step.description}
-                    </p>
-                  </div>
+                  <h3 className="text-xl font-bold text-foreground">
+                    {step.title}
+                  </h3>
                 </div>
-              </div>
-            </div>
-          ))}
+                
+                {/* Description */}
+                <blockquote className="border-l-4 border-primary pl-6 text-muted-foreground italic leading-relaxed">
+                  {step.description}
+                </blockquote>
+              </CardContent>
+            </Card>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default MethodSection;
