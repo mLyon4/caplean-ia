@@ -40,8 +40,11 @@ const ProcessSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            La démarche
+            Notre Démarche de Transformation Digitale
           </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Méthodologie éprouvée d'optimisation des processus et de structuration d'entreprise adaptée aux PME du BTP
+          </p>
         </div>
 
         {/* Process Steps */}

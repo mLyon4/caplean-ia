@@ -42,9 +42,12 @@ const AboutSection = () => {
           <div className="inline-flex items-center space-x-2 mb-6">
             <span className="text-4xl">👩‍💻</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Qui sommes nous ?
+              Expert en Transformation Digitale PME BTP
             </h2>
           </div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Spécialiste de l'optimisation des processus, solutions Notion CRM et Lean management pour le secteur du bâtiment
+          </p>
         </div>
 
         {/* Qualifications */}
