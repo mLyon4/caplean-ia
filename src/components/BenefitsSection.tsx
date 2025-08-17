@@ -10,15 +10,15 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: <CheckCircle className="h-8 w-8 text-primary" />,
-      title: "Simplifier la gestion de votre entreprise BTP"
+      title: "Simplifier la gestion de votre entreprise"
     },
     {
       icon: <Lightbulb className="h-8 w-8 text-primary" />,
-      title: "Optimiser vos processus métier BTP"
+      title: "Clarifier vos priorités et vos process"
     },
     {
       icon: <Target className="h-8 w-8 text-primary" />,
-      title: "Piloter efficacement vos chantiers et projets BTP"
+      title: "Piloter efficacement vos projets"
     },
     {
       icon: <Smile className="h-8 w-8 text-primary" />,
@@ -29,11 +29,11 @@ const BenefitsSection = () => {
   const approaches = [
     {
       title: "Stratégique",
-      description: "co-construction d'une feuille de route de transformation digitale, pilotage des solutions d'optimisation"
+      description: "co-construction d'une feuille de route, pilotage des solutions"
     },
     {
       title: "Humaine", 
-      description: "accompagnement des équipes BTP pour une adoption fluide de la digitalisation"
+      description: "accompagnement des équipes pour une adoption fluide"
     }
   ];
 
@@ -43,12 +43,9 @@ const BenefitsSection = () => {
         {/* Benefits */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Bénéfices de la Transformation Digitale pour votre PME BTP
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Les bénéfices pour vous
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Impact concret de l'optimisation des processus et de la digitalisation sur la performance de votre entreprise du bâtiment
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -72,7 +69,7 @@ const BenefitsSection = () => {
         {/* Double Approach */}
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-16">
-            Notre Double Approche de Transformation Digitale
+            Notre double approche
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">

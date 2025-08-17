@@ -7,21 +7,21 @@ const OffersSection = () => {
     icon: <HardHat className="h-8 w-8 text-primary" />,
     emoji: "🛠️",
     title: "Offre Lean Management BTP",
-    features: ["Jusqu'à 30 % de temps administratif en moins", "Pilotage en temps réel de la rentabilité des chantiers", "Optimisation des processus BTP", "Décisions plus rapides et plus sereines"],
+    features: ["Jusqu'à 30 % de temps administratif en moins", "Pilotage en temps réel de la rentabilité", "Décisions plus rapides et plus sereines"],
     highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
     isSpecial: true
   }, {
     icon: <Database className="h-8 w-8 text-primary" />,
     emoji: "💼",
-    title: "Solutions Notion CRM BTP",
-    description: "Structuration d'entreprise BTP, optimisation productivité, CRM adapté aux chantiers et communication interne & externe.",
+    title: "Notion sur mesure",
+    description: "Structuration de l'organisation, productivité, communication interne & externe.",
     price: "À partir de 850 €",
     features: []
   }, {
     icon: <Puzzle className="h-8 w-8 text-primary" />,
     emoji: "🧩",
-    title: "Transformation Digitale Complète PME BTP",
-    description: "Diagnostic approfondi, digitalisation des processus métier BTP (IA, CRM/ERP spécialisé, automatisation). Durée et rythme à définir ensemble selon vos contraintes de chantiers.",
+    title: "Offre Personnalisée",
+    description: "Diagnostic, digitalisation des processus (IA, CRM/ERP, automatisation). Durée et rythme à définir ensemble.",
     highlight: "Intervention possible d'un collectif d'experts.",
     features: []
   }];
@@ -32,12 +32,9 @@ const OffersSection = () => {
           <div className="flex items-center justify-center space-x-2 mb-6">
             <Pin className="h-6 w-6 text-muted-foreground" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Offres de Transformation Digitale PME BTP
+              Nos offres sur mesure
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Accompagnement personnalisé en optimisation des processus et structuration d'entreprise, spécialement conçu pour les PME du secteur BTP
-          </p>
         </div>
 
         {/* Offers Grid */}
