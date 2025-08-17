@@ -37,11 +37,15 @@ const ProcessSection = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        {/* Header */}
+        {/* Header SEO optimisé */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            La démarche
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Processus d'Accompagnement en Transformation Digitale
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Méthodologie éprouvée en 4 étapes pour réussir votre digitalisation d'entreprise : 
+            du diagnostic initial à l'accompagnement post-déploiement de vos solutions Notion et CRM.
+          </p>
         </div>
 
         {/* Process Steps */}

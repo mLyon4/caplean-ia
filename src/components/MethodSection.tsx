@@ -20,12 +20,15 @@ const MethodSection = () => {
   }];
   return <section id="methode" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        {/* Header */}
+        {/* Header SEO optimisé */}
         <div className="text-center mb-16">
-          
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Notre méthode : OSER
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Méthode OSER : Transformation Digitale PME
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Notre approche structurée pour accompagner la digitalisation de votre entreprise : 
+            Observer, Stratégifier, Expérimenter, obtenir des Résultats concrets et mesurables.
+          </p>
         </div>
 
         {/* Method Steps */}

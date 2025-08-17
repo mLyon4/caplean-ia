@@ -10,52 +10,60 @@ const DetailedServicesSection = () => {
   const services = [
     {
       icon: <Settings className="h-10 w-10 text-primary" />,
-      title: "Pilotage de projets & structuration digitale",
+      title: "Pilotage de projets de transformation digitale",
       features: [
-        "Cadrage, planification et pilotage de vos projets ERP, CRM, etc.",
-        "Interface entre métiers et éditeurs"
+        "Cadrage et pilotage de vos projets ERP, CRM et solutions digitales",
+        "Interface experte entre vos équipes métiers et les éditeurs de logiciels",
+        "Structuration digitale adaptée aux PME du BTP"
       ],
-      result: "vos projets avancent, vos équipes restent alignées."
+      result: "vos projets de digitalisation avancent efficacement, vos équipes restent alignées sur les objectifs."
     },
     {
       icon: <Database className="h-10 w-10 text-primary" />,
-      title: "Systèmes Notion personnalisés & formations",
+      title: "Solutions Notion sur mesure pour PME",
       features: [
-        "Création d'espaces Notion sur mesure : CRM, RH, projets, pilotage, communication interne, espaces clients…",
-        "Automatisations",
-        "Formation des équipes (Qualiopi)"
+        "Création d'espaces Notion personnalisés : CRM intégré, gestion RH, pilotage de projets BTP",
+        "Automatisations intelligentes pour optimiser vos processus métiers",
+        "Formation certifiée Qualiopi de vos équipes à l'utilisation de Notion",
+        "Structuration de la communication interne et espaces clients dédiés"
       ],
-      result: "un système qui vous ressemble, intuitif, opérationnel et adopté par vos équipes."
+      result: "un système de gestion complet qui vous ressemble, intuitif et parfaitement adopté par vos équipes."
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
-      title: "Conduite du changement & optimisation des processus",
+      title: "Lean Management & optimisation processus BTP",
       features: [
-        "Diagnostic, refonte des flux, approche Lean & amélioration continue"
+        "Diagnostic complet de votre organisation et processus métiers",
+        "Refonte des flux opérationnels selon les principes du Lean Management",
+        "Conduite du changement adaptée aux spécificités du secteur BTP",
+        "Mise en place d'une démarche d'amélioration continue durable"
       ],
-      result: "moins de perte de temps, plus d'efficacité, plus d'adhésion."
+      result: "réduction significative des pertes de temps, efficacité accrue et adhésion renforcée de vos équipes."
     },
     {
       icon: <Zap className="h-10 w-10 text-primary" />,
-      title: "Automatisation & IA au service de la performance",
+      title: "Automatisation intelligente & IA pour PME",
       features: [
-        "Automatisation des tâches répétitives",
-        "IA générative intégrée à vos outils métiers"
+        "Automatisation des tâches répétitives et chronophages",
+        "Intégration d'IA générative dans vos outils métiers existants",
+        "Développement de workflows optimisés pour le secteur BTP",
+        "Formation à l'utilisation des outils d'automatisation"
       ],
-      result: "un gain de temps significatif, des données fiabilisées, une prise de décision accélérée."
+      result: "gain de temps considérable, données fiabilisées en temps réel et prise de décision stratégique accélérée."
     }
   ];
 
   return (
     <section id="services" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        {/* Header */}
+        {/* Header SEO optimisé */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground leading-tight">
-            Nos Services
+            Services de Transformation Digitale pour PME
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Des solutions sur mesure qui s'adaptent parfaitement aux besoins spécifiques de votre entreprise.
+            Solutions expertes en digitalisation d'entreprise : Notion sur mesure, optimisation processus, 
+            CRM adapté et Lean Management. Accompagnement personnalisé pour PME et secteur BTP.
           </p>
         </div>
 

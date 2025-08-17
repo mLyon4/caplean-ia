@@ -37,14 +37,18 @@ const AboutSection = () => {
   }];
   return <section id="qui-sommes-nous" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        {/* About Header */}
+        {/* About Header SEO optimisé */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 mb-6">
             <span className="text-4xl">👩‍💻</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Qui sommes nous ?
+              Expert Certifié en Transformation Digitale
             </h2>
           </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Christelle Picault, consultante spécialisée en digitalisation PME avec plus de 20 ans d'expérience. 
+            Certifications PMP, Lean Six Sigma, Notion et Activateur France Num pour accompagner votre transformation.
+          </p>
         </div>
 
         {/* Qualifications */}

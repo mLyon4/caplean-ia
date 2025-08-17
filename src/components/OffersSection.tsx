@@ -27,14 +27,18 @@ const OffersSection = () => {
   }];
   return <section id="offres" className="py-20 bg-muted/20">
       <div className="container mx-auto px-6">
-        {/* Header */}
+        {/* Header SEO optimisé */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 mb-6">
             <Pin className="h-6 w-6 text-muted-foreground" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Nos offres sur mesure
+              Offres de Transformation Digitale sur Mesure
             </h2>
           </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Découvrez nos solutions expertes adaptées aux PME : Lean Management BTP, Notion personnalisé, 
+            et accompagnement complet en digitalisation d'entreprise.
+          </p>
         </div>
 
         {/* Offers Grid */}
@@ -85,10 +89,12 @@ const OffersSection = () => {
             </Card>)}
         </div>
 
-        {/* Call to Action */}
+        {/* Call to Action optimisé conversion */}
         <div className="text-center mt-12">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href="#contacts">Discutons de votre projet</a>
+            <a href="#contacts" aria-label="Contactez notre expert en transformation digitale">
+              💬 Échangeons sur votre projet de transformation
+            </a>
           </Button>
         </div>
       </div>

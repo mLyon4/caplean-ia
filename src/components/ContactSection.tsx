@@ -23,14 +23,15 @@ const ContactSection = () => {
   }];
   return <section id="contacts" className="py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6">
-        {/* Header */}
+        {/* Header optimisé conversion */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Discutons de vos besoins
+            Lancez Votre Transformation Digitale Maintenant
           </h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Profitez d'un pré-diagnostic d'une heure offert et sans engagement.
-            Discutons de vos besoins et objectifs afin de déterminer ensemble les meilleures solutions pour la transformation de votre entreprise.
+            🎁 <strong>Diagnostic gratuit d'1 heure offert</strong> - Sans engagement<br/>
+            Échangeons sur vos enjeux de digitalisation, structuration d'entreprise et optimisation des processus. 
+            Découvrez comment Notion, le Lean Management et nos solutions sur mesure peuvent transformer votre PME.
           </p>
         </div>
 
@@ -50,7 +51,12 @@ const ContactSection = () => {
                 
                 
                 
-                <Button variant="outline" className="border-white text-black dark:text-white hover:bg-white hover:text-primary dark:hover:text-blue-500 w-full" onClick={() => window.open(method.link, '_blank')}>
+                <Button 
+                  variant="outline" 
+                  className="border-white text-black dark:text-white hover:bg-white hover:text-primary dark:hover:text-blue-500 w-full" 
+                  onClick={() => window.open(method.link, '_blank')}
+                  aria-label={`${method.title} - ${method.linkText}`}
+                >
                   {method.linkText}
                 </Button>
               </CardContent>

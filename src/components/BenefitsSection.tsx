@@ -43,9 +43,13 @@ const BenefitsSection = () => {
         {/* Benefits */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Les bénéfices pour vous
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Bénéfices Concrets de la Transformation Digitale
             </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Résultats mesurables et durables pour votre PME : amélioration de la rentabilité, 
+              optimisation des processus métiers et structuration efficace de votre organisation.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
