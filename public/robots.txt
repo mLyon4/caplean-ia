@@ -1,16 +1,14 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://christelle-picault.fr/sitemap.xml
-
-# Optimisation pour le SEO
-Crawl-delay: 1
-
-# Pages importantes à indexer en priorité
-Allow: /
-Allow: /#services
-Allow: /#offres
-Allow: /#methode
-Allow: /#qui-sommes-nous
-Allow: /#contacts
