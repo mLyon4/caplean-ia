@@ -14,7 +14,7 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.1] text-foreground">
-            Transformation digitale PME BTP : retrouvez{" "}
+            Transformez votre entreprise pour retrouver{" "}
             <span className="text-accent">clarté</span>,{" "}
             <span className="text-accent">rentabilité</span> et{" "}
             <span className="text-accent">sérénité</span>
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">
-            Expert en optimisation des processus, solutions Notion CRM et Lean management pour PME du BTP. Structuration d'entreprise et digitalisation sur mesure pour booster votre productivité.
+            Solutions sur mesure de structuration, simplification & digitalisation avec Notion, ERP & IA pour optimiser votre productivité.
           </p>
 
           {/* Problem Statement */}

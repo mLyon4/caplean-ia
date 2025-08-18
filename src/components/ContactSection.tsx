@@ -26,11 +26,11 @@ const ContactSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Lancez votre Transformation Digitale BTP
+            Discutons de vos besoins
           </h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Profitez d'un diagnostic gratuit d'une heure pour analyser vos processus BTP. 
-            Discutons de vos besoins en optimisation, structuration d'entreprise et solutions Notion CRM adaptées à votre PME du bâtiment.
+            Profitez d'un pré-diagnostic d'une heure offert et sans engagement.
+            Discutons de vos besoins et objectifs afin de déterminer ensemble les meilleures solutions pour la transformation de votre entreprise.
           </p>
         </div>
 

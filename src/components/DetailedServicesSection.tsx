@@ -10,43 +10,39 @@ const DetailedServicesSection = () => {
   const services = [
     {
       icon: <Settings className="h-10 w-10 text-primary" />,
-      title: "Pilotage de projets & structuration digitale PME BTP",
+      title: "Pilotage de projets & structuration digitale",
       features: [
-        "Cadrage, planification et pilotage de vos projets ERP, CRM pour le BTP",
-        "Interface entre métiers du bâtiment et éditeurs de solutions",
-        "Transformation digitale adaptée aux processus du BTP"
+        "Cadrage, planification et pilotage de vos projets ERP, CRM, etc.",
+        "Interface entre métiers et éditeurs"
       ],
-      result: "vos projets de digitalisation avancent, vos équipes BTP restent alignées."
+      result: "vos projets avancent, vos équipes restent alignées."
     },
     {
       icon: <Database className="h-10 w-10 text-primary" />,
-      title: "Solutions Notion CRM personnalisées pour PME BTP",
+      title: "Systèmes Notion personnalisés & formations",
       features: [
-        "Création d'espaces Notion CRM spécialisés BTP : gestion chantiers, suivi clients, devis, facturation",
-        "Automatisations métier adaptées aux processus du bâtiment",
-        "Formation certifiée Qualiopi de vos équipes sur les outils Notion"
+        "Création d'espaces Notion sur mesure : CRM, RH, projets, pilotage, communication interne, espaces clients…",
+        "Automatisations",
+        "Formation des équipes (Qualiopi)"
       ],
-      result: "un CRM Notion qui s'adapte parfaitement aux spécificités du BTP, adopté par vos équipes."
+      result: "un système qui vous ressemble, intuitif, opérationnel et adopté par vos équipes."
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
-      title: "Lean management & optimisation des processus BTP",
+      title: "Conduite du changement & optimisation des processus",
       features: [
-        "Diagnostic approfondi des processus métier du BTP",
-        "Refonte des flux opérationnels selon les principes Lean management",
-        "Amélioration continue adaptée aux contraintes du secteur du bâtiment"
+        "Diagnostic, refonte des flux, approche Lean & amélioration continue"
       ],
-      result: "moins de gaspillage sur vos chantiers, plus d'efficacité opérationnelle, plus d'adhésion de vos équipes."
+      result: "moins de perte de temps, plus d'efficacité, plus d'adhésion."
     },
     {
       icon: <Zap className="h-10 w-10 text-primary" />,
-      title: "Automatisation & IA pour PME du BTP",
+      title: "Automatisation & IA au service de la performance",
       features: [
-        "Automatisation des tâches administratives répétitives du BTP",
-        "IA générative intégrée à vos outils de gestion de chantiers",
-        "Digitalisation intelligente des processus métier du bâtiment"
+        "Automatisation des tâches répétitives",
+        "IA générative intégrée à vos outils métiers"
       ],
-      result: "un gain de temps significatif sur vos projets BTP, des données de chantier fiabilisées, une prise de décision accélérée."
+      result: "un gain de temps significatif, des données fiabilisées, une prise de décision accélérée."
     }
   ];
 
@@ -56,10 +52,10 @@ const DetailedServicesSection = () => {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground leading-tight">
-            Services de Transformation Digitale pour PME BTP
+            Nos Services
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Solutions expertes d'optimisation des processus, Notion CRM et Lean management adaptées aux spécificités de votre entreprise du BTP.
+            Des solutions sur mesure qui s'adaptent parfaitement aux besoins spécifiques de votre entreprise.
           </p>
         </div>
 
