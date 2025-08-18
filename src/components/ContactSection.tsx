@@ -26,11 +26,11 @@ const ContactSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Discutons de vos besoins
+            Diagnostic Gratuit de Transformation Digitale
           </h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Profitez d'un pré-diagnostic d'une heure offert et sans engagement.
-            Discutons de vos besoins et objectifs afin de déterminer ensemble les meilleures solutions pour la transformation de votre entreprise.
+            <strong>Pré-diagnostic d'une heure offert et sans engagement</strong> pour votre PME ou entreprise BTP.
+            Analysons ensemble vos processus actuels et identifions les opportunités d'optimisation avec Notion, CRM et Lean management.
           </p>
         </div>
 

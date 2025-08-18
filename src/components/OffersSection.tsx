@@ -6,22 +6,22 @@ const OffersSection = () => {
   const offers = [{
     icon: <HardHat className="h-8 w-8 text-primary" />,
     emoji: "🛠️",
-    title: "Offre Lean Management BTP",
-    features: ["Jusqu'à 30 % de temps administratif en moins", "Pilotage en temps réel de la rentabilité", "Décisions plus rapides et plus sereines"],
+    title: "Lean Management Spécialisé BTP",
+    features: ["Jusqu'à 30% de temps administratif économisé", "Pilotage en temps réel de la rentabilité chantiers", "Optimisation des processus de production BTP", "Décisions plus rapides et plus sereines"],
     highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
     isSpecial: true
   }, {
     icon: <Database className="h-8 w-8 text-primary" />,
     emoji: "💼",
-    title: "Notion sur mesure",
-    description: "Structuration de l'organisation, productivité, communication interne & externe.",
+    title: "Systèmes Notion Personnalisés",
+    description: "CRM sur mesure, gestion de projets, structuration de l'organisation et automatisation des processus métiers pour PME.",
     price: "À partir de 850 €",
     features: []
   }, {
     icon: <Puzzle className="h-8 w-8 text-primary" />,
     emoji: "🧩",
-    title: "Offre Personnalisée",
-    description: "Diagnostic, digitalisation des processus (IA, CRM/ERP, automatisation). Durée et rythme à définir ensemble.",
+    title: "Transformation Digitale Complète",
+    description: "Diagnostic approfondi, pilotage de projets ERP/CRM, digitalisation des processus avec IA et automatisation. Accompagnement personnalisé selon vos besoins.",
     highlight: "Intervention possible d'un collectif d'experts.",
     features: []
   }];
@@ -32,9 +32,12 @@ const OffersSection = () => {
           <div className="flex items-center justify-center space-x-2 mb-6">
             <Pin className="h-6 w-6 text-muted-foreground" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Nos offres sur mesure
+              Offres de Digitalisation sur Mesure pour PME et BTP
             </h2>
           </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Solutions d'optimisation des processus, Lean management et structuration d'entreprise adaptées aux spécificités de votre secteur d'activité.
+          </p>
         </div>
 
         {/* Offers Grid */}

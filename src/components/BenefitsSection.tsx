@@ -44,8 +44,11 @@ const BenefitsSection = () => {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Les bénéfices pour vous
+              Bénéfices de l'Optimisation des Processus
             </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Résultats concrets de la transformation digitale et du Lean management pour votre PME ou entreprise BTP.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -69,7 +72,7 @@ const BenefitsSection = () => {
         {/* Double Approach */}
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-16">
-            Notre double approche
+            Approche Stratégique et Humaine de la Transformation Digitale
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">

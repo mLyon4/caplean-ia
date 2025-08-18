@@ -21,19 +21,23 @@ const AboutSection = () => {
   const clients = [{
     name: "Up Neo",
     logo: upNeoLogo,
-    description: "Accompagnement en pilotage de rentabilité et développement d'entreprise"
+    description: "Accompagnement en pilotage de rentabilité et développement d'entreprise",
+    alt: "Logo Up Neo - Client transformation digitale PME"
   }, {
-    name: "ZDEC",
+    name: "ZDEC", 
     logo: zdecLogo,
-    description: "Solutions d'électricité et maintenance industrielle"
+    description: "Solutions d'électricité et maintenance industrielle BTP",
+    alt: "Logo ZDEC - Client secteur BTP électricité maintenance"
   }, {
     name: "AC2R",
     logo: ac2rLogo,
-    description: "Expert en construction et rénovation avec quatre cœurs de métier"
+    description: "Expert en construction et rénovation BTP avec quatre cœurs de métier",
+    alt: "Logo AC2R - Client secteur BTP construction rénovation"
   }, {
     name: "RosaLog",
     logo: rosalogLogo,
-    description: "Logiciel de planification et optimisation des ressources"
+    description: "Logiciel de planification et optimisation des ressources pour PME",
+    alt: "Logo RosaLog - Client logiciel planification PME"
   }];
   return <section id="qui-sommes-nous" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -42,9 +46,13 @@ const AboutSection = () => {
           <div className="inline-flex items-center space-x-2 mb-6">
             <span className="text-4xl">👩‍💻</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Qui sommes nous ?
+              Christelle Picault - Expert Transformation Digitale
             </h2>
           </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Plus de 20 ans d'expérience en pilotage de projets et structuration d'entreprise. 
+            Certifiée PMP, Lean Six Sigma, Notion et Activateur France Num pour accompagner les PME et le secteur BTP.
+          </p>
         </div>
 
         {/* Qualifications */}
