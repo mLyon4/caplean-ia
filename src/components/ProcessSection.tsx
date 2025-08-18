@@ -42,8 +42,8 @@ const ProcessSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Notre Démarche de Transformation Digitale
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Une méthodologie éprouvée en 4 étapes pour la digitalisation et l'optimisation des processus de votre PME ou entreprise BTP.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Méthodologie éprouvée d'optimisation des processus et de structuration d'entreprise adaptée aux PME du BTP
           </p>
         </div>
 

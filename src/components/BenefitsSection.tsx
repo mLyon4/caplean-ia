@@ -10,15 +10,15 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: <CheckCircle className="h-8 w-8 text-primary" />,
-      title: "Simplifier la gestion de votre entreprise"
+      title: "Simplifier la gestion de votre entreprise BTP"
     },
     {
       icon: <Lightbulb className="h-8 w-8 text-primary" />,
-      title: "Clarifier vos priorités et vos process"
+      title: "Optimiser vos processus métier BTP"
     },
     {
       icon: <Target className="h-8 w-8 text-primary" />,
-      title: "Piloter efficacement vos projets"
+      title: "Piloter efficacement vos chantiers et projets BTP"
     },
     {
       icon: <Smile className="h-8 w-8 text-primary" />,
@@ -29,11 +29,11 @@ const BenefitsSection = () => {
   const approaches = [
     {
       title: "Stratégique",
-      description: "co-construction d'une feuille de route, pilotage des solutions"
+      description: "co-construction d'une feuille de route de transformation digitale, pilotage des solutions d'optimisation"
     },
     {
       title: "Humaine", 
-      description: "accompagnement des équipes pour une adoption fluide"
+      description: "accompagnement des équipes BTP pour une adoption fluide de la digitalisation"
     }
   ];
 
@@ -43,11 +43,11 @@ const BenefitsSection = () => {
         {/* Benefits */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Bénéfices de l'Optimisation des Processus
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Bénéfices de la Transformation Digitale pour votre PME BTP
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Résultats concrets de la transformation digitale et du Lean management pour votre PME ou entreprise BTP.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Impact concret de l'optimisation des processus et de la digitalisation sur la performance de votre entreprise du bâtiment
             </p>
           </div>
 
@@ -72,7 +72,7 @@ const BenefitsSection = () => {
         {/* Double Approach */}
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-16">
-            Approche Stratégique et Humaine de la Transformation Digitale
+            Notre Double Approche de Transformation Digitale
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
