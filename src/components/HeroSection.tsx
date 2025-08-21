@@ -34,9 +34,9 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.1] text-foreground">
             Transformez votre entreprise pour retrouver{" "}
-            <span className="text-accent">clarté</span>,{" "}
-            <span className="text-accent">rentabilité</span> et{" "}
-            <span className="text-accent">sérénité</span>
+            <span style={{color: '#3f779d'}}>clarté</span>,{" "}
+            <span style={{color: '#3f779d'}}>rentabilité</span> et{" "}
+            <span style={{color: '#3f779d'}}>sérénité</span>
           </h1>
 
           {/* Subtitle */}
@@ -49,10 +49,10 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button asChild size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-secondary hover:bg-secondary/90 text-white">
+            <Button asChild size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-white hover:opacity-90" style={{backgroundColor: '#3f779d'}}>
               <a href="#contacts">Prendre rendez-vous</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl border-2 border-primary/30 hover:border-primary/60 bg-white/90 backdrop-blur-md text-primary hover:bg-primary/5">
+            <Button asChild variant="outline" size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl border-2 bg-white/90 backdrop-blur-md hover:bg-primary/5" style={{borderColor: '#3f779d', color: '#3f779d'}}>
               <a href="#services">Découvrir les services</a>
             </Button>
           </div>
