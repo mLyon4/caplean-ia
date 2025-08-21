@@ -9,7 +9,7 @@ import satisfiedClient from "@/assets/satisfied-client.jpg";
 const AboutSection = () => {
   const qualifications = [{
     icon: <User className="h-8 w-8 text-primary" />,
-    text: "Plus de 20 ans d'expériences en pilotage de projets"
+    text: "Plus de 25 ans d'expériences en pilotage de projets"
   }, {
     icon: <Award className="h-8 w-8 text-primary" />,
     text: "Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, Notion, Activateur France Num"
