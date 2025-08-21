@@ -50,9 +50,7 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Qui sommes nous ?
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Des experts passionnés par la transformation digitale et l'optimisation des processus, dédiés à votre réussite.
-          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">Experts en transformation digitale et optimisation des processus, dédiés à votre réussite.</p>
         </div>
 
         {/* Profile Section - Modern Design */}
@@ -92,19 +90,15 @@ const AboutSection = () => {
                 </h3>
                 <p className="text-2xl font-semibold mb-6" style={{
                 color: '#3f779d'
-              }}>
-                  Experte en Transformation Digitale & Lean Management
-                </p>
+              }}>Consultante en Transformation Digitale & Lean Management</p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto lg:mx-0 mb-6 rounded-full"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Forte de plus de 20 ans d'expérience, je accompagne les entreprises du BTP et les PME dans leur transformation digitale avec une approche personnalisée et pragmatique.
-                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">Forte de plus de 25 ans d'expérience, j'accompagne les entreprises  dans leur transformation digitale avec une approche personnalisée et pragmatique.</p>
               </div>
               
               {/* Stats or highlights */}
               <div className="grid grid-cols-2 gap-6 max-w-md mx-auto lg:mx-0">
                 <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-4 border border-primary/10">
-                  <div className="text-2xl font-bold text-primary mb-1">20+</div>
+                  <div className="text-2xl font-bold text-primary mb-1">25+</div>
                   <div className="text-sm text-muted-foreground">Années d'expérience</div>
                 </div>
                 
