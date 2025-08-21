@@ -3,10 +3,10 @@ import {
   CheckCircle, 
   Lightbulb, 
   Target, 
-  Smile 
+  Smile,
+  TrendingUp,
+  Users
 } from "lucide-react";
-import btpMeeting from "@/assets/btp-meeting.jpg";
-import satisfiedClient from "@/assets/satisfied-client.jpg";
 
 const BenefitsSection = () => {
   const benefits = [
@@ -30,10 +30,12 @@ const BenefitsSection = () => {
 
   const approaches = [
     {
+      icon: <TrendingUp className="h-8 w-8 text-secondary" />,
       title: "Stratégique",
       description: "co-construction d'une feuille de route, pilotage des solutions"
     },
     {
+      icon: <Users className="h-8 w-8 text-secondary" />,
       title: "Humaine", 
       description: "accompagnement des équipes pour une adoption fluide"
     }
@@ -49,77 +51,60 @@ const BenefitsSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Benefits */}
-        <div className="mb-20">
-          <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
-            <div className="lg:w-1/2 text-center lg:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Les bénéfices pour vous
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Découvrez comment notre approche personnalisée transforme votre entreprise et améliore votre quotidien professionnel.
-              </p>
-            </div>
-            <div className="lg:w-1/2">
-              <div className="relative">
-                <img 
-                  src={satisfiedClient} 
-                  alt="Client satisfait dans son bureau" 
-                  className="rounded-2xl shadow-xl w-full h-64 object-cover"
-                />
-                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
-              </div>
-            </div>
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Les bénéfices pour vous
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Découvrez comment notre approche personnalisée transforme votre entreprise et améliore votre quotidien professionnel.
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
-                <CardContent className="p-6 text-center">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      {benefit.icon}
-                    </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+          {benefits.map((benefit, index) => (
+            <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group">
+              <CardContent className="p-6 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="p-4 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors duration-300">
+                    {benefit.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground leading-tight">
-                    {benefit.title}
-                  </h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground leading-tight">
+                  {benefit.title}
+                </h3>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         {/* Double Approach */}
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
-            <div className="relative">
-              <img 
-                src={btpMeeting} 
-                alt="Réunion professionnelle BTP avec équipe" 
-                className="rounded-2xl shadow-xl w-full h-64 object-cover"
-              />
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary/20 rounded-full blur-xl"></div>
-            </div>
-          </div>
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center lg:text-left">
-              Notre double approche
-            </h2>
-            <div className="space-y-6">
-              {approaches.map((approach, index) => (
-                <Card key={index} className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-lg bg-white/80 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-primary mb-3">
-                      {approach.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {approach.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Notre double approche
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            Une méthodologie éprouvée alliant stratégie et dimension humaine pour garantir votre succès.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {approaches.map((approach, index) => (
+            <Card key={index} className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-xl group bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-8 text-center">
+                <div className="flex justify-center mb-6">
+                  <div className="p-4 bg-secondary/10 rounded-xl group-hover:bg-secondary/20 transition-colors duration-300">
+                    {approach.icon}
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">
+                  {approach.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  {approach.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
