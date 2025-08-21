@@ -130,53 +130,7 @@ const AboutSection = () => {
         </div>
 
         {/* Clients Section - Horizontal Scroll Design */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">Témoignages</h3>
-          <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">Ils nous ont fait confiance pour leur transformation digitale</p>
-          
-          {/* Horizontal scroll container */}
-          <div className="relative">
-            <div className="flex overflow-x-auto scrollbar-hide gap-6 pb-4 px-4 snap-x snap-mandatory">
-              {clients.map((client, index) => (
-                <Card key={index} className="group relative overflow-hidden border-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex-shrink-0 w-80 snap-center">
-                  <CardContent className="p-8">
-                    <div className="flex items-center space-x-6">
-                      <div className="relative">
-                        <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <img src={client.logo} alt={`Logo ${client.name}`} className="h-12 w-auto object-contain filter group-hover:brightness-110 transition-all duration-300" />
-                        </div>
-                        <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      </div>
-                      <div className="flex-1 text-left">
-                        <h4 className="font-bold text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                          {client.name}
-                        </h4>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {client.description}
-                        </p>
-                      </div>
-                    </div>
-                    
-                    {/* Decorative elements */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-secondary/5 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            
-            {/* Scroll indicators */}
-            <div className="flex justify-center mt-6 space-x-2">
-              {clients.map((_, index) => (
-                <div key={index} className="w-2 h-2 rounded-full bg-muted-foreground/30 hover:bg-primary/50 transition-colors cursor-pointer"></div>
-              ))}
-            </div>
-            
-            {/* Gradient overlays for scroll indication */}
-            <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent pointer-events-none"></div>
-          </div>
-        </div>
+        
       </div>
     </section>;
 };
