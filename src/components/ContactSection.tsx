@@ -50,7 +50,7 @@ const ContactSection = () => {
                 
                 
                 
-                <Button variant="outline" className="border-white text-black dark:text-white hover:bg-white hover:text-primary dark:hover:text-blue-500 w-full" onClick={() => window.open(method.link, '_blank')}>
+                <Button variant="outline" className="border-white text-white hover:bg-white w-full hover:opacity-90" style={{borderColor: '#3f779d', backgroundColor: '#3f779d'}} onClick={() => window.open(method.link, '_blank')}>
                   {method.linkText}
                 </Button>
               </CardContent>

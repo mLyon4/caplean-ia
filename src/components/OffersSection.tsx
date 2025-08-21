@@ -77,7 +77,7 @@ const OffersSection = () => {
                   </div>}
 
                 {offer.isSpecial && <div className="mt-6 text-center">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
+                    <Button className="text-white hover:opacity-90 w-full" style={{backgroundColor: '#3f779d'}}>
                       Demander un pré-diagnostic
                     </Button>
                   </div>}
@@ -87,7 +87,7 @@ const OffersSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-12">
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild size="lg" className="text-white hover:opacity-90" style={{backgroundColor: '#3f779d'}}>
             <a href="#contacts">Discutons de votre projet</a>
           </Button>
         </div>

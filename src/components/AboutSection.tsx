@@ -62,8 +62,8 @@ const AboutSection = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src={teamCollaboration} 
-                  alt="Équipe de consultants travaillant ensemble" 
+                  src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" 
+                  alt="Christelle Picault - Experte en transformation digitale" 
                   className="rounded-2xl shadow-xl w-full h-64 object-cover"
                 />
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary/20 rounded-full blur-xl"></div>

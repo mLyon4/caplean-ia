@@ -55,7 +55,7 @@ const Header = () => {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button asChild className="bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <Button asChild className="text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:opacity-90" style={{backgroundColor: '#3f779d'}}>
               <a href="#contacts" onClick={e => {
               e.preventDefault();
               document.getElementById('contacts')?.scrollIntoView({
