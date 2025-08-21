@@ -68,17 +68,19 @@ const AboutSection = () => {
                 
                 {/* Main image */}
                 <div className="relative w-80 h-80 mx-auto">
-                  <img 
-                    src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" 
-                    alt="Christelle Picault - Experte en transformation digitale" 
-                    className="w-full h-full object-cover rounded-full shadow-2xl border-4 border-white group-hover:scale-105 transition-all duration-500"
-                  />
+                  <img src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" alt="Christelle Picault - Experte en transformation digitale" className="w-full h-full object-cover rounded-full shadow-2xl border-4 border-white group-hover:scale-105 transition-all duration-500" />
                 </div>
                 
                 {/* Floating decorative elements */}
-                <div className="absolute top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full blur-sm animate-bounce" style={{animationDelay: '0s'}}></div>
-                <div className="absolute bottom-8 -left-6 w-6 h-6 bg-secondary/20 rounded-full blur-sm animate-bounce" style={{animationDelay: '1s'}}></div>
-                <div className="absolute top-1/2 -right-8 w-4 h-4 bg-primary/30 rounded-full blur-sm animate-bounce" style={{animationDelay: '2s'}}></div>
+                <div className="absolute top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full blur-sm animate-bounce" style={{
+                animationDelay: '0s'
+              }}></div>
+                <div className="absolute bottom-8 -left-6 w-6 h-6 bg-secondary/20 rounded-full blur-sm animate-bounce" style={{
+                animationDelay: '1s'
+              }}></div>
+                <div className="absolute top-1/2 -right-8 w-4 h-4 bg-primary/30 rounded-full blur-sm animate-bounce" style={{
+                animationDelay: '2s'
+              }}></div>
               </div>
             </div>
             
@@ -88,7 +90,9 @@ const AboutSection = () => {
                 <h3 className="text-4xl font-bold text-foreground mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
                   Christelle Picault
                 </h3>
-                <p className="text-2xl font-semibold mb-6" style={{color: '#3f779d'}}>
+                <p className="text-2xl font-semibold mb-6" style={{
+                color: '#3f779d'
+              }}>
                   Experte en Transformation Digitale & Lean Management
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto lg:mx-0 mb-6 rounded-full"></div>
@@ -103,10 +107,7 @@ const AboutSection = () => {
                   <div className="text-2xl font-bold text-primary mb-1">20+</div>
                   <div className="text-sm text-muted-foreground">Années d'expérience</div>
                 </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-4 border border-secondary/10">
-                  <div className="text-2xl font-bold text-secondary mb-1">100+</div>
-                  <div className="text-sm text-muted-foreground">Projets réalisés</div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -114,8 +115,7 @@ const AboutSection = () => {
 
         {/* Qualifications */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
-          {qualifications.map((qual, index) => 
-            <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-white/80 backdrop-blur-sm">
+          {qualifications.map((qual, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-white/80 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
@@ -126,31 +126,21 @@ const AboutSection = () => {
                   </p>
                 </div>
               </CardContent>
-            </Card>
-          )}
+            </Card>)}
         </div>
 
         {/* Clients Section - Modern Design */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            Ils nous font confiance
-          </h3>
-          <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Des entreprises de référence qui ont choisi notre expertise pour leur transformation digitale
-          </p>
+          <h3 className="text-2xl font-bold text-foreground mb-4">Témoignages</h3>
+          <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">Ils nous ont fait confiance pour leu</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {clients.map((client, index) => (
-              <Card key={index} className="group relative overflow-hidden border-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            {clients.map((client, index) => <Card key={index} className="group relative overflow-hidden border-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <CardContent className="p-8">
                   <div className="flex items-center space-x-6">
                     <div className="relative">
                       <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <img 
-                          src={client.logo} 
-                          alt={`Logo ${client.name}`} 
-                          className="h-12 w-auto object-contain filter group-hover:brightness-110 transition-all duration-300"
-                        />
+                        <img src={client.logo} alt={`Logo ${client.name}`} className="h-12 w-auto object-contain filter group-hover:brightness-110 transition-all duration-300" />
                       </div>
                       <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
@@ -168,8 +158,7 @@ const AboutSection = () => {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-secondary/5 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </div>
