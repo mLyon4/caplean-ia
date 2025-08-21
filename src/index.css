@@ -20,23 +20,23 @@ All colors MUST be HSL.
     --primary: 205 43% 43%; /* #3f779d - Bleu principal demandé */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 25 83% 49%; /* #e97411 - Orange chaleureux */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 197 71% 73%; /* #87CEEB - Bleu ciel voile */
+    --secondary-foreground: 205 33% 26%;
 
     --muted: 205 20% 95%;
     --muted-foreground: 205 15% 50%;
 
-    --accent: 25 83% 49%; /* #e97411 - Orange chaleureux */
+    --accent: 217 76% 58%; /* #4A90E2 - Bleu océan */
     --accent-foreground: 0 0% 100%;
 
-    /* Couleurs personnalisées avec bleu principal #3f779d */
-    --hero-bg: linear-gradient(135deg, 210 40% 98%, 25 40% 97%);
+    /* Couleurs inspirées de l'univers voile - nuances de bleu */
+    --hero-bg: linear-gradient(135deg, 210 40% 98%, 197 30% 97%);
     --primary-warm: 205 43% 43%; /* #3f779d - Bleu principal */
-    --secondary-warm: 25 83% 49%; /* Orange chaleureux */
-    --accent-warm: 25 83% 55%; /* Orange chaleureux pour accents */
-    --gradient-hero: linear-gradient(135deg, 210 100% 97% 0%, 25 50% 96% 50%, 205 40% 95% 100%);
-    --gradient-warm: linear-gradient(135deg, 25 83% 49%, 205 43% 43%);
-    --gradient-section: linear-gradient(180deg, 210 40% 98%, 25 30% 97%);
+    --secondary-warm: 197 71% 73%; /* Bleu ciel voile */
+    --accent-warm: 217 76% 58%; /* Bleu océan */
+    --gradient-hero: linear-gradient(135deg, 210 100% 97% 0%, 197 50% 96% 50%, 205 40% 95% 100%);
+    --gradient-warm: linear-gradient(135deg, 197 71% 73%, 205 43% 43%);
+    --gradient-section: linear-gradient(180deg, 210 40% 98%, 197 30% 97%);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -77,13 +77,13 @@ All colors MUST be HSL.
     --primary: 205 43% 55%; /* Version plus claire du bleu #3f779d pour le dark mode */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 25 70% 35%; /* Version sombre de l'orange */
+    --secondary: 197 50% 45%; /* Version sombre du bleu ciel */
     --secondary-foreground: 210 33% 95%;
 
     --muted: 205 33% 20%;
     --muted-foreground: 205 20% 65%;
 
-    --accent: 25 70% 55%; /* Version orange pour le dark mode */
+    --accent: 217 60% 45%; /* Version sombre du bleu océan */
     --accent-foreground: 0 0% 100%;
 
     /* Dark mode versions avec nouvelle palette */
