@@ -52,10 +52,10 @@ const DetailedServicesSection = () => {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground leading-tight">
-            Nos Services
+            Services de Transformation Digitale
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Des solutions sur mesure qui s'adaptent parfaitement aux besoins spécifiques de votre entreprise.
+            Solutions personnalisées d'optimisation de processus, structuration d'entreprise et digitalisation avec Notion, CRM et Lean management.
           </p>
         </div>
 

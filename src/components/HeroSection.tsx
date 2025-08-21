@@ -5,11 +5,11 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur rounded-full px-8 py-3 mb-12 border border-primary/10 shadow-sm">
-            <span className="text-sm font-medium text-primary">DIGITALISATION DES ENTREPRISES</span>
+            <span className="text-sm font-medium text-primary">TRANSFORMATION DIGITALE</span>
             <span className="text-primary/50">•</span>
-            <span className="text-sm font-medium text-primary">AMÉLIORATION CONTINUE</span>
+            <span className="text-sm font-medium text-primary">OPTIMISATION DES PROCESSUS</span>
             <span className="text-primary/50">•</span>
-            <span className="text-sm font-medium text-primary">GESTION DE PROJETS</span>
+            <span className="text-sm font-medium text-primary">LEAN MANAGEMENT BTP</span>
           </div>
 
           {/* Main Title */}
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">
-            Solutions sur mesure de structuration, simplification & digitalisation avec Notion, ERP & IA pour optimiser votre productivité.
+            Structuration d'entreprise, pilotage de projets ERP/CRM, systèmes Notion personnalisés et Lean management BTP.
           </p>
 
           {/* Problem Statement */}
