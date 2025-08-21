@@ -55,29 +55,60 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Profile Section */}
-        <div className="flex flex-col items-center mb-16">
-          <div className="relative mb-8">
-            <div className="w-48 h-48 mx-auto">
-              <img 
-                src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" 
-                alt="Christelle Picault - Experte en transformation digitale" 
-                className="w-full h-full object-cover rounded-full shadow-xl border-4 border-white"
-              />
+        {/* Profile Section - Modern Design */}
+        <div className="relative mb-16">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 max-w-6xl mx-auto">
+            
+            {/* Image Section */}
+            <div className="relative flex-shrink-0">
+              <div className="relative group">
+                {/* Animated background circles */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500 animate-pulse"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-secondary/30 to-primary/30 rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
+                
+                {/* Main image */}
+                <div className="relative w-80 h-80 mx-auto">
+                  <img 
+                    src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" 
+                    alt="Christelle Picault - Experte en transformation digitale" 
+                    className="w-full h-full object-cover rounded-full shadow-2xl border-4 border-white group-hover:scale-105 transition-all duration-500"
+                  />
+                </div>
+                
+                {/* Floating decorative elements */}
+                <div className="absolute top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full blur-sm animate-bounce" style={{animationDelay: '0s'}}></div>
+                <div className="absolute bottom-8 -left-6 w-6 h-6 bg-secondary/20 rounded-full blur-sm animate-bounce" style={{animationDelay: '1s'}}></div>
+                <div className="absolute top-1/2 -right-8 w-4 h-4 bg-primary/30 rounded-full blur-sm animate-bounce" style={{animationDelay: '2s'}}></div>
+              </div>
             </div>
-            <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/20 rounded-full blur-xl"></div>
-          </div>
-          
-          <div className="text-center max-w-3xl">
-            <h3 className="text-2xl font-bold text-foreground mb-3">
-              Christelle Picault
-            </h3>
-            <p className="text-xl" style={{color: '#3f779d'}}>
-              Experte en Transformation Digitale & Lean Management
-            </p>
-            <p className="text-muted-foreground mt-4 leading-relaxed">
-              Forte de plus de 20 ans d'expérience, je accompagne les entreprises du BTP et les PME dans leur transformation digitale avec une approche personnalisée et pragmatique.
-            </p>
+            
+            {/* Content Section */}
+            <div className="flex-1 text-center lg:text-left lg:pt-8">
+              <div className="mb-8">
+                <h3 className="text-4xl font-bold text-foreground mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
+                  Christelle Picault
+                </h3>
+                <p className="text-2xl font-semibold mb-6" style={{color: '#3f779d'}}>
+                  Experte en Transformation Digitale & Lean Management
+                </p>
+                <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto lg:mx-0 mb-6 rounded-full"></div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Forte de plus de 20 ans d'expérience, je accompagne les entreprises du BTP et les PME dans leur transformation digitale avec une approche personnalisée et pragmatique.
+                </p>
+              </div>
+              
+              {/* Stats or highlights */}
+              <div className="grid grid-cols-2 gap-6 max-w-md mx-auto lg:mx-0">
+                <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-4 border border-primary/10">
+                  <div className="text-2xl font-bold text-primary mb-1">20+</div>
+                  <div className="text-sm text-muted-foreground">Années d'expérience</div>
+                </div>
+                <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-4 border border-secondary/10">
+                  <div className="text-2xl font-bold text-secondary mb-1">100+</div>
+                  <div className="text-sm text-muted-foreground">Projets réalisés</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -99,23 +130,45 @@ const AboutSection = () => {
           )}
         </div>
 
-        {/* Clients Section */}
+        {/* Clients Section - Modern Design */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-8">
+          <h3 className="text-2xl font-bold text-foreground mb-4">
             Ils nous font confiance
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Des entreprises de référence qui ont choisi notre expertise pour leur transformation digitale
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {clients.map((client, index) => (
-              <div key={index} className="flex flex-col items-center p-4 hover:scale-105 transition-transform duration-300">
-                <img 
-                  src={client.logo} 
-                  alt={`Logo ${client.name}`} 
-                  className="h-16 w-auto object-contain mb-3 opacity-70 hover:opacity-100 transition-opacity"
-                />
-                <p className="text-sm text-muted-foreground text-center">
-                  {client.name}
-                </p>
-              </div>
+              <Card key={index} className="group relative overflow-hidden border-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                <CardContent className="p-8">
+                  <div className="flex items-center space-x-6">
+                    <div className="relative">
+                      <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img 
+                          src={client.logo} 
+                          alt={`Logo ${client.name}`} 
+                          className="h-12 w-auto object-contain filter group-hover:brightness-110 transition-all duration-300"
+                        />
+                      </div>
+                      <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
+                    <div className="flex-1 text-left">
+                      <h4 className="font-bold text-lg text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                        {client.name}
+                      </h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {client.description}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative elements */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-secondary/5 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
