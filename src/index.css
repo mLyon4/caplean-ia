@@ -17,26 +17,26 @@ All colors MUST be HSL.
     --popover: 210 33% 98%;
     --popover-foreground: 205 33% 26%;
 
-    --primary: 210 70% 45%; /* #2563EB - Bleu professionnel */
+    --primary: 205 43% 43%; /* #3f779d - Bleu principal demandé */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 71% 45%; /* #10B981 - Vert moderne */
+    --secondary: 25 83% 49%; /* #e97411 - Orange chaleureux */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 95%;
-    --muted-foreground: 215 25% 50%;
+    --muted: 205 20% 95%;
+    --muted-foreground: 205 15% 50%;
 
-    --accent: 142 71% 45%; /* #10B981 - Vert moderne */
+    --accent: 25 83% 49%; /* #e97411 - Orange chaleureux */
     --accent-foreground: 0 0% 100%;
 
-    /* Couleurs personnalisées inspirées de ValSociety */
-    --hero-bg: linear-gradient(135deg, 210 40% 98%, 142 30% 97%);
-    --primary-warm: 210 70% 45%; /* Bleu professionnel */
-    --secondary-warm: 142 71% 45%; /* Vert moderne */
-    --accent-warm: 37 91% 55%; /* Orange chaleureux pour accents */
-    --gradient-hero: linear-gradient(135deg, 210 100% 97% 0%, 142 50% 96% 50%, 210 40% 95% 100%);
-    --gradient-warm: linear-gradient(135deg, 142 71% 45%, 210 70% 45%);
-    --gradient-section: linear-gradient(180deg, 210 40% 98%, 142 30% 97%);
+    /* Couleurs personnalisées avec bleu principal #3f779d */
+    --hero-bg: linear-gradient(135deg, 210 40% 98%, 25 40% 97%);
+    --primary-warm: 205 43% 43%; /* #3f779d - Bleu principal */
+    --secondary-warm: 25 83% 49%; /* Orange chaleureux */
+    --accent-warm: 25 83% 55%; /* Orange chaleureux pour accents */
+    --gradient-hero: linear-gradient(135deg, 210 100% 97% 0%, 25 50% 96% 50%, 205 40% 95% 100%);
+    --gradient-warm: linear-gradient(135deg, 25 83% 49%, 205 43% 43%);
+    --gradient-section: linear-gradient(180deg, 210 40% 98%, 25 30% 97%);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -74,16 +74,16 @@ All colors MUST be HSL.
     --popover: 205 33% 15%;
     --popover-foreground: 210 33% 95%;
 
-    --primary: 205 43% 55%; /* Version plus claire du bleu-gris pour le dark mode */
+    --primary: 205 43% 55%; /* Version plus claire du bleu #3f779d pour le dark mode */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 207 45% 35%; /* Version sombre du bleu pastel */
+    --secondary: 25 70% 35%; /* Version sombre de l'orange */
     --secondary-foreground: 210 33% 95%;
 
     --muted: 205 33% 20%;
-    --muted-foreground: 207 20% 65%;
+    --muted-foreground: 205 20% 65%;
 
-    --accent: 205 43% 55%; /* Version bleu-gris pour le dark mode */
+    --accent: 25 70% 55%; /* Version orange pour le dark mode */
     --accent-foreground: 0 0% 100%;
 
     /* Dark mode versions avec nouvelle palette */
