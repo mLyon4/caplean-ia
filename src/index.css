@@ -17,27 +17,26 @@ All colors MUST be HSL.
     --popover: 210 33% 98%;
     --popover-foreground: 205 33% 26%;
 
-    --primary: 205 43% 43%; /* #3F779D - Bleu-gris élégant */
+    --primary: 210 70% 45%; /* #2563EB - Bleu professionnel */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 207 65% 78%; /* #A1C6EA - Bleu pastel apaisant */
-    --secondary-foreground: 205 33% 26%;
+    --secondary: 142 71% 45%; /* #10B981 - Vert moderne */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 207 65% 88%;
-    --muted-foreground: 205 20% 55%;
+    --muted: 210 40% 95%;
+    --muted-foreground: 215 25% 50%;
 
-    --accent: 205 43% 43%; /* #3F779D - Bleu-gris élégant */
+    --accent: 142 71% 45%; /* #10B981 - Vert moderne */
     --accent-foreground: 0 0% 100%;
 
-    /* Couleurs personnalisées avec nouvelle palette */
-    --hero-bg: linear-gradient(135deg, 210 33% 98%, 207 65% 95%);
-    --gold: 205 43% 43%; /* #3F779D - Bleu-gris remplace le jaune */
-    --gold-light: 205 43% 55%;
-    --blue-deep: 205 43% 43%; /* #3F779D */
-    --blue-light: 207 65% 78%; /* #A1C6EA */
-    --blue-pastel: 207 65% 78%; /* #A1C6EA */
-    --blue-night: 205 33% 26%; /* #2E4057 */
-    --gradient-hero: linear-gradient(135deg, 210 33% 98% 0%, 207 65% 95% 50%, 207 65% 92% 100%);
+    /* Couleurs personnalisées inspirées de ValSociety */
+    --hero-bg: linear-gradient(135deg, 210 40% 98%, 142 30% 97%);
+    --primary-warm: 210 70% 45%; /* Bleu professionnel */
+    --secondary-warm: 142 71% 45%; /* Vert moderne */
+    --accent-warm: 37 91% 55%; /* Orange chaleureux pour accents */
+    --gradient-hero: linear-gradient(135deg, 210 100% 97% 0%, 142 50% 96% 50%, 210 40% 95% 100%);
+    --gradient-warm: linear-gradient(135deg, 142 71% 45%, 210 70% 45%);
+    --gradient-section: linear-gradient(180deg, 210 40% 98%, 142 30% 97%);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
