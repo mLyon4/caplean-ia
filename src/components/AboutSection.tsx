@@ -9,7 +9,7 @@ import satisfiedClient from "@/assets/satisfied-client.jpg";
 const AboutSection = () => {
   const qualifications = [{
     icon: <User className="h-8 w-8 text-primary" />,
-    text: "Plus de 25 ans d'expériences en pilotage de projets"
+    text: "Plus de 20 ans d'expériences en pilotage de projets"
   }, {
     icon: <Award className="h-8 w-8 text-primary" />,
     text: "Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, Notion, Activateur France Num"
@@ -92,13 +92,13 @@ const AboutSection = () => {
                 color: '#3f779d'
               }}>Consultante en Transformation Digitale & Lean Management</p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto lg:mx-0 mb-6 rounded-full"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed">Forte de plus de 25 ans d'expérience, j'accompagne les entreprises  dans leur transformation digitale avec une approche personnalisée et pragmatique.</p>
+                <p className="text-lg text-muted-foreground leading-relaxed">Forte de plus de 20 ans d'expérience, j'accompagne les entreprises  dans leur transformation digitale avec une approche personnalisée et pragmatique.</p>
               </div>
               
               {/* Stats or highlights */}
               <div className="grid grid-cols-2 gap-6 max-w-md mx-auto lg:mx-0">
                 <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-4 border border-primary/10">
-                  <div className="text-2xl font-bold text-primary mb-1">25+</div>
+                  <div className="text-2xl font-bold text-primary mb-1">20+</div>
                   <div className="text-sm text-muted-foreground">Années d'expérience</div>
                 </div>
                 
