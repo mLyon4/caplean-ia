@@ -41,6 +41,15 @@ const TestSection = () => {
       rating: 5,
       company: "Fireco",
       logo: "https://via.placeholder.com/120x40/f59e0b/white?text=Fireco"
+    },
+    {
+      content: "Gestion de projet et accompagnement au changement pour la montée de version de Rosalog chez des clients historiques ayant des spécificités fonctionnelles.",
+      author: "Samuel Robert",
+      title: "Dirigeant",
+      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      rating: 5,
+      company: "Rosalog",
+      logo: "/src/assets/logos/rosalog-logo.png"
     }
   ];
 
