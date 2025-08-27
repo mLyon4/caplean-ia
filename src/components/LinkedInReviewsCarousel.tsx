@@ -38,7 +38,7 @@ const LinkedInReviewsCarousel = () => {
       author: "Céline Mansuy Ferreira", 
       title: "Consultante Free-lance",
       company: "Up Neo",
-      content: "Une professionnelle remarquable ! L'espace Notion créé sur mesure répond parfaitement à mes besoins. Pédagogie exceptionnelle, je recommande vivement.",
+      content: "Mise en place d'un système Notion sur mesure. Une vraie pro 🤩 J'ai fait appel aux services de Christelle pour la création de mon espace Notion. Après quelques mois d'activité en tant que free-lance, je commençais à avoir des informations un peu partout, sous différents formats, et j'avais besoin de structurer! Christelle a pris le temps d'écouter mes besoins et s'y est très facilement adaptée, avec un grand sens pédagogique, de sorte que je suis devenue autonome avec « mon » Notion hyper rapidement! Je recommande les yeux fermés 🚀",
       rating: 5,
       date: "Il y a 1 mois"
     },
