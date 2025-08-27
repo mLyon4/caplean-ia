@@ -44,8 +44,6 @@ const CompanyCarousel = () => {
 
   return (
     <div className="mt-12 bg-white rounded-lg shadow-sm p-6 overflow-hidden">
-      <h3 className="text-xl font-semibold text-foreground mb-6 text-center">Nos Références Clients</h3>
-      
       <div className="relative overflow-hidden">
         <div className="flex animate-scroll-right">
           {duplicatedCompanies.map((company, index) => (
