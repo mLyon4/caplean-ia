@@ -8,32 +8,68 @@ const TestSection = () => {
     <section className="py-16 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-8">Section Test</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-12">Ce Que Disent Nos Clients</h2>
           
-          <div className="mb-8">
-            <label className="block text-sm font-medium text-muted-foreground mb-4">
-              Padding: {padding[0]}px
-            </label>
-            <div className="max-w-md mx-auto">
-              <Slider
-                value={padding}
-                onValueChange={setPadding}
-                min={0}
-                max={200}
-                step={5}
-                className="w-full"
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-card border rounded-lg p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                  JS
+                </div>
+                <div className="ml-4">
+                  <h3 className="font-semibold text-card-foreground">Jean Dupont</h3>
+                  <p className="text-sm text-muted-foreground">PDG, TechCorp</p>
+                </div>
+              </div>
+              <p className="text-card-foreground italic">
+                "Excellent travail sur l'automatisation de nos processus. L'équipe a su comprendre nos besoins et livrer une solution parfaitement adaptée."
+              </p>
+              <div className="flex mt-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">★</span>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div 
-            className="bg-card border rounded-lg shadow-sm transition-all duration-300"
-            style={{ padding: `${padding[0]}px` }}
-          >
-            <p className="text-card-foreground">
-              Contenu de test avec padding ajustable. 
-              Utilisez le slider ci-dessus pour modifier le padding de cette zone.
-            </p>
+            <div className="bg-card border rounded-lg p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                  ML
+                </div>
+                <div className="ml-4">
+                  <h3 className="font-semibold text-card-foreground">Marie Laurent</h3>
+                  <p className="text-sm text-muted-foreground">Directrice, InnovCorp</p>
+                </div>
+              </div>
+              <p className="text-card-foreground italic">
+                "La mise en place de notre ERP avec Christelle a été un véritable succès. Professionnalisme et expertise au rendez-vous."
+              </p>
+              <div className="flex mt-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">★</span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-card border rounded-lg p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                  PM
+                </div>
+                <div className="ml-4">
+                  <h3 className="font-semibold text-card-foreground">Pierre Martin</h3>
+                  <p className="text-sm text-muted-foreground">Manager, StartupXYZ</p>
+                </div>
+              </div>
+              <p className="text-card-foreground italic">
+                "Grâce à l'implémentation Notion et aux automatisations, notre productivité a augmenté de 40%. Merci pour ce travail exceptionnel."
+              </p>
+              <div className="flex mt-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">★</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
