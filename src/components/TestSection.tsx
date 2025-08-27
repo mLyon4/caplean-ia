@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import TestimonialItem from "./TestimonialItem";
+import CompanyCarousel from "./CompanyCarousel";
 
 const TestSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -108,6 +109,9 @@ const TestSection = () => {
               ))}
             </div>
           </div>
+          
+          {/* Company carousel */}
+          <CompanyCarousel />
         </div>
       </div>
     </section>
