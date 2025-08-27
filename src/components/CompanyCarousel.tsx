@@ -27,13 +27,13 @@ const CompanyCarousel = () => {
     },
     {
       name: "Fireco",
-      logo: "https://via.placeholder.com/120x40/f59e0b/white?text=Fireco",
+      logo: "/lovable-uploads/fe2cff57-abcf-43b0-b42c-910b0cb4f724.png",
       director: "Quentin Forgeot",
       website: "https://fireco.agency/"
     },
     {
       name: "Rosalog",
-      logo: "/src/assets/logos/rosalog-logo.png",
+      logo: "/lovable-uploads/dac45283-edcc-4cc4-a4f0-94ddaa97836f.png",
       director: "Samuel Robert",
       website: "https://rosalog.com/"
     }
@@ -51,11 +51,16 @@ const CompanyCarousel = () => {
               key={`${company.name}-${index}`}
               className="flex items-center justify-center mx-12 flex-shrink-0 min-w-[160px]"
             >
-              <img
-                src={company.logo}
-                alt={`Logo ${company.name}`}
-                className="h-16 w-auto object-contain"
-              />
+              <div className="flex items-center gap-3">
+                <img
+                  src={company.logo}
+                  alt={`Logo ${company.name}`}
+                  className="h-16 w-auto object-contain"
+                />
+                {company.name === "Rosalog" && (
+                  <span className="text-lg font-semibold text-gray-700">Rosalog</span>
+                )}
+              </div>
             </div>
           ))}
         </div>
