@@ -9,7 +9,7 @@ const CompanyCarousel = () => {
   const companies: Company[] = [
     {
       name: "AC2R",
-      logo: "/src/assets/logos/ac2r-logo.png",
+      logo: "/lovable-uploads/39196d8c-0542-406b-b7ad-51e771eae56a.png",
       director: "Anne-Gaëlle Roux",
       website: "https://www.ac2r.com/"
     },
@@ -21,7 +21,7 @@ const CompanyCarousel = () => {
     },
     {
       name: "Up Neo",
-      logo: "/src/assets/logos/up-neo-logo.png",
+      logo: "/lovable-uploads/46aedefe-2d5e-46ce-b22d-3a151da26b60.png",
       director: "Céline Mansuy Ferreira",
       website: "https://up-neo.com/"
     },
