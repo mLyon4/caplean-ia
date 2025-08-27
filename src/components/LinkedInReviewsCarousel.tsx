@@ -16,7 +16,16 @@ const LinkedInReviewsCarousel = () => {
 
   const linkedInReviews: LinkedInReview[] = [
     {
-      id: "1",
+      id: "1", 
+      author: "Samuel Robert",
+      title: "Dirigeant",
+      company: "Rosalog",
+      content: "Un accompagnement de qualité pour la montée de version de notre solution. Gestion de projet exemplaire et adaptation parfaite aux spécificités de nos clients.",
+      rating: 5,
+      date: "Il y a 3 mois"
+    },
+    {
+      id: "2",
       author: "Céline Mansuy Ferreira", 
       title: "Consultante Free-lance",
       company: "Up Neo",
