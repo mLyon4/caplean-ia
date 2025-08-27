@@ -15,7 +15,7 @@ const CompanyCarousel = () => {
     },
     {
       name: "ZDEC",
-      logo: "/src/assets/logos/zdec-logo.png",
+      logo: "/lovable-uploads/abec6c71-f519-4115-a580-545944c988d5.png",
       director: "Rami Bouchedda",
       website: "https://www.perica.fr/annuaires/zdec/"
     },
