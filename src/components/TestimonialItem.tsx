@@ -43,11 +43,11 @@ const TestimonialItem = ({
       <div className="p-2 md:p-8">
         <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
           <div className="md:w-1/3 flex flex-col items-center text-center">
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg mb-4">
+            <div className="w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg mb-4 bg-white p-2 flex items-center justify-center">
               <img
-                src={avatar}
-                alt={author}
-                className="w-full h-full object-cover"
+                src={logo}
+                alt={company}
+                className="max-w-full max-h-full object-contain"
                 loading="lazy"
               />
             </div>
@@ -55,12 +55,9 @@ const TestimonialItem = ({
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
               {title}
             </p>
-            <img
-              src={logo}
-              alt={company}
-              className="h-8 object-contain my-2 opacity-80"
-              loading="lazy"
-            />
+            <p className="text-sm font-medium text-primary">
+              {company}
+            </p>
             <div className="flex items-center justify-center mt-2">
               {renderStars(rating)}
             </div>
