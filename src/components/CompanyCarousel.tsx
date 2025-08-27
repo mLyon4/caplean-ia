@@ -51,7 +51,7 @@ const CompanyCarousel = () => {
               key={`${company.name}-${index}`}
               className="flex items-center justify-center mx-12 flex-shrink-0 min-w-[180px]"
             >
-              <div className="flex items-center gap-4 p-4 rounded-lg bg-card border shadow-sm">
+              <div className="flex items-center gap-4">
                 <img
                   src={company.logo}
                   alt={`Logo ${company.name}`}
