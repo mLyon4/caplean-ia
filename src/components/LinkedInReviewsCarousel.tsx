@@ -17,39 +17,12 @@ const LinkedInReviewsCarousel = () => {
   const linkedInReviews: LinkedInReview[] = [
     {
       id: "1",
-      author: "Anne-Gaëlle Roux",
-      title: "Dirigeante",
-      company: "AC2R",
-      content: "Excellente prestation d'accompagnement au changement. Christelle a su nous guider efficacement dans notre transition ERP avec une approche méthodique et bienveillante.",
-      rating: 5,
-      date: "Il y a 2 mois"
-    },
-    {
-      id: "2", 
-      author: "Samuel Robert",
-      title: "Dirigeant",
-      company: "Rosalog",
-      content: "Un accompagnement de qualité pour la montée de version de notre solution. Gestion de projet exemplaire et adaptation parfaite aux spécificités de nos clients.",
-      rating: 5,
-      date: "Il y a 3 mois"
-    },
-    {
-      id: "3",
       author: "Céline Mansuy Ferreira", 
       title: "Consultante Free-lance",
       company: "Up Neo",
       content: "Mise en place d'un système Notion sur mesure. Une vraie pro 🤩 J'ai fait appel aux services de Christelle pour la création de mon espace Notion. Après quelques mois d'activité en tant que free-lance, je commençais à avoir des informations un peu partout, sous différents formats, et j'avais besoin de structurer! Christelle a pris le temps d'écouter mes besoins et s'y est très facilement adaptée, avec un grand sens pédagogique, de sorte que je suis devenue autonome avec « mon » Notion hyper rapidement! Je recommande les yeux fermés 🚀",
       rating: 5,
       date: "Il y a 1 mois"
-    },
-    {
-      id: "4",
-      author: "Rami Bouchedda",
-      title: "Dirigeant", 
-      company: "ZDEC",
-      content: "Accompagnement structuré et efficace pour notre changement d'ERP. Approche pragmatique qui nous a permis de gagner significativement en productivité.",
-      rating: 5,
-      date: "Il y a 4 mois"
     }
   ];
 
