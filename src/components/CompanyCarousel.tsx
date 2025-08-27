@@ -43,7 +43,7 @@ const CompanyCarousel = () => {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <div className="mt-12 bg-background border border-border rounded-lg shadow-sm p-6 overflow-hidden">
+    <div className="mt-12 bg-white rounded-lg shadow-sm p-6 overflow-hidden">
       <h3 className="text-xl font-semibold text-foreground mb-6 text-center">Nos Références Clients</h3>
       
       <div className="relative overflow-hidden">
@@ -51,16 +51,13 @@ const CompanyCarousel = () => {
           {duplicatedCompanies.map((company, index) => (
             <div
               key={`${company.name}-${index}`}
-              className="flex items-center space-x-3 mx-8 flex-shrink-0 min-w-[200px]"
+              className="flex items-center justify-center mx-12 flex-shrink-0 min-w-[160px]"
             >
               <img
                 src={company.logo}
                 alt={`Logo ${company.name}`}
-                className="h-10 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
-              <div className="text-left">
-                <h4 className="font-semibold text-sm text-foreground">{company.name}</h4>
-              </div>
             </div>
           ))}
         </div>
