@@ -27,14 +27,6 @@ const Header = () => {
           }}>
               Offres
             </a>
-            <a href="#methode" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
-            e.preventDefault();
-            document.getElementById('methode')?.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }}>
-              Méthode
-            </a>
             <a href="#qui-sommes-nous" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
             e.preventDefault();
             document.getElementById('qui-sommes-nous')?.scrollIntoView({
@@ -42,6 +34,14 @@ const Header = () => {
             });
           }}>
               Expertise
+            </a>
+            <a href="#testimonials" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
+            e.preventDefault();
+            document.getElementById('testimonials')?.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }}>
+              Références
             </a>
             <a href="#contacts" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
             e.preventDefault();

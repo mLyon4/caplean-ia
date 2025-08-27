@@ -7,40 +7,40 @@ const TestSection = () => {
 
   const testimonials = [
     {
-      content: "Excellent travail sur l'automatisation de nos processus. L'équipe a su comprendre nos besoins et livrer une solution parfaitement adaptée.",
-      author: "Jean Dupont",
-      title: "PDG",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      rating: 5,
-      company: "TechCorp",
-      logo: "https://via.placeholder.com/120x40/6366f1/white?text=TechCorp"
-    },
-    {
-      content: "La mise en place de notre ERP avec Christelle a été un véritable succès. Professionnalisme et expertise au rendez-vous.",
-      author: "Marie Laurent",
-      title: "Directrice",
+      content: "Accompagnement au changement d'ERP pour gagner en productivité et mise en place d'un système sur Notion pour gérer nos données RH et Services généraux.",
+      author: "Anne-Gaëlle Roux",
+      title: "Dirigeante",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       rating: 5,
-      company: "InnovCorp",
-      logo: "https://via.placeholder.com/120x40/10b981/white?text=InnovCorp"
+      company: "AC2R",
+      logo: "/src/assets/logos/ac2r-logo.png"
     },
     {
-      content: "Grâce à l'implémentation Notion et aux automatisations, notre productivité a augmenté de 40%. Merci pour ce travail exceptionnel.",
-      author: "Pierre Martin",
-      title: "Manager",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      content: "Accompagnement au changement d'ERP pour gagner en productivité et mise en place d'un système sur Notion pour gérer nos données RH et Services généraux.",
+      author: "Rami Bouchedda",
+      title: "Dirigeant",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       rating: 5,
-      company: "StartupXYZ",
-      logo: "https://via.placeholder.com/120x40/f59e0b/white?text=StartupXYZ"
+      company: "ZDEC",
+      logo: "/src/assets/logos/zdec-logo.png"
     },
     {
-      content: "L'accompagnement personnalisé et la formation de l'équipe ont été parfaits. Nous recommandons vivement leurs services.",
-      author: "Sophie Dubois",
-      title: "Responsable IT",
+      content: "Mise en place d'un système Notion sur mesure. Une vraie pro 🤩 J'ai fait appel aux services de Christelle pour la création de mon espace Notion. Après quelques mois d'activité en tant que free-lance, je commençais à avoir des informations un peu partout, sous différents formats, et j'avais besoin de structurer! Christelle a pris le temps d'écouter mes besoins et s'y est très facilement adaptée, avec un grand sens pédagogique, de sorte que je suis devenue autonome avec « mon » Notion hyper rapidement! Je recommande les yeux fermés 🚀",
+      author: "Céline Mansuy Ferreira",
+      title: "Free-lance",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       rating: 5,
-      company: "DigitalFlow",
-      logo: "https://via.placeholder.com/120x40/8b5cf6/white?text=DigitalFlow"
+      company: "Up Neo",
+      logo: "/src/assets/logos/up-neo-logo.png"
+    },
+    {
+      content: "Mise en place d'un système Notion sur mesure pour gérer le croissance de son entreprise.",
+      author: "Quentin Forgeot",
+      title: "Dirigeant",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      rating: 5,
+      company: "Fireco",
+      logo: "https://via.placeholder.com/120x40/f59e0b/white?text=Fireco"
     }
   ];
 
@@ -53,7 +53,7 @@ const TestSection = () => {
   };
 
   return (
-    <section className="py-16 bg-muted/50">
+    <section id="testimonials" className="py-16 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Ce Que Disent Nos Clients</h2>
