@@ -43,7 +43,7 @@ const CompanyCarousel = () => {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <div className="mt-12 bg-background rounded-lg shadow-sm p-4 md:p-8 overflow-hidden border">
+    <div className="mt-12 w-full bg-white rounded-lg shadow-sm py-6 md:py-8 px-2 md:px-4 overflow-hidden border">
       <div className="relative overflow-hidden">
         <div className="flex animate-scroll-right">
           {duplicatedCompanies.map((company, index) => (
