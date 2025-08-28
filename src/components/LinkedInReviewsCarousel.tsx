@@ -31,7 +31,16 @@ const LinkedInReviewsCarousel = () => {
       company: "Up Neo",
       content: "Mise en place d'un système Notion sur mesure. Une vraie pro 🤩 J'ai fait appel aux services de Christelle pour la création de mon espace Notion. Après quelques mois d'activité en tant que free-lance, je commençais à avoir des informations un peu partout, sous différents formats, et j'avais besoin de structurer! Christelle a pris le temps d'écouter mes besoins et s'y est très facilement adaptée, avec un grand sens pédagogique, de sorte que je suis devenue autonome avec « mon » Notion hyper rapidement! Je recommande les yeux fermés 🚀",
       rating: 5,
-      date: "Il y a 1 mois"
+      date: "Juillet 2025"
+    },
+    {
+      id: "3",
+      author: "Quentin Forgeot",
+      title: "CEO",
+      company: "Fireco | Agence Meta Ads, Google Ads & Créa",
+      content: "J'ai eu l'occasion de travailler avec Christelle sur la refonte complète de mon espace Notion, avec pour objectif de le rendre utilisable à la fois en interne et en externe (clients). Son travail a été remarquable : elle a su structurer l'ensemble de manière claire et fluide, tout en gardant une logique d'utilisation simple et intuitive. Résultat : un outil bien plus efficace, adapté à mes besoins et prêt à évoluer. Je recommande vivement son accompagnement.",
+      rating: 5,
+      date: "Août 2025"
     }
   ];
 
