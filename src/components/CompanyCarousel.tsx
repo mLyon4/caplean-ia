@@ -43,22 +43,22 @@ const CompanyCarousel = () => {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <div className="mt-12 bg-background rounded-lg shadow-sm p-8 overflow-hidden border">
+    <div className="mt-12 bg-background rounded-lg shadow-sm p-4 md:p-8 overflow-hidden border">
       <div className="relative overflow-hidden">
         <div className="flex animate-scroll-right">
           {duplicatedCompanies.map((company, index) => (
             <div
               key={`${company.name}-${index}`}
-              className="flex items-center justify-center mx-12 flex-shrink-0 min-w-[180px]"
+              className="flex items-center justify-center mx-4 md:mx-8 lg:mx-12 flex-shrink-0 min-w-[120px] md:min-w-[160px] lg:min-w-[180px]"
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 md:gap-4">
                 <img
                   src={company.logo}
                   alt={`Logo ${company.name}`}
-                  className="h-20 w-auto object-contain max-w-[100px]"
+                  className="h-12 md:h-16 lg:h-20 w-auto object-contain max-w-[80px] md:max-w-[90px] lg:max-w-[100px]"
                 />
                 {company.name === "Rosalog" && (
-                  <span className="text-lg font-semibold text-foreground">Rosalog</span>
+                  <span className="text-sm md:text-base lg:text-lg font-semibold text-foreground">Rosalog</span>
                 )}
               </div>
             </div>
