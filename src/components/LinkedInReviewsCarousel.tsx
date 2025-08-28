@@ -69,7 +69,14 @@ const LinkedInReviewsCarousel = () => {
     <div className="mt-12 bg-white dark:bg-card rounded-lg shadow-lg p-6">
       <div className="flex items-center justify-center mb-6">
         <Linkedin className="h-6 w-6 text-blue-600 mr-2" />
-        <h3 className="text-xl font-semibold text-foreground">Avis LinkedIn Services</h3>
+        <a 
+          href="https://www.linkedin.com/services/page/99439232a0ba4b836b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl font-semibold text-foreground hover:text-primary transition-colors duration-200"
+        >
+          Avis LinkedIn Services
+        </a>
       </div>
       
       <div className="relative">
