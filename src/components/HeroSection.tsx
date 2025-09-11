@@ -1,15 +1,12 @@
 import { Button } from "@/components/ui/button";
 import heroProfessional from "@/assets/hero-professional-optimized.jpg";
-
 const HeroSection = () => {
-  return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden" style={{background: 'hsl(var(--gradient-hero))'}}>
+  return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden" style={{
+    background: 'hsl(var(--gradient-hero))'
+  }}>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroProfessional} 
-          alt="Professional business consultant" 
-          className="w-full h-full object-cover opacity-15"
-        />
+        <img src={heroProfessional} alt="Professional business consultant" className="w-full h-full object-cover opacity-15" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/20"></div>
       </div>
 
@@ -34,25 +31,34 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.1] text-foreground">
             Transformez votre entreprise pour retrouver{" "}
-            <span style={{color: '#3f779d'}}>clarté</span>,{" "}
-            <span style={{color: '#3f779d'}}>rentabilité</span> et{" "}
-            <span style={{color: '#3f779d'}}>sérénité</span>
+            <span style={{
+            color: '#3f779d'
+          }}>clarté</span>,{" "}
+            <span style={{
+            color: '#3f779d'
+          }}>rentabilité</span> et{" "}
+            <span style={{
+            color: '#3f779d'
+          }}>sérénité</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">
-            Structuration d'entreprise, pilotage de projets ERP/CRM, systèmes Notion personnalisés et Lean management BTP.
-          </p>
+          <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">Structuration d'entreprise, pilotage de projets ERP/CRM, Lean management BTP, systèmes Notion personnalisés, automatisations et solutions IA.</p>
 
           {/* Problem Statement */}
           
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button asChild size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-white hover:opacity-90" style={{backgroundColor: '#3f779d'}}>
+            <Button asChild size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-white hover:opacity-90" style={{
+            backgroundColor: '#3f779d'
+          }}>
               <a href="#contacts">Prendre rendez-vous</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl border-2 bg-white/90 backdrop-blur-md hover:bg-primary/5" style={{borderColor: '#3f779d', color: '#3f779d'}}>
+            <Button asChild variant="outline" size="lg" className="font-semibold px-10 py-6 text-lg rounded-xl border-2 bg-white/90 backdrop-blur-md hover:bg-primary/5" style={{
+            borderColor: '#3f779d',
+            color: '#3f779d'
+          }}>
               <a href="#services">Découvrir les services</a>
             </Button>
           </div>
