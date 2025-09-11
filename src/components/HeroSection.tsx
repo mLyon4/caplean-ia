@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroProfessional from "@/assets/hero-professional.jpg";
+import heroProfessional from "@/assets/hero-professional-optimized.jpg";
 
 const HeroSection = () => {
   return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden" style={{background: 'hsl(var(--gradient-hero))'}}>
