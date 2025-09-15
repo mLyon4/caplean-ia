@@ -15,8 +15,8 @@ const OffersSection = () => {
     emoji: "💼",
     title: "Systèmes Notion personnalisés",
     description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
-    price: "À partir de 850 €",
-    features: []
+    price: "À partir de 850 €, modulables selon la complexité et les fonctionnalités souhaitées",
+    features: ["Chaque système est pensé pour gagner du temps", "Centraliser l'information et faciliter la collaboration", "Formations Notion certifiées Qualiopi"]
   }, {
     icon: <Puzzle className="h-8 w-8 text-primary" />,
     emoji: "🧩",
