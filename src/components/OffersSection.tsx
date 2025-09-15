@@ -14,7 +14,7 @@ const OffersSection = () => {
     icon: <Database className="h-8 w-8 text-primary" />,
     emoji: "💼",
     title: "Systèmes Notion personnalisés",
-    description: "Structuration de l'organisation, productivité, communication interne & externe.",
+    description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
     price: "À partir de 850 €",
     features: []
   }, {
