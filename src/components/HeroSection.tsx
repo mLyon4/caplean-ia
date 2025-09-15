@@ -26,6 +26,8 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-secondary">OPTIMISATION DES PROCESSUS</span>
             <span className="text-primary">•</span>
             <span className="text-sm font-medium text-primary">LEAN MANAGEMENT BTP</span>
+            <span className="text-secondary">•</span>
+            <span className="text-sm font-medium text-secondary">AUTOMATISATIONS ET IA</span>
           </div>
 
           {/* Main Title */}
