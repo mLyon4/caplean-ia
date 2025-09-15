@@ -57,6 +57,12 @@ const OffersSection = () => {
                     {offer.description}
                   </p>}
 
+                {offer.price && <div className="text-center mb-6">
+                    <Badge variant="secondary" className="bg-accent/10 text-accent border-accent/20 text-lg px-4 py-2">
+                      {offer.price}
+                    </Badge>
+                  </div>}
+
                 {offer.title === "Systèmes Notion personnalisés" && <div className="text-center mb-6">
                     <p className="text-lg font-bold text-primary">
                       Formations Notion (Qualiopi)
@@ -69,12 +75,6 @@ const OffersSection = () => {
                         <span className="text-muted-foreground">{feature}</span>
                       </li>)}
                   </ul>}
-
-                {offer.price && <div className="text-center mb-6">
-                    <Badge variant="secondary" className="bg-accent/10 text-accent border-accent/20 text-lg px-4 py-2">
-                      {offer.price}
-                    </Badge>
-                  </div>}
 
                 {offer.highlight && <div className="p-4 rounded-lg border-l-4 bg-accent/10 border-accent">
                     <p className="font-semibold" style={{ color: 'hsl(var(--custom-blue))' }}>
