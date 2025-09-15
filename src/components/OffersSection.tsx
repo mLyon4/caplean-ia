@@ -57,6 +57,12 @@ const OffersSection = () => {
                     {offer.description}
                   </p>}
 
+                {offer.title === "Systèmes Notion personnalisés" && <div className="text-center mb-6">
+                    <p className="text-lg font-bold text-primary">
+                      Formations Notion (Qualiopi)
+                    </p>
+                  </div>}
+
                 {offer.features.length > 0 && <ul className="space-y-3 mb-6">
                     {offer.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-start space-x-2">
                         <span className="text-primary font-bold mt-1">•</span>
