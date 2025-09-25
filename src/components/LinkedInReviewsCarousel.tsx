@@ -16,6 +16,15 @@ const LinkedInReviewsCarousel = () => {
 
   const linkedInReviews: LinkedInReview[] = [
     {
+      id: "1",
+      author: "Anne-Gaëlle de Kinkelin- Roux",
+      title: "DG et Responsable du développement commercial",
+      company: "AC2R",
+      content: "Christelle nous a accompagné dans notre transition numérique chez AC2R; Nous savions qu'il fallait que l'on opère des changements organisationnels, fonctionnels, et d'outils. Christelle, grâce à son travail de compréhension de notre mode de fonctionnement, à son analyse très précise, et à son état des lieux sans équivoque, nous a permis de changer de logiciel de gestion (après 17 ans avec un prestataire), et de mettre en place de nouveaux outils. C'est notre magicienne :) Merci",
+      rating: 5,
+      date: "Septembre 2025"
+    },
+    {
       id: "2",
       author: "Céline Mansuy Ferreira", 
       title: "Consultante Free-lance",
