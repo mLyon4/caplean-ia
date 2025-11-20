@@ -12,7 +12,7 @@ const AboutSection = () => {
     text: "Plus de 20 ans d'expériences en pilotage de projets"
   }, {
     icon: <Award className="h-8 w-8 text-primary" />,
-    text: <>Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, Notion (Notion Certified Admin), <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors">Activateur France Num</a></>
+    text: <>Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, Notion Service Specialist, <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors">Activateur France Num</a></>
   }, {
     icon: <Zap className="h-8 w-8 text-primary" />,
     text: "Spécialistes Notion, ERP, Lean management, automatisation IA"
