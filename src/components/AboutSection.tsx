@@ -4,6 +4,7 @@ import upNeoLogo from "@/assets/logos/up-neo-logo-clean.png";
 import zdecLogo from "@/assets/logos/zdec-logo.png";
 import ac2rLogo from "@/assets/logos/ac2r-logo.png";
 import rosalogLogo from "@/assets/logos/rosalog-logo.png";
+import notionLogo from "@/assets/logos/notion-service-specialist.png";
 import teamCollaboration from "@/assets/team-collaboration.jpg";
 import satisfiedClient from "@/assets/satisfied-client.jpg";
 const AboutSection = () => {
@@ -12,7 +13,10 @@ const AboutSection = () => {
     text: "Plus de 20 ans d'expériences en pilotage de projets"
   }, {
     icon: <Award className="h-8 w-8 text-primary" />,
-    text: <>Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors">Notion Service Specialist</a>, <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors">Activateur France Num</a></>
+    text: <>Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors inline-flex items-center gap-2">
+      <img src={notionLogo} alt="Notion Service Specialist" className="h-5 w-5 inline-block" />
+      Notion Service Specialist
+    </a>, <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors">Activateur France Num</a></>
   }, {
     icon: <Zap className="h-8 w-8 text-primary" />,
     text: "Spécialistes Notion, ERP, Lean management, automatisation IA"
