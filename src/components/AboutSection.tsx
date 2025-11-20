@@ -28,7 +28,7 @@ const AboutSection = () => {
       title: "Notion Certified",
       description: "Expert Notion certifié",
       logo: notionLogo,
-      link: "https://www.credly.com/badges/8e1895c8-dd0f-464e-a181-7672912a6d5d/linked_in_profile",
+      link: "https://www.notion.so/@christellepicault",
       color: "from-gray-800 to-gray-900"
     },
     {
