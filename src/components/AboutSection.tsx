@@ -8,15 +8,42 @@ import notionLogo from "@/assets/logos/notion-service-specialist.png";
 import teamCollaboration from "@/assets/team-collaboration.jpg";
 import satisfiedClient from "@/assets/satisfied-client.jpg";
 const AboutSection = () => {
+  const certifications = [
+    {
+      name: "PMP",
+      title: "Project Management Professional",
+      description: "Gestion de projets certifiée",
+      icon: <Award className="h-10 w-10" />,
+      color: "from-blue-500 to-blue-600"
+    },
+    {
+      name: "Lean Six Sigma",
+      title: "Green Belt",
+      description: "Optimisation des processus",
+      icon: <Zap className="h-10 w-10" />,
+      color: "from-green-500 to-green-600"
+    },
+    {
+      name: "Notion Service Specialist",
+      title: "Notion Certified",
+      description: "Expert Notion certifié",
+      logo: notionLogo,
+      link: "https://www.notion.so/@christellepicault",
+      color: "from-gray-800 to-gray-900"
+    },
+    {
+      name: "Activateur France Num",
+      title: "Conseiller du numérique",
+      description: "Accompagnement transformation digitale",
+      icon: <Users className="h-10 w-10" />,
+      link: "https://www.francenum.gouv.fr/activateurs/christelle-picault",
+      color: "from-indigo-500 to-indigo-600"
+    }
+  ];
+
   const qualifications = [{
     icon: <User className="h-8 w-8 text-primary" />,
     text: "Plus de 20 ans d'expériences en pilotage de projets"
-  }, {
-    icon: <Award className="h-8 w-8 text-primary" />,
-    text: <>Certifications PMP (gestion de projets), Lean Six Sigma Green Belt, <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors inline-flex items-center gap-2">
-      <img src={notionLogo} alt="Notion Service Specialist" className="h-5 w-5 inline-block" />
-      Notion Service Specialist
-    </a>, <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline transition-colors">Activateur France Num</a></>
   }, {
     icon: <Zap className="h-8 w-8 text-primary" />,
     text: "Spécialistes Notion, ERP, Lean management, automatisation IA"
@@ -111,8 +138,65 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Certifications Badges */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Certifications & Accréditations</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {certifications.map((cert, index) => {
+              const BadgeContent = () => (
+                <div className={`relative group h-full bg-gradient-to-br ${cert.color} rounded-2xl p-6 text-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1`}>
+                  {/* Badge icon or logo */}
+                  <div className="flex justify-center mb-4">
+                    {cert.logo ? (
+                      <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md">
+                        <img src={cert.logo} alt={cert.name} className="w-full h-full object-contain" />
+                      </div>
+                    ) : (
+                      <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                        {cert.icon}
+                      </div>
+                    )}
+                  </div>
+                  
+                  {/* Badge content */}
+                  <div className="text-center">
+                    <div className="text-xs font-semibold uppercase tracking-wider mb-1 opacity-90">
+                      {cert.title}
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 line-clamp-2">
+                      {cert.name}
+                    </h4>
+                    <p className="text-sm opacity-90 line-clamp-2">
+                      {cert.description}
+                    </p>
+                  </div>
+                  
+                  {/* External link indicator */}
+                  {cert.link && (
+                    <div className="absolute top-4 right-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-colors">
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+              );
+
+              return cert.link ? (
+                <a key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <BadgeContent />
+                </a>
+              ) : (
+                <div key={index}>
+                  <BadgeContent />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Qualifications */}
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
           {qualifications.map((qual, index) => <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg bg-white/80 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
