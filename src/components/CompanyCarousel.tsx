@@ -51,18 +51,16 @@ const CompanyCarousel = () => {
         {companies.map((company) => (
           <div
             key={company.name}
-            className="flex items-center justify-center"
+            className="flex flex-col items-center justify-center"
           >
-            <div className="flex items-center gap-2 md:gap-4">
-              <img
-                src={company.logo}
-                alt={`Logo ${company.name}`}
-                className="h-12 md:h-16 lg:h-20 w-auto object-contain max-w-[80px] md:max-w-[100px] lg:max-w-[120px]"
-              />
-              {company.name === "Rosalog" && (
-                <span className="text-sm md:text-base lg:text-lg font-semibold text-foreground">Rosalog</span>
-              )}
-            </div>
+            <img
+              src={company.logo}
+              alt={`Logo ${company.name}`}
+              className="h-12 md:h-16 lg:h-20 w-auto object-contain max-w-[80px] md:max-w-[100px] lg:max-w-[120px]"
+            />
+            {(company.name === "Rosalog" || company.name === "#FeeCommTuVeux") && (
+              <span className="text-xs md:text-sm font-semibold text-foreground mt-2">{company.name}</span>
+            )}
           </div>
         ))}
       </div>
