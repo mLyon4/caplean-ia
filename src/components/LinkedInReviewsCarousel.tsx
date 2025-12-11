@@ -41,6 +41,15 @@ const LinkedInReviewsCarousel = () => {
       content: "J'ai eu l'occasion de travailler avec Christelle sur la refonte complète de mon espace Notion, avec pour objectif de le rendre utilisable à la fois en interne et en externe (clients). Son travail a été remarquable : elle a su structurer l'ensemble de manière claire et fluide, tout en gardant une logique d'utilisation simple et intuitive. Résultat : un outil bien plus efficace, adapté à mes besoins et prêt à évoluer. Je recommande vivement son accompagnement.",
       rating: 5,
       date: "Août 2025"
+    },
+    {
+      id: "4",
+      author: "Coralie Moiny",
+      title: "Directrice Marketing",
+      company: "#FeeCommTuVeux",
+      content: "En tant que directrice marketing externalisée, je pilote plusieurs projets par client chaque mois. J'ai testé pas mal d'outils : trop chers, trop rigides. Rien ne collait. Christelle a changé la donne. Elle a écouté mes besoins réels et conçu MON outil. Celui qui me fait gagner du temps. Aujourd'hui, mon assistante et moi collaborons sur une plateforme fluide, fiable, sans superflu. Christelle digitalise intelligemment, sans usine à gaz. Pour digitaliser avec pragmatisme : foncez !",
+      rating: 5,
+      date: "Décembre 2025"
     }
   ];
 
