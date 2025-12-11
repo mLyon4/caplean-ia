@@ -58,8 +58,10 @@ const CompanyCarousel = () => {
               alt={`Logo ${company.name}`}
               className="h-12 md:h-16 lg:h-20 w-auto object-contain max-w-[80px] md:max-w-[100px] lg:max-w-[120px]"
             />
-            {(company.name === "Rosalog" || company.name === "#FeeCommTuVeux") && (
-              <span className="text-xs md:text-sm font-semibold text-foreground mt-2">{company.name}</span>
+            {(company.name === "Rosalog" || company.name === "#FeeCommTuVeux" || company.name === "Up Neo") && (
+              <span className="text-xs md:text-sm font-semibold text-foreground mt-2">
+                {company.name === "Up Neo" ? "Up Néo" : company.name}
+              </span>
             )}
           </div>
         ))}
