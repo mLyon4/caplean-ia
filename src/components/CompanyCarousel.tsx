@@ -36,6 +36,12 @@ const CompanyCarousel = () => {
       logo: "/lovable-uploads/dac45283-edcc-4cc4-a4f0-94ddaa97836f.png",
       director: "Samuel Robert",
       website: "https://rosalog.com/"
+    },
+    {
+      name: "#FeeCommTuVeux",
+      logo: "/lovable-uploads/feecommtuveux-logo.jpg",
+      director: "Coralie Moiny",
+      website: "https://feecommtuveux.fr/"
     }
   ];
 
