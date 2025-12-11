@@ -46,7 +46,7 @@ const CompanyCarousel = () => {
   ];
 
   return (
-    <div className="mt-12 w-full bg-background rounded-lg shadow-sm py-6 md:py-8 px-4 md:px-8 border">
+    <div className="mt-12 w-full bg-white rounded-lg shadow-sm py-6 md:py-8 px-4 md:px-8 border">
       <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 lg:gap-12">
         {companies.map((company) => (
           <div
