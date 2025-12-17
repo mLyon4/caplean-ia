@@ -18,7 +18,10 @@ import {
   HeartHandshake,
   Star,
   Quote,
-  Linkedin
+  Linkedin,
+  GraduationCap,
+  BadgeCheck,
+  Wallet
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -322,8 +325,59 @@ const ConsultanteNotion = () => {
           </div>
         </section>
 
-        {/* Témoignages clients */}
+        {/* Formation Notion */}
         <section className="py-20">
+          <div className="container mx-auto px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Formation Notion en entreprise
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Orientées usage réel et adoption par les équipes
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Card className="border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                      <GraduationCap className="h-7 w-7 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Formation en entreprise</h3>
+                    <p className="text-muted-foreground">
+                      Sessions sur site ou à distance, adaptées à vos équipes et à vos cas d'usage métier concrets.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                      <BadgeCheck className="h-7 w-7 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Formation personnalisée</h3>
+                    <p className="text-muted-foreground">
+                      Programmes adaptés au niveau de chacun : débutants ou utilisateurs avancés. Aucun prérequis technique.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
+                  <CardContent className="pt-6">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                      <Wallet className="h-7 w-7 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Financement Qualiopi</h3>
+                    <p className="text-muted-foreground">
+                      Organisme certifié Qualiopi : vos formations peuvent être prises en charge par votre OPCO.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Témoignages clients */}
+        <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-4">
