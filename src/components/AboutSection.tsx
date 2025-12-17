@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Users, Zap, Sparkles } from "lucide-react";
+import { Award, Users, Zap } from "lucide-react";
 import notionLogo from "@/assets/logos/notion-service-specialist.png";
 
 const AboutSection = () => {
@@ -45,6 +45,16 @@ const AboutSection = () => {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Qui sommes nous ?
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Experts en transformation digitale et optimisation des processus, dédiés à votre réussite.
+          </p>
+        </div>
+
         {/* Main Profile Section - Baccoffice style */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Image */}
@@ -71,27 +81,16 @@ const AboutSection = () => {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-secondary" />
-              <span className="text-sm font-medium text-secondary">COO freelance & consultante</span>
-            </div>
-            
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              Hello, moi c'est{" "}
-              <span className="text-secondary">Christelle !</span>
+              <span className="text-secondary">Christelle Picault</span>
             </h2>
             
             <h3 className="text-xl md:text-2xl font-semibold text-primary mb-6">
               Consultante en Transformation Digitale & Lean Management
             </h3>
             
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Mon dada à moi, c'est l'organisation, la productivité et l'efficacité. 
-              Tout ce qu'en général, les entrepreneurs n'aiment pas entendre.
-            </p>
-            
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              J'accompagne les entreprises, agences et entrepreneurs visionnaires à 
+              J'accompagne les entreprises à 
               <strong className="text-foreground"> sortir du chaos opérationnel</strong> et à structurer 
               leur business pour une croissance sereine.
             </p>
