@@ -33,17 +33,14 @@ const HeroSection = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.1] text-foreground">
-            Transformez votre entreprise pour retrouver{" "}
+          <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-[1.2] text-foreground">
+            Conseil & accompagnement opérationnel en{" "}
             <span style={{
             color: '#3f779d'
-          }}>clarté</span>,{" "}
+          }}>transformation digitale</span> – Lean BTP, systèmes Notion sur mesure, pilotage ERP/CRM et{" "}
             <span style={{
             color: '#3f779d'
-          }}>rentabilité</span> et{" "}
-            <span style={{
-            color: '#3f779d'
-          }}>sérénité</span>
+          }}>automatisations IA</span>
           </h1>
 
           {/* Subtitle */}
