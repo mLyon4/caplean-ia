@@ -113,11 +113,10 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Consultante Notion pour TPE/PME : <span className="text-primary">système de pilotage sur mesure</span>, conduite du changement et formation (Qualiopi)
+                Consultante spécialiste Notion pour les entreprises – <span className="text-primary">Structuration, pilotage d'entreprise et formation Qualiopi</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Systèmes Notion sur mesure pour structurer votre organisation. 
-                Des espaces de travail qui transforment le chaos en pilotage clair.
+                Des systèmes Notion sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par les équipes.
               </p>
               <div className="flex flex-wrap justify-center gap-3 text-sm text-muted-foreground">
                 <span className="bg-muted px-3 py-1 rounded-full">consultante Notion</span>
