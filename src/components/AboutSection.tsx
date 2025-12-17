@@ -59,7 +59,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative max-w-md mx-auto">
+            <div className="relative max-w-sm mx-auto">
               {/* Decorative background */}
               <div className="absolute -inset-4 bg-secondary/10 rounded-3xl transform -rotate-3" />
               
