@@ -1,9 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Settings, 
   Database, 
   TrendingUp, 
-  Zap 
+  Zap,
+  ArrowRight
 } from "lucide-react";
 
 const DetailedServicesSection = () => {
@@ -25,7 +28,8 @@ const DetailedServicesSection = () => {
         "Automatisations",
         "Formation des équipes (Qualiopi)"
       ],
-      result: "un système qui vous ressemble, intuitif, opérationnel et adopté par vos équipes."
+      result: "un système qui vous ressemble, intuitif, opérationnel et adopté par vos équipes.",
+      link: "/consultante-notion"
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
@@ -92,6 +96,15 @@ const DetailedServicesSection = () => {
                       </div>
                     </div>
                   </div>
+                  
+                  {service.link && (
+                    <Button asChild variant="outline" className="w-full mt-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <Link to={service.link}>
+                        Découvrir l'offre Notion
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
