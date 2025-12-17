@@ -121,6 +121,9 @@ const ConsultanteNotion = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Des systèmes Notion sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par les équipes.
               </p>
+              <p className="text-base text-muted-foreground mb-6">
+                📍 Basée à Lyon – Interventions en France entière
+              </p>
               <div className="flex flex-wrap justify-center gap-3 text-sm text-muted-foreground">
                 <span className="bg-muted px-3 py-1 rounded-full">consultante Notion</span>
                 <span className="bg-muted px-3 py-1 rounded-full">spécialiste Notion entreprise</span>
