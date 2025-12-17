@@ -4,7 +4,7 @@ import notionBadge from "@/assets/logos/notion-specialist-badge.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-background">
+    <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-background pt-16 md:pt-24">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-40 right-1/4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
