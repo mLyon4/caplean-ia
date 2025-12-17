@@ -401,10 +401,10 @@ const ConsultanteNotion = () => {
                 Discutons de vos besoins lors d'un appel découverte gratuit de 30 minutes.
               </p>
               <Button asChild size="lg" className="text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-md" style={{backgroundColor: '#3f779d'}}>
-                <Link to="/#contacts" className="flex items-center gap-2">
+                <a href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Réserver mon appel découverte
                   <ArrowRight className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
