@@ -1,104 +1,173 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { HardHat, Database, Puzzle, Pin } from "lucide-react";
+import { HardHat, Database, Puzzle, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+
 const OffersSection = () => {
-  const offers = [{
-    icon: <HardHat className="h-8 w-8 text-primary" />,
-    emoji: "🛠️",
-    title: "Lean Management spécialisé BTP",
-    features: ["Jusqu'à 30 % de temps administratif en moins", "Pilotage en temps réel de la rentabilité", "Décisions plus rapides et plus sereines"],
-    highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
-    isSpecial: true
-  }, {
-    icon: <Database className="h-8 w-8 text-primary" />,
-    emoji: "💼",
-    title: "Systèmes Notion personnalisés",
-    description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
-    link: "/consultante-notion-entreprise",
-    features: []
-  }, {
-    icon: <Puzzle className="h-8 w-8 text-primary" />,
-    emoji: "🧩",
-    title: "Transformation Digitale",
-    description: "Diagnostic, pilotage de projets ERP/CRM, digitalisation des processus (automatisation, IA). Accompagnement personnalisé selon vos besoins.",
-    highlight: "Intervention possible d'un collectif d'experts.",
-    features: []
-  }];
-  return <section id="offres" className="py-20 bg-muted/20">
-      <div className="container mx-auto px-6">
+  const offers = [
+    {
+      icon: HardHat,
+      title: "Lean Management spécialisé BTP",
+      features: [
+        "Jusqu'à 30 % de temps administratif en moins",
+        "Pilotage en temps réel de la rentabilité",
+        "Décisions plus rapides et plus sereines"
+      ],
+      highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
+      isSpecial: true,
+      color: "primary"
+    },
+    {
+      icon: Database,
+      title: "Systèmes Notion personnalisés",
+      description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
+      link: "/consultante-notion-entreprise",
+      badge: "Formations Qualiopi",
+      color: "secondary"
+    },
+    {
+      icon: Puzzle,
+      title: "Transformation Digitale",
+      description: "Diagnostic, pilotage de projets ERP/CRM, digitalisation des processus (automatisation, IA). Accompagnement personnalisé.",
+      highlight: "Intervention possible d'un collectif d'experts.",
+      color: "primary"
+    }
+  ];
+
+  return (
+    <section id="offres" className="py-28 relative overflow-hidden">
+      <div className="absolute inset-0 bg-muted/20" />
+      <div className="absolute top-20 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-[80px]" />
+      <div className="absolute bottom-20 right-10 w-80 h-80 bg-primary/10 rounded-full blur-[100px]" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center space-x-2 mb-6">
-            <Pin className="h-6 w-6 text-muted-foreground" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Offres sur mesure
-            </h2>
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 glass px-5 py-2.5 rounded-full mb-8">
+            <Sparkles className="h-4 w-4 text-secondary" />
+            <span className="text-sm font-medium text-foreground/80">Offres sur mesure</span>
           </div>
+          
+          <h2 className="section-title text-foreground mb-6">
+            Des solutions <span className="text-gradient-secondary">adaptées</span>
+          </h2>
         </div>
 
         {/* Offers Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {offers.map((offer, index) => <Card key={index} className={`border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg ${offer.isSpecial ? 'ring-2 ring-accent/20' : ''}`}>
-              <CardHeader className="text-center pb-4">
-                <div className="flex items-center justify-center space-x-3 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    {offer.icon}
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {offers.map((offer, index) => {
+            const Icon = offer.icon;
+            const isPrimary = offer.color === 'primary';
+            
+            return (
+              <div 
+                key={index} 
+                className={`glass-premium rounded-[2rem] p-8 card-premium relative ${
+                  offer.isSpecial ? 'ring-2 ring-secondary/30' : ''
+                }`}
+              >
+                {offer.isSpecial && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <span className="bg-secondary text-white text-xs font-bold px-4 py-1.5 rounded-full">
+                      Recommandé
+                    </span>
+                  </div>
+                )}
+                
+                <div className="text-center">
+                  {/* Icon */}
+                  <div className={`icon-container w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 ${
+                    isPrimary 
+                      ? 'bg-gradient-to-br from-primary/20 to-primary/5' 
+                      : 'bg-gradient-to-br from-secondary/20 to-secondary/5'
+                  }`}>
+                    <Icon className={`h-10 w-10 ${isPrimary ? 'text-primary' : 'text-secondary'}`} />
                   </div>
                   
-                </div>
-                <CardTitle className="text-xl font-bold text-foreground">
-                  {offer.title}
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="pt-0">
-                {offer.description && <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {offer.description}
-                  </p>}
-
-                {offer.link && <div className="text-center mb-6">
-                    <Link to={offer.link} className="text-primary hover:underline font-semibold">
-                      En savoir plus →
+                  {/* Title */}
+                  <h3 className="text-xl font-bold text-foreground mb-4">
+                    {offer.title}
+                  </h3>
+                  
+                  {/* Badge */}
+                  {offer.badge && (
+                    <div className="mb-4">
+                      <span className="inline-block bg-secondary/10 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full">
+                        {offer.badge}
+                      </span>
+                    </div>
+                  )}
+                  
+                  {/* Description */}
+                  {offer.description && (
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {offer.description}
+                    </p>
+                  )}
+                  
+                  {/* Features */}
+                  {offer.features && offer.features.length > 0 && (
+                    <ul className="space-y-3 mb-6 text-left">
+                      {offer.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start gap-3">
+                          <span className="text-secondary font-bold mt-0.5">✓</span>
+                          <span className="text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  
+                  {/* Link */}
+                  {offer.link && (
+                    <Link 
+                      to={offer.link} 
+                      className="inline-flex items-center gap-2 text-secondary hover:text-secondary-dark font-semibold transition-colors group"
+                    >
+                      En savoir plus 
+                      <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                  </div>}
-
-                {offer.title === "Systèmes Notion personnalisés" && <div className="text-center mb-6">
-                    <p className="text-lg font-bold text-primary">
-                      Formations Notion (Qualiopi)
-                    </p>
-                  </div>}
-
-                {offer.features.length > 0 && <ul className="space-y-3 mb-6">
-                    {offer.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-start space-x-2">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span className="text-muted-foreground">{feature}</span>
-                      </li>)}
-                  </ul>}
-
-                {offer.highlight && <div className="p-4 rounded-lg border-l-4 bg-accent/10 border-accent">
-                    <p className="font-semibold" style={{ color: 'hsl(var(--custom-blue))' }}>
-                      {offer.highlight}
-                    </p>
-                  </div>}
-
-                {offer.isSpecial && <div className="mt-6 text-center">
-                    <Button className="text-white hover:opacity-90 w-full" style={{backgroundColor: '#3f779d'}}>
-                      Demander un pré-diagnostic
+                  )}
+                  
+                  {/* Highlight */}
+                  {offer.highlight && (
+                    <div className="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                      <p className="text-primary font-semibold text-sm">
+                        {offer.highlight}
+                      </p>
+                    </div>
+                  )}
+                  
+                  {/* CTA for special offer */}
+                  {offer.isSpecial && (
+                    <Button 
+                      asChild
+                      className="btn-premium btn-shine w-full mt-6"
+                    >
+                      <a href="#contacts">
+                        Demander un pré-diagnostic
+                      </a>
                     </Button>
-                  </div>}
-              </CardContent>
-            </Card>)}
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-12">
-          <Button asChild size="lg" className="text-white hover:opacity-90" style={{backgroundColor: '#3f779d'}}>
-            <a href="#contacts">Discutons de votre projet</a>
+        <div className="text-center mt-16">
+          <Button 
+            asChild 
+            className="btn-premium btn-shine text-lg px-10 py-6"
+          >
+            <a href="#contacts" className="flex items-center gap-2">
+              Discutons de votre projet
+              <ArrowRight className="h-5 w-5" />
+            </a>
           </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default OffersSection;

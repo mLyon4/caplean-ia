@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Award, Users, Zap } from "lucide-react";
 import notionLogo from "@/assets/logos/notion-service-specialist.png";
 
@@ -8,13 +7,13 @@ const AboutSection = () => {
       name: "PMP",
       title: "Project Management Professional",
       description: "Gestion de projets certifiée",
-      icon: <Award className="h-8 w-8" />,
+      icon: Award,
     },
     {
       name: "Lean Six Sigma",
       title: "Green Belt",
       description: "Optimisation des processus",
-      icon: <Zap className="h-8 w-8" />,
+      icon: Zap,
     },
     {
       name: "Notion Certified",
@@ -27,7 +26,7 @@ const AboutSection = () => {
       name: "France Num",
       title: "Activateur",
       description: "Conseiller transformation digitale",
-      icon: <Users className="h-8 w-8" />,
+      icon: Users,
       link: "https://www.francenum.gouv.fr/activateurs/christelle-picault",
     }
   ];
@@ -39,31 +38,31 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="qui-sommes-nous" className="py-24 bg-background relative overflow-hidden">
+    <section id="qui-sommes-nous" className="py-28 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-[100px]" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-[80px]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Qui sommes nous ?
+        <div className="text-center mb-20">
+          <h2 className="section-title text-foreground mb-6">
+            Qui <span className="text-gradient-secondary">sommes-nous</span> ?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Experts en transformation digitale et optimisation des processus, dédiés à votre réussite.
+          <p className="section-subtitle">
+            Experts en transformation digitale et optimisation des processus.
           </p>
         </div>
 
-        {/* Main Profile Section - Baccoffice style */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        {/* Main Profile Section */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           {/* Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative max-w-xs mx-auto">
+            <div className="relative max-w-sm mx-auto">
               {/* Decorative background */}
-              <div className="absolute -inset-4 bg-secondary/10 rounded-3xl transform -rotate-3" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-primary/10 rounded-[2rem] transform -rotate-3 blur-sm" />
               
-              <div className="relative rounded-3xl overflow-hidden shadow-elegant-lg">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-elegant-lg border-2 border-white/50">
                 <img 
                   src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" 
                   alt="Christelle Picault - Experte en transformation digitale" 
@@ -72,8 +71,8 @@ const AboutSection = () => {
               </div>
               
               {/* Floating stats card */}
-              <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl shadow-elegant-lg p-5 border border-border/50">
-                <div className="text-3xl font-bold text-primary mb-1">20+</div>
+              <div className="absolute -bottom-6 -right-6 glass-premium rounded-2xl p-6 shadow-elegant-lg">
+                <div className="text-4xl font-bold text-gradient-primary mb-1">20+</div>
                 <div className="text-sm text-muted-foreground">Années d'expérience</div>
               </div>
             </div>
@@ -82,27 +81,27 @@ const AboutSection = () => {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              <span className="text-secondary">Christelle Picault</span>
+              <span className="text-gradient-secondary">Christelle Picault</span>
             </h2>
             
-            <h3 className="text-xl md:text-2xl font-semibold text-primary mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-primary mb-8">
               Consultante en Transformation Digitale & Lean Management
             </h3>
             
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
               J'accompagne les entreprises à 
               <strong className="text-foreground"> sortir du chaos opérationnel</strong> et à structurer 
               leur business pour une croissance sereine.
             </p>
             
             {/* Expertise points */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               {expertises.map((expertise, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center">
-                    <span className="text-secondary font-bold text-sm">✓</span>
+                <div key={index} className="flex items-center gap-4 glass p-4 rounded-xl">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center">
+                    <span className="text-secondary font-bold">✓</span>
                   </span>
-                  <span className="text-foreground">{expertise}</span>
+                  <span className="text-foreground font-medium">{expertise}</span>
                 </div>
               ))}
             </div>
@@ -110,38 +109,38 @@ const AboutSection = () => {
         </div>
 
         {/* Certifications Section */}
-        <div className="bg-muted/30 rounded-3xl p-8 md:p-12">
-          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
+        <div className="glass-premium rounded-[2.5rem] p-10 md:p-14">
+          <h3 className="text-2xl font-bold text-foreground mb-10 text-center">
             Certifications & Accréditations
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {certifications.map((cert, index) => {
+              const Icon = cert.icon;
+              
               const content = (
-                <Card className="group h-full border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant hover-lift bg-card">
-                  <CardContent className="p-5 text-center">
-                    <div className="mb-4 flex justify-center">
-                      {cert.logo ? (
-                        <div className="w-14 h-14 bg-white rounded-xl p-2 shadow-sm border border-border/30">
-                          <img src={cert.logo} alt={cert.name} className="w-full h-full object-contain" />
-                        </div>
-                      ) : (
-                        <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                          {cert.icon}
-                        </div>
-                      )}
-                    </div>
-                    <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1">
-                      {cert.title}
-                    </div>
-                    <h4 className="font-bold text-foreground mb-1">
-                      {cert.name}
-                    </h4>
-                    <p className="text-xs text-muted-foreground">
-                      {cert.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                <div className="bento-card h-full text-center group">
+                  <div className="mb-6 flex justify-center">
+                    {cert.logo ? (
+                      <div className="w-16 h-16 bg-white rounded-2xl p-3 shadow-sm border border-border/30 group-hover:scale-110 transition-transform duration-500">
+                        <img src={cert.logo} alt={cert.name} className="w-full h-full object-contain" />
+                      </div>
+                    ) : Icon ? (
+                      <div className="icon-container w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <Icon className="h-8 w-8 text-primary" />
+                      </div>
+                    ) : null}
+                  </div>
+                  <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-2">
+                    {cert.title}
+                  </div>
+                  <h4 className="font-bold text-foreground mb-2 text-lg">
+                    {cert.name}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {cert.description}
+                  </p>
+                </div>
               );
 
               return cert.link ? (

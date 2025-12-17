@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "@/components/ThemeToggle";
 import {
@@ -26,37 +26,42 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-card/95 backdrop-blur-lg border-b border-border/50 sticky top-0 z-50 shadow-elegant">
+    <header className="w-full glass-premium sticky top-0 z-50 border-b border-border/20">
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">Caplean</span>
-            <span className="text-xl font-light text-secondary">IA</span>
+          <Link to="/" className="flex items-center space-x-1 group">
+            <span className="text-2xl font-bold text-primary group-hover:text-primary-dark transition-colors">Caplean</span>
+            <span className="text-2xl font-light text-secondary">IA</span>
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a 
-              href="#services" 
-              className="text-foreground/70 hover:text-primary transition-colors font-medium"
-              onClick={e => {
-                e.preventDefault();
-                scrollToSection('services');
-              }}
-            >
-              Services
-            </a>
+          <nav className="hidden md:flex items-center space-x-1">
+            {[
+              { label: "Services", id: "services" },
+            ].map((item) => (
+              <a 
+                key={item.id}
+                href={`#${item.id}`}
+                className="px-4 py-2 text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-300 font-medium"
+                onClick={e => {
+                  e.preventDefault();
+                  scrollToSection(item.id);
+                }}
+              >
+                {item.label}
+              </a>
+            ))}
+            
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-foreground/70 hover:text-primary transition-colors font-medium flex items-center gap-1">
+              <DropdownMenuTrigger className="px-4 py-2 text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-300 font-medium flex items-center gap-1">
                 Offres
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-card border border-border shadow-elegant-lg">
-                <DropdownMenuItem asChild>
+              <DropdownMenuContent className="glass-premium border border-border/30 shadow-elegant-lg rounded-xl p-2">
+                <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
                   <a 
-                    href="#offres" 
-                    className="cursor-pointer"
+                    href="#offres"
                     onClick={e => {
                       e.preventDefault();
                       scrollToSection('offres');
@@ -65,43 +70,31 @@ const Header = () => {
                     Toutes les offres
                   </a>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/consultante-notion-entreprise" className="cursor-pointer">
+                <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
+                  <Link to="/consultante-notion-entreprise">
                     Consultante Notion Entreprise
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a 
-              href="#qui-sommes-nous" 
-              className="text-foreground/70 hover:text-primary transition-colors font-medium"
-              onClick={e => {
-                e.preventDefault();
-                scrollToSection('qui-sommes-nous');
-              }}
-            >
-              Expertise
-            </a>
-            <a 
-              href="#testimonials" 
-              className="text-foreground/70 hover:text-primary transition-colors font-medium"
-              onClick={e => {
-                e.preventDefault();
-                scrollToSection('testimonials');
-              }}
-            >
-              Références
-            </a>
-            <a 
-              href="#contacts" 
-              className="text-foreground/70 hover:text-primary transition-colors font-medium"
-              onClick={e => {
-                e.preventDefault();
-                scrollToSection('contacts');
-              }}
-            >
-              Contact
-            </a>
+
+            {[
+              { label: "Expertise", id: "qui-sommes-nous" },
+              { label: "Références", id: "testimonials" },
+              { label: "Contact", id: "contacts" },
+            ].map((item) => (
+              <a 
+                key={item.id}
+                href={`#${item.id}`}
+                className="px-4 py-2 text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-300 font-medium"
+                onClick={e => {
+                  e.preventDefault();
+                  scrollToSection(item.id);
+                }}
+              >
+                {item.label}
+              </a>
+            ))}
           </nav>
 
           <div className="flex items-center space-x-3">
@@ -110,7 +103,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <Button 
               asChild 
-              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-white font-semibold px-6 py-2.5 rounded-xl shadow-md hover:shadow-glow-secondary transition-all duration-300"
+              className="hidden md:inline-flex btn-premium btn-shine"
             >
               <a 
                 href="#contacts" 
@@ -118,81 +111,53 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection('contacts');
                 }}
+                className="flex items-center gap-2"
               >
-                Prendre rendez-vous
+                <Sparkles className="h-4 w-4" />
+                Rendez-vous
               </a>
             </Button>
 
             {/* Mobile Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon" className="h-10 w-10">
+                <Button variant="ghost" size="icon" className="h-10 w-10 rounded-xl">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] bg-card border-l border-border">
-                <nav className="flex flex-col space-y-5 mt-8">
-                  <a 
-                    href="#services" 
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    onClick={e => {
-                      e.preventDefault();
-                      scrollToSection('services');
-                    }}
-                  >
-                    Services
-                  </a>
-                  <a 
-                    href="#offres" 
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    onClick={e => {
-                      e.preventDefault();
-                      scrollToSection('offres');
-                    }}
-                  >
-                    Offres
-                  </a>
+              <SheetContent side="right" className="w-[300px] glass-premium border-l border-border/20">
+                <nav className="flex flex-col space-y-2 mt-8">
+                  {[
+                    { label: "Services", id: "services" },
+                    { label: "Offres", id: "offres" },
+                    { label: "Expertise", id: "qui-sommes-nous" },
+                    { label: "Références", id: "testimonials" },
+                    { label: "Contact", id: "contacts" },
+                  ].map((item) => (
+                    <a 
+                      key={item.id}
+                      href={`#${item.id}`}
+                      className="text-lg font-medium text-foreground hover:text-primary hover:bg-primary/5 px-4 py-3 rounded-xl transition-all"
+                      onClick={e => {
+                        e.preventDefault();
+                        scrollToSection(item.id);
+                      }}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
                   <Link 
                     to="/consultante-notion-entreprise" 
-                    className="font-medium text-foreground/70 hover:text-primary transition-colors pl-4"
+                    className="font-medium text-secondary hover:text-secondary-dark px-4 py-3 rounded-xl hover:bg-secondary/5 transition-all"
                     onClick={() => setIsOpen(false)}
                   >
                     → Consultante Notion
                   </Link>
-                  <a 
-                    href="#qui-sommes-nous" 
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    onClick={e => {
-                      e.preventDefault();
-                      scrollToSection('qui-sommes-nous');
-                    }}
-                  >
-                    Expertise
-                  </a>
-                  <a 
-                    href="#testimonials" 
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    onClick={e => {
-                      e.preventDefault();
-                      scrollToSection('testimonials');
-                    }}
-                  >
-                    Références
-                  </a>
-                  <a 
-                    href="#contacts" 
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    onClick={e => {
-                      e.preventDefault();
-                      scrollToSection('contacts');
-                    }}
-                  >
-                    Contact
-                  </a>
                   <Button 
-                    className="w-full bg-secondary hover:bg-secondary-dark text-white font-semibold py-3 rounded-xl mt-4 shadow-md" 
+                    className="btn-premium btn-shine w-full mt-4" 
                     onClick={() => scrollToSection('contacts')}
                   >
+                    <Sparkles className="h-4 w-4 mr-2" />
                     Prendre rendez-vous
                   </Button>
                 </nav>
