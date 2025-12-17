@@ -26,15 +26,15 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.05] tracking-tight reveal-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-foreground">Pilotez votre</span>
+            <span className="text-foreground">Conseil et</span>
             <br />
-            <span className="text-gradient-animated">croissance</span>
+            <span className="text-gradient-animated">accompagnement</span>
             <br />
             <span className="text-foreground">en </span>
             <span className="relative inline-block">
-              <span className="text-secondary">sérénité</span>
-              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                <path d="M2 8C50 2 150 2 198 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" />
+              <span className="text-secondary">transformation digitale</span>
+              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
+                <path d="M2 8C75 2 225 2 298 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" />
               </svg>
             </span>
           </h1>
