@@ -122,7 +122,7 @@ const ConsultanteNotion = () => {
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Systèmes Notion sur mesure pour structurer votre organisation. 
-                Je crée des espaces de travail qui transforment le chaos en pilotage clair.
+                Des espaces de travail qui transforment le chaos en pilotage clair.
               </p>
               <div className="flex flex-wrap justify-center gap-3 text-sm text-muted-foreground">
                 <span className="bg-muted px-3 py-1 rounded-full">consultante Notion</span>
@@ -140,7 +140,7 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Ce que je mets en place concrètement
+                Ce qui est mis en place concrètement
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Des systèmes Notion sur mesure qui s'adaptent à votre métier et vos processus
@@ -172,7 +172,7 @@ const ConsultanteNotion = () => {
                 Pour qui ?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                J'accompagne les structures qui veulent professionnaliser leur organisation
+                Un accompagnement pour les structures qui veulent professionnaliser leur organisation
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -235,8 +235,8 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Ma posture d'accompagnement
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Une posture d'accompagnement
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
@@ -246,7 +246,7 @@ const ConsultanteNotion = () => {
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">Structuration sur mesure</h3>
                   <p className="text-muted-foreground">
-                    Je ne plaque pas un template générique. J'analyse vos processus existants pour créer 
+                    Pas de template générique. Une analyse de vos processus existants pour créer 
                     un système Notion qui colle à votre réalité métier.
                   </p>
                 </div>
@@ -256,8 +256,8 @@ const ConsultanteNotion = () => {
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">Adoption par les équipes</h3>
                   <p className="text-muted-foreground">
-                    Un outil non utilisé ne sert à rien. Je forme vos équipes et m'assure que le système 
-                    est adopté dans la durée, pas abandonné après 2 semaines.
+                    Un outil non utilisé ne sert à rien. Formation des équipes et suivi pour que le système 
+                    soit adopté dans la durée, pas abandonné après 2 semaines.
                   </p>
                 </div>
               </div>
