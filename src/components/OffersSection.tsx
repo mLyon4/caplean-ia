@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { HardHat, Database, Puzzle, Pin } from "lucide-react";
+import { Link } from "react-router-dom";
 const OffersSection = () => {
   const offers = [{
     icon: <HardHat className="h-8 w-8 text-primary" />,
@@ -15,7 +16,7 @@ const OffersSection = () => {
     emoji: "💼",
     title: "Systèmes Notion personnalisés",
     description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
-    price: "À partir de 850 €",
+    link: "/consultante-notion-entreprise",
     features: []
   }, {
     icon: <Puzzle className="h-8 w-8 text-primary" />,
@@ -57,10 +58,10 @@ const OffersSection = () => {
                     {offer.description}
                   </p>}
 
-                {offer.price && <div className="text-center mb-6">
-                    <Badge variant="secondary" className="bg-accent/10 text-accent border-accent/20 text-lg px-4 py-2">
-                      {offer.price}
-                    </Badge>
+                {offer.link && <div className="text-center mb-6">
+                    <Link to={offer.link} className="text-primary hover:underline font-semibold">
+                      En savoir plus →
+                    </Link>
                   </div>}
 
                 {offer.title === "Systèmes Notion personnalisés" && <div className="text-center mb-6">
