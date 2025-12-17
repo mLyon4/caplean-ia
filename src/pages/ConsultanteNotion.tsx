@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import notionServiceSpecialist from "@/assets/logos/notion-service-specialist.png";
 
 const ConsultanteNotion = () => {
   const implementations = [
@@ -111,19 +112,19 @@ const ConsultanteNotion = () => {
         <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-3 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <img 
-                  src="/lovable-uploads/46aedefe-2d5e-46ce-b22d-3a151da26b60.png" 
-                  alt="Notion Service Partner" 
-                  className="h-5 w-auto"
+                  src={notionServiceSpecialist} 
+                  alt="Notion Service Specialist" 
+                  className="h-8 w-auto"
                 />
                 Spécialiste Notion Entreprise
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-                Consultante Notion pour <span className="text-primary">structurer votre entreprise</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+                Consultante Notion pour TPE et PME : <span className="text-primary">mise en place de votre système de pilotage</span>, formation des équipes (Qualiopi)
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Formation Notion Qualiopi, systèmes sur mesure pour PME et BTP. 
+                Systèmes Notion sur mesure pour structurer votre organisation. 
                 Je crée des espaces de travail qui transforment le chaos en pilotage clair.
               </p>
               <div className="flex flex-wrap justify-center gap-3 text-sm text-muted-foreground">
