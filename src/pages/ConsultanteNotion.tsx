@@ -15,7 +15,9 @@ import {
   Zap,
   Clock,
   Settings,
-  HeartHandshake
+  HeartHandshake,
+  Star,
+  Quote
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -47,6 +49,37 @@ const ConsultanteNotion = () => {
     { icon: Zap, title: "Tout-en-un", description: "Docs, bases de données, projets, wiki... un seul outil remplace 5" },
     { icon: Clock, title: "Évolutif", description: "Votre système grandit avec vous, sans changer d'outil ni migrer de données" },
     { icon: HeartHandshake, title: "Adoption facile", description: "Interface intuitive que vos équipes adoptent réellement" },
+  ];
+
+  const testimonials = [
+    {
+      content: "Accompagnement au changement d'ERP pour gagner en productivité et mise en place d'un système sur Notion pour gérer nos données RH et Services généraux.",
+      author: "Anne-Gaëlle Roux",
+      title: "Dirigeante",
+      company: "AC2R",
+      logo: "/src/assets/logos/ac2r-logo.png"
+    },
+    {
+      content: "Accompagnement au changement d'ERP pour gagner en productivité et mise en place d'un système sur Notion pour gérer nos données RH et Services généraux.",
+      author: "Rami Bouchedda",
+      title: "Dirigeant",
+      company: "ZDEC",
+      logo: "/src/assets/logos/zdec-logo.png"
+    },
+    {
+      content: "Mise en place d'un système Notion sur mesure. Une vraie pro 🤩 J'ai fait appel aux services de Christelle pour la création de mon espace Notion. Après quelques mois d'activité en tant que free-lance, je commençais à avoir des informations un peu partout, sous différents formats, et j'avais besoin de structurer! Christelle a pris le temps d'écouter mes besoins et s'y est très facilement adaptée, avec un grand sens pédagogique, de sorte que je suis devenue autonome avec « mon » Notion hyper rapidement! Je recommande les yeux fermés 🚀",
+      author: "Céline Mansuy Ferreira",
+      title: "Free-lance",
+      company: "Up Neo",
+      logo: "/src/assets/logos/up-neo-logo.png"
+    },
+    {
+      content: "Mise en place d'un système Notion sur mesure pour gérer la croissance de son entreprise.",
+      author: "Quentin Forgeot",
+      title: "Dirigeant",
+      company: "Fireco",
+      logo: null
+    },
   ];
 
   return (
@@ -273,6 +306,48 @@ const ConsultanteNotion = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground text-sm">{item.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Témoignages clients */}
+        <section className="py-20">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Ils ont structuré leur entreprise avec Notion
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Découvrez les retours de clients qui ont transformé leur organisation
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="border-border/50 relative overflow-hidden">
+                  <div className="absolute top-4 right-4 text-primary/10">
+                    <Quote className="h-12 w-12" />
+                  </div>
+                  <CardContent className="pt-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-foreground mb-6 relative z-10">{testimonial.content}</p>
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                        <span className="text-primary font-semibold text-lg">
+                          {testimonial.author.charAt(0)}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">{testimonial.author}</p>
+                        <p className="text-sm text-muted-foreground">{testimonial.title} • {testimonial.company}</p>
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
