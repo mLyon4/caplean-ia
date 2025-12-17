@@ -17,7 +17,8 @@ import {
   Settings,
   HeartHandshake,
   Star,
-  Quote
+  Quote,
+  Linkedin
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -53,33 +54,33 @@ const ConsultanteNotion = () => {
 
   const testimonials = [
     {
-      content: "Accompagnement au changement d'ERP pour gagner en productivité et mise en place d'un système sur Notion pour gérer nos données RH et Services généraux.",
-      author: "Anne-Gaëlle Roux",
-      title: "Dirigeante",
+      content: "Christelle nous a accompagné dans notre transition numérique chez AC2R; Nous savions qu'il fallait que l'on opère des changements organisationnels, fonctionnels, et d'outils. Christelle, grâce à son travail de compréhension de notre mode de fonctionnement, à son analyse très précise, et à son état des lieux sans équivoque, nous a permis de changer de logiciel de gestion (après 17 ans avec un prestataire), et de mettre en place de nouveaux outils. C'est notre magicienne :) Merci",
+      author: "Anne-Gaëlle de Kinkelin- Roux",
+      title: "DG et Responsable du développement commercial",
       company: "AC2R",
-      logo: "/src/assets/logos/ac2r-logo.png"
-    },
-    {
-      content: "Accompagnement au changement d'ERP pour gagner en productivité et mise en place d'un système sur Notion pour gérer nos données RH et Services généraux.",
-      author: "Rami Bouchedda",
-      title: "Dirigeant",
-      company: "ZDEC",
-      logo: "/src/assets/logos/zdec-logo.png"
+      date: "Septembre 2025"
     },
     {
       content: "Mise en place d'un système Notion sur mesure. Une vraie pro 🤩 J'ai fait appel aux services de Christelle pour la création de mon espace Notion. Après quelques mois d'activité en tant que free-lance, je commençais à avoir des informations un peu partout, sous différents formats, et j'avais besoin de structurer! Christelle a pris le temps d'écouter mes besoins et s'y est très facilement adaptée, avec un grand sens pédagogique, de sorte que je suis devenue autonome avec « mon » Notion hyper rapidement! Je recommande les yeux fermés 🚀",
       author: "Céline Mansuy Ferreira",
-      title: "Free-lance",
+      title: "Consultante Free-lance",
       company: "Up Neo",
-      logo: "/src/assets/logos/up-neo-logo.png"
+      date: "Juillet 2025"
     },
     {
-      content: "Mise en place d'un système Notion sur mesure pour gérer la croissance de son entreprise.",
+      content: "J'ai eu l'occasion de travailler avec Christelle sur la refonte complète de mon espace Notion, avec pour objectif de le rendre utilisable à la fois en interne et en externe (clients). Son travail a été remarquable : elle a su structurer l'ensemble de manière claire et fluide, tout en gardant une logique d'utilisation simple et intuitive. Résultat : un outil bien plus efficace, adapté à mes besoins et prêt à évoluer. Je recommande vivement son accompagnement.",
       author: "Quentin Forgeot",
-      title: "Dirigeant",
-      company: "Fireco",
-      logo: null
+      title: "CEO",
+      company: "Fireco | Agence Meta Ads, Google Ads & Créa",
+      date: "Août 2025"
     },
+    {
+      content: "En tant que directrice marketing externalisée, je pilote plusieurs projets par client chaque mois. J'ai testé pas mal d'outils : trop chers, trop rigides. Rien ne collait. Christelle a changé la donne. Elle a écouté mes besoins réels et conçu MON outil. Celui qui me fait gagner du temps. Aujourd'hui, mon assistante et moi collaborons sur une plateforme fluide, fiable, sans superflu. Christelle digitalise intelligemment, sans usine à gaz. Pour digitaliser avec pragmatisme : foncez !",
+      author: "Coralie Moiny",
+      title: "Directrice Marketing",
+      company: "#FeeCommTuVeux",
+      date: "Décembre 2025"
+    }
   ];
 
   return (
@@ -317,6 +318,17 @@ const ConsultanteNotion = () => {
         <section className="py-20">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Linkedin className="h-6 w-6 text-blue-600" />
+                <a 
+                  href="https://www.linkedin.com/services/page/99439232a0ba4b836b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-600 hover:underline"
+                >
+                  Voir tous les avis LinkedIn
+                </a>
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Ils ont structuré leur entreprise avec Notion
               </h2>
@@ -346,6 +358,7 @@ const ConsultanteNotion = () => {
                       <div>
                         <p className="font-semibold text-foreground">{testimonial.author}</p>
                         <p className="text-sm text-muted-foreground">{testimonial.title} • {testimonial.company}</p>
+                        <p className="text-xs text-muted-foreground mt-1">{testimonial.date}</p>
                       </div>
                     </div>
                   </CardContent>
