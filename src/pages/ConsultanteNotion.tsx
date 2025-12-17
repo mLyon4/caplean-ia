@@ -135,6 +135,22 @@ const ConsultanteNotion = () => {
           </div>
         </section>
 
+        {/* Expertise reconnue par Notion */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-6">
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-lg font-medium text-foreground mb-6">
+                Une expertise reconnue par Notion
+              </p>
+              <img 
+                src={notionSpecialistBadge} 
+                alt="Notion Service Specialist - Expertise certifiée" 
+                className="h-32 md:h-40 w-auto mx-auto"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Ce que je mets en place */}
         <section className="py-20">
           <div className="container mx-auto px-6">
