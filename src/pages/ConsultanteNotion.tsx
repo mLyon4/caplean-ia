@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import notionServiceSpecialist from "@/assets/logos/notion-service-specialist.png";
+import notionSpecialistBadge from "@/assets/logos/notion-specialist-badge.png";
 
 const ConsultanteNotion = () => {
   const implementations = [
@@ -112,16 +112,13 @@ const ConsultanteNotion = () => {
         <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-3 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <img 
-                  src={notionServiceSpecialist} 
-                  alt="Notion Service Specialist" 
-                  className="h-8 w-auto"
-                />
-                Spécialiste Notion Entreprise
-              </div>
+              <img 
+                src={notionSpecialistBadge} 
+                alt="Notion Service Specialist" 
+                className="h-24 w-auto mx-auto mb-6"
+              />
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Consultante Notion pour TPE et PME : <span className="text-primary">mise en place de votre système de pilotage</span>, formation des équipes (Qualiopi)
+                Consultante Notion pour TPE/PME : <span className="text-primary">système de pilotage sur mesure</span>, conduite du changement et formation (Qualiopi)
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Systèmes Notion sur mesure pour structurer votre organisation. 
