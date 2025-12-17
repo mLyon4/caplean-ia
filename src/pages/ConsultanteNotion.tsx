@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { 
   ArrowLeft, 
@@ -28,6 +29,10 @@ import { Helmet } from "react-helmet-async";
 import notionSpecialistBadge from "@/assets/logos/notion-specialist-badge.png";
 
 const ConsultanteNotion = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const implementations = [
     { icon: LayoutDashboard, title: "CRM sur mesure", description: "Gestion clients et prospects adaptée à votre métier" },
     { icon: FolderKanban, title: "Pilotage de projets", description: "Suivi d'avancement, jalons et livrables centralisés" },
