@@ -11,12 +11,6 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Notion Badge */}
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <img src={notionBadge} alt="Notion Certified" className="h-12 w-auto" />
-            <span className="text-sm font-medium text-muted-foreground">Consultante Notion certifiée</span>
-          </div>
-
           {/* Main Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1] tracking-tight text-foreground">
             Conseil & accompagnement en{" "}
@@ -29,9 +23,15 @@ const HeroSection = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
             De la structuration des équipes à l'automatisation des process, nous mettons en place des systèmes digitaux qui facilitent le pilotage et améliorent la performance.
           </p>
+
+          {/* Notion Badge */}
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <img src={notionBadge} alt="Notion Certified" className="h-12 w-auto" />
+            <span className="text-sm font-medium text-muted-foreground">Consultante Notion certifiée</span>
+          </div>
 
           {/* CTA Button */}
           <Button 
