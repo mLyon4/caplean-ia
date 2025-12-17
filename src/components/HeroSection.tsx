@@ -13,8 +13,9 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-[1.1] tracking-tight">
-            <span className="text-[#154962] whitespace-nowrap">Conseil & accompagnement en</span>{" "}
-            <span className="text-secondary">transformation digitale</span>
+            <span className="text-[#154962]">Conseil et accompagnement</span>
+            <br />
+            <span className="text-secondary">en transformation digitale</span>
           </h1>
 
           {/* Subtitle */}
