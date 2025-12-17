@@ -112,11 +112,6 @@ const ConsultanteNotion = () => {
         <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <img 
-                src={notionSpecialistBadge} 
-                alt="Notion Service Specialist" 
-                className="h-24 w-auto mx-auto mb-6"
-              />
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
                 Consultante Notion pour TPE/PME : <span className="text-primary">système de pilotage sur mesure</span>, conduite du changement et formation (Qualiopi)
               </h1>
