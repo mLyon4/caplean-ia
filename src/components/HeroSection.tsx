@@ -20,16 +20,16 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-white/90 backdrop-blur-md rounded-full px-8 py-3 mb-12 border border-primary/20 shadow-lg">
-            <span className="text-sm font-medium text-primary">TRANSFORMATION DIGITALE</span>
-            <span className="text-secondary">•</span>
-            <span className="text-sm font-medium text-secondary">OPTIMISATION DES PROCESSUS</span>
-            <span className="text-primary">•</span>
-            <span className="text-sm font-medium text-primary">LEAN MANAGEMENT BTP</span>
-            <span className="text-secondary">•</span>
-            <span className="text-sm font-medium text-secondary">NOTION</span>
-            <span className="text-primary">•</span>
-            <span className="text-sm font-medium text-primary">AUTOMATISATIONS ET IA</span>
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 bg-white/90 backdrop-blur-md rounded-2xl md:rounded-full px-4 md:px-8 py-3 mb-12 border border-primary/20 shadow-lg max-w-[90vw]">
+            <span className="text-xs md:text-sm font-medium text-primary">TRANSFORMATION DIGITALE</span>
+            <span className="text-secondary hidden md:inline">•</span>
+            <span className="text-xs md:text-sm font-medium text-secondary">OPTIMISATION DES PROCESSUS</span>
+            <span className="text-primary hidden md:inline">•</span>
+            <span className="text-xs md:text-sm font-medium text-primary">LEAN MANAGEMENT BTP</span>
+            <span className="text-secondary hidden md:inline">•</span>
+            <span className="text-xs md:text-sm font-medium text-secondary">NOTION</span>
+            <span className="text-primary hidden md:inline">•</span>
+            <span className="text-xs md:text-sm font-medium text-primary">AUTOMATISATIONS ET IA</span>
           </div>
 
           {/* Main Title */}
