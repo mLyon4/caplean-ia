@@ -53,14 +53,14 @@ const CompanyCarousel = () => {
       <div className="flex items-center justify-center gap-3 mb-10">
         <Heart className="w-6 h-6 text-white fill-white" />
         <h2 className="text-2xl md:text-3xl font-bold text-white">
-          Ils me font confiance
+          Ils nous font confiance
         </h2>
         <Heart className="w-6 h-6 text-white fill-white" />
       </div>
       
       {/* Logos */}
       <div className="container mx-auto px-6">
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
+        <div className="flex flex-wrap items-start justify-center gap-8 md:gap-12 lg:gap-16">
           {companies.map((company) => (
             <a
               key={company.name}

@@ -54,7 +54,7 @@ const LinkedInReviewsCarousel = () => {
   return (
     <div className="mt-12">
       <div className="text-center mb-8">
-        <h3 className="text-2xl font-bold text-foreground mb-4">Témoignages clients</h3>
+        <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Témoignages clients</h3>
         <div className="flex items-center justify-center gap-2">
           <Linkedin className="h-6 w-6 text-blue-600" />
           <a 

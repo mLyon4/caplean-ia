@@ -25,7 +25,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <h2 className="text-xl md:text-2xl font-semibold text-foreground/80 mb-4">
-            Pilotage ERP/CRM, Notion sur mesure, automatisations IA & Lean BTP : c'est mon truc
+            Pilotage de projets ERP/CRM, systèmes Notion sur mesure, automatisations IA et Lean BTP.
           </h2>
 
           {/* Description */}
