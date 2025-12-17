@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "@/components/ThemeToggle";
 import {
@@ -13,7 +13,6 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
 
 const Header = () => {
@@ -27,27 +26,33 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-white/95 backdrop-blur-lg border-b border-border/30 sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-4 md:px-6 py-4 md:py-5">
+    <header className="w-full bg-card/95 backdrop-blur-lg border-b border-border/50 sticky top-0 z-50 shadow-elegant">
+      <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Sparkles className="h-7 w-7 md:h-8 md:w-8 text-accent" />
-          </div>
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <span className="text-xl font-bold text-primary">Caplean</span>
+            <span className="text-xl font-light text-secondary">IA</span>
+          </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
-            <a href="#services" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
-              e.preventDefault();
-              scrollToSection('services');
-            }}>
+          <nav className="hidden md:flex items-center space-x-8">
+            <a 
+              href="#services" 
+              className="text-foreground/70 hover:text-primary transition-colors font-medium"
+              onClick={e => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
+            >
               Services
             </a>
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium flex items-center gap-1">
+              <DropdownMenuTrigger className="text-foreground/70 hover:text-primary transition-colors font-medium flex items-center gap-1">
                 Offres
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-border shadow-lg z-50">
+              <DropdownMenuContent className="bg-card border border-border shadow-elegant-lg">
                 <DropdownMenuItem asChild>
                   <a 
                     href="#offres" 
@@ -67,35 +72,53 @@ const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="#qui-sommes-nous" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
-              e.preventDefault();
-              scrollToSection('qui-sommes-nous');
-            }}>
+            <a 
+              href="#qui-sommes-nous" 
+              className="text-foreground/70 hover:text-primary transition-colors font-medium"
+              onClick={e => {
+                e.preventDefault();
+                scrollToSection('qui-sommes-nous');
+              }}
+            >
               Expertise
             </a>
-            <a href="#testimonials" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
-              e.preventDefault();
-              scrollToSection('testimonials');
-            }}>
+            <a 
+              href="#testimonials" 
+              className="text-foreground/70 hover:text-primary transition-colors font-medium"
+              onClick={e => {
+                e.preventDefault();
+                scrollToSection('testimonials');
+              }}
+            >
               Références
             </a>
-            <a href="#contacts" className="text-foreground/80 hover:text-primary transition-colors cursor-pointer font-medium" onClick={e => {
-              e.preventDefault();
-              scrollToSection('contacts');
-            }}>
+            <a 
+              href="#contacts" 
+              className="text-foreground/70 hover:text-primary transition-colors font-medium"
+              onClick={e => {
+                e.preventDefault();
+                scrollToSection('contacts');
+              }}
+            >
               Contact
             </a>
           </nav>
 
-          <div className="flex items-center space-x-2 md:space-x-4">
+          <div className="flex items-center space-x-3">
             <ThemeToggle />
             
             {/* Desktop CTA */}
-            <Button asChild className="hidden md:inline-flex text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:opacity-90" style={{backgroundColor: '#3f779d'}}>
-              <a href="#contacts" onClick={e => {
-                e.preventDefault();
-                scrollToSection('contacts');
-              }} aria-label="Prendre rendez-vous - Aller à la section Contacts">
+            <Button 
+              asChild 
+              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-white font-semibold px-6 py-2.5 rounded-xl shadow-md hover:shadow-glow-secondary transition-all duration-300"
+            >
+              <a 
+                href="#contacts" 
+                onClick={e => {
+                  e.preventDefault();
+                  scrollToSection('contacts');
+                }}
+              >
                 Prendre rendez-vous
               </a>
             </Button>
@@ -107,8 +130,8 @@ const Header = () => {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] bg-background">
-                <nav className="flex flex-col space-y-6 mt-8">
+              <SheetContent side="right" className="w-[300px] bg-card border-l border-border">
+                <nav className="flex flex-col space-y-5 mt-8">
                   <a 
                     href="#services" 
                     className="text-lg font-medium text-foreground hover:text-primary transition-colors"
@@ -131,7 +154,7 @@ const Header = () => {
                   </a>
                   <Link 
                     to="/consultante-notion-entreprise" 
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors pl-4 text-base"
+                    className="font-medium text-foreground/70 hover:text-primary transition-colors pl-4"
                     onClick={() => setIsOpen(false)}
                   >
                     → Consultante Notion
@@ -167,8 +190,7 @@ const Header = () => {
                     Contact
                   </a>
                   <Button 
-                    className="w-full text-white font-semibold py-3 rounded-xl mt-4" 
-                    style={{backgroundColor: '#3f779d'}}
+                    className="w-full bg-secondary hover:bg-secondary-dark text-white font-semibold py-3 rounded-xl mt-4 shadow-md" 
                     onClick={() => scrollToSection('contacts')}
                   >
                     Prendre rendez-vous
