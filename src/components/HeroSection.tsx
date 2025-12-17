@@ -44,7 +44,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">Structuration d'entreprise, pilotage de projets ERP/CRM, Lean management BTP, systèmes Notion personnalisés, automatisations et solutions IA.</p>
+          <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">De la structuration des équipes à l'automatisation des process, je mets en place des systèmes digitaux qui facilitent le pilotage et améliorent la performance</p>
 
           {/* Problem Statement */}
           
