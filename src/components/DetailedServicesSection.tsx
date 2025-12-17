@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -12,7 +11,7 @@ import {
 const DetailedServicesSection = () => {
   const services = [
     {
-      icon: <Settings className="h-8 w-8" />,
+      icon: Settings,
       title: "Pilotage de projets & structuration digitale",
       features: [
         "Cadrage, planification et pilotage de vos projets ERP, CRM, etc.",
@@ -22,20 +21,20 @@ const DetailedServicesSection = () => {
       color: "primary"
     },
     {
-      icon: <Database className="h-8 w-8" />,
+      icon: Database,
       title: "Systèmes Notion personnalisés & formations",
       features: [
-        "Création d'espaces Notion sur mesure : CRM, RH, projets, pilotage, communication interne, espaces clients…",
+        "Création d'espaces Notion sur mesure : CRM, RH, projets, pilotage, communication interne…",
         "Automatisations",
         "Formation des équipes (Qualiopi)"
       ],
-      result: "un système qui vous ressemble, intuitif, opérationnel et adopté par vos équipes.",
-      link: "/consultante-notion",
+      result: "un système qui vous ressemble, intuitif, opérationnel et adopté.",
+      link: "/consultante-notion-entreprise",
       color: "secondary"
     },
     {
-      icon: <TrendingUp className="h-8 w-8" />,
-      title: "Conduite du changement & optimisation des processus",
+      icon: TrendingUp,
+      title: "Conduite du changement & optimisation",
       features: [
         "Diagnostic, refonte des flux, approche Lean & amélioration continue"
       ],
@@ -43,80 +42,93 @@ const DetailedServicesSection = () => {
       color: "primary"
     },
     {
-      icon: <Zap className="h-8 w-8" />,
-      title: "Automatisation & IA au service de la performance",
+      icon: Zap,
+      title: "Automatisation & IA",
       features: [
         "Automatisation des tâches répétitives",
         "IA générative intégrée à vos outils métiers"
       ],
-      result: "un gain de temps significatif, des données fiabilisées, une prise de décision accélérée.",
+      result: "gain de temps, données fiabilisées, décisions accélérées.",
       color: "secondary"
     }
   ];
 
   return (
-    <section id="services" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-28 relative overflow-hidden">
+      <div className="absolute inset-0 bg-muted/30" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px]" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/5 rounded-full blur-[80px]" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 text-sm font-semibold text-secondary bg-secondary/10 rounded-full mb-6">
-            Nos expertises
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground leading-tight">
-            Services de{" "}
-            <span className="text-gradient-primary">Transformation Digitale</span>
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <div className="inline-flex items-center gap-2 glass px-5 py-2.5 rounded-full mb-8">
+            <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+            <span className="text-sm font-medium text-foreground/80">Nos expertises</span>
+          </div>
+          
+          <h2 className="section-title text-foreground mb-6">
+            Services de <span className="text-gradient-secondary">Transformation</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Solutions personnalisées d'optimisation de processus, structuration d'entreprise et digitalisation avec Notion, CRM et Lean management.
+          
+          <p className="section-subtitle">
+            Solutions personnalisées d'optimisation de processus, structuration d'entreprise et digitalisation.
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Grid - Bento Style */}
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="group border border-border/50 shadow-elegant hover:shadow-elegant-lg transition-all duration-500 rounded-2xl bg-card overflow-hidden hover-lift"
-            >
-              <CardContent className="p-8">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            const isPrimary = service.color === 'primary';
+            
+            return (
+              <div 
+                key={index} 
+                className="glass-premium rounded-[2rem] p-10 card-premium group"
+              >
                 <div className="space-y-6">
                   {/* Icon and Title */}
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-5">
                     <div 
-                      className={`flex-shrink-0 p-3 rounded-xl transition-colors duration-300 ${
-                        service.color === 'primary' 
-                          ? 'bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white' 
-                          : 'bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-white'
+                      className={`icon-container flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-500 ${
+                        isPrimary 
+                          ? 'bg-gradient-to-br from-primary/20 to-primary/5 group-hover:from-primary group-hover:to-primary-dark' 
+                          : 'bg-gradient-to-br from-secondary/20 to-secondary/5 group-hover:from-secondary group-hover:to-secondary-dark'
                       }`}
                     >
-                      {service.icon}
+                      <Icon className={`h-8 w-8 transition-colors duration-500 ${
+                        isPrimary 
+                          ? 'text-primary group-hover:text-white' 
+                          : 'text-secondary group-hover:text-white'
+                      }`} />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground leading-tight pt-1">
+                    <h3 className="text-2xl font-bold text-foreground leading-tight pt-2">
                       {service.title}
                     </h3>
                   </div>
                   
                   {/* Features */}
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 pl-1">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-3">
-                        <span className={`font-bold mt-0.5 ${service.color === 'primary' ? 'text-primary' : 'text-secondary'}`}>✓</span>
-                        <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                        <span className={`font-bold mt-1 text-lg ${isPrimary ? 'text-primary' : 'text-secondary'}`}>✓</span>
+                        <span className="text-muted-foreground leading-relaxed text-lg">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   
                   {/* Result */}
-                  <div className={`p-5 rounded-xl ${
-                    service.color === 'primary' 
-                      ? 'bg-primary/5 border-l-4 border-primary' 
-                      : 'bg-secondary/5 border-l-4 border-secondary'
+                  <div className={`p-6 rounded-2xl border-l-4 ${
+                    isPrimary 
+                      ? 'bg-primary/5 border-primary' 
+                      : 'bg-secondary/5 border-secondary'
                   }`}>
                     <div className="flex items-start gap-3">
-                      <span className={`font-bold text-lg ${service.color === 'primary' ? 'text-primary' : 'text-secondary'}`}>→</span>
+                      <span className={`font-bold text-xl ${isPrimary ? 'text-primary' : 'text-secondary'}`}>→</span>
                       <div>
-                        <span className={`font-semibold ${service.color === 'primary' ? 'text-primary' : 'text-secondary'}`}>Résultat : </span>
-                        <span className="text-foreground/80">{service.result}</span>
+                        <span className={`font-semibold ${isPrimary ? 'text-primary' : 'text-secondary'}`}>Résultat : </span>
+                        <span className="text-foreground/80 text-lg">{service.result}</span>
                       </div>
                     </div>
                   </div>
@@ -126,18 +138,18 @@ const DetailedServicesSection = () => {
                     <Button 
                       asChild 
                       variant="outline" 
-                      className="w-full border-secondary/30 text-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-all duration-300"
+                      className="w-full py-6 text-lg rounded-xl border-2 border-secondary/30 text-secondary hover:bg-secondary hover:text-white hover:border-secondary transition-all duration-300 btn-shine"
                     >
                       <Link to={service.link} className="flex items-center justify-center gap-2">
                         Découvrir l'offre Notion
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowRight className="h-5 w-5" />
                       </Link>
                     </Button>
                   )}
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

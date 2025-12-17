@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { 
   CheckCircle, 
   Lightbulb, 
@@ -11,100 +10,106 @@ import {
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: <CheckCircle className="h-8 w-8 text-primary" />,
+      icon: CheckCircle,
       title: "Simplifier la gestion de votre entreprise"
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-primary" />,
+      icon: Lightbulb,
       title: "Clarifier vos priorités et vos process"
     },
     {
-      icon: <Target className="h-8 w-8 text-primary" />,
+      icon: Target,
       title: "Piloter efficacement vos projets"
     },
     {
-      icon: <Smile className="h-8 w-8 text-primary" />,
-      title: "Gagner en clarté, en efficacité et en sérénité"
+      icon: Smile,
+      title: "Gagner en clarté, efficacité et sérénité"
     }
   ];
 
   const approaches = [
     {
-      icon: <TrendingUp className="h-8 w-8 text-secondary" />,
+      icon: TrendingUp,
       title: "Stratégique",
-      description: "co-construction d'une feuille de route, pilotage des solutions"
+      description: "Co-construction d'une feuille de route, pilotage des solutions"
     },
     {
-      icon: <Users className="h-8 w-8 text-secondary" />,
+      icon: Users,
       title: "Humaine", 
-      description: "accompagnement des équipes pour une adoption fluide"
+      description: "Accompagnement des équipes pour une adoption fluide"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary/10 via-background to-primary/10 relative overflow-hidden">
-      {/* Background geometric shapes */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary/15 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-48 h-48 bg-primary/15 rounded-full blur-2xl"></div>
-      </div>
+    <section className="py-28 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-background to-primary/5" />
+      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-[100px] float-slow" />
+      <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px] float-medium" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Benefits */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Les bénéfices pour vous
+        <div className="text-center mb-20">
+          <h2 className="section-title text-foreground mb-6">
+            Les <span className="text-gradient-secondary">bénéfices</span> pour vous
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Découvrez comment notre approche personnalisée transforme votre entreprise et améliore votre quotidien professionnel.
+          <p className="section-subtitle">
+            Découvrez comment notre approche personnalisée transforme votre entreprise.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group">
-              <CardContent className="p-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors duration-300">
-                    {benefit.icon}
-                  </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-28">
+          {benefits.map((benefit, index) => {
+            const Icon = benefit.icon;
+            return (
+              <div 
+                key={index} 
+                className="bento-card text-center group"
+              >
+                <div className="icon-container w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
+                  <Icon className="h-10 w-10 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground leading-tight">
+                <h3 className="text-lg font-bold text-foreground leading-tight">
                   {benefit.title}
                 </h3>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            );
+          })}
         </div>
 
         {/* Double Approach */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Notre double approche
+        <div className="text-center mb-16">
+          <h2 className="section-title text-foreground mb-6">
+            Notre <span className="text-gradient-secondary">double</span> approche
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Une méthodologie éprouvée alliant stratégie et dimension humaine pour garantir votre succès.
+          <p className="section-subtitle">
+            Une méthodologie éprouvée alliant stratégie et dimension humaine.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {approaches.map((approach, index) => (
-            <Card key={index} className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-xl group bg-white/80 backdrop-blur-sm">
-              <CardContent className="p-8 text-center">
-                <div className="flex justify-center mb-6">
-                  <div className="p-4 bg-secondary/10 rounded-xl group-hover:bg-secondary/20 transition-colors duration-300">
-                    {approach.icon}
+          {approaches.map((approach, index) => {
+            const Icon = approach.icon;
+            return (
+              <div 
+                key={index} 
+                className="glass-premium rounded-[2rem] p-10 text-center card-premium"
+              >
+                <div className="relative inline-block mb-8">
+                  <div className="absolute inset-0 bg-secondary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="icon-container w-24 h-24 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center mx-auto">
+                    <Icon className="h-12 w-12 text-secondary" />
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-secondary mb-4">
+                <h3 className="text-3xl font-bold text-secondary mb-4">
                   {approach.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   {approach.description}
                 </p>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
