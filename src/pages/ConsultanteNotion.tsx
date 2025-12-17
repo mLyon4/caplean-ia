@@ -97,14 +97,18 @@ const ConsultanteNotion = () => {
       
       <div className="min-h-screen bg-background">
         {/* Header */}
-        <header className="w-full bg-white/95 backdrop-blur-lg border-b border-border/30 sticky top-0 z-50 shadow-sm">
+        <header className="w-full bg-background/95 backdrop-blur-lg border-b border-border/30 sticky top-0 z-50 shadow-sm">
           <div className="container mx-auto px-6 py-5">
             <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center space-x-2 text-foreground/80 hover:text-primary transition-colors">
                 <ArrowLeft className="h-5 w-5" />
                 <span className="font-medium">Retour à l'accueil</span>
               </Link>
-              <Button asChild className="text-white font-semibold px-6 py-2.5 rounded-xl shadow-sm" style={{backgroundColor: '#3f779d'}}>
+              <Button 
+                asChild 
+                variant="outline"
+                className="font-semibold px-6 py-2.5 rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300"
+              >
                 <Link to="/#contacts">Prendre rendez-vous</Link>
               </Button>
             </div>
@@ -112,35 +116,45 @@ const ConsultanteNotion = () => {
         </header>
 
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
-          <div className="container mx-auto px-6">
+        <section className="relative min-h-[60vh] flex items-center overflow-hidden bg-background pt-16 pb-20">
+          {/* Decorative elements */}
+          <div className="absolute top-20 left-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-40 right-1/4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
+          <div className="absolute top-1/2 right-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Consultante spécialiste Notion pour les entreprises – <span className="text-primary">Structuration, pilotage d'entreprise et formation Qualiopi</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1] tracking-tight">
+                <span className="text-primary">Consultante spécialiste Notion</span>
+                <br />
+                <span className="text-primary">pour les </span>
+                <span className="text-secondary">entreprises</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-2xl font-semibold text-foreground/80 mb-4">
+                Structuration, pilotage d'entreprise et formation Qualiopi
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed max-w-3xl mx-auto">
                 Des systèmes Notion sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par les équipes.
               </p>
-              <p className="text-base text-muted-foreground mb-6">
+              <p className="text-base text-muted-foreground mb-8">
                 📍 Basée à Lyon – Interventions en France entière
               </p>
-              <div className="flex flex-wrap justify-center gap-3 text-sm text-muted-foreground">
-                <span className="bg-muted px-3 py-1 rounded-full">consultante Notion</span>
-                <span className="bg-muted px-3 py-1 rounded-full">spécialiste Notion entreprise</span>
-                <span className="bg-muted px-3 py-1 rounded-full">formation Notion Qualiopi</span>
-                <span className="bg-muted px-3 py-1 rounded-full">système Notion sur mesure</span>
-                <span className="bg-muted px-3 py-1 rounded-full">Notion pour le BTP</span>
+              <div className="flex flex-wrap justify-center gap-3 text-sm">
+                {["consultante Notion", "spécialiste Notion entreprise", "formation Notion Qualiopi", "système Notion sur mesure", "Notion pour le BTP"].map((tag, i) => (
+                  <span key={i} className="bg-primary/10 text-primary px-4 py-1.5 rounded-full font-medium">{tag}</span>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
         {/* Expertise reconnue par Notion */}
-        <section className="py-12 bg-muted/30">
-          <div className="container mx-auto px-6">
+        <section className="py-16 bg-muted/30 relative overflow-hidden">
+          <div className="absolute -top-20 -right-20 w-64 h-64 bg-secondary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-lg font-medium text-foreground mb-6">
-                Une expertise reconnue par Notion
+              <p className="text-xl font-semibold text-foreground mb-6">
+                Une expertise <span className="text-secondary">reconnue par Notion</span>
               </p>
               <img 
                 src={notionSpecialistBadge} 
@@ -152,24 +166,25 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Ce que je mets en place */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Ce qui est mis en place concrètement
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                Ce qui est mis en place <span className="text-secondary">concrètement</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Des systèmes Notion sur mesure qui s'adaptent à votre métier et vos processus
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {implementations.map((item, index) => (
-                <Card key={index} className="border-border/50 hover:border-primary/30 transition-colors">
+                <Card key={index} className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover-lift bg-card">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                      <item.icon className="h-6 w-6 text-primary" />
+                    <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-4">
+                      <item.icon className="h-7 w-7 text-secondary" />
                     </div>
-                    <CardTitle className="text-xl">{item.title}</CardTitle>
+                    <CardTitle className="text-xl text-foreground">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{item.description}</p>
@@ -181,23 +196,24 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Pour qui */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Pour qui ?
+        <section className="py-24 bg-muted/30 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                Pour <span className="text-secondary">qui</span> ?
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Un accompagnement pour les structures qui veulent professionnaliser leur organisation
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {targetAudience.map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="h-8 w-8 text-primary" />
+                <div key={index} className="text-center group">
+                  <div className="w-20 h-20 rounded-3xl bg-primary/10 group-hover:bg-secondary/10 flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
+                    <item.icon className="h-10 w-10 text-primary group-hover:text-secondary transition-colors duration-300" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
               ))}
@@ -205,33 +221,33 @@ const ConsultanteNotion = () => {
           </div>
         </section>
 
-
         {/* Ma posture */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute bottom-20 left-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Une posture d'accompagnement
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                  Une posture <span className="text-secondary">d'accompagnement</span>
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-background rounded-2xl p-8 shadow-sm border border-border/50">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                    <Lightbulb className="h-7 w-7 text-primary" />
+                <div className="bg-card rounded-3xl p-8 shadow-lg border border-border/50 hover-lift">
+                  <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6">
+                    <Lightbulb className="h-8 w-8 text-secondary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Structuration sur mesure</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-2xl font-semibold text-foreground mb-4">Structuration sur mesure</h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
                     Pas de template générique. Une analyse de vos processus existants pour créer 
                     un système Notion qui colle à votre réalité métier.
                   </p>
                 </div>
-                <div className="bg-background rounded-2xl p-8 shadow-sm border border-border/50">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                    <HeartHandshake className="h-7 w-7 text-primary" />
+                <div className="bg-card rounded-3xl p-8 shadow-lg border border-border/50 hover-lift">
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
+                    <HeartHandshake className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Adoption par les équipes</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-2xl font-semibold text-foreground mb-4">Adoption par les équipes</h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
                     Un outil non utilisé ne sert à rien. Formation des équipes et suivi pour que le système 
                     soit adopté dans la durée, pas abandonné après 2 semaines.
                   </p>
@@ -242,19 +258,20 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Quand faire appel */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
+        <section className="py-24 bg-muted/30 relative overflow-hidden">
+          <div className="absolute top-1/2 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Quand faire appel à une consultante Notion ?
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                  Quand faire appel à une <span className="text-secondary">consultante Notion</span> ?
                 </h2>
               </div>
               <div className="space-y-4">
                 {whenToCallReasons.map((reason, index) => (
-                  <div key={index} className="flex items-start gap-4 p-4 bg-muted/50 rounded-xl">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                    <p className="text-foreground">{reason}</p>
+                  <div key={index} className="flex items-start gap-4 p-5 bg-card rounded-2xl border border-border/50 hover:border-secondary/30 transition-colors">
+                    <CheckCircle2 className="h-6 w-6 text-secondary flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground text-lg">{reason}</p>
                   </div>
                 ))}
               </div>
@@ -263,24 +280,25 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Pourquoi Notion */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Pourquoi Notion plutôt qu'un outil classique ?
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                Pourquoi <span className="text-secondary">Notion</span> plutôt qu'un outil classique ?
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {whyNotionReasons.map((item, index) => (
-                <Card key={index} className="border-border/50 text-center">
+                <Card key={index} className="border-border/50 text-center hover-lift hover:border-secondary/30 transition-all duration-300 bg-card">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <item.icon className="h-6 w-6 text-primary" />
+                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                      <item.icon className="h-7 w-7 text-primary" />
                     </div>
-                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                    <CardTitle className="text-lg text-foreground">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground text-sm">{item.description}</p>
+                    <p className="text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -289,46 +307,47 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Formation Notion */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
+        <section className="py-24 bg-muted/30 relative overflow-hidden">
+          <div className="absolute top-20 left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Formation Notion en entreprise
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                  Formation Notion <span className="text-secondary">en entreprise</span>
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                   Orientées usage réel et adoption par les équipes
                 </p>
               </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <Card className="border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
-                  <CardContent className="pt-6">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                      <GraduationCap className="h-7 w-7 text-primary" />
+              <div className="grid md:grid-cols-3 gap-8">
+                <Card className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover-lift bg-card">
+                  <CardContent className="pt-8 pb-8">
+                    <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6">
+                      <GraduationCap className="h-8 w-8 text-secondary" />
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">Formation en entreprise</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">Formation en entreprise</h3>
                     <p className="text-muted-foreground">
                       Sessions sur site ou à distance, adaptées à vos équipes et à vos cas d'usage métier concrets.
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
-                  <CardContent className="pt-6">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                      <BadgeCheck className="h-7 w-7 text-primary" />
+                <Card className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover-lift bg-card">
+                  <CardContent className="pt-8 pb-8">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
+                      <BadgeCheck className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">Formation personnalisée</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">Formation personnalisée</h3>
                     <p className="text-muted-foreground">
                       Programmes adaptés au niveau de chacun : débutants ou utilisateurs avancés. Aucun prérequis technique.
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
-                  <CardContent className="pt-6">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                      <Wallet className="h-7 w-7 text-primary" />
+                <Card className="border-border/50 hover:border-secondary/30 transition-all duration-300 hover-lift bg-card">
+                  <CardContent className="pt-8 pb-8">
+                    <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6">
+                      <Wallet className="h-8 w-8 text-secondary" />
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">Financement Qualiopi</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">Financement Qualiopi</h3>
                     <p className="text-muted-foreground">
                       Organisme certifié Qualiopi : vos formations peuvent être prises en charge par votre OPCO.
                     </p>
@@ -340,43 +359,44 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Témoignages clients */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-secondary/5 rounded-full blur-3xl" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
               <div className="flex items-center justify-center gap-2 mb-4">
-                <Linkedin className="h-6 w-6 text-blue-600" />
+                <Linkedin className="h-6 w-6 text-[#0077b5]" />
                 <a 
                   href="https://www.linkedin.com/services/page/99439232a0ba4b836b/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-blue-600 hover:underline"
+                  className="text-sm text-[#0077b5] hover:underline font-medium"
                 >
                   Voir tous les avis LinkedIn
                 </a>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Ils ont structuré leur entreprise avec Notion
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                Ils ont structuré leur entreprise avec <span className="text-secondary">Notion</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Découvrez les retours de clients qui ont transformé leur organisation
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="border-border/50 relative overflow-hidden">
-                  <div className="absolute top-4 right-4 text-primary/10">
-                    <Quote className="h-12 w-12" />
+                <Card key={index} className="border-border/50 relative overflow-hidden hover-lift bg-card">
+                  <div className="absolute top-4 right-4 text-secondary/10">
+                    <Quote className="h-16 w-16" />
                   </div>
-                  <CardContent className="pt-6">
+                  <CardContent className="pt-8 pb-8">
                     <div className="flex gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                        <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
                       ))}
                     </div>
-                    <p className="text-foreground mb-6 relative z-10">{testimonial.content}</p>
+                    <p className="text-foreground mb-6 relative z-10 leading-relaxed">{testimonial.content}</p>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                        <span className="text-primary font-semibold text-lg">
+                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+                        <span className="text-primary font-bold text-xl">
                           {testimonial.author.charAt(0)}
                         </span>
                       </div>
@@ -394,19 +414,27 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-primary/5">
-          <div className="container mx-auto px-6">
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute inset-0 bg-primary/5" />
+          <div className="absolute top-10 left-1/4 w-32 h-32 bg-secondary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-1/4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Prêt à structurer votre entreprise avec Notion ?
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Prêt à structurer votre entreprise avec <span className="text-secondary">Notion</span> ?
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-xl text-muted-foreground mb-10">
                 Discutons de vos besoins lors d'un appel découverte gratuit de 30 minutes.
               </p>
-              <Button asChild size="lg" className="text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-md" style={{backgroundColor: '#3f779d'}}>
+              <Button 
+                asChild 
+                variant="outline"
+                size="lg" 
+                className="group font-semibold px-8 py-6 text-lg rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300"
+              >
                 <a href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Réserver mon appel découverte
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
             </div>
@@ -414,9 +442,9 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Footer */}
-        <footer className="py-8 border-t border-border/30">
-          <div className="container mx-auto px-6 text-center text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">
+        <footer className="py-10 border-t border-border/30 bg-background">
+          <div className="container mx-auto px-6 text-center">
+            <Link to="/" className="text-muted-foreground hover:text-secondary transition-colors font-medium">
               ← Retour à l'accueil
             </Link>
           </div>
