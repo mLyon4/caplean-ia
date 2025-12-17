@@ -30,11 +30,11 @@ const HeroSection = () => {
             <br />
             <span className="text-gradient-animated">accompagnement</span>
             <br />
-            <span className="text-foreground">en </span>
+            <span className="text-foreground">en transformation </span>
             <span className="relative inline-block">
-              <span className="text-secondary">transformation digitale</span>
-              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
-                <path d="M2 8C75 2 225 2 298 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" />
+              <span className="text-secondary">digitale</span>
+              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 150 12" fill="none">
+                <path d="M2 8C38 2 112 2 148 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" />
               </svg>
             </span>
           </h1>
