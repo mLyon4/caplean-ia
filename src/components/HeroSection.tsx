@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-[1.1] tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1] tracking-tight">
             <span className="text-[#154962]">Conseil et accompagnement</span>
             <br />
             <span className="text-secondary">en transformation digitale</span>
