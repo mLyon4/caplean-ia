@@ -13,7 +13,6 @@ const OffersSection = () => {
         "Décisions plus rapides et plus sereines"
       ],
       highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
-      isSpecial: true,
       color: "primary"
     },
     {
@@ -61,18 +60,8 @@ const OffersSection = () => {
             return (
               <div 
                 key={index} 
-                className={`glass-premium rounded-[2rem] p-8 card-premium relative ${
-                  offer.isSpecial ? 'ring-2 ring-secondary/30' : ''
-                }`}
+                className="glass-premium rounded-[2rem] p-8 card-premium relative"
               >
-                {offer.isSpecial && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="bg-secondary text-white text-xs font-bold px-4 py-1.5 rounded-full">
-                      Recommandé
-                    </span>
-                  </div>
-                )}
-                
                 <div className="text-center">
                   {/* Icon */}
                   <div className={`icon-container w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 ${
@@ -134,18 +123,6 @@ const OffersSection = () => {
                         {offer.highlight}
                       </p>
                     </div>
-                  )}
-                  
-                  {/* CTA for special offer */}
-                  {offer.isSpecial && (
-                    <Button 
-                      asChild
-                      className="btn-premium btn-shine w-full mt-6"
-                    >
-                      <a href="#contacts">
-                        Demander un pré-diagnostic
-                      </a>
-                    </Button>
                   )}
                 </div>
               </div>
