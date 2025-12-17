@@ -34,7 +34,7 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-[1.2] text-foreground">
-            Conseil & accompagnement opérationnel en{" "}
+            Conseil & accompagnement en{" "}
             <span style={{
             color: '#3f779d'
           }}>transformation digitale</span>
