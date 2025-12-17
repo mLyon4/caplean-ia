@@ -1,105 +1,84 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import notionBadge from "@/assets/logos/notion-specialist-badge.png";
 
 const HeroSection = () => {
-  const badges = [
-    "TRANSFORMATION DIGITALE",
-    "OPTIMISATION DES PROCESSUS", 
-    "LEAN MANAGEMENT BTP",
-    "NOTION",
-    "AUTOMATISATIONS & IA"
-  ];
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
-      {/* Elegant background elements */}
-      <div className="absolute inset-0 z-0">
-        {/* Primary gradient orb */}
-        <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] animate-float" />
-        {/* Secondary accent orb */}
-        <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/8 rounded-full blur-[80px] animate-float" style={{ animationDelay: '-3s' }} />
-        {/* Subtle grid pattern */}
-        <div className="absolute inset-0 opacity-[0.015]" style={{
-          backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }} />
-      </div>
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
+      {/* Decorative elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-40 left-1/4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
+      
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="max-w-xl">
+            {/* Notion Badge */}
+            <div className="flex items-center gap-3 mb-8">
+              <img src={notionBadge} alt="Notion Certified" className="h-12 w-auto" />
+              <span className="text-sm font-medium text-muted-foreground">Consultante Notion certifiée</span>
+            </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          
-          {/* Expertise badges - Elegant pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-12 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            {badges.map((badge, index) => (
-              <span 
-                key={badge}
-                className="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-wide rounded-full border transition-all duration-300 hover:shadow-elegant"
-                style={{
-                  backgroundColor: index % 2 === 0 ? 'hsl(var(--primary) / 0.08)' : 'hsl(var(--secondary) / 0.08)',
-                  borderColor: index % 2 === 0 ? 'hsl(var(--primary) / 0.2)' : 'hsl(var(--secondary) / 0.2)',
-                  color: index % 2 === 0 ? 'hsl(var(--primary))' : 'hsl(var(--secondary))'
-                }}
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
+            {/* Main Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1] tracking-tight text-foreground">
+              Structurez et accélérez votre{" "}
+              <span className="text-secondary">transformation digitale</span>
+            </h1>
 
-          {/* Main Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-foreground">Conseil & accompagnement en</span>
-            <br />
-            <span className="text-gradient-primary">transformation digitale</span>
-          </h1>
+            {/* Subtitle */}
+            <h2 className="text-xl md:text-2xl font-semibold text-foreground/80 mb-4">
+              Pilotage ERP/CRM, Notion sur mesure, automatisations IA & Lean BTP : c'est mon truc
+            </h2>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-medium text-foreground/90 mb-4 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            Pilotage de projets ERP/CRM, systèmes Notion sur mesure, automatisations IA et Lean BTP.
-          </p>
+            {/* Description */}
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Ne laissez pas le chaos s'installer. Adoptez une consultante experte pour reprendre le contrôle sur vos process et booster votre performance.
+            </p>
 
-          {/* Description */}
-          <p className="text-lg md:text-xl text-muted-foreground font-light max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            De la structuration des équipes à l'automatisation des process, je mets en place des systèmes digitaux qui facilitent le pilotage et améliorent la performance.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            {/* CTA Button */}
             <Button 
               asChild 
+              variant="outline"
               size="lg" 
-              className="group font-semibold px-8 py-6 text-base rounded-xl bg-secondary hover:bg-secondary-dark text-white shadow-lg hover:shadow-glow-secondary transition-all duration-300"
+              className="group font-semibold px-8 py-6 text-base rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300"
             >
               <a href="#contacts" className="flex items-center gap-2">
-                Prendre rendez-vous
+                Oui, je structure mon business !
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg" 
-              className="font-semibold px-8 py-6 text-base rounded-xl border-2 border-primary/30 bg-white/80 backdrop-blur-sm hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-            >
-              <a href="#services">Découvrir les services</a>
-            </Button>
           </div>
 
-          {/* Trust indicator */}
-          <div className="mt-16 flex items-center justify-center gap-2 text-muted-foreground animate-fade-up" style={{ animationDelay: '0.6s' }}>
-            <Sparkles className="w-4 h-4 text-secondary" />
-            <span className="text-sm font-medium">+20 ans d'expérience terrain</span>
-            <span className="mx-2 text-border">|</span>
-            <span className="text-sm font-medium">Certifiée Notion</span>
-            <span className="mx-2 text-border">|</span>
-            <span className="text-sm font-medium">Formation Qualiopi</span>
-          </div>
-        </div>
-      </div>
+          {/* Right Image */}
+          <div className="relative hidden lg:block">
+            {/* Main Image Container */}
+            <div className="relative">
+              {/* Background shape */}
+              <div className="absolute -top-8 -right-8 w-full h-full bg-primary/5 rounded-3xl transform rotate-3" />
+              
+              {/* Real photo */}
+              <div className="relative rounded-3xl overflow-hidden shadow-elegant-lg">
+                <img 
+                  src="/lovable-uploads/462df1d0-8c1d-4756-b5c2-61440b78a905.png" 
+                  alt="Christelle Picault - Consultante en transformation digitale"
+                  className="aspect-[4/5] w-full object-cover"
+                />
+              </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/20 rounded-full flex justify-center">
-          <div className="w-1.5 h-3 bg-primary/40 rounded-full mt-2" />
+              {/* Floating badge */}
+              <div className="absolute -bottom-4 -left-4 bg-card rounded-2xl shadow-elegant-lg p-4 border border-border/50">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
+                    <span className="text-secondary font-bold">✓</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm text-foreground">Formation Qualiopi</p>
+                    <p className="text-xs text-muted-foreground">Certifiée qualité</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

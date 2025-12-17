@@ -1,3 +1,5 @@
+import { Heart } from "lucide-react";
+
 interface Company {
   name: string;
   logo: string;
@@ -46,27 +48,45 @@ const CompanyCarousel = () => {
   ];
 
   return (
-    <div className="mt-12 w-full bg-white rounded-lg shadow-sm py-6 md:py-8 px-4 md:px-8 border">
-      <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 lg:gap-12">
-        {companies.map((company) => (
-          <div
-            key={company.name}
-            className="flex flex-col items-center justify-center"
-          >
-            <img
-              src={company.logo}
-              alt={`Logo ${company.name}`}
-              className="h-12 md:h-16 lg:h-20 w-auto object-contain max-w-[80px] md:max-w-[100px] lg:max-w-[120px]"
-            />
-            {(company.name === "Rosalog" || company.name === "#FeeCommTuVeux" || company.name === "Up Neo") && (
-              <span className="text-xs md:text-sm font-semibold text-foreground mt-2">
-                {company.name === "Up Neo" ? "Up Néo" : company.name}
-              </span>
-            )}
-          </div>
-        ))}
+    <section className="py-12 bg-secondary rounded-3xl mx-4 md:mx-8 lg:mx-16 -mt-8 relative z-10 shadow-glow-secondary">
+      {/* Title */}
+      <div className="flex items-center justify-center gap-3 mb-10">
+        <Heart className="w-6 h-6 text-white fill-white" />
+        <h2 className="text-2xl md:text-3xl font-bold text-white">
+          Ils me font confiance
+        </h2>
+        <Heart className="w-6 h-6 text-white fill-white" />
       </div>
-    </div>
+      
+      {/* Logos */}
+      <div className="container mx-auto px-6">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
+          {companies.map((company) => (
+            <a
+              key={company.name}
+              href={company.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center justify-center group transition-transform duration-300 hover:scale-110"
+            >
+              <div className="bg-white/95 rounded-xl p-3 shadow-md">
+                <img
+                  src={company.logo}
+                  alt={`Logo ${company.name}`}
+                  className="h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[70px] md:max-w-[90px] lg:max-w-[100px]"
+                />
+              </div>
+              {(company.name === "Rosalog" || company.name === "#FeeCommTuVeux" || company.name === "Up Neo") && (
+                <span className="text-xs font-medium text-white/90 mt-2">
+                  {company.name === "Up Neo" ? "Up Néo" : company.name}
+                </span>
+              )}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
+
 export default CompanyCarousel;
