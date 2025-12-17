@@ -202,46 +202,6 @@ const ConsultanteNotion = () => {
           </div>
         </section>
 
-        {/* Avant / Après */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Avant / Après
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="border-destructive/30 bg-destructive/5">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-destructive flex items-center gap-2">
-                    😵 Avant : le chaos doux
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <p className="text-muted-foreground">• Informations éparpillées entre mails, Excel, Drive...</p>
-                  <p className="text-muted-foreground">• Chaque collaborateur a sa propre méthode</p>
-                  <p className="text-muted-foreground">• Impossible de suivre l'avancement des projets</p>
-                  <p className="text-muted-foreground">• Le dirigeant est le "hub" de toutes les infos</p>
-                  <p className="text-muted-foreground">• Onboarding des nouveaux = bricolage</p>
-                </CardContent>
-              </Card>
-              <Card className="border-primary/30 bg-primary/5">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-primary flex items-center gap-2">
-                    ✨ Après : pilotage clair
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <p className="text-muted-foreground">• Une source unique de vérité pour toute l'équipe</p>
-                  <p className="text-muted-foreground">• Processus documentés et partagés</p>
-                  <p className="text-muted-foreground">• Tableaux de bord pour piloter en un coup d'œil</p>
-                  <p className="text-muted-foreground">• Autonomie des équipes, moins de sollicitations</p>
-                  <p className="text-muted-foreground">• Onboarding fluide avec tout au même endroit</p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
 
         {/* Ma posture */}
         <section className="py-20 bg-muted/30">
