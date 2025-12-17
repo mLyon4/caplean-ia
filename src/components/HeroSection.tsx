@@ -16,13 +16,6 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
-          <div className="flex justify-center mb-8 reveal-up" style={{ animationDelay: '0.1s' }}>
-            <div className="glass-premium px-6 py-3 rounded-full flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              <span className="text-sm font-medium text-foreground/80">Transformation digitale & Lean Management</span>
-            </div>
-          </div>
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.05] tracking-tight reveal-up" style={{ animationDelay: '0.2s' }}>
