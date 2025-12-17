@@ -37,11 +37,11 @@ const HeroSection = () => {
             Conseil & accompagnement opérationnel en{" "}
             <span style={{
             color: '#3f779d'
-          }}>transformation digitale</span> – Lean BTP, systèmes Notion sur mesure, pilotage ERP/CRM et{" "}
-            <span style={{
-            color: '#3f779d'
-          }}>automatisations IA</span>
+          }}>transformation digitale</span>
           </h1>
+          <p className="text-xl md:text-2xl mb-6 text-foreground font-medium max-w-4xl mx-auto">
+            Pilotage de projets ERP/CRM, systèmes Notion sur mesure, automatisations IA et Lean BTP.
+          </p>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-12 text-muted-foreground font-light max-w-4xl mx-auto leading-relaxed">De la structuration des équipes à l'automatisation des process, je mets en place des systèmes digitaux qui facilitent le pilotage et améliorent la performance</p>
