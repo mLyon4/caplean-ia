@@ -30,7 +30,7 @@ const HeroSection = () => {
 
           {/* Notion Badge */}
           <div className="flex items-center justify-center gap-3 mb-8">
-            <img src={notionBadge} alt="Notion Certified" className="h-12 w-auto" />
+            <img src={notionBadge} alt="Notion Certified" className="h-8 w-auto" />
             <span className="text-sm font-medium text-muted-foreground">Consultante Notion certifiée</span>
           </div>
 
