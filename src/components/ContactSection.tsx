@@ -42,15 +42,15 @@ const ContactSection = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
             <Sparkles className="h-4 w-4 text-secondary" />
-            <span className="text-sm font-medium text-white/90">Parlons de votre projet</span>
+            <span className="text-sm font-medium text-white/90">30 minutes, gratuit</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white">
-            Discutons de vos besoins
+            Prêt à structurer votre entreprise ?
           </h2>
           
           <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Profitez d'un <strong className="text-secondary">pré-diagnostic d'une heure offert</strong> et sans engagement.
+            Discutons de vos besoins lors d'un appel découverte gratuit.
           </p>
         </div>
 
