@@ -215,8 +215,8 @@ const ConsultanteNotion = () => {
         <section className="py-28 relative">
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
-              <h2 className="section-title text-foreground mb-6">
-                Ce que je <span className="text-gradient-secondary">construis</span>
+            <h2 className="section-title text-foreground mb-6">
+                Ce que nous <span className="text-gradient-secondary">construisons ensemble</span>
               </h2>
               <p className="section-subtitle">
                 Des systèmes Notion sur mesure qui s'adaptent à votre métier
