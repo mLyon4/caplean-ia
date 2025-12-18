@@ -276,7 +276,7 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <h2 className="section-title text-foreground mb-6">
-                Ma <span className="text-gradient-secondary">posture</span>
+                Nos <span className="text-gradient-secondary">offres de valeur</span>
               </h2>
             </div>
             
