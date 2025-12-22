@@ -44,7 +44,7 @@ const ConsultanteNotion = () => {
   const targetAudience = [
     { icon: Building2, title: "PME en croissance", description: "Structurer pour scaler sans perdre en agilité" },
     { icon: Users, title: "Dirigeants débordés", description: "Reprendre le contrôle de votre organisation" },
-    { icon: HardHat, title: "Entreprises BTP", description: "Solutions métier adaptées au terrain" },
+    { icon: HardHat, title: "Entreprises Services & BTP", description: "Solutions métier adaptées au terrain" },
   ];
 
   const whenToCallReasons = [
@@ -333,10 +333,10 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
             <h2 className="section-title text-foreground mb-6">
-                Systèmes Notion sur mesure pour <span className="text-gradient-secondary">PME à Lyon</span>
+                Ce que nous <span className="text-gradient-secondary">construisons ensemble</span>
               </h2>
               <p className="section-subtitle">
-                CRM, pilotage de projets, RH et documentation adaptés à votre métier
+                Des systèmes Notion sur mesure qui s'adaptent à votre métier
               </p>
             </div>
             
@@ -364,7 +364,7 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <h2 className="section-title text-foreground mb-6">
-                Accompagnement Notion pour <span className="text-gradient-secondary">PME et BTP</span>
+                Pour <span className="text-gradient-secondary">qui</span> ?
               </h2>
               <p className="section-subtitle">
                 Dirigeants et entreprises en croissance en région lyonnaise et France
