@@ -480,10 +480,10 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <h2 className="section-title text-foreground mb-6">
-                Formation <span className="text-gradient-secondary">Notion Qualiopi</span> à Lyon
+                Formation <span className="text-gradient-secondary">Notion</span> (Qualiopi)
               </h2>
               <p className="section-subtitle">
-                Formations certifiées, finançables OPCO, adaptées aux équipes PME et BTP
+                Orientées usage réel et adoption par les équipes. Finançables OPCO
               </p>
             </div>
             
