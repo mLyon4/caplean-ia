@@ -19,7 +19,7 @@ const OffersSection = () => {
       icon: Database,
       title: "Systèmes Notion personnalisés",
       description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
-      link: "/consultante-notion-entreprise",
+      link: "/consultante-notion-lyon-structuration-pilotage-pme",
       badge: "Formations Qualiopi",
       color: "secondary"
     },

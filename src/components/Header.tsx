@@ -71,7 +71,7 @@ const Header = () => {
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
-                  <Link to="/consultante-notion-entreprise">
+                  <Link to="/consultante-notion-lyon-structuration-pilotage-pme">
                     Consultante Notion Entreprise
                   </Link>
                 </DropdownMenuItem>
@@ -147,7 +147,7 @@ const Header = () => {
                     </a>
                   ))}
                   <Link 
-                    to="/consultante-notion-entreprise" 
+                    to="/consultante-notion-lyon-structuration-pilotage-pme" 
                     className="font-medium text-secondary hover:text-secondary-dark px-4 py-3 rounded-xl hover:bg-secondary/5 transition-all"
                     onClick={() => setIsOpen(false)}
                   >
