@@ -22,7 +22,8 @@ import {
   GraduationCap,
   BadgeCheck,
   Wallet,
-  Sparkles
+  Sparkles,
+  ChevronRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -61,6 +62,29 @@ const ConsultanteNotion = () => {
     { icon: HeartHandshake, title: "Adoption facile", description: "Interface que vos équipes adoptent" },
   ];
 
+  const faqItems = [
+    {
+      question: "Combien coûte un accompagnement Notion pour PME ?",
+      answer: "Le tarif dépend de la complexité de votre projet. Un audit initial gratuit de 30 minutes permet d'évaluer vos besoins et d'établir un devis sur mesure."
+    },
+    {
+      question: "Combien de temps pour mettre en place un système Notion ?",
+      answer: "Comptez entre 2 et 8 semaines selon l'ampleur du projet. Un CRM simple peut être opérationnel en 2 semaines, un système complet de pilotage d'entreprise en 6-8 semaines."
+    },
+    {
+      question: "Intervenez-vous uniquement à Lyon ?",
+      answer: "Basée à Lyon, j'interviens en présentiel en Auvergne-Rhône-Alpes et à distance dans toute la France pour les PME et entreprises BTP."
+    },
+    {
+      question: "La formation Notion est-elle finançable par mon OPCO ?",
+      answer: "Oui, mes formations Notion sont certifiées Qualiopi et donc éligibles au financement OPCO. Je vous accompagne dans les démarches administratives."
+    },
+    {
+      question: "Notion est-il adapté aux entreprises du BTP ?",
+      answer: "Absolument. Je crée des systèmes Notion spécialisés BTP : suivi de chantiers, gestion des équipes terrain, documentation technique, planning des interventions."
+    }
+  ];
+
   const testimonials = [
     {
       content: "Christelle nous a accompagné dans notre transition numérique chez AC2R. Grâce à son travail de compréhension de notre mode de fonctionnement et à son analyse très précise, nous avons pu changer de logiciel de gestion après 17 ans. C'est notre magicienne :)",
@@ -88,11 +112,93 @@ const ConsultanteNotion = () => {
     }
   ];
 
+  // JSON-LD Structured Data
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://christellepicault.fr/#business",
+        "name": "Christelle Picault - Consultante Notion",
+        "description": "Consultante Notion certifiée à Lyon. Structuration et pilotage d'entreprise pour PME et BTP. Formation Qualiopi, CRM sur mesure, automatisations.",
+        "url": "https://christellepicault.fr/consultante-notion-lyon-structuration-pilotage-pme",
+        "telephone": "+33",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lyon",
+          "addressRegion": "Auvergne-Rhône-Alpes",
+          "addressCountry": "FR"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Lyon" },
+          { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" },
+          { "@type": "Country", "name": "France" }
+        ],
+        "priceRange": "€€"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://christellepicault.fr/#person",
+        "name": "Christelle Picault",
+        "jobTitle": "Consultante Notion certifiée",
+        "description": "Notion Service Specialist certifiée, spécialisée dans la structuration et le pilotage de PME et entreprises BTP à Lyon et en France.",
+        "knowsAbout": ["Notion", "Structuration entreprise", "Pilotage PME", "CRM", "BTP", "Formation Qualiopi"],
+        "worksFor": {
+          "@id": "https://christellepicault.fr/#business"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://christellepicault.fr/#service",
+        "name": "Consulting Notion pour PME",
+        "provider": { "@id": "https://christellepicault.fr/#person" },
+        "serviceType": "Consulting",
+        "areaServed": "France",
+        "description": "Création de systèmes Notion sur mesure : CRM, gestion de projets, RH, documentation. Formation Qualiopi incluse."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
-        <title>Consultante Notion Entreprise | Spécialiste Notion pour PME et BTP</title>
-        <meta name="description" content="Consultante Notion certifiée pour PME et BTP. Formation Notion Qualiopi, systèmes sur mesure (CRM, projets, RH). Transformez votre organisation avec Notion." />
+        <title>Consultante Notion Lyon | Structuration & Pilotage PME - Christelle Picault</title>
+        <meta name="description" content="Christelle Picault, consultante Notion certifiée à Lyon. Structuration sur mesure pour PME et BTP : CRM, pilotage projets, formation Qualiopi. Appel découverte gratuit." />
+        <link rel="canonical" href="https://christellepicault.fr/consultante-notion-lyon-structuration-pilotage-pme" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Consultante Notion Lyon | Structuration & Pilotage PME - Christelle Picault" />
+        <meta property="og:description" content="Christelle Picault, consultante Notion certifiée à Lyon. Structuration sur mesure pour PME et BTP : CRM, pilotage projets, formation Qualiopi." />
+        <meta property="og:url" content="https://christellepicault.fr/consultante-notion-lyon-structuration-pilotage-pme" />
+        <meta property="og:locale" content="fr_FR" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Consultante Notion Lyon | Structuration & Pilotage PME" />
+        <meta name="twitter:description" content="Christelle Picault, consultante Notion certifiée à Lyon. Structuration sur mesure pour PME et BTP." />
+        
+        {/* Additional SEO */}
+        <meta name="author" content="Christelle Picault" />
+        <meta name="robots" content="index, follow" />
+        <meta name="geo.region" content="FR-ARA" />
+        <meta name="geo.placename" content="Lyon" />
+        
+        {/* JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
       
       <div className="min-h-screen bg-background relative overflow-hidden">
@@ -128,48 +234,60 @@ const ConsultanteNotion = () => {
           </div>
         </header>
 
+        {/* Breadcrumb */}
+        <nav aria-label="Fil d'Ariane" className="container mx-auto px-6 py-4 relative z-10">
+          <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+            <li>
+              <Link to="/" className="hover:text-primary transition-colors">Accueil</Link>
+            </li>
+            <li><ChevronRight className="h-4 w-4" /></li>
+            <li className="text-foreground font-medium">Consultante Notion Lyon</li>
+          </ol>
+        </nav>
+
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center pt-12 pb-24">
+        <section className="relative min-h-[85vh] flex items-center pt-8 pb-24">
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-5xl mx-auto">
               {/* Badge */}
               <div className="flex justify-center mb-8 reveal-up" style={{ animationDelay: '0.1s' }}>
                 <div className="glass-premium px-6 py-3 rounded-full flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                  <span className="text-sm font-medium text-foreground/80">Consultante Notion certifiée</span>
+                  <span className="text-sm font-medium text-foreground/80">Christelle Picault – Notion Service Specialist</span>
                 </div>
               </div>
               
-              {/* Title */}
+              {/* Title - H1 SEO optimized */}
               <div className="text-center mb-8 reveal-up" style={{ animationDelay: '0.2s' }}>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-[1.05] tracking-tight">
-                  <span className="text-foreground">Structurez votre</span>
-                  <br />
-                  <span className="text-gradient-animated">entreprise</span>
-                  <br />
-                  <span className="text-foreground">avec </span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                  <span className="text-foreground">Consultante </span>
                   <span className="relative inline-block">
                     <span className="text-secondary">Notion</span>
                     <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" className="animate-draw" />
                     </svg>
                   </span>
+                  <span className="text-foreground"> à Lyon</span>
+                  <br />
+                  <span className="text-gradient-animated">Structuration & Pilotage</span>
+                  <br />
+                  <span className="text-foreground">pour PME</span>
                 </h1>
               </div>
 
               {/* Subtitle */}
               <p className="text-xl md:text-2xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto leading-relaxed reveal-up" style={{ animationDelay: '0.3s' }}>
-                Des systèmes sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par les équipes.
+                Christelle Picault crée des systèmes Notion sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par vos équipes.
               </p>
 
               {/* Location */}
               <p className="text-center text-muted-foreground mb-10 reveal-up" style={{ animationDelay: '0.4s' }}>
-                📍 Basée à Lyon – Interventions en France entière
+                📍 Lyon, Auvergne-Rhône-Alpes – Interventions en France entière
               </p>
 
               {/* Tags */}
               <div className="flex flex-wrap justify-center gap-3 reveal-up" style={{ animationDelay: '0.5s' }}>
-                {["Formation Qualiopi", "Systèmes sur mesure", "PME & BTP", "Accompagnement"].map((tag, i) => (
+                {["Formation Qualiopi", "CRM sur mesure", "PME & BTP Lyon", "Accompagnement"].map((tag, i) => (
                   <span 
                     key={i} 
                     className="glass px-5 py-2.5 rounded-full text-sm font-medium text-foreground/80 border border-primary/20 hover:border-secondary/40 transition-colors cursor-default"
@@ -203,7 +321,7 @@ const ConsultanteNotion = () => {
                 <div className="absolute inset-0 bg-secondary/20 rounded-full blur-2xl pulse-glow" />
                 <img 
                   src={notionSpecialistBadge} 
-                  alt="Notion Service Specialist" 
+                  alt="Badge Notion Service Specialist - Christelle Picault consultante Notion certifiée à Lyon pour PME et BTP" 
                   className="h-36 md:h-44 w-auto mx-auto relative z-10"
                 />
               </div>
@@ -216,10 +334,10 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
             <h2 className="section-title text-foreground mb-6">
-                Ce que nous <span className="text-gradient-secondary">construisons ensemble</span>
+                Systèmes Notion sur mesure pour <span className="text-gradient-secondary">PME à Lyon</span>
               </h2>
               <p className="section-subtitle">
-                Des systèmes Notion sur mesure qui s'adaptent à votre métier
+                CRM, pilotage de projets, RH et documentation adaptés à votre métier
               </p>
             </div>
             
@@ -247,10 +365,10 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <h2 className="section-title text-foreground mb-6">
-                Pour <span className="text-gradient-secondary">qui</span> ?
+                Accompagnement Notion pour <span className="text-gradient-secondary">PME et BTP</span>
               </h2>
               <p className="section-subtitle">
-                Un accompagnement pour ceux qui veulent professionnaliser leur organisation
+                Dirigeants et entreprises en croissance en région lyonnaise et France
               </p>
             </div>
             
@@ -363,10 +481,10 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-20">
               <h2 className="section-title text-foreground mb-6">
-                Formation <span className="text-gradient-secondary">Notion</span>
+                Formation <span className="text-gradient-secondary">Notion Qualiopi</span> à Lyon
               </h2>
               <p className="section-subtitle">
-                Orientées usage réel et adoption par les équipes
+                Formations certifiées, finançables OPCO, adaptées aux équipes PME et BTP
               </p>
             </div>
             
@@ -442,6 +560,40 @@ const ConsultanteNotion = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-28 relative">
+          <div className="absolute inset-0 bg-muted/50" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="section-title text-foreground mb-6">
+                  Questions fréquentes sur le <span className="text-gradient-secondary">consulting Notion</span>
+                </h2>
+                <p className="section-subtitle">
+                  Tout ce que vous devez savoir avant de travailler avec Christelle Picault
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <details 
+                    key={index} 
+                    className="glass-premium rounded-2xl group"
+                  >
+                    <summary className="p-6 cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-foreground text-lg hover:text-secondary transition-colors">
+                      {item.question}
+                      <ChevronRight className="h-5 w-5 text-muted-foreground group-open:rotate-90 transition-transform flex-shrink-0" />
+                    </summary>
+                    <div className="px-6 pb-6 text-muted-foreground leading-relaxed">
+                      {item.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
             </div>
           </div>
         </section>
