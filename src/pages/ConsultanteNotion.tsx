@@ -65,7 +65,7 @@ const ConsultanteNotion = () => {
   const faqItems = [
     {
       question: "Combien coûte un accompagnement Notion pour PME ?",
-      answer: "Le tarif dépend de la complexité de votre projet. Un audit initial gratuit de 30 minutes permet d'évaluer vos besoins et d'établir un devis sur mesure."
+      answer: "Tout dépend de la complexité du projet. Nous évoquerons ce point lors du diagnostic initial."
     },
     {
       question: "Combien de temps pour mettre en place un système Notion ?",
