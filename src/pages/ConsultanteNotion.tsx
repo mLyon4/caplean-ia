@@ -276,7 +276,7 @@ const ConsultanteNotion = () => {
 
               {/* Subtitle */}
               <p className="text-xl md:text-2xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto leading-relaxed reveal-up" style={{ animationDelay: '0.3s' }}>
-                Christelle Picault crée des systèmes Notion sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par vos équipes.
+                Des systèmes sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par les équipes.
               </p>
 
               {/* Location */}
