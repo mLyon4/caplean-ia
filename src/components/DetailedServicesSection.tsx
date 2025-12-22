@@ -29,7 +29,7 @@ const DetailedServicesSection = () => {
         "Formation des équipes (Qualiopi)"
       ],
       result: "un système qui vous ressemble, intuitif, opérationnel et adopté.",
-      link: "/consultante-notion-entreprise",
+      link: "/consultante-notion-lyon-structuration-pilotage-pme",
       color: "secondary"
     },
     {
