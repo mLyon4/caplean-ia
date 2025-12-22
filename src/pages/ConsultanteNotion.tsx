@@ -73,7 +73,7 @@ const ConsultanteNotion = () => {
     },
     {
       question: "Intervenez-vous uniquement à Lyon ?",
-      answer: "Basée à Lyon, j'interviens en présentiel en Auvergne-Rhône-Alpes et à distance dans toute la France pour les PME et entreprises BTP."
+      answer: "Basée à Lyon, j'interviens en présentiel sur Lyon et sa région et à distance dans toute la France pour les PME et entreprises de Services et de BTP."
     },
     {
       question: "La formation Notion est-elle finançable par mon OPCO ?",
