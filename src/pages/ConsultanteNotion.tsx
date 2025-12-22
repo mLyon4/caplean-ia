@@ -286,7 +286,7 @@ const ConsultanteNotion = () => {
 
               {/* Tags */}
               <div className="flex flex-wrap justify-center gap-3 reveal-up" style={{ animationDelay: '0.5s' }}>
-                {["Formation Qualiopi", "CRM sur mesure", "PME & BTP Lyon", "Accompagnement"].map((tag, i) => (
+                {["Formation Qualiopi", "Systèmes sur mesure", "PME Services & BTP", "Accompagnement"].map((tag, i) => (
                   <span 
                     key={i} 
                     className="glass px-5 py-2.5 rounded-full text-sm font-medium text-foreground/80 border border-primary/20 hover:border-secondary/40 transition-colors cursor-default"
