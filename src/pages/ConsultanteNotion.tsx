@@ -77,11 +77,11 @@ const ConsultanteNotion = () => {
     },
     {
       question: "La formation Notion est-elle finançable par mon OPCO ?",
-      answer: "Oui, mes formations Notion sont certifiées Qualiopi et donc éligibles au financement OPCO. Je vous accompagne dans les démarches administratives."
+      answer: "Oui, mes formations Notion sont certifiées Qualiopi et donc éligibles au financement OPCO."
     },
     {
       question: "Notion est-il adapté aux entreprises du BTP ?",
-      answer: "Absolument. Je crée des systèmes Notion spécialisés BTP : suivi de chantiers, gestion des équipes terrain, documentation technique, planning des interventions."
+      answer: "Absolument. Je crée des systèmes Notion spécialisés BTP : SIRH, demandes de congés, gestion des équipes terrain, des services généraux, documentation technique."
     }
   ];
 
