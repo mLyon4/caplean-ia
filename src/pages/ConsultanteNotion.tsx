@@ -260,18 +260,17 @@ const ConsultanteNotion = () => {
               {/* Title - H1 SEO optimized */}
               <div className="text-center mb-8 reveal-up" style={{ animationDelay: '0.2s' }}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
-                  <span className="text-foreground">Consultante </span>
+                  <span className="text-foreground">Structurez votre</span>
+                  <br />
+                  <span className="text-gradient-animated">entreprise</span>
+                  <br />
+                  <span className="text-foreground">avec </span>
                   <span className="relative inline-block">
                     <span className="text-secondary">Notion</span>
                     <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" className="animate-draw" />
                     </svg>
                   </span>
-                  <span className="text-foreground"> à Lyon</span>
-                  <br />
-                  <span className="text-gradient-animated">Structuration & Pilotage</span>
-                  <br />
-                  <span className="text-foreground">pour PME</span>
                 </h1>
               </div>
 
