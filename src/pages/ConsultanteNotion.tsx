@@ -333,8 +333,7 @@ const ConsultanteNotion = () => {
                       <Settings className="h-5 w-5 text-secondary" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Notion au service des process métiers</p>
-                      <p className="text-sm text-muted-foreground">(pas l'inverse)</p>
+                      <p className="font-semibold text-foreground">Notion au service des process métiers <span className="text-muted-foreground font-normal">(pas l'inverse)</span></p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
