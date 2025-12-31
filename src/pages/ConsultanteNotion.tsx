@@ -309,8 +309,75 @@ const ConsultanteNotion = () => {
           </div>
         </section>
 
-        {/* Notion Badge Section */}
+        {/* Value Proposition Section */}
         <section className="py-20 relative">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="glass-premium rounded-[2.5rem] p-10 md:p-14 max-w-4xl mx-auto">
+              <div className="text-center mb-10">
+                <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-6">
+                  J'aide les dirigeants d'entreprise à <span className="text-secondary font-semibold">reprendre le contrôle de leur organisation</span> grâce à Notion.
+                </p>
+                <p className="text-lg text-muted-foreground">
+                  Pas pour "faire joli", mais pour <strong className="text-foreground">piloter</strong>, <strong className="text-foreground">simplifier</strong> et <strong className="text-foreground">gagner du temps</strong>.
+                </p>
+              </div>
+
+              <div className="border-t border-border/30 pt-10">
+                <h2 className="text-xl font-bold text-foreground mb-8 flex items-center gap-3">
+                  <span className="text-2xl">🎯</span>
+                  Ce qui me distingue
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                      <Settings className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">Notion au service des process métiers</p>
+                      <p className="text-sm text-muted-foreground">(pas l'inverse)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                      <Lightbulb className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">Approche structuration + amélioration continue</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                      <Users className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">Une vraie capacité à faire adopter l'outil</p>
+                      <p className="text-sm text-muted-foreground">par les équipes</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                      <HardHat className="h-5 w-5 text-secondary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">Expertise terrain</p>
+                      <p className="text-sm text-muted-foreground">(PME, BTP, services)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 pt-8 border-t border-border/30 text-center">
+                <p className="text-lg font-medium text-foreground flex items-center justify-center gap-2">
+                  <span className="text-xl">👉</span>
+                  Résultat : un espace Notion <span className="text-secondary">clair</span>, <span className="text-secondary">utile</span>, <span className="text-secondary">vivant</span>… et <strong>utilisé</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Notion Badge Section */}
+        <section className="py-16 relative">
           <div className="container mx-auto px-6 relative z-10">
             <div className="glass-premium rounded-[2.5rem] p-12 max-w-2xl mx-auto text-center">
               <p className="text-2xl font-semibold text-foreground mb-8">
