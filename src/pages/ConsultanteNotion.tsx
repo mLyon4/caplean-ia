@@ -349,8 +349,7 @@ const ConsultanteNotion = () => {
                       <Users className="h-5 w-5 text-secondary" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Une vraie capacité à faire adopter l'outil</p>
-                      <p className="text-sm text-muted-foreground">par les équipes</p>
+                      <p className="font-semibold text-foreground">Une vraie capacité à faire adopter l'outil <span className="text-muted-foreground font-normal">par les équipes</span></p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
