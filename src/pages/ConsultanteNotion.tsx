@@ -253,16 +253,8 @@ const ConsultanteNotion = () => {
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-5xl mx-auto">
-              {/* Badge */}
-              <div className="flex justify-center mb-8 reveal-up" style={{ animationDelay: '0.1s' }}>
-                <div className="glass-premium px-6 py-3 rounded-full flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                  <span className="text-sm font-medium text-foreground/80">Christelle Picault – Notion Service Specialist</span>
-                </div>
-              </div>
-
               {/* Main headline - H1 SEO */}
-              <div className="text-center mb-10 reveal-up" style={{ animationDelay: '0.2s' }}>
+              <div className="text-center mb-10 reveal-up" style={{ animationDelay: '0.1s' }}>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-8">
                   J'aide les dirigeants à{" "}
                   <span className="relative inline-block">
@@ -289,9 +281,21 @@ const ConsultanteNotion = () => {
               </div>
 
               {/* Location */}
-              <p className="text-center text-muted-foreground mb-10 reveal-up" style={{ animationDelay: '0.3s' }}>
+              <p className="text-center text-muted-foreground mb-6 reveal-up" style={{ animationDelay: '0.2s' }}>
                 📍 Lyon, Auvergne-Rhône-Alpes – Interventions en France entière
               </p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap justify-center gap-3 mb-10 reveal-up" style={{ animationDelay: '0.25s' }}>
+                {["Formation Qualiopi", "Systèmes sur mesure", "PME Services & BTP", "Accompagnement"].map((tag, i) => (
+                  <span 
+                    key={i} 
+                    className="glass px-5 py-2.5 rounded-full text-sm font-medium text-foreground/80 border border-primary/20 hover:border-secondary/40 transition-colors cursor-default"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
 
               {/* Distinguishing features */}
               <div className="mb-12">
