@@ -310,65 +310,94 @@ const ConsultanteNotion = () => {
         </section>
 
         {/* Value Proposition Section */}
-        <section className="py-20 relative">
+        <section className="py-24 relative overflow-hidden">
+          {/* Background decorative elements */}
+          <div className="absolute top-0 left-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none" />
+          
           <div className="container mx-auto px-6 relative z-10">
-            <div className="glass-premium rounded-[2.5rem] p-10 md:p-14 max-w-4xl mx-auto">
-              <div className="text-center mb-10">
-                <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-6">
-                  J'aide les dirigeants d'entreprise à <span className="text-secondary font-semibold">reprendre le contrôle de leur organisation</span> grâce à Notion.
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  Pas pour "faire joli", mais pour <strong className="text-foreground">piloter</strong>, <strong className="text-foreground">simplifier</strong> et <strong className="text-foreground">gagner du temps</strong>.
+            <div className="max-w-5xl mx-auto">
+              {/* Main headline */}
+              <div className="text-center mb-16 reveal-up">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-8">
+                  J'aide les dirigeants à{" "}
+                  <span className="relative inline-block">
+                    <span className="text-gradient-secondary">reprendre le contrôle</span>
+                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
+                      <path d="M2 6C50 2 150 2 198 6" stroke="hsl(var(--secondary))" strokeWidth="3" strokeLinecap="round" opacity="0.4" />
+                    </svg>
+                  </span>
+                  <br className="hidden md:block" />
+                  de leur organisation grâce à Notion.
+                </h2>
+                <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                  Pas pour "faire joli", mais pour{" "}
+                  <span className="text-foreground font-semibold">piloter</span>,{" "}
+                  <span className="text-foreground font-semibold">simplifier</span> et{" "}
+                  <span className="text-foreground font-semibold">gagner du temps</span>.
                 </p>
               </div>
 
-              <div className="border-t border-border/30 pt-10">
-                <h2 className="text-xl font-bold text-foreground mb-8 flex items-center gap-3">
+              {/* Distinguishing features */}
+              <div className="mb-16">
+                <div className="flex items-center justify-center gap-3 mb-10 reveal-up" style={{ animationDelay: '0.1s' }}>
+                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary/50" />
                   <span className="text-2xl">🎯</span>
-                  Ce qui me distingue
-                </h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
-                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                      <Settings className="h-5 w-5 text-secondary" />
+                  <h3 className="text-xl font-bold text-foreground">Ce qui me distingue</h3>
+                  <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary/50" />
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-5">
+                  {[
+                    { icon: Settings, text: "Notion au service des process métiers", subtext: "(pas l'inverse)" },
+                    { icon: Lightbulb, text: "Approche structuration + amélioration continue", subtext: null },
+                    { icon: Users, text: "Une vraie capacité à faire adopter l'outil", subtext: "par les équipes" },
+                    { icon: HardHat, text: "Expertise terrain", subtext: "(PME, BTP, services)" },
+                  ].map((item, index) => (
+                    <div 
+                      key={index}
+                      className="group relative glass rounded-2xl p-6 border border-border/30 hover:border-secondary/40 transition-all duration-500 reveal-up"
+                      style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+                    >
+                      {/* Hover glow effect */}
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      
+                      <div className="relative flex items-center gap-5">
+                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-secondary/10">
+                          <item.icon className="h-7 w-7 text-secondary" />
+                        </div>
+                        <p className="font-semibold text-foreground text-lg">
+                          {item.text}
+                          {item.subtext && (
+                            <span className="text-muted-foreground font-normal ml-1">{item.subtext}</span>
+                          )}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Notion au service des process métiers <span className="text-muted-foreground font-normal">(pas l'inverse)</span></p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
-                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                      <Lightbulb className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Approche structuration + amélioration continue</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
-                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                      <Users className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Une vraie capacité à faire adopter l'outil <span className="text-muted-foreground font-normal">par les équipes</span></p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-background/50 hover:bg-background/70 transition-colors">
-                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
-                      <HardHat className="h-5 w-5 text-secondary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Expertise terrain</p>
-                      <p className="text-sm text-muted-foreground">(PME, BTP, services)</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
-              <div className="mt-10 pt-8 border-t border-border/30 text-center">
-                <p className="text-lg font-medium text-foreground flex items-center justify-center gap-2">
-                  <span className="text-xl">👉</span>
-                  Résultat : un espace Notion <span className="text-secondary">clair</span>, <span className="text-secondary">utile</span>, <span className="text-secondary">vivant</span>… et <strong>utilisé</strong>.
-                </p>
+              {/* Result banner */}
+              <div className="reveal-up" style={{ animationDelay: '0.6s' }}>
+                <div className="relative glass-premium rounded-2xl p-8 text-center overflow-hidden">
+                  {/* Animated gradient border */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-secondary/20 via-primary/20 to-secondary/20 opacity-50" />
+                  <div className="absolute inset-[1px] rounded-2xl bg-background/80 backdrop-blur-xl" />
+                  
+                  <div className="relative flex flex-col md:flex-row items-center justify-center gap-4">
+                    <span className="text-3xl animate-bounce">👉</span>
+                    <p className="text-xl md:text-2xl font-medium text-foreground">
+                      Résultat : un espace Notion{" "}
+                      <span className="inline-flex items-center gap-2">
+                        <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold">clair</span>
+                        <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold">utile</span>
+                        <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold">vivant</span>
+                      </span>
+                      {" "}… et <strong className="text-secondary">utilisé</strong>.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
