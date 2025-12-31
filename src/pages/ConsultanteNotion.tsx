@@ -245,8 +245,12 @@ const ConsultanteNotion = () => {
           </ol>
         </nav>
 
-        {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center pt-8 pb-24">
+        {/* Hero Section - Value Proposition */}
+        <section className="relative min-h-[85vh] flex items-center py-16 overflow-hidden">
+          {/* Background decorative elements */}
+          <div className="absolute top-20 left-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
+          <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none" />
+          
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-5xl mx-auto">
               {/* Badge */}
@@ -256,70 +260,10 @@ const ConsultanteNotion = () => {
                   <span className="text-sm font-medium text-foreground/80">Christelle Picault – Notion Service Specialist</span>
                 </div>
               </div>
-              
-              {/* Title - H1 SEO optimized */}
-              <div className="text-center mb-8 reveal-up" style={{ animationDelay: '0.2s' }}>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
-                  <span className="text-foreground">Structurez votre</span>
-                  <br />
-                  <span className="text-gradient-animated">entreprise</span>
-                  <br />
-                  <span className="text-foreground">avec </span>
-                  <span className="relative inline-block">
-                    <span className="text-secondary">Notion</span>
-                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                      <path d="M2 8C50 2 150 2 198 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" className="animate-draw" />
-                    </svg>
-                  </span>
-                </h1>
-              </div>
 
-              {/* Subtitle */}
-              <p className="text-xl md:text-2xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto leading-relaxed reveal-up" style={{ animationDelay: '0.3s' }}>
-                Des systèmes sur mesure pour centraliser l'information, piloter l'activité et faciliter l'adoption par les équipes.
-              </p>
-
-              {/* Location */}
-              <p className="text-center text-muted-foreground mb-10 reveal-up" style={{ animationDelay: '0.4s' }}>
-                📍 Lyon, Auvergne-Rhône-Alpes – Interventions en France entière
-              </p>
-
-              {/* Tags */}
-              <div className="flex flex-wrap justify-center gap-3 reveal-up" style={{ animationDelay: '0.5s' }}>
-                {["Formation Qualiopi", "Systèmes sur mesure", "PME Services & BTP", "Accompagnement"].map((tag, i) => (
-                  <span 
-                    key={i} 
-                    className="glass px-5 py-2.5 rounded-full text-sm font-medium text-foreground/80 border border-primary/20 hover:border-secondary/40 transition-colors cursor-default"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-wrap justify-center gap-4 mt-12 reveal-up" style={{ animationDelay: '0.6s' }}>
-                <Button asChild className="btn-premium btn-shine text-lg px-10 py-6">
-                  <a href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    Appel découverte gratuit
-                    <ArrowRight className="h-5 w-5" />
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Value Proposition Section */}
-        <section className="py-24 relative overflow-hidden">
-          {/* Background decorative elements */}
-          <div className="absolute top-0 left-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none" />
-          
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-5xl mx-auto">
-              {/* Main headline */}
-              <div className="text-center mb-16 reveal-up">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-8">
+              {/* Main headline - H1 SEO */}
+              <div className="text-center mb-10 reveal-up" style={{ animationDelay: '0.2s' }}>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-8">
                   J'aide les dirigeants à{" "}
                   <span className="relative inline-block">
                     <span className="text-gradient-secondary">reprendre le contrôle</span>
@@ -328,8 +272,14 @@ const ConsultanteNotion = () => {
                     </svg>
                   </span>
                   <br className="hidden md:block" />
-                  de leur organisation grâce à Notion.
-                </h2>
+                  de leur organisation grâce à{" "}
+                  <span className="relative inline-block">
+                    <span className="text-secondary">Notion</span>
+                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
+                      <path d="M2 8C50 2 150 2 198 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" className="animate-draw" />
+                    </svg>
+                  </span>
+                </h1>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                   Pas pour "faire joli", mais pour{" "}
                   <span className="text-foreground font-semibold">piloter</span>,{" "}
@@ -338,12 +288,17 @@ const ConsultanteNotion = () => {
                 </p>
               </div>
 
+              {/* Location */}
+              <p className="text-center text-muted-foreground mb-10 reveal-up" style={{ animationDelay: '0.3s' }}>
+                📍 Lyon, Auvergne-Rhône-Alpes – Interventions en France entière
+              </p>
+
               {/* Distinguishing features */}
-              <div className="mb-16">
-                <div className="flex items-center justify-center gap-3 mb-10 reveal-up" style={{ animationDelay: '0.1s' }}>
+              <div className="mb-12">
+                <div className="flex items-center justify-center gap-3 mb-8 reveal-up" style={{ animationDelay: '0.35s' }}>
                   <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary/50" />
                   <span className="text-2xl">🎯</span>
-                  <h3 className="text-xl font-bold text-foreground">Ce qui me distingue</h3>
+                  <h2 className="text-xl font-bold text-foreground">Ce qui me distingue</h2>
                   <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary/50" />
                 </div>
                 
@@ -357,9 +312,8 @@ const ConsultanteNotion = () => {
                     <div 
                       key={index}
                       className="group relative glass rounded-2xl p-6 border border-border/30 hover:border-secondary/40 transition-all duration-500 reveal-up"
-                      style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+                      style={{ animationDelay: `${0.4 + index * 0.1}s` }}
                     >
-                      {/* Hover glow effect */}
                       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       
                       <div className="relative flex items-center gap-5">
@@ -379,9 +333,8 @@ const ConsultanteNotion = () => {
               </div>
 
               {/* Result banner */}
-              <div className="reveal-up" style={{ animationDelay: '0.6s' }}>
+              <div className="reveal-up mb-10" style={{ animationDelay: '0.8s' }}>
                 <div className="relative glass-premium rounded-2xl p-8 text-center overflow-hidden">
-                  {/* Animated gradient border */}
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-secondary/20 via-primary/20 to-secondary/20 opacity-50" />
                   <div className="absolute inset-[1px] rounded-2xl bg-background/80 backdrop-blur-xl" />
                   
@@ -389,7 +342,7 @@ const ConsultanteNotion = () => {
                     <span className="text-3xl animate-bounce">👉</span>
                     <p className="text-xl md:text-2xl font-medium text-foreground">
                       Résultat : un espace Notion{" "}
-                      <span className="inline-flex items-center gap-2">
+                      <span className="inline-flex items-center gap-2 flex-wrap justify-center">
                         <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold">clair</span>
                         <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold">utile</span>
                         <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold">vivant</span>
@@ -398,6 +351,16 @@ const ConsultanteNotion = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="flex justify-center reveal-up" style={{ animationDelay: '0.9s' }}>
+                <Button asChild className="btn-premium btn-shine text-lg px-10 py-6">
+                  <a href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    Appel découverte gratuit
+                    <ArrowRight className="h-5 w-5" />
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
