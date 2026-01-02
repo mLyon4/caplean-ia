@@ -63,7 +63,7 @@ const DetailedServicesSection = () => {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <div className="inline-flex items-center gap-2 glass px-5 py-2.5 rounded-full mb-8">
-            <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+            <div className="w-2 h-2 rounded-full bg-secondary" />
             <span className="text-sm font-medium text-foreground/80">Nos expertises</span>
           </div>
           
