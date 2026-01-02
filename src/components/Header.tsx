@@ -103,7 +103,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <Button 
               asChild 
-              className="hidden md:inline-flex btn-premium btn-shine"
+              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-white btn-shine rounded-full px-6 py-2"
             >
               <a 
                 href="#contacts" 
@@ -154,7 +154,7 @@ const Header = () => {
                     → Consultante Notion
                   </Link>
                   <Button 
-                    className="btn-premium btn-shine w-full mt-4" 
+                    className="bg-secondary hover:bg-secondary-dark text-white btn-shine w-full mt-4 rounded-full" 
                     onClick={() => scrollToSection('contacts')}
                   >
                     <Sparkles className="h-4 w-4 mr-2" />

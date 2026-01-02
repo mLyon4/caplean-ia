@@ -223,7 +223,7 @@ const ConsultanteNotion = () => {
               </Link>
               <Button 
                 asChild 
-                className="btn-premium btn-shine"
+                className="bg-secondary hover:bg-secondary-dark text-white btn-shine rounded-full px-6 py-2"
               >
                 <Link to="/#contacts" className="flex items-center gap-2">
                   <Sparkles className="h-4 w-4" />
@@ -680,7 +680,7 @@ const ConsultanteNotion = () => {
               
               <Button 
                 asChild 
-                className="btn-premium btn-shine text-base md:text-xl px-8 md:px-12 py-5 md:py-7 w-full sm:w-auto"
+                className="bg-secondary hover:bg-secondary-dark text-white btn-shine text-base md:text-xl px-8 md:px-12 py-5 md:py-7 w-full sm:w-auto rounded-full shadow-md"
               >
                 <a 
                   href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" 

@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-4 reveal-up" style={{ animationDelay: '0.5s' }}>
             <Button 
               asChild 
-              className="btn-premium btn-shine text-lg px-10 py-6"
+              className="bg-secondary hover:bg-secondary-dark text-white btn-shine text-lg px-10 py-6 rounded-full shadow-md"
             >
               <a href="#contacts" className="flex items-center gap-2">
                 <Sparkles className="h-5 w-5" />
