@@ -206,10 +206,10 @@ const ConsultanteNotion = () => {
         <div className="fixed inset-0 bg-mesh pointer-events-none" />
         <div className="fixed inset-0 bg-noise pointer-events-none" />
         
-        {/* Floating decorative orbs */}
-        <div className="fixed top-20 left-[10%] w-96 h-96 bg-secondary/20 rounded-full blur-[100px] float-slow pointer-events-none" />
-        <div className="fixed top-[40%] right-[5%] w-80 h-80 bg-primary/15 rounded-full blur-[80px] float-medium pointer-events-none" />
-        <div className="fixed bottom-[20%] left-[20%] w-64 h-64 bg-secondary/10 rounded-full blur-[60px] float-fast pointer-events-none" />
+        {/* Subtle decorative backgrounds */}
+        <div className="fixed top-20 left-[10%] w-96 h-96 bg-muted/50 rounded-full blur-[100px] pointer-events-none" />
+        <div className="fixed top-[40%] right-[5%] w-80 h-80 bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
+        <div className="fixed bottom-[20%] left-[20%] w-64 h-64 bg-muted/40 rounded-full blur-[60px] pointer-events-none" />
 
         {/* Header */}
         <header className="w-full glass-premium sticky top-0 z-50 border-b border-border/20">
@@ -380,7 +380,7 @@ const ConsultanteNotion = () => {
                 Une expertise <span className="text-secondary">reconnue par Notion</span>
               </p>
               <div className="relative inline-block">
-                <div className="absolute inset-0 bg-secondary/20 rounded-full blur-2xl pulse-glow" />
+                <div className="absolute inset-0 bg-muted/60 rounded-full blur-2xl" />
                 <img 
                   src={notionSpecialistBadge} 
                   alt="Badge Notion Service Specialist - Christelle Picault consultante Notion certifiée à Lyon pour PME et BTP" 

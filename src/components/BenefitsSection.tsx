@@ -43,9 +43,9 @@ const BenefitsSection = () => {
   return (
     <section className="py-28 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-background to-primary/5" />
-      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-[100px] float-slow" />
-      <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px] float-medium" />
+      <div className="absolute inset-0 bg-gradient-to-br from-muted/30 via-background to-muted/20" />
+      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-muted/40 rounded-full blur-[100px]" />
+      <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[80px]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Benefits */}

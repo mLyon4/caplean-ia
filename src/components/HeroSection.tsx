@@ -9,19 +9,19 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-mesh pointer-events-none" />
       <div className="absolute inset-0 bg-noise pointer-events-none" />
       
-      {/* Floating decorative orbs */}
-      <div className="absolute top-20 left-[5%] w-80 h-80 bg-secondary/20 rounded-full blur-[100px] float-slow pointer-events-none" />
-      <div className="absolute top-[50%] right-[10%] w-96 h-96 bg-primary/15 rounded-full blur-[80px] float-medium pointer-events-none" />
-      <div className="absolute bottom-[10%] left-[30%] w-64 h-64 bg-secondary/10 rounded-full blur-[60px] float-fast pointer-events-none" />
+      {/* Subtle decorative backgrounds */}
+      <div className="absolute top-20 left-[5%] w-80 h-80 bg-muted/50 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-[50%] right-[10%] w-96 h-96 bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute bottom-[10%] left-[30%] w-64 h-64 bg-muted/40 rounded-full blur-[60px] pointer-events-none" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
 
           {/* Main Title */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.05] tracking-tight reveal-up" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.05] tracking-tight">
             <span className="text-foreground">Conseil et</span>
             <br />
-            <span className="text-gradient-animated">accompagnement</span>
+            <span className="text-primary">accompagnement</span>
             <br />
             <span className="text-foreground">en transformation </span>
             <span className="relative inline-block">

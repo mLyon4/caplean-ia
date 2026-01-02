@@ -102,24 +102,14 @@ export default {
 				'fade-in': {
 					from: { opacity: '0' },
 					to: { opacity: '1' }
-				},
-				'scale-in': {
-					from: { opacity: '0', transform: 'scale(0.95)' },
-					to: { opacity: '1', transform: 'scale(1)' }
-				},
-				'float': {
-					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'scroll-right': 'scroll-right 30s linear infinite',
-				'fade-up': 'fade-up 0.6s ease-out forwards',
-				'fade-in': 'fade-in 0.4s ease-out forwards',
-				'scale-in': 'scale-in 0.3s ease-out forwards',
-				'float': 'float 6s ease-in-out infinite'
+				'fade-up': 'fade-up 0.5s ease-out forwards',
+				'fade-in': 'fade-in 0.3s ease-out forwards'
 			}
 		}
 	},
