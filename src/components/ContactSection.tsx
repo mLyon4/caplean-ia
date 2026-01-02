@@ -78,7 +78,7 @@ const ContactSection = () => {
                   </p>
                   
                   <Button 
-                    className="w-full btn-premium btn-shine py-6"
+                    className="w-full bg-secondary hover:bg-secondary-dark text-white btn-shine py-6 rounded-full"
                     onClick={() => window.open(method.link, '_blank')}
                   >
                     {method.linkText}
