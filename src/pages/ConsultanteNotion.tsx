@@ -121,7 +121,7 @@ const ConsultanteNotion = () => {
         "@id": "https://christellepicault.fr/#business",
         "name": "Christelle Picault - Consultante Notion",
         "description": "Consultante Notion certifiée à Lyon. Structuration et pilotage d'entreprise pour PME et BTP. Formation Qualiopi, CRM sur mesure, automatisations.",
-        "url": "https://christellepicault.fr/consultante-notion-lyon-structuration-pilotage-pme",
+        "url": "https://christellepicault.fr/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme",
         "telephone": "+33",
         "address": {
           "@type": "PostalAddress",
@@ -175,13 +175,13 @@ const ConsultanteNotion = () => {
       <Helmet>
         <title>Consultante Notion Lyon | Structuration & Pilotage PME - Christelle Picault</title>
         <meta name="description" content="Christelle Picault, consultante Notion certifiée à Lyon. Structuration sur mesure pour PME et BTP : CRM, pilotage projets, formation Qualiopi. Appel découverte gratuit." />
-        <link rel="canonical" href="https://christellepicault.fr/consultante-notion-lyon-structuration-pilotage-pme" />
+        <link rel="canonical" href="https://christellepicault.fr/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Consultante Notion Lyon | Structuration & Pilotage PME - Christelle Picault" />
         <meta property="og:description" content="Christelle Picault, consultante Notion certifiée à Lyon. Structuration sur mesure pour PME et BTP : CRM, pilotage projets, formation Qualiopi." />
-        <meta property="og:url" content="https://christellepicault.fr/consultante-notion-lyon-structuration-pilotage-pme" />
+        <meta property="og:url" content="https://christellepicault.fr/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" />
         <meta property="og:locale" content="fr_FR" />
         
         {/* Twitter */}
