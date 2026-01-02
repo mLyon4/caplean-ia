@@ -21,7 +21,7 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/consultante-notion-lyon-structuration-pilotage-pme" element={<ConsultanteNotion />} />
+              <Route path="/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" element={<ConsultanteNotion />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
