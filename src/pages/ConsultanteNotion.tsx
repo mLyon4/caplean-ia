@@ -28,6 +28,7 @@ import {
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import notionSpecialistBadge from "@/assets/logos/notion-specialist-badge.png";
+import { trackCTAClick } from "@/lib/analytics";
 
 const ConsultanteNotion = () => {
   useEffect(() => {
@@ -225,7 +226,11 @@ const ConsultanteNotion = () => {
                 asChild 
                 className="bg-secondary hover:bg-secondary-dark text-white btn-shine rounded-full px-6 py-2"
               >
-                <Link to="/#contacts" className="flex items-center gap-2">
+                <Link 
+                  to="/#contacts" 
+                  className="flex items-center gap-2"
+                  onClick={() => trackCTAClick('Prendre rendez-vous', 'notion_header', '/#contacts')}
+                >
                   <Sparkles className="h-4 w-4" />
                   Prendre rendez-vous
                 </Link>
@@ -362,7 +367,13 @@ const ConsultanteNotion = () => {
               {/* CTA Button */}
               <div className="flex justify-center reveal-up" style={{ animationDelay: '0.9s' }}>
                 <Button asChild className="btn-premium btn-shine text-base md:text-lg px-6 md:px-10 py-5 md:py-6 w-full sm:w-auto">
-                  <a href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <a 
+                    href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center justify-center gap-2"
+                    onClick={() => trackCTAClick('Appel découverte gratuit', 'notion_hero', 'calendly')}
+                  >
                     Appel découverte gratuit
                     <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
                   </a>
@@ -687,6 +698,7 @@ const ConsultanteNotion = () => {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center justify-center gap-2 md:gap-3"
+                  onClick={() => trackCTAClick('Réserver mon appel découverte', 'notion_footer_cta', 'calendly')}
                 >
                   Réserver mon appel découverte
                   <ArrowRight className="h-5 w-5 md:h-6 md:w-6" />
