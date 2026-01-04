@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "@/components/ThemeToggle";
+import { trackCTAClick } from "@/lib/analytics";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -109,6 +110,7 @@ const Header = () => {
                 href="#contacts" 
                 onClick={e => {
                   e.preventDefault();
+                  trackCTAClick('Rendez-vous', 'header_desktop', '#contacts');
                   scrollToSection('contacts');
                 }}
                 className="flex items-center gap-2"
@@ -155,7 +157,10 @@ const Header = () => {
                   </Link>
                   <Button 
                     className="bg-secondary hover:bg-secondary-dark text-white btn-shine w-full mt-4 rounded-full" 
-                    onClick={() => scrollToSection('contacts')}
+                    onClick={() => {
+                      trackCTAClick('Prendre rendez-vous', 'header_mobile', '#contacts');
+                      scrollToSection('contacts');
+                    }}
                   >
                     <Sparkles className="h-4 w-4 mr-2" />
                     Prendre rendez-vous
