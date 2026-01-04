@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, FileText, Mail, ArrowRight, Sparkles } from "lucide-react";
-
+import { trackContactMethod } from "@/lib/analytics";
 const ContactSection = () => {
   const contactMethods = [
     {
@@ -79,7 +79,10 @@ const ContactSection = () => {
                   
                   <Button 
                     className="w-full bg-secondary hover:bg-secondary-dark text-white btn-shine py-6 rounded-full"
-                    onClick={() => window.open(method.link, '_blank')}
+                    onClick={() => {
+                      trackContactMethod(method.title);
+                      window.open(method.link, '_blank');
+                    }}
                   >
                     {method.linkText}
                     <ArrowRight className="ml-2 h-4 w-4" />

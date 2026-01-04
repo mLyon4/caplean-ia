@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Play } from "lucide-react";
 import notionBadge from "@/assets/logos/notion-specialist-badge.png";
-
+import { trackCTAClick } from "@/lib/analytics";
 const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background pt-16 md:pt-24">
@@ -51,7 +51,11 @@ const HeroSection = () => {
               asChild 
               className="bg-secondary hover:bg-secondary-dark text-white btn-shine text-lg px-10 py-6 rounded-full shadow-md"
             >
-              <a href="#contacts" className="flex items-center gap-2">
+              <a 
+                href="#contacts" 
+                className="flex items-center gap-2"
+                onClick={() => trackCTAClick('Prendre rendez-vous', 'hero', '#contacts')}
+              >
                 <Sparkles className="h-5 w-5" />
                 Prendre rendez-vous
                 <ArrowRight className="w-5 h-5" />
@@ -63,7 +67,11 @@ const HeroSection = () => {
               variant="outline"
               className="glass text-lg px-8 py-6 rounded-full border-2 border-primary/30 text-foreground hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
             >
-              <a href="#services" className="flex items-center gap-2">
+              <a 
+                href="#services" 
+                className="flex items-center gap-2"
+                onClick={() => trackCTAClick('Découvrir nos services', 'hero', '#services')}
+              >
                 <Play className="h-4 w-4" />
                 Découvrir nos services
               </a>
