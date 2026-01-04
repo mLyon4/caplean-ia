@@ -8,7 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ConsultanteNotion from "./pages/ConsultanteNotion";
-
+import AnalyticsDashboard from "./pages/AnalyticsDashboard";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -22,6 +22,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" element={<ConsultanteNotion />} />
+              <Route path="/analytics-debug" element={<AnalyticsDashboard />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
