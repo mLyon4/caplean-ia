@@ -33,7 +33,7 @@ const AboutSection = () => {
     },
     {
       name: "Osez l'IA",
-      title: "Programme IA",
+      title: "Ambassadrice",
       description: "Accompagnement IA pour les entreprises",
       logo: osezIaLogo,
     }
