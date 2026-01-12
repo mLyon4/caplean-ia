@@ -276,7 +276,7 @@ const ConsultanteNotion = () => {
 
                   {/* Key points - Horizontal on desktop */}
                   <div className="flex flex-wrap gap-3">
-                    {["Formations Qualiopi", "Création de systèmes sur mesure", "Sur mesure"].map((tag, i) => (
+                    {["Formations Qualiopi", "Création de systèmes sur mesure"].map((tag, i) => (
                       <span 
                         key={i} 
                         className="px-4 py-2 rounded-full text-sm font-medium bg-primary/5 text-primary border border-primary/10"
