@@ -36,7 +36,7 @@ const Header = () => {
             <img 
               src={capleanLogo} 
               alt="CapLean" 
-              className="h-10 w-auto"
+              className="h-[43px] w-[164px]"
             />
           </Link>
           
