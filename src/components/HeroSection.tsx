@@ -74,17 +74,17 @@ const HeroSection = () => {
           </div>
 
           {/* Certification Logos */}
-          <div className="flex items-center justify-center gap-6 reveal-up" style={{ animationDelay: '0.5s' }}>
+          <div className="flex items-center justify-center gap-8 reveal-up" style={{ animationDelay: '0.5s' }}>
             <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="group">
-              <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-2xl p-3 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
                 <img src={notionLogo} alt="Notion Certified" className="w-full h-full object-contain" />
               </div>
             </a>
-            <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md border border-border/30 hover:scale-110 transition-transform duration-300">
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-2xl p-3 shadow-md border border-border/30 hover:scale-110 transition-transform duration-300">
               <img src={osezIaLogo} alt="Osez l'IA" className="w-full h-full object-contain" />
             </div>
             <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="group">
-              <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-2xl p-3 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
                 <img src={franceNumLogo} alt="France Num Activatrice" className="w-full h-full object-contain" />
               </div>
             </a>
