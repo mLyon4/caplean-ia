@@ -6,23 +6,17 @@ import franceNumLogo from "@/assets/logos/france-num-logo.jpg";
 const AboutSection = () => {
   const certifications = [
     {
-      name: "PMP",
-      title: "Project Management Professional",
-      description: "Gestion de projets certifiée",
-      icon: Award,
-    },
-    {
-      name: "Lean Six Sigma",
-      title: "Green Belt",
-      description: "Optimisation des processus",
-      icon: Zap,
-    },
-    {
       name: "Notion Certified",
       title: "Service Specialist",
       description: "Expert Notion certifié",
       logo: notionLogo,
       link: "https://www.notion.so/@christellepicault",
+    },
+    {
+      name: "Osez l'IA",
+      title: "Ambassadrice",
+      description: "Accompagnement IA pour les entreprises",
+      logo: osezIaLogo,
     },
     {
       name: "France Num",
@@ -32,11 +26,17 @@ const AboutSection = () => {
       link: "https://www.francenum.gouv.fr/activateurs/christelle-picault",
     },
     {
-      name: "Osez l'IA",
-      title: "Ambassadrice",
-      description: "Accompagnement IA pour les entreprises",
-      logo: osezIaLogo,
-    }
+      name: "Lean Six Sigma",
+      title: "Green Belt",
+      description: "Optimisation des processus",
+      icon: Zap,
+    },
+    {
+      name: "PMP",
+      title: "Project Management Professional",
+      description: "Gestion de projets certifiée",
+      icon: Award,
+    },
   ];
 
   const expertises = [
