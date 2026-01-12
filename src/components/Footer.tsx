@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Quick Info */}
           <div className="text-center">
             <p className="text-background/70 font-medium mb-2">
-              Transformation Digitale & Lean Management
+              Transformation Digitale, Systèmes Notion sur mesure, automatisations IA
             </p>
             <p className="text-sm text-background/50">
               Lyon • France entière
