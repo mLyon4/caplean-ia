@@ -243,25 +243,15 @@ const ConsultanteNotion = () => {
         </nav>
 
         {/* Hero Section - Clean & Professional */}
-        <section className="relative py-16 md:py-24 lg:py-32">
+        <section className="relative py-8 md:py-16 lg:py-20">
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-6xl mx-auto">
               
               {/* Two-column layout on desktop */}
-              <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                 
                 {/* Left column - Main content */}
-                <div className="lg:col-span-7 space-y-8">
-                  
-                  {/* Badge certification - Subtle */}
-                  <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-muted/60 border border-border/50">
-                    <img 
-                      src={notionSpecialistBadge} 
-                      alt="Notion Service Specialist" 
-                      className="h-12 w-auto"
-                    />
-                    <span className="text-base font-medium text-foreground">Notion Service Specialist</span>
-                  </div>
+                <div className="lg:col-span-7 space-y-6">
 
                   {/* H1 - Clean typography */}
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
@@ -308,6 +298,15 @@ const ConsultanteNotion = () => {
 
                 {/* Right column - Value proposition cards */}
                 <div className="lg:col-span-5 space-y-4">
+                  
+                  {/* Notion Badge - Positioned strategically at top */}
+                  <div className="flex justify-center lg:justify-end mb-2">
+                    <img 
+                      src={notionSpecialistBadge} 
+                      alt="Notion Service Specialist - Certification officielle" 
+                      className="h-20 md:h-24 w-auto drop-shadow-md"
+                    />
+                  </div>
                   
                   {/* Card 1 */}
                   <div className="p-6 rounded-2xl bg-card border border-border/50 shadow-sm hover:shadow-md transition-shadow duration-300">
