@@ -292,7 +292,7 @@ const ConsultanteNotion = () => {
               </p>
 
               {/* Tags */}
-              <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10 reveal-up" style={{ animationDelay: '0.25s' }}>
+              <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8 reveal-up" style={{ animationDelay: '0.25s' }}>
                 {["Formation Qualiopi", "PME Services & BTP", "Accompagnement"].map((tag, i) => (
                   <span 
                     key={i} 
@@ -301,6 +301,23 @@ const ConsultanteNotion = () => {
                     {tag}
                   </span>
                 ))}
+              </div>
+
+              {/* Notion Badge - Visible without scroll */}
+              <div className="flex justify-center mb-8 md:mb-12 reveal-up" style={{ animationDelay: '0.3s' }}>
+                <div className="glass-premium rounded-2xl px-6 py-4 flex items-center gap-4">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-muted/60 rounded-full blur-xl" />
+                    <img 
+                      src={notionSpecialistBadge} 
+                      alt="Badge Notion Service Specialist - Christelle Picault consultante Notion certifiée à Lyon pour PME et BTP" 
+                      className="h-16 md:h-24 w-auto relative z-10"
+                    />
+                  </div>
+                  <p className="text-sm md:text-base font-medium text-foreground">
+                    Expertise <span className="text-secondary">reconnue par Notion</span>
+                  </p>
+                </div>
               </div>
 
               {/* Distinguishing features */}
@@ -379,25 +396,6 @@ const ConsultanteNotion = () => {
                     <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
                   </a>
                 </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Notion Badge Section */}
-        <section className="py-10 md:py-16 relative">
-          <div className="container mx-auto px-4 md:px-6 relative z-10">
-            <div className="glass-premium rounded-2xl md:rounded-[2.5rem] p-8 md:p-12 max-w-2xl mx-auto text-center">
-              <p className="text-lg md:text-2xl font-semibold text-foreground mb-6 md:mb-8">
-                Une expertise <span className="text-secondary">reconnue par Notion</span>
-              </p>
-              <div className="relative inline-block">
-                <div className="absolute inset-0 bg-muted/60 rounded-full blur-2xl" />
-                <img 
-                  src={notionSpecialistBadge} 
-                  alt="Badge Notion Service Specialist - Christelle Picault consultante Notion certifiée à Lyon pour PME et BTP" 
-                  className="h-28 md:h-44 w-auto mx-auto relative z-10"
-                />
               </div>
             </div>
           </div>
