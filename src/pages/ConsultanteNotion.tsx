@@ -254,13 +254,13 @@ const ConsultanteNotion = () => {
                 <div className="lg:col-span-7 space-y-8">
                   
                   {/* Badge certification - Subtle */}
-                  <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-muted/60 border border-border/50">
+                  <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-muted/60 border border-border/50">
                     <img 
                       src={notionSpecialistBadge} 
                       alt="Notion Service Specialist" 
-                      className="h-6 w-auto"
+                      className="h-12 w-auto"
                     />
-                    <span className="text-sm font-medium text-foreground">Notion Service Specialist</span>
+                    <span className="text-base font-medium text-foreground">Notion Service Specialist</span>
                   </div>
 
                   {/* H1 - Clean typography */}
@@ -276,7 +276,7 @@ const ConsultanteNotion = () => {
 
                   {/* Key points - Horizontal on desktop */}
                   <div className="flex flex-wrap gap-3">
-                    {["Formation Qualiopi", "PME & BTP", "Sur mesure"].map((tag, i) => (
+                    {["Formations Qualiopi", "Création de systèmes sur mesure", "Sur mesure"].map((tag, i) => (
                       <span 
                         key={i} 
                         className="px-4 py-2 rounded-full text-sm font-medium bg-primary/5 text-primary border border-primary/10"
