@@ -1,4 +1,5 @@
 import { Linkedin, Mail, ArrowUp } from "lucide-react";
+import capleanLogo from "@/assets/logos/caplean-logo-full.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -15,9 +16,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 items-center">
           {/* Logo & Copyright */}
           <div>
-            <div className="flex items-center gap-1 mb-4">
-              <span className="text-2xl font-bold text-background">Caplean</span>
-              <span className="text-2xl font-light text-secondary">IA</span>
+            <div className="mb-4">
+              <img src={capleanLogo} alt="CapLean" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-background/50">
               © 2025 Christelle Picault
