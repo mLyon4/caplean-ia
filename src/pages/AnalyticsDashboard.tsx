@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Activity, MousePointerClick, Mail, Navigation, Trash2, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 interface TrackedEvent {
   id: string;
@@ -249,6 +250,7 @@ const AnalyticsDashboard = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

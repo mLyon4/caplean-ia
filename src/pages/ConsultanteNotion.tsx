@@ -29,6 +29,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import notionSpecialistBadge from "@/assets/logos/notion-specialist-badge.png";
 import { trackCTAClick } from "@/lib/analytics";
+import Footer from "@/components/Footer";
 
 const ConsultanteNotion = () => {
   useEffect(() => {
@@ -708,18 +709,7 @@ const ConsultanteNotion = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="py-8 md:py-12 border-t border-border/20 relative z-10">
-          <div className="container mx-auto px-4 md:px-6 text-center">
-            <Link 
-              to="/" 
-              className="inline-flex items-center gap-2 text-sm md:text-base text-muted-foreground hover:text-secondary transition-colors font-medium group"
-            >
-              <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              Retour à l'accueil
-            </Link>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
