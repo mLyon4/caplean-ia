@@ -1,6 +1,7 @@
-import { Award, Users, Zap, Sparkles } from "lucide-react";
+import { Award, Zap } from "lucide-react";
 import notionLogo from "@/assets/logos/notion-service-specialist.png";
 import osezIaLogo from "@/assets/logos/osez-ia-logo.png";
+import franceNumLogo from "@/assets/logos/france-num-logo.jpg";
 
 const AboutSection = () => {
   const certifications = [
@@ -27,7 +28,7 @@ const AboutSection = () => {
       name: "France Num",
       title: "Activateur",
       description: "Conseiller transformation digitale",
-      icon: Users,
+      logo: franceNumLogo,
       link: "https://www.francenum.gouv.fr/activateurs/christelle-picault",
     },
     {
