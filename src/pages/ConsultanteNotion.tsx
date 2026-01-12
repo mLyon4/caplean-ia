@@ -204,35 +204,26 @@ const ConsultanteNotion = () => {
       </Helmet>
       
       <div className="min-h-screen bg-background relative overflow-hidden">
-        {/* Background mesh gradient */}
-        <div className="fixed inset-0 bg-mesh pointer-events-none" />
-        <div className="fixed inset-0 bg-noise pointer-events-none" />
-        
-        {/* Subtle decorative backgrounds */}
-        <div className="fixed top-20 left-[10%] w-96 h-96 bg-muted/50 rounded-full blur-[100px] pointer-events-none" />
-        <div className="fixed top-[40%] right-[5%] w-80 h-80 bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
-        <div className="fixed bottom-[20%] left-[20%] w-64 h-64 bg-muted/40 rounded-full blur-[60px] pointer-events-none" />
+        {/* Minimal background */}
+        <div className="fixed inset-0 bg-gradient-to-b from-muted/30 via-background to-background pointer-events-none" />
 
         {/* Header */}
-        <header className="w-full glass-premium sticky top-0 z-50 border-b border-border/20">
+        <header className="w-full bg-background/80 backdrop-blur-lg sticky top-0 z-50 border-b border-border/30">
           <div className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
-              <Link to="/" className="group flex items-center gap-3 text-foreground/70 hover:text-primary transition-all duration-300">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <ArrowLeft className="h-5 w-5" />
-                </div>
+              <Link to="/" className="group flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300">
+                <ArrowLeft className="h-5 w-5" />
                 <span className="font-medium hidden sm:block">Retour</span>
               </Link>
               <Button 
                 asChild 
-                className="bg-secondary hover:bg-secondary-dark text-white btn-shine rounded-full px-6 py-2"
+                className="bg-secondary hover:bg-secondary-dark text-white rounded-full px-6 py-2 shadow-lg shadow-secondary/20"
               >
                 <Link 
                   to="/#contacts" 
                   className="flex items-center gap-2"
                   onClick={() => trackCTAClick('Prendre rendez-vous', 'notion_header', '/#contacts')}
                 >
-                  <Sparkles className="h-4 w-4" />
                   Prendre rendez-vous
                 </Link>
               </Button>
@@ -251,151 +242,119 @@ const ConsultanteNotion = () => {
           </ol>
         </nav>
 
-        {/* Hero Section - Value Proposition */}
-        <section className="relative min-h-[auto] md:min-h-[85vh] flex items-center py-10 md:py-16 overflow-hidden">
-          {/* Background decorative elements */}
-          <div className="absolute top-20 left-1/4 w-48 md:w-72 h-48 md:h-72 bg-secondary/10 rounded-full blur-[80px] md:blur-[100px] pointer-events-none" />
-          <div className="absolute bottom-20 right-1/4 w-40 md:w-64 h-40 md:h-64 bg-primary/10 rounded-full blur-[60px] md:blur-[80px] pointer-events-none" />
-          
-          <div className="container mx-auto px-4 md:px-6 relative z-10">
-            <div className="max-w-5xl mx-auto">
-              {/* Main headline - H1 SEO */}
-              <div className="text-center mb-6 md:mb-10 reveal-up" style={{ animationDelay: '0.1s' }}>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-5 md:mb-8">
-                  J'aide les dirigeants à{" "}
-                  <span className="relative inline-block">
-                    <span className="text-gradient-secondary">reprendre le contrôle</span>
-                    <svg className="absolute -bottom-1 md:-bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
-                      <path d="M2 6C50 2 150 2 198 6" stroke="hsl(var(--secondary))" strokeWidth="3" strokeLinecap="round" opacity="0.4" />
-                    </svg>
-                  </span>
-                  <br className="hidden sm:block" />
-                  {" "}de leur organisation grâce à{" "}
-                  <span className="relative inline-block">
-                    <span className="text-secondary">Notion</span>
-                    <svg className="absolute -bottom-1 md:-bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                      <path d="M2 8C50 2 150 2 198 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" className="animate-draw" />
-                    </svg>
-                  </span>
-                </h1>
-                <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
-                  Pas pour "faire joli", mais pour{" "}
-                  <span className="text-foreground font-semibold">piloter</span>,{" "}
-                  <span className="text-foreground font-semibold">simplifier</span> et{" "}
-                  <span className="text-foreground font-semibold">gagner du temps</span>.
-                </p>
-              </div>
-
-              {/* Location */}
-              <p className="text-center text-sm md:text-base text-muted-foreground mb-4 md:mb-6 reveal-up" style={{ animationDelay: '0.2s' }}>
-                📍 Lyon – Interventions en France entière
-              </p>
-
-              {/* Tags */}
-              <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8 reveal-up" style={{ animationDelay: '0.25s' }}>
-                {["Formation Qualiopi", "PME Services & BTP", "Accompagnement"].map((tag, i) => (
-                  <span 
-                    key={i} 
-                    className="glass px-3 md:px-5 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-medium text-foreground/80 border border-primary/20"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Notion Badge - Visible without scroll */}
-              <div className="flex justify-center mb-8 md:mb-12 reveal-up" style={{ animationDelay: '0.3s' }}>
-                <div className="glass-premium rounded-2xl px-6 py-4 flex items-center gap-4">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-muted/60 rounded-full blur-xl" />
+        {/* Hero Section - Clean & Professional */}
+        <section className="relative py-16 md:py-24 lg:py-32">
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-6xl mx-auto">
+              
+              {/* Two-column layout on desktop */}
+              <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                {/* Left column - Main content */}
+                <div className="lg:col-span-7 space-y-8">
+                  
+                  {/* Badge certification - Subtle */}
+                  <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-muted/60 border border-border/50">
                     <img 
                       src={notionSpecialistBadge} 
-                      alt="Badge Notion Service Specialist - Christelle Picault consultante Notion certifiée à Lyon pour PME et BTP" 
-                      className="h-16 md:h-24 w-auto relative z-10"
+                      alt="Notion Service Specialist" 
+                      className="h-6 w-auto"
                     />
+                    <span className="text-sm font-medium text-foreground">Notion Service Specialist</span>
                   </div>
-                  <p className="text-sm md:text-base font-medium text-foreground">
-                    Expertise <span className="text-secondary">reconnue par Notion</span>
-                  </p>
-                </div>
-              </div>
 
-              {/* Distinguishing features */}
-              <div className="mb-8 md:mb-12">
-                <div className="flex items-center justify-center gap-2 md:gap-3 mb-6 md:mb-8 reveal-up" style={{ animationDelay: '0.35s' }}>
-                  <div className="h-px w-8 md:w-12 bg-gradient-to-r from-transparent to-secondary/50" />
-                  <span className="text-xl md:text-2xl">🎯</span>
-                  <h2 className="text-base md:text-xl font-bold text-foreground">Ce qui me distingue</h2>
-                  <div className="h-px w-8 md:w-12 bg-gradient-to-l from-transparent to-secondary/50" />
+                  {/* H1 - Clean typography */}
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
+                    Reprenez le contrôle de votre organisation avec{" "}
+                    <span className="text-secondary">Notion</span>
+                  </h1>
+                  
+                  {/* Subtitle */}
+                  <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
+                    J'accompagne les dirigeants de PME à structurer leur entreprise pour <strong className="text-foreground">piloter</strong>, <strong className="text-foreground">simplifier</strong> et <strong className="text-foreground">gagner du temps</strong>.
+                  </p>
+
+                  {/* Key points - Horizontal on desktop */}
+                  <div className="flex flex-wrap gap-3">
+                    {["Formation Qualiopi", "PME & BTP", "Sur mesure"].map((tag, i) => (
+                      <span 
+                        key={i} 
+                        className="px-4 py-2 rounded-full text-sm font-medium bg-primary/5 text-primary border border-primary/10"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* CTA Group */}
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <Button asChild className="btn-premium text-base px-8 py-6">
+                      <a 
+                        href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center justify-center gap-2"
+                        onClick={() => trackCTAClick('Appel découverte gratuit', 'notion_hero', 'calendly')}
+                      >
+                        Appel découverte gratuit
+                        <ArrowRight className="h-5 w-5" />
+                      </a>
+                    </Button>
+                    <span className="text-sm text-muted-foreground self-center">
+                      📍 Lyon · France entière
+                    </span>
+                  </div>
                 </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-                  {[
-                    { icon: Settings, text: "Notion au service des process métiers", subtext: "(pas l'inverse)" },
-                    { icon: Lightbulb, text: "Approche structuration + amélioration continue", subtext: null },
-                    { icon: Users, text: "Une vraie capacité à faire adopter l'outil", subtext: "par les équipes" },
-                    { icon: HardHat, text: "Expertise terrain", subtext: "(PME, BTP, services)" },
-                  ].map((item, index) => (
-                    <div 
-                      key={index}
-                      className="group relative glass rounded-xl md:rounded-2xl p-4 md:p-6 border border-border/30 hover:border-secondary/40 transition-all duration-500 reveal-up"
-                      style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-                    >
-                      <div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      
-                      <div className="relative flex items-center gap-3 md:gap-5">
-                        <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-secondary/10">
-                          <item.icon className="h-5 w-5 md:h-7 md:w-7 text-secondary" />
-                        </div>
-                        <p className="font-semibold text-foreground text-sm md:text-lg leading-snug">
-                          {item.text}
-                          {item.subtext && (
-                            <span className="text-muted-foreground font-normal ml-1 text-xs md:text-base">{item.subtext}</span>
-                          )}
-                        </p>
+
+                {/* Right column - Value proposition cards */}
+                <div className="lg:col-span-5 space-y-4">
+                  
+                  {/* Card 1 */}
+                  <div className="p-6 rounded-2xl bg-card border border-border/50 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                        <Settings className="h-6 w-6 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">Notion au service de vos process</h3>
+                        <p className="text-sm text-muted-foreground">Pas l'inverse. L'outil s'adapte à votre façon de travailler.</p>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
+                  </div>
 
-              {/* Result banner */}
-              <div className="reveal-up mb-8 md:mb-10" style={{ animationDelay: '0.8s' }}>
-                <div className="relative glass-premium rounded-xl md:rounded-2xl p-5 md:p-8 text-center overflow-hidden">
-                  <div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-r from-secondary/20 via-primary/20 to-secondary/20 opacity-50" />
-                  <div className="absolute inset-[1px] rounded-xl md:rounded-2xl bg-background/80 backdrop-blur-xl" />
-                  
-                  <div className="relative flex flex-col items-center justify-center gap-3 md:gap-4">
-                    <span className="text-2xl md:text-3xl animate-bounce">👉</span>
-                    <p className="text-base md:text-xl lg:text-2xl font-medium text-foreground">
-                      Résultat : un espace Notion
-                    </p>
-                    <div className="flex items-center gap-2 flex-wrap justify-center">
-                      <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold text-sm md:text-base">clair</span>
-                      <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold text-sm md:text-base">utile</span>
-                      <span className="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-semibold text-sm md:text-base">vivant</span>
+                  {/* Card 2 */}
+                  <div className="p-6 rounded-2xl bg-card border border-border/50 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Users className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">Adoption par vos équipes</h3>
+                        <p className="text-sm text-muted-foreground">Un outil utilisé, pas juste installé. Formation incluse.</p>
+                      </div>
                     </div>
-                    <p className="text-base md:text-xl font-medium text-foreground">
-                      … et <strong className="text-secondary">utilisé</strong>.
+                  </div>
+
+                  {/* Card 3 */}
+                  <div className="p-6 rounded-2xl bg-card border border-border/50 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                        <HardHat className="h-6 w-6 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">Expertise terrain PME & BTP</h3>
+                        <p className="text-sm text-muted-foreground">Des solutions concrètes, testées sur le terrain.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Result highlight */}
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-secondary/5 to-primary/5 border border-secondary/20">
+                    <p className="text-center text-foreground font-medium">
+                      Résultat : un Notion <span className="text-secondary font-bold">clair</span>, <span className="text-secondary font-bold">utile</span>, et <span className="text-secondary font-bold">utilisé</span>.
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* CTA Button */}
-              <div className="flex justify-center reveal-up" style={{ animationDelay: '0.9s' }}>
-                <Button asChild className="btn-premium btn-shine text-base md:text-lg px-6 md:px-10 py-5 md:py-6 w-full sm:w-auto">
-                  <a 
-                    href="https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex items-center justify-center gap-2"
-                    onClick={() => trackCTAClick('Appel découverte gratuit', 'notion_hero', 'calendly')}
-                  >
-                    Appel découverte gratuit
-                    <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
-                  </a>
-                </Button>
               </div>
             </div>
           </div>
