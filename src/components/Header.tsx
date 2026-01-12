@@ -4,6 +4,7 @@ import { ChevronDown, Menu, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "@/components/ThemeToggle";
 import { trackCTAClick } from "@/lib/analytics";
+import capleanLogo from "@/assets/logos/caplean-logo.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,9 +32,12 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-1 group">
-            <span className="text-2xl font-bold text-primary group-hover:text-primary-dark transition-colors">Caplean</span>
-            <span className="text-2xl font-light text-secondary">IA</span>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={capleanLogo} 
+              alt="CapLean" 
+              className="h-10 w-auto"
+            />
           </Link>
           
           {/* Desktop Navigation */}
