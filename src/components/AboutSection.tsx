@@ -26,7 +26,7 @@ const AboutSection = () => {
     },
     {
       name: "France Num",
-      title: "Activateur",
+      title: "Activatrice",
       description: "Conseiller transformation digitale",
       logo: franceNumLogo,
       link: "https://www.francenum.gouv.fr/activateurs/christelle-picault",
