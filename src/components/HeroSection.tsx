@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Play } from "lucide-react";
-import notionBadge from "@/assets/logos/notion-specialist-badge.png";
+import notionLogo from "@/assets/logos/notion-service-specialist.png";
+import osezIaLogo from "@/assets/logos/osez-ia-logo.png";
+import franceNumLogo from "@/assets/logos/france-num-logo.jpg";
 import { trackCTAClick } from "@/lib/analytics";
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background pt-16 md:pt-24">
@@ -37,12 +40,21 @@ const HeroSection = () => {
             Pilotage de projets ERP/CRM, systèmes Notion sur mesure, automatisations IA et Lean BTP pour structurer et digitaliser votre entreprise.
           </p>
 
-          {/* Notion Badge */}
-          <div className="flex items-center justify-center gap-4 mb-10 reveal-up" style={{ animationDelay: '0.4s' }}>
-            <div className="glass px-4 py-2 rounded-full flex items-center gap-3 border border-primary/20">
-              <img src={notionBadge} alt="Notion Certified" className="h-10 w-auto" />
-              <span className="text-sm font-medium text-foreground/70">Consultante Notion certifiée</span>
+          {/* Certification Logos */}
+          <div className="flex items-center justify-center gap-6 mb-10 reveal-up" style={{ animationDelay: '0.4s' }}>
+            <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="group">
+              <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
+                <img src={notionLogo} alt="Notion Certified" className="w-full h-full object-contain" />
+              </div>
+            </a>
+            <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md border border-border/30 hover:scale-110 transition-transform duration-300">
+              <img src={osezIaLogo} alt="Osez l'IA" className="w-full h-full object-contain" />
             </div>
+            <a href="https://www.francenum.gouv.fr/activateurs/christelle-picault" target="_blank" rel="noopener noreferrer" className="group">
+              <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
+                <img src={franceNumLogo} alt="France Num Activatrice" className="w-full h-full object-contain" />
+              </div>
+            </a>
           </div>
 
           {/* CTA Buttons */}
