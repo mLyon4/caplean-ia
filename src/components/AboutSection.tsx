@@ -1,5 +1,6 @@
-import { Award, Users, Zap } from "lucide-react";
+import { Award, Users, Zap, Sparkles } from "lucide-react";
 import notionLogo from "@/assets/logos/notion-service-specialist.png";
+import osezIaLogo from "@/assets/logos/osez-ia-logo.png";
 
 const AboutSection = () => {
   const certifications = [
@@ -28,6 +29,12 @@ const AboutSection = () => {
       description: "Conseiller transformation digitale",
       icon: Users,
       link: "https://www.francenum.gouv.fr/activateurs/christelle-picault",
+    },
+    {
+      name: "Osez l'IA",
+      title: "Programme IA",
+      description: "Accompagnement IA pour les entreprises",
+      logo: osezIaLogo,
     }
   ];
 
