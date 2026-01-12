@@ -118,31 +118,24 @@ const AboutSection = () => {
 
         {/* Certifications Section */}
         <div className="glass-premium rounded-[2.5rem] p-10 md:p-14">
-          <h3 className="text-2xl font-bold text-foreground mb-10 text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-12 text-center">
             Certifications & Accréditations
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {certifications.map((cert, index) => {
-              const Icon = cert.icon;
-              
+          {/* First row: 3 main certifications with logos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {certifications.slice(0, 3).map((cert, index) => {
               const content = (
-                <div className="bento-card h-full text-center group">
+                <div className="bento-card h-full text-center group p-8">
                   <div className="mb-6 flex justify-center">
-                    {cert.logo ? (
-                      <div className="w-16 h-16 bg-white rounded-2xl p-3 shadow-sm border border-border/30 group-hover:scale-110 transition-transform duration-500">
-                        <img src={cert.logo} alt={cert.name} className="w-full h-full object-contain" />
-                      </div>
-                    ) : Icon ? (
-                      <div className="icon-container w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                        <Icon className="h-8 w-8 text-primary" />
-                      </div>
-                    ) : null}
+                    <div className="w-24 h-24 bg-white rounded-2xl p-4 shadow-md border border-border/30 group-hover:scale-105 group-hover:shadow-lg transition-all duration-500">
+                      <img src={cert.logo} alt={cert.name} className="w-full h-full object-contain" />
+                    </div>
                   </div>
-                  <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-2">
+                  <div className="text-xs font-semibold text-secondary uppercase tracking-wider mb-2">
                     {cert.title}
                   </div>
-                  <h4 className="font-bold text-foreground mb-2 text-lg">
+                  <h4 className="font-bold text-foreground text-xl mb-3">
                     {cert.name}
                   </h4>
                   <p className="text-sm text-muted-foreground">
@@ -152,11 +145,37 @@ const AboutSection = () => {
               );
 
               return cert.link ? (
-                <a key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="block">
+                <a key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="block hover:no-underline">
                   {content}
                 </a>
               ) : (
                 <div key={index}>{content}</div>
+              );
+            })}
+          </div>
+
+          {/* Second row: 2 certifications with icons, centered */}
+          <div className="flex justify-center gap-8">
+            {certifications.slice(3).map((cert, index) => {
+              const Icon = cert.icon;
+              
+              return (
+                <div key={index} className="bento-card text-center group p-6 w-full md:w-64">
+                  <div className="mb-4 flex justify-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-all duration-500">
+                      {Icon && <Icon className="h-8 w-8 text-primary" />}
+                    </div>
+                  </div>
+                  <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
+                    {cert.title}
+                  </div>
+                  <h4 className="font-bold text-foreground text-lg mb-2">
+                    {cert.name}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {cert.description}
+                  </p>
+                </div>
               );
             })}
           </div>
