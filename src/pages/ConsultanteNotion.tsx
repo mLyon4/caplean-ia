@@ -28,6 +28,7 @@ import {
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import notionSpecialistBadge from "@/assets/logos/notion-specialist-badge.png";
+import notionAmbassador from "@/assets/logos/notion-ambassador.png";
 import { trackCTAClick } from "@/lib/analytics";
 import Footer from "@/components/Footer";
 
@@ -299,12 +300,17 @@ const ConsultanteNotion = () => {
                 {/* Right column - Value proposition cards */}
                 <div className="lg:col-span-5 space-y-4">
                   
-                  {/* Notion Badge - Positioned strategically at top */}
-                  <div className="flex justify-center lg:justify-end mb-2">
+                  {/* Notion Badges - Positioned strategically at top */}
+                  <div className="flex justify-center lg:justify-end gap-4 mb-2">
+                    <img 
+                      src={notionAmbassador} 
+                      alt="Notion Official Ambassador" 
+                      className="h-16 md:h-20 w-auto drop-shadow-md"
+                    />
                     <img 
                       src={notionSpecialistBadge} 
                       alt="Notion Service Specialist - Certification officielle" 
-                      className="h-20 md:h-24 w-auto drop-shadow-md"
+                      className="h-16 md:h-20 w-auto drop-shadow-md"
                     />
                   </div>
                   
