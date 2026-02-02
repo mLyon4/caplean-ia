@@ -305,7 +305,7 @@ const ConsultanteNotion = () => {
                     <img 
                       src={notionAmbassador} 
                       alt="Notion Official Ambassador" 
-                      className="h-12 md:h-14 w-auto drop-shadow-md"
+                      className="h-14 md:h-16 w-auto drop-shadow-md"
                     />
                     <img 
                       src={notionSpecialistBadge} 
