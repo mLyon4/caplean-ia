@@ -310,7 +310,7 @@ const ConsultanteNotion = () => {
                     <img 
                       src={notionSpecialistBadge} 
                       alt="Notion Service Specialist - Certification officielle" 
-                      className="h-12 md:h-14 w-auto drop-shadow-md"
+                      className="h-14 md:h-16 w-auto drop-shadow-md"
                     />
                   </div>
                   
