@@ -77,7 +77,7 @@ const HeroSection = () => {
           {/* Certification Logos */}
           <div className="flex items-center justify-center gap-6 reveal-up" style={{ animationDelay: '0.5s' }}>
             <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="group">
-              <img src={notionAmbassador} alt="Notion Official Ambassador" className="h-10 md:h-12 w-auto drop-shadow-md group-hover:scale-110 transition-transform duration-300" />
+              <img src={notionAmbassador} alt="Notion Official Ambassador" className="h-14 md:h-16 w-auto drop-shadow-md group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a href="https://www.notion.so/@christellepicault" target="_blank" rel="noopener noreferrer" className="group">
               <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl p-2 shadow-md border border-border/30 group-hover:scale-110 transition-transform duration-300">
