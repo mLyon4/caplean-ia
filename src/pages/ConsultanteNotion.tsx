@@ -301,16 +301,16 @@ const ConsultanteNotion = () => {
                 <div className="lg:col-span-5 space-y-4">
                   
                   {/* Notion Badges - Positioned strategically at top */}
-                  <div className="flex justify-center lg:justify-end gap-4 mb-2">
+                  <div className="flex justify-center lg:justify-end gap-3 mb-2">
                     <img 
                       src={notionAmbassador} 
                       alt="Notion Official Ambassador" 
-                      className="h-16 md:h-20 w-auto drop-shadow-md"
+                      className="h-12 md:h-14 w-auto drop-shadow-md"
                     />
                     <img 
                       src={notionSpecialistBadge} 
                       alt="Notion Service Specialist - Certification officielle" 
-                      className="h-16 md:h-20 w-auto drop-shadow-md"
+                      className="h-12 md:h-14 w-auto drop-shadow-md"
                     />
                   </div>
                   
