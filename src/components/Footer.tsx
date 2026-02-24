@@ -20,7 +20,7 @@ const Footer = () => {
               <img src={capleanLogo} alt="CapLean" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-background/50">
-              © 2025 Christelle Picault
+              © 2026 Christelle Picault
             </p>
             <p className="text-sm text-background/50">
               Tous droits réservés
