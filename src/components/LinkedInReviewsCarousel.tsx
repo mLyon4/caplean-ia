@@ -47,6 +47,15 @@ const LinkedInReviewsCarousel = () => {
       content: "Christelle a changé la donne. Elle a écouté mes besoins réels et conçu MON outil. Aujourd'hui, mon assistante et moi collaborons sur une plateforme fluide, fiable, sans superflu. Pour digitaliser avec pragmatisme : foncez !",
       rating: 5,
       date: "Décembre 2025"
+    },
+    {
+      id: "5",
+      author: "Rami Bouchedda",
+      title: "CEO",
+      company: "ZDEC",
+      content: "Je cherchais à structurer mon activité pour arrêter de perdre du temps sur des tâches sans valeur ajoutée. Christelle a su traduire mes besoins en un système fluide et efficace. Résultat : une visibilité immédiate sur ma rentabilité et une gestion plus sereine. Son expertise va bien au-delà de l'outil, c'est une vraie approche d'optimisation de nos processus métier.",
+      rating: 5,
+      date: "Février 2026"
     }
   ];
 
