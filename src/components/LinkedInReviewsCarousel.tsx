@@ -99,17 +99,10 @@ const LinkedInReviewsCarousel = () => {
                 "{review.content}"
               </p>
               
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center">
-                  <span className="text-primary font-bold text-xl">
-                    {review.author.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <p className="font-bold text-foreground">{review.author}</p>
-                  <p className="text-sm text-muted-foreground">{review.title}</p>
-                  <p className="text-sm text-secondary font-medium">{review.company}</p>
-                </div>
+              <div>
+                <p className="font-bold text-foreground">{review.author}</p>
+                <p className="text-sm text-muted-foreground">{review.title}</p>
+                <p className="text-sm text-secondary font-medium">{review.company}</p>
               </div>
             </div>
           </div>
