@@ -125,7 +125,7 @@ const LinkedInReviewsCarousel = () => {
           </div>
         </div>
         <a 
-          href="https://share.google/PDVdr4RjwOz1j1bRF"
+          href="https://share.google/FZ2YV3koXTfFL1uOM"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#4285F4] hover:underline font-medium"
