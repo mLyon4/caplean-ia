@@ -97,7 +97,7 @@ const HeroSection = () => {
           {/* Stats Row */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto reveal-up" style={{ animationDelay: '0.6s' }}>
             {[
-              { value: "20+", label: "Années d'expérience" },
+              { value: "25+", label: "Années d'expérience" },
               { value: "15+", label: "Projets réalisés" },
               { value: "100%", label: "Clients satisfaits" },
             ].map((stat, index) => (
