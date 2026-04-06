@@ -8,7 +8,7 @@ import { trackCTAClick } from "@/lib/analytics";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background pt-16 md:pt-24">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background pt-16 pb-24 md:pt-24 md:pb-32">
       {/* Background mesh gradient */}
       <div className="absolute inset-0 bg-mesh pointer-events-none" />
       <div className="absolute inset-0 bg-noise pointer-events-none" />
