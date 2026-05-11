@@ -482,50 +482,27 @@ const CapDigital = () => {
           </div>
         </section>
 
-        {/* GUARANTEE */}
-        <section className="py-20 bg-muted/20">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <aside className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-secondary/10 to-primary/5 border border-secondary/30 flex gap-6 items-start">
-              <ShieldCheck className="h-12 w-12 text-secondary flex-shrink-0" />
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-                  Garantie « 50% du diagnostic offert si vous poursuivez »
-                </h2>
-                <p className="text-foreground/85 mb-3">
-                  Si à l'issue du Cap Digital vous choisissez de poursuivre avec l'un de mes
-                  accompagnements (ERP, Espace Notion, ou Global), 1 000 € HT sont intégralement
-                  déduits de la mission suivante.
-                </p>
-                <p className="text-muted-foreground">
-                  Vous repartez gagnant dans tous les cas : soit avec une feuille de route, soit
-                  avec 50% du diagnostic offert.
-                </p>
-              </div>
-            </aside>
-          </div>
-        </section>
-
         {/* PROCESS */}
-        <section className="py-20">
+        <section className="py-20 bg-muted/20">
           <div className="container mx-auto px-6 max-w-6xl">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Comment ça se passe
               </h2>
               <p className="text-muted-foreground">Le process en 4 étapes.</p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {process.map(({ icon: Icon, title, desc }, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-colors"
+                  className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-colors space-y-5"
                 >
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-2xl font-bold text-secondary">{i + 1}</span>
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="flex items-center gap-4">
+                    <span className="text-3xl font-bold text-secondary">{i + 1}</span>
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-bold text-foreground mb-2">{title}</h3>
-                  <p className="text-sm text-muted-foreground">{desc}</p>
+                  <h3 className="text-lg font-bold text-foreground leading-snug">{title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
