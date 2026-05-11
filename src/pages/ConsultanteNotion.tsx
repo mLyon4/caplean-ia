@@ -287,7 +287,6 @@ const ConsultanteNotion = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button asChild className="btn-premium text-base px-8 py-6">
-                  <Button asChild className="btn-premium text-base px-8 py-6">
                     <a
                       href={CALENDLY_URL}
                       target="_blank"
