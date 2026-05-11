@@ -80,6 +80,11 @@ const Header = () => {
                     Consultante Notion Entreprise
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
+                  <Link to="/le-cap-digital">
+                    Cap Digital — Vision 360°
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 

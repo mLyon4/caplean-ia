@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { HardHat, Database, Puzzle, ArrowRight, Sparkles } from "lucide-react";
+import { HardHat, Database, Puzzle, Compass, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
@@ -29,6 +29,14 @@ const OffersSection = () => {
       description: "Diagnostic, pilotage de projets ERP/CRM, digitalisation des processus (automatisation, IA). Accompagnement personnalisé.",
       highlight: "Intervention possible d'un collectif d'experts.",
       color: "primary"
+    },
+    {
+      icon: Compass,
+      title: "Cap Digital — Vision 360°",
+      description: "Diagnostic stratégique SI + organisation livré en 7 jours. Une feuille de route claire avant tout investissement lourd.",
+      link: "/le-cap-digital",
+      badge: "Nouveau · 7 jours",
+      color: "secondary"
     }
   ];
 
@@ -52,7 +60,7 @@ const OffersSection = () => {
         </div>
 
         {/* Offers Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {offers.map((offer, index) => {
             const Icon = offer.icon;
             const isPrimary = offer.color === 'primary';
