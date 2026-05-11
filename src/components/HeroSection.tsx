@@ -45,7 +45,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-4 mb-10 reveal-up" style={{ animationDelay: '0.4s' }}>
             <Button 
               asChild 
-              className="bg-secondary hover:bg-secondary-dark text-white btn-shine text-lg px-10 py-6 rounded-full shadow-md"
+              className="bg-secondary hover:bg-secondary-dark text-secondary-foreground btn-shine text-lg px-10 py-6 rounded-full shadow-md"
             >
               <a 
                 href="#contacts" 
