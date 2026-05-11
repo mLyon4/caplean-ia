@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 const OffersSection = () => {
   const offers = [
     {
+      icon: Compass,
+      title: "Diagnostic SI + organisation.",
+      description: "Une feuille de route claire avant d'investir.",
+      link: "/le-cap-digital",
+      color: "secondary"
+    },
+    {
       icon: HardHat,
       title: "Lean Management spécialisé BTP",
       features: [
@@ -29,14 +36,6 @@ const OffersSection = () => {
       description: "Diagnostic, pilotage de projets ERP/CRM, digitalisation des processus (automatisation, IA). Accompagnement personnalisé.",
       highlight: "Intervention possible d'un collectif d'experts.",
       color: "primary"
-    },
-    {
-      icon: Compass,
-      title: "Cap Digital — Vision 360°",
-      description: "Diagnostic stratégique SI + organisation livré en 7 jours. Une feuille de route claire avant tout investissement lourd.",
-      link: "/le-cap-digital",
-      badge: "Nouveau · 7 jours",
-      color: "secondary"
     }
   ];
 
