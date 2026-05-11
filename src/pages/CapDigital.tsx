@@ -76,6 +76,7 @@ const CapDigital = () => {
   const phases = [
     {
       icon: Search,
+      tag: "",
       title: "Phase d'immersion",
       items: [
         "Entretien dirigeant approfondi (90 min)",
@@ -85,6 +86,7 @@ const CapDigital = () => {
     },
     {
       icon: FileText,
+      tag: "",
       title: "Le rapport « Cap Digital »",
       items: [
         "Cartographie SI actuelle : forces, faiblesses, risques",
@@ -97,6 +99,7 @@ const CapDigital = () => {
     },
     {
       icon: Presentation,
+      tag: "",
       title: "Restitution dirigeante",
       items: [
         "Présentation orale en visio ou en présentiel (1h30)",
