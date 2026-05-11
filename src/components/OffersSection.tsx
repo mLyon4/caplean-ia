@@ -95,7 +95,7 @@ const OffersSection = () => {
                   
                   {/* Description */}
                   {offer.description && (
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-6 leading-relaxed whitespace-pre-line">
                       {offer.description}
                     </p>
                   )}
