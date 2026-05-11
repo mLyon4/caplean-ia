@@ -86,7 +86,7 @@ const DirectionTransformation = () => {
       ideal: "PME 1-5 M€ en transformation ciblée",
       scope: "Pilotage ERP ou structuration Notion",
       engagement: "3 mois minimum",
-      price: "7 000 € HT/mois",
+      price: "À partir de 3 600 € HT/mois",
     },
     {
       name: "Transformation",
