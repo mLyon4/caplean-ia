@@ -85,6 +85,11 @@ const Header = () => {
                     Cap Digital - Diagnostic 360°
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
+                  <Link to="/direction-transformation-digitale-temps-partage-pme-erp-notion-ia">
+                    Direction Transformation Digitale
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
