@@ -82,7 +82,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
                   <Link to="/le-cap-digital">
-                    Cap Digital — Vision 360°
+                    Cap Digital - Diagnostic 360°
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
