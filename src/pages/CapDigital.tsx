@@ -113,7 +113,7 @@ const CapDigital = () => {
   const process = [
     {
       icon: Calendar,
-      title: "Entretien gratuit de 30 min",
+      title: "Entretien gratuit de 45 min",
       desc: "Vous me racontez où vous en êtes. Je vérifie que Le Cap Digital est le bon point d'entrée pour vous. Sinon, je vous le dis franchement.",
     },
     {
@@ -632,7 +632,7 @@ const CapDigital = () => {
                 Prêt à transformer le brouillard en plan d'action ?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Réservez votre entretien gratuit de 30 minutes. Nous regardons ensemble si Le Cap
+                Réservez votre entretien gratuit de 45 minutes. Nous regardons ensemble si Le Cap
                 Digital est fait pour vous.
               </p>
               <Button asChild className="btn-premium text-base px-10 py-6">
