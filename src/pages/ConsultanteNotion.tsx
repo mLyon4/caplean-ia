@@ -99,7 +99,6 @@ const ConsultanteNotion = () => {
       ideal: "PME 1-3 M€",
       scope: "CRM + projets + pilotage",
       qualiopi: "Incluse",
-      price: "À partir de 4 500 € HT + formation",
     },
     {
       name: "Complet",
@@ -107,8 +106,6 @@ const ConsultanteNotion = () => {
       ideal: "PME 3-10 M€",
       scope: "CRM + projets + OKR + pilotage + IA",
       qualiopi: "Incluse",
-      price: "À partir de 7 000 € HT + formation",
-      highlighted: true,
     },
   ];
 
@@ -175,7 +172,7 @@ const ConsultanteNotion = () => {
     },
     {
       question: "Combien coûte vraiment le projet, tout compris ?",
-      answer: "Essentiel : à partir de 4 500 € HT. Complet : à partir de 7 000 € HT. La partie formation est finançable OPCO (Qualiopi). Le devis définitif est calibré après un échange découverte gratuit de 45 minutes.",
+      answer: "Chaque projet est sur devis, adapté à votre périmètre et à vos équipes. La partie formation est finançable OPCO (Qualiopi). Le devis définitif est calibré après un échange découverte gratuit de 45 minutes.",
     },
   ];
 
@@ -207,8 +204,8 @@ const ConsultanteNotion = () => {
         areaServed: "France",
         description: "Espace Notion livré en 6 à 9 semaines : architecture, automatisations, IA, tableau de bord, formation Qualiopi.",
         offers: [
-          { "@type": "Offer", name: "Essentiel", price: "4500", priceCurrency: "EUR" },
-          { "@type": "Offer", name: "Complet", price: "7000", priceCurrency: "EUR" },
+          { "@type": "Offer", name: "Essentiel" },
+          { "@type": "Offer", name: "Complet" },
         ],
       },
       {
@@ -226,7 +223,7 @@ const ConsultanteNotion = () => {
     <>
       <Helmet>
         <title>Espace Notion sur-mesure pour PME en 6 à 9 semaines | Christelle Picault</title>
-        <meta name="description" content="Reprenez le contrôle de votre PME : un Espace Notion sur-mesure livré en 6 à 9 semaines. À partir de 4 500 € HT. Formation Qualiopi finançable OPCO." />
+        <meta name="description" content="Reprenez le contrôle de votre PME : un Espace Notion sur-mesure livré en 6 à 9 semaines. Formation Qualiopi finançable OPCO." />
         <link rel="canonical" href="https://christellepicault.fr/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Espace Notion sur-mesure pour PME en 6 à 9 semaines" />
@@ -406,7 +403,7 @@ const ConsultanteNotion = () => {
           <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="text-center mb-10 md:mb-16">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 md:mb-6">
-                Choisissez votre <span className="text-gradient-secondary">formule</span>
+                Deux formules adaptées à votre <span className="text-gradient-secondary">ambition</span>
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
