@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { HardHat, Database, Puzzle, Compass, ArrowRight, Sparkles } from "lucide-react";
+import { Database, Puzzle, Compass, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
@@ -10,17 +10,6 @@ const OffersSection = () => {
       description: "un diagnostic stratégique de vos outils ERP/CRM, facturation, Notion et de votre organisation.\nUne feuille de route claire avant d'investir dans une transformation digitale.",
       link: "/le-cap-digital",
       color: "secondary"
-    },
-    {
-      icon: HardHat,
-      title: "Lean Management spécialisé BTP",
-      features: [
-        "Jusqu'à 30 % de temps administratif en moins",
-        "Pilotage en temps réel de la rentabilité",
-        "Décisions plus rapides et plus sereines"
-      ],
-      highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
-      color: "primary"
     },
     {
       icon: Database,
@@ -102,7 +91,7 @@ const OffersSection = () => {
                   )}
                   
                   {/* Features */}
-                  {offer.features && offer.features.length > 0 && (
+                  {'features' in offer && Array.isArray(offer.features) && offer.features.length > 0 && (
                     <ul className="space-y-3 mb-6 text-left">
                       {offer.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-3">
