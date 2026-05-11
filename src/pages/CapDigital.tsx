@@ -68,7 +68,7 @@ const CapDigital = () => {
 
   const whyItWorks = [
     "Je ne suis pas un éditeur.",
-    "Je connais les deux mondes : systèmes structurants (ERP/CRM) ET systèmes agiles et no-code (Notion, IA).",,
+    "Je connais les deux mondes : systèmes structurants (ERP/CRM) ET systèmes agiles et no-code (Notion, IA).",
     "Je pense organisation avant outil. L'outil ne sauve jamais un process bancal.",
     "Je livre rapidement en 2 semaines, pas 3 mois. Vous décidez tant que l'élan est là.",
   ];
