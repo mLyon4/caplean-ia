@@ -410,9 +410,7 @@ const ConsultanteNotion = () => {
               {formulas.map((f, i) => (
                 <div
                   key={i}
-                  className={`glass-premium rounded-2xl md:rounded-[2rem] p-6 md:p-10 card-premium ${
-                    f.highlighted ? "border-2 border-secondary/40" : ""
-                  }`}
+                  className="glass-premium rounded-2xl md:rounded-[2rem] p-6 md:p-10 card-premium"
                 >
                   <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">{f.name}</h3>
                   <p className="text-secondary font-semibold mb-6">{f.duration} · Idéal pour {f.ideal}</p>
@@ -421,7 +419,7 @@ const ConsultanteNotion = () => {
                     <li className="flex items-start gap-3"><CheckCircle2 className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" /><span className="text-foreground"><strong>Formation Qualiopi :</strong> {f.qualiopi}</span></li>
                   </ul>
                   <div className="pt-4 border-t border-border/50">
-                    <p className="text-base md:text-lg font-bold text-foreground">{f.price}</p>
+                    <p className="text-base md:text-lg font-bold text-foreground">Sur devis</p>
                   </div>
                 </div>
               ))}
