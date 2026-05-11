@@ -113,7 +113,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <Button 
               asChild 
-              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-white btn-shine rounded-full px-6 py-2"
+              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-secondary-foreground btn-shine rounded-full px-6 py-2"
             >
               <a 
                 href="#contacts" 
