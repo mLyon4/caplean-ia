@@ -295,15 +295,12 @@ const CapDigital = () => {
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
-                  {" "}pour grandir : <span className="text-primary">ERP,</span>
-                  <br className="hidden md:block" />
-                  <span className="text-primary">facturation, Notion, organisation.</span>
+                  {" "}pour grandir.
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Le Cap Digital : un diagnostic 360° de votre SI et de votre organisation, livré
-                  en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une
-                  feuille de route claire — ERP, Notion, ou les deux.
+                  Le Cap Digital : un diagnostic 360° stratégique de vos outils <strong className="text-foreground">ERP, facturation, Notion</strong> et de votre organisation. Livré
+                  en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une feuille de route claire.
                 </p>
 
                 <ul className="space-y-3">
