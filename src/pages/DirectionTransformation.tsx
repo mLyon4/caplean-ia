@@ -667,9 +667,6 @@ const DirectionTransformation = () => {
               <p className="text-xs md:text-sm text-muted-foreground mt-6">
                 2 mandats simultanés maximum. 1 nouveau mandat ouvert par trimestre. Prochaine disponibilité communiquée lors de l'entretien.
               </p>
-              <p className="mt-10 text-base md:text-lg text-foreground italic max-w-2xl mx-auto">
-                Pour 7 à 10 000 € HT/mois, je deviens votre Directrice de la Transformation Digitale 2 à 3 jours par semaine — je pilote votre ERP, je structure votre Notion, je forme vos équipes à l'IA, et je vous garantis un dirigeant libéré et plusieurs points de marge gagnés en moins de 6 mois.
-              </p>
             </div>
           </div>
         </section>
