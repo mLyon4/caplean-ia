@@ -82,7 +82,7 @@ const DirectionTransformation = () => {
   const formulas = [
     {
       name: "Pilote",
-      duration: "2 jours/semaine",
+      duration: "1 à 2 jours/semaine",
       ideal: "PME 1-5 M€ en transformation ciblée",
       scope: "Pilotage ERP ou structuration Notion",
       engagement: "3 mois minimum",
