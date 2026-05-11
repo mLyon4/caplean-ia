@@ -6,8 +6,8 @@ const OffersSection = () => {
   const offers = [
     {
       icon: Compass,
-      title: "Diagnostic SI + organisation.",
-      description: "Une feuille de route claire avant d'investir.",
+      title: "Diagnostic Cap Digital 360°",
+      description: "un diagnostic stratégique de vos outils ERP, facturation, Notion et de votre organisation.\nUne feuille de route claire avant d'investir dans une transformation digitale.",
       link: "/le-cap-digital",
       color: "secondary"
     },
@@ -95,7 +95,7 @@ const OffersSection = () => {
                   
                   {/* Description */}
                   {offer.description && (
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-6 leading-relaxed whitespace-pre-line">
                       {offer.description}
                     </p>
                   )}
