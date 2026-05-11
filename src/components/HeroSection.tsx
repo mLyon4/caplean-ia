@@ -31,7 +31,7 @@ const HeroSection = () => {
             <span className="relative inline-block">
               <span className="text-secondary">digitale</span>
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 150 12" fill="none">
-                <path d="M2 8C38 2 112 2 148 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" />
+                <path d="M2 8C38 2 112 2 148 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
               </svg>
             </span>
           </h1>
