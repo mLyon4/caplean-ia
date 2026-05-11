@@ -33,7 +33,7 @@ const OffersSection = () => {
     {
       icon: Puzzle,
       title: "Externalisez votre Direction Transformation Digitale — en temps partagé",
-      description: "Diagnostic, pilotage de projets ERP/CRM, digitalisation des processus (automatisation, IA). Accompagnement personnalisé.",
+      description: "Une directrice Transformation digitale expérimentée de 1 à 3 jours par semaine, pour piloter votre ERP, structurer votre Notion et faire passer un cap à votre PME en moins de 6 mois.",
       link: "/direction-transformation-digitale-temps-partage-pme-erp-notion-ia",
       highlight: "Intervention possible d'un collectif d'experts.",
       color: "primary"
