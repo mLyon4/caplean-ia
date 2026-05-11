@@ -210,7 +210,7 @@ const DirectionTransformation = () => {
         <meta name="description" content="Externalisez votre Direction Transformation Digitale en temps partagé : 1 à 3 jours/semaine pour piloter votre ERP, structurer votre Notion et faire passer un cap à votre PME en moins de 6 mois." />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Direction Transformation Digitale à temps partagé" />
-        <meta property="og:description" content="Une dirigeante expérimentée 1 à 3 jours/semaine pour piloter ERP, Notion et IA dans votre PME." />
+        <meta property="og:description" content="Une directrice Transformation digitale expérimentée 1 à 3 jours/semaine pour piloter ERP, Notion et IA dans votre PME." />
         <meta property="og:locale" content="fr_FR" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
@@ -260,7 +260,7 @@ const DirectionTransformation = () => {
                   Externalisez votre <span className="text-secondary">Direction Transformation Digitale</span> — en temps partagé
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-                  Une dirigeante expérimentée de <strong className="text-foreground">1 à 3 jours par semaine</strong>, pour piloter votre ERP, structurer votre Notion et <strong className="text-foreground">faire passer un cap à votre PME</strong> en moins de 6 mois.
+                  Une directrice Transformation digitale expérimentée de <strong className="text-foreground">1 à 3 jours par semaine</strong>, pour piloter votre ERP, structurer votre Notion et <strong className="text-foreground">faire passer un cap à votre PME</strong> en moins de 6 mois.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
