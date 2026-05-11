@@ -31,7 +31,7 @@ const HeroSection = () => {
             <span className="relative inline-block">
               <span className="text-secondary">digitale</span>
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 150 12" fill="none">
-                <path d="M2 8C38 2 112 2 148 8" stroke="hsl(15, 79%, 57%)" strokeWidth="4" strokeLinecap="round" />
+                <path d="M2 8C38 2 112 2 148 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
               </svg>
             </span>
           </h1>
@@ -45,7 +45,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-4 mb-10 reveal-up" style={{ animationDelay: '0.4s' }}>
             <Button 
               asChild 
-              className="bg-secondary hover:bg-secondary-dark text-white btn-shine text-lg px-10 py-6 rounded-full shadow-md"
+              className="bg-secondary hover:bg-secondary-dark text-secondary-foreground btn-shine text-lg px-10 py-6 rounded-full shadow-md"
             >
               <a 
                 href="#contacts" 

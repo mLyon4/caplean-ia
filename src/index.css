@@ -28,11 +28,11 @@
     --primary-light: 230 35% 32%;
     --primary-dark: 230 45% 14%;
 
-    /* Secondary: #f5dcd4 - Rose pâle */
-    --secondary: 15 62% 90%;
+    /* Secondary: #f0c4b8 - Rose soutenu (CTA / accent visuel) */
+    --secondary: 13 65% 83%;
     --secondary-foreground: 230 41% 20%;
-    --secondary-light: 15 62% 94%;
-    --secondary-dark: 15 55% 82%;
+    --secondary-light: 15 62% 90%;
+    --secondary-dark: 13 55% 72%;
 
     /* Muted: #f2f1ed bg / #6e7082 fg */
     --muted: 48 16% 94%;
@@ -231,18 +231,18 @@
 }
 
 @layer components {
-  /* Premium button - Navy CTA */
+  /* Premium button - Rose soutenu CTA */
   .btn-premium {
     @apply relative px-8 py-4 font-semibold text-lg rounded-full overflow-hidden transition-all duration-300;
-    background: hsl(230, 41%, 20%);
-    color: hsl(48, 56%, 98%);
-    box-shadow: 0 2px 8px rgba(30, 37, 71, 0.25);
+    background: hsl(13, 65%, 83%);
+    color: hsl(230, 41%, 20%);
+    box-shadow: 0 2px 8px rgba(240, 196, 184, 0.45);
   }
 
   .btn-premium:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(30, 37, 71, 0.35);
-    background: hsl(230, 45%, 14%);
+    box-shadow: 0 4px 16px rgba(240, 196, 184, 0.6);
+    background: hsl(13, 55%, 72%);
   }
 
   /* Section title */
