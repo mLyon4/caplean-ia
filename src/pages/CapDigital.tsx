@@ -113,7 +113,7 @@ const CapDigital = () => {
   const process = [
     {
       icon: Calendar,
-      title: "Entretien gratuit de 30 min",
+      title: "Entretien gratuit de 45 min",
       desc: "Vous me racontez où vous en êtes. Je vérifie que Le Cap Digital est le bon point d'entrée pour vous. Sinon, je vous le dis franchement.",
     },
     {
