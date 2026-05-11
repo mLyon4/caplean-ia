@@ -230,7 +230,7 @@ const CapDigital = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background relative overflow-hidden">
-        <div className="fixed inset-0 bg-gradient-to-b from-muted/30 via-background to-background pointer-events-none" />
+        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-muted/30 via-background to-background pointer-events-none" />
 
         {/* Header */}
         <header className="w-full bg-background/80 backdrop-blur-lg sticky top-0 z-50 border-b border-border/30">
@@ -296,8 +296,7 @@ const CapDigital = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-                  Avant d'investir <span className="text-secondary">20 000 €</span> dans un ERP,
-                  sachez précisément quoi faire.
+                  Avant d'investir dans un nouvel <span className="text-secondary">ERP</span>, outil de facturation, ou une nouvelle organisation, sachez précisément quoi faire, dans quel ordre, et pourquoi.
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
