@@ -113,7 +113,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <Button 
               asChild 
-              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-white btn-shine rounded-full px-6 py-2"
+              className="hidden md:inline-flex bg-secondary hover:bg-secondary-dark text-secondary-foreground btn-shine rounded-full px-6 py-2"
             >
               <a 
                 href="#contacts" 
@@ -165,7 +165,7 @@ const Header = () => {
                     → Consultante Notion
                   </Link>
                   <Button 
-                    className="bg-secondary hover:bg-secondary-dark text-white btn-shine w-full mt-4 rounded-full" 
+                    className="bg-secondary hover:bg-secondary-dark text-secondary-foreground btn-shine w-full mt-4 rounded-full" 
                     onClick={() => {
                       trackCTAClick('Prendre rendez-vous', 'header_mobile', '#contacts');
                       scrollToSection('contacts');
