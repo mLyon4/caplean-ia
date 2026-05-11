@@ -262,6 +262,6 @@
 
   .bento-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(21, 73, 98, 0.08);
+    box-shadow: 0 8px 24px rgba(30, 37, 71, 0.08);
   }
 }
