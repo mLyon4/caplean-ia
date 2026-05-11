@@ -91,7 +91,7 @@ const OffersSection = () => {
                   )}
                   
                   {/* Features */}
-                  {offer.features && offer.features.length > 0 && (
+                  {'features' in offer && Array.isArray(offer.features) && offer.features.length > 0 && (
                     <ul className="space-y-3 mb-6 text-left">
                       {offer.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-3">
