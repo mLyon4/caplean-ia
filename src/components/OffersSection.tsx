@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { HardHat, Database, Puzzle, Compass, ArrowRight, Sparkles } from "lucide-react";
+import { Database, Puzzle, Compass, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
