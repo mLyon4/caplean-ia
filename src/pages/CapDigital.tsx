@@ -295,9 +295,7 @@ const CapDigital = () => {
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
-                  {" "}pour grandir : <span className="text-primary">ERP,</span>
-                  <br className="hidden md:block" />
-                  <span className="text-primary">facturation, Notion, organisation.</span>
+                  {" "}pour grandir.
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
