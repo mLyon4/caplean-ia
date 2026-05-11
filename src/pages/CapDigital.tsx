@@ -295,7 +295,7 @@ const CapDigital = () => {
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
-                  {" "}avant d'investir :
+                  {" "}pour grandir :
                   <br className="hidden md:block" />
                   <span className="text-primary"> ERP, facturation, Notion, organisation.</span>
                 </h1>
