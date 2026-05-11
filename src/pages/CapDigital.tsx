@@ -410,13 +410,29 @@ const CapDigital = () => {
               Le Cap Digital : transformer le brouillard en plan d'action.
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Je radiographie votre organisation et votre système d'information. Je rencontre vos
-              collaborateurs clés. J'analyse vos process critiques. Et je vous remets un rapport
-              stratégique qui répond à une seule question :
+              Je fais un diagnostic de votre organisation et votre système d'information.
+              Je rencontre vos collaborateurs clés.
+              J'analyse vos process critiques.
+              Et je vous remets un rapport stratégique avec des solutions digitales actionnables sur 4 fonctions clés :
             </p>
-            <p className="text-xl text-foreground font-semibold mb-10 p-6 rounded-2xl bg-secondary/5 border border-secondary/20">
-              Faut-il un ERP, un espace Notion structuré, ou les deux — et dans quel ordre ?
-            </p>
+            <ul className="space-y-2 mb-10 text-foreground/85">
+              <li className="flex items-start gap-2">
+                <span className="text-secondary mt-1">•</span>
+                <span>Facturation et gestion financière</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-secondary mt-1">•</span>
+                <span>Gestion clients et relation commerciale</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-secondary mt-1">•</span>
+                <span>Organisation et gestion de projets</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-secondary mt-1">•</span>
+                <span>Process internes et gestion documentaire</span>
+              </li>
+            </ul>
             <h3 className="text-2xl font-bold text-foreground mb-6">Pourquoi ça marche</h3>
             <ul className="space-y-3">
               {whyItWorks.map((w, i) => (
