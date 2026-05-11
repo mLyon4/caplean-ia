@@ -287,15 +287,17 @@ const CapDigital = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
-                  <Compass className="h-4 w-4 text-secondary" />
-                  <span className="text-sm font-medium text-foreground/80">
-                    Cap Digital — Vision 360°
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] tracking-tight">
+                  Posez le bon{" "}
+                  <span className="relative inline-block">
+                    <span className="text-secondary">diagnostic</span>
+                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
+                      <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
+                    </svg>
                   </span>
-                </div>
-
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-                  Posez le bon diagnostic avant d'investir : ERP, facturation, Notion, organisation — vos chantiers enfin clarifiés.
+                  {" "}avant d'investir :
+                  <br className="hidden md:block" />
+                  <span className="text-primary"> ERP, facturation, Notion, organisation.</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
