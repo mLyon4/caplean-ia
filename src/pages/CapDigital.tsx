@@ -296,7 +296,7 @@ const CapDigital = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-                  Avant d'investir dans un nouvel <span className="text-secondary">ERP</span>, outil de facturation, ou une nouvelle organisation, sachez précisément quoi faire, dans quel ordre, et pourquoi.
+                  Posez le bon diagnostic avant d'investir : ERP, facturation, Notion, organisation — vos chantiers enfin clarifiés.
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
