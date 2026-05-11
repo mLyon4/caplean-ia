@@ -230,7 +230,7 @@ const ConsultanteNotion = () => {
         <link rel="canonical" href="https://christellepicault.fr/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Espace Notion sur-mesure pour PME en 6 à 9 semaines" />
-        <meta property="og:description" content="Le quartier général digital de votre PME — adopté par vos équipes, piloté par vos KPI, finançable OPCO." />
+        <meta property="og:description" content="Le quartier général digital de votre PME — adopté par vos équipes, piloté par vos KPI. Formation Qualiopi finançable OPCO." />
         <meta property="og:locale" content="fr_FR" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow" />
@@ -683,7 +683,7 @@ const ConsultanteNotion = () => {
                 2 espaces livrés par mois maximum. Prochaine disponibilité communiquée lors de l'échange.
               </p>
               <p className="mt-10 text-base md:text-lg text-foreground italic max-w-2xl mx-auto">
-                En 6 à 9 semaines, nous vous livrons l'espace Notion qui devient le quartier général digital de votre PME — adopté par vos équipes, piloté par vos KPI, finançable OPCO.
+                En 6 à 9 semaines, nous vous livrons l'espace Notion qui devient le quartier général digital de votre PME — adopté par vos équipes, piloté par vos KPI. Formation Qualiopi finançable OPCO.
               </p>
             </div>
           </div>
