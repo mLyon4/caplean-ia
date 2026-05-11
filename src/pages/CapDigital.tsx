@@ -70,7 +70,7 @@ const CapDigital = () => {
     "Je suis indépendante de tout éditeur.",
     "Je connais les deux mondes : systèmes structurants (ERP, CRM) ET systèmes agiles (Notion, IA).",
     "Je pense organisation avant outil. L'outil ne sauve jamais un process bancal.",
-    "Je livre vite et serré. 7 jours, pas 3 mois. Vous décidez tant que l'élan est là.",
+    "Je livre vite et serré. 2 semaines, pas 3 mois. Vous décidez tant que l'élan est là.",
   ];
 
   const phases = [
@@ -123,7 +123,7 @@ const CapDigital = () => {
     },
     {
       icon: Search,
-      title: "Immersion + rapport (7 jours)",
+      title: "Immersion + rapport (2 semaines)",
       desc: "J'embarque dans votre organisation. Je questionne. Vous continuez à faire tourner votre PME.",
     },
     {
@@ -151,7 +151,7 @@ const CapDigital = () => {
       a: "Mes recommandations sont guidées par votre intérêt. Je peux toutefois vous orienter vers des partenaires intégrateurs de confiance si besoin.",
     },
     {
-      q: "Que se passe-t-il après les 7 jours ?",
+      q: "Que se passe-t-il après les 2 semaines ?",
       a: "Deux scénarios : (1) vous repartez avec votre feuille de route et la mettez en œuvre en interne ou avec d'autres partenaires — c'est très bien. (2) Vous choisissez de poursuivre avec l'un de mes accompagnements (ERP, Notion, Global, Suivi mensuel). Dans ce cas, 50% de la prestation de diagnostic seront déduits.",
     },
     {
@@ -173,7 +173,7 @@ const CapDigital = () => {
         },
         areaServed: "France",
         description:
-          "Diagnostic stratégique SI + organisation pour PME, livré en 7 jours. Feuille de route 12 mois, matrice de décision ERP / Notion.",
+          "Diagnostic stratégique SI + organisation pour PME, livré en 2 semaines. Feuille de route 12 mois, matrice de décision ERP / Notion.",
         offers: {
           "@type": "Offer",
           price: "2000",
@@ -195,10 +195,10 @@ const CapDigital = () => {
   return (
     <>
       <Helmet>
-        <title>Le Cap Digital — Diagnostic 360° PME en 7 jours</title>
+        <title>Le Cap Digital — Diagnostic 360° PME en 2 semaines</title>
         <meta
           name="description"
-          content="Avant d'engager 20 K€ dans un ERP, dérisquez votre décision. Diagnostic stratégique SI + organisation livré en 7 jours."
+          content="Avant d'engager 20 K€ dans un ERP, dérisquez votre décision. Diagnostic stratégique SI + organisation livré en 2 semaines."
         />
         <meta
           name="keywords"
@@ -207,20 +207,20 @@ const CapDigital = () => {
         <link rel="canonical" href="https://christelle-picault.fr/le-cap-digital" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Le Cap Digital — 7 jours pour décider" />
+        <meta property="og:title" content="Le Cap Digital — 2 semaines pour décider" />
         <meta
           property="og:description"
-          content="Diagnostic 360° SI + organisation pour PME, livré en 7 jours. Une feuille de route claire avant tout investissement lourd."
+          content="Diagnostic 360° SI + organisation pour PME, livré en 2 semaines. Une feuille de route claire avant tout investissement lourd."
         />
         <meta property="og:url" content="https://christelle-picault.fr/le-cap-digital" />
         <meta property="og:image" content={ogImage} />
         <meta property="og:locale" content="fr_FR" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Le Cap Digital — 7 jours pour décider" />
+        <meta name="twitter:title" content="Le Cap Digital — 2 semaines pour décider" />
         <meta
           name="twitter:description"
-          content="Diagnostic 360° SI + organisation pour PME, livré en 7 jours."
+          content="Diagnostic 360° SI + organisation pour PME, livré en 2 semaines."
         />
         <meta name="twitter:image" content={ogImage} />
 
@@ -296,12 +296,12 @@ const CapDigital = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-                  Avant d'investir dans un nouvel <span className="text-secondary">ERP</span>, outil de facturation, ou une nouvelle organisation, sachez précisément quoi faire, dans quel ordre, et pourquoi.
+                  Posez le bon diagnostic avant d'investir : ERP, facturation, Notion, organisation — vos chantiers enfin clarifiés.
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                   Le Cap Digital : un diagnostic 360° de votre SI et de votre organisation, livré
-                  en <strong className="text-foreground">7 jours</strong>. Vous repartez avec une
+                  en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une
                   feuille de route claire — ERP, Notion, ou les deux.
                 </p>
 
@@ -337,7 +337,7 @@ const CapDigital = () => {
                 <div className="rounded-3xl overflow-hidden border border-border/50 shadow-elegant-lg">
                   <img
                     src={ogImage}
-                    alt="Le Cap Digital — 7 jours pour décider"
+                    alt="Le Cap Digital — 2 semaines pour décider"
                     width={1200}
                     height={640}
                     className="w-full h-auto"
@@ -530,7 +530,7 @@ const CapDigital = () => {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-3 text-foreground/85">
-                  <span>⏱️</span> Livré sous 7 jours après l'entretien d'immersion
+                  <span>⏱️</span> Livré sous 2 semaines après l'entretien d'immersion
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🎯</span> Déduit à 50% de la mission suivante si poursuite
