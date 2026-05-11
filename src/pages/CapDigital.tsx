@@ -299,9 +299,8 @@ const CapDigital = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Le Cap Digital : un diagnostic 360° de votre SI et de votre organisation, livré
-                  en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une
-                  feuille de route claire — ERP, Notion, ou les deux.
+                  Le Cap Digital : un diagnostic 360° stratégique de vos outils <strong className="text-foreground">ERP, facturation, Notion</strong> et de votre organisation. Livré
+                  en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une feuille de route claire.
                 </p>
 
                 <ul className="space-y-3">
