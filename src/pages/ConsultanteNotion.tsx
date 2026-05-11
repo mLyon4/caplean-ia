@@ -316,7 +316,7 @@ const ConsultanteNotion = () => {
               <div className="lg:col-span-5 space-y-4">
                 <div className="flex justify-center lg:justify-end gap-3 mb-2">
                   <img src={notionAmbassador} alt="Notion Official Ambassador" className="h-14 md:h-16 w-auto drop-shadow-md" />
-                  <img src={notionSpecialistBadge} alt="Notion Service Specialist - Certification officielle" className="h-14 md:h-16 w-auto drop-shadow-md" />
+                  <img src={notionSpecialistBadge} alt="Notion Service Specialist - Certification officielle" className="h-20 md:h-24 lg:h-28 w-auto drop-shadow-md" />
                 </div>
 
                 <div className="p-6 rounded-2xl bg-gradient-to-br from-secondary/10 to-primary/5 border border-secondary/20">
