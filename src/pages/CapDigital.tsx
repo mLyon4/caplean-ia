@@ -67,27 +67,24 @@ const CapDigital = () => {
   ];
 
   const whyItWorks = [
-    "Je suis indépendante de tout éditeur.",
-    "Je connais les deux mondes : systèmes structurants (ERP, CRM) ET systèmes agiles (Notion, IA).",
+    "Je ne suis pas un éditeur.",
+    "Je connais les deux mondes : systèmes structurants (ERP, CRM) ET systèmes agiles et no-code (Notion, IA).",
     "Je pense organisation avant outil. L'outil ne sauve jamais un process bancal.",
-    "Je livre vite et serré. 2 semaines, pas 3 mois. Vous décidez tant que l'élan est là.",
+    "Je livre rapidement en 2 semaines, pas 3 mois. Vous décidez tant que l'élan est là.",
   ];
 
   const phases = [
     {
       icon: Search,
-      tag: "Jours 1–3",
       title: "Phase d'immersion",
       items: [
         "Entretien dirigeant approfondi (90 min)",
         "Audit de votre SI : cartographie complète des outils, flux et données",
         "Audit organisationnel : maturité de vos process critiques",
-        "3 à 5 entretiens avec vos collaborateurs clés (60 min chacun)",
       ],
     },
     {
       icon: FileText,
-      tag: "Jours 4–6",
       title: "Le rapport « Cap Digital »",
       items: [
         "Cartographie SI actuelle : forces, faiblesses, risques",
@@ -100,12 +97,11 @@ const CapDigital = () => {
     },
     {
       icon: Presentation,
-      tag: "Jour 7",
       title: "Restitution dirigeante",
       items: [
-        "Présentation orale en visio ou en présentiel (2h)",
+        "Présentation orale en visio ou en présentiel (1h30)",
         "Espace dédié aux questions et arbitrages",
-        "Vous repartez avec une décision claire",
+        "Vous repartez avec des solutions, un plan d'actions chiffré",
       ],
     },
   ];
@@ -463,9 +459,11 @@ const CapDigital = () => {
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center mb-4">
                     <Icon className="h-7 w-7 text-secondary" />
                   </div>
-                  <span className="text-xs font-semibold text-secondary uppercase tracking-wide mb-2">
-                    {tag}
-                  </span>
+                  {tag && (
+                    <span className="text-xs font-semibold text-secondary uppercase tracking-wide mb-2">
+                      {tag}
+                    </span>
+                  )}
                   <h3 className="text-xl font-bold text-foreground mb-4">{title}</h3>
                   <ul className="space-y-2">
                     {items.map((it, j) => (
