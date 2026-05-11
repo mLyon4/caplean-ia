@@ -77,10 +77,10 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			boxShadow: {
-				'elegant': '0 4px 20px -2px rgba(21, 73, 98, 0.12)',
-				'elegant-lg': '0 10px 40px -10px rgba(21, 73, 98, 0.2)',
-				'glow-primary': '0 0 30px rgba(21, 73, 98, 0.15)',
-				'glow-secondary': '0 0 30px rgba(232, 101, 57, 0.2)',
+				'elegant': '0 4px 20px -2px rgba(30, 37, 71, 0.12)',
+				'elegant-lg': '0 10px 40px -10px rgba(30, 37, 71, 0.2)',
+				'glow-primary': '0 0 30px rgba(30, 37, 71, 0.15)',
+				'glow-secondary': '0 0 30px rgba(240, 196, 184, 0.4)',
 			},
 			keyframes: {
 				'accordion-down': {
