@@ -230,7 +230,7 @@ const CapDigital = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background relative overflow-hidden">
-        <div className="fixed inset-0 bg-gradient-to-b from-muted/30 via-background to-background pointer-events-none" />
+        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-muted/30 via-background to-background pointer-events-none" />
 
         {/* Header */}
         <header className="w-full bg-background/80 backdrop-blur-lg sticky top-0 z-50 border-b border-border/30">
