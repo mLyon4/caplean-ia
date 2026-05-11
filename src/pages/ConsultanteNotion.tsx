@@ -278,23 +278,15 @@ const ConsultanteNotion = () => {
             <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
               <div className="lg:col-span-7 space-y-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-                  Reprenez le contrôle de votre PME en{" "}
-                  <span className="text-secondary">6 à 9 semaines</span>
+                  Accélérez la croissance de votre entreprise avec{" "}
+                  <span className="text-secondary">Notion</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
                   Un <strong className="text-foreground">Espace Notion sur-mesure</strong> qui devient le <strong className="text-foreground">quartier général digital</strong> de votre PME — adopté par vos équipes, piloté par vos KPI, prêt à grandir avec vous.
                 </p>
 
-                <div className="glass-premium rounded-2xl p-5 border-l-4 border-secondary">
-                  <p className="text-sm md:text-base text-foreground flex items-start gap-3">
-                    <span className="text-xl">🎯</span>
-                    <span>
-                      <strong>À partir de 4 500 € HT</strong> · Livré en 6 à 9 semaines · Formation Qualiopi finançable par votre OPCO
-                    </span>
-                  </p>
-                </div>
-
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                  <Button asChild className="btn-premium text-base px-8 py-6">
                   <Button asChild className="btn-premium text-base px-8 py-6">
                     <a
                       href={CALENDLY_URL}
