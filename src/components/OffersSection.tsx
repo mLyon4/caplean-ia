@@ -12,17 +12,6 @@ const OffersSection = () => {
       color: "secondary"
     },
     {
-      icon: HardHat,
-      title: "Lean Management spécialisé BTP",
-      features: [
-        "Jusqu'à 30 % de temps administratif en moins",
-        "Pilotage en temps réel de la rentabilité",
-        "Décisions plus rapides et plus sereines"
-      ],
-      highlight: "🎯 Pré-diagnostic offert – Financement OPCO possible",
-      color: "primary"
-    },
-    {
       icon: Database,
       title: "Systèmes Notion personnalisés",
       description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
