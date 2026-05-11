@@ -7,7 +7,7 @@ const OffersSection = () => {
     {
       icon: Compass,
       title: "Diagnostic Cap Digital 360°",
-      description: "un diagnostic stratégique de vos outils ERP, facturation, Notion et de votre organisation.\nUne feuille de route claire avant d'investir dans une transformation digitale.",
+      description: "un diagnostic stratégique de vos outils ERP/CRM, facturation, Notion et de votre organisation.\nUne feuille de route claire avant d'investir dans une transformation digitale.",
       link: "/le-cap-digital",
       color: "secondary"
     },
