@@ -62,13 +62,13 @@ const CapDigital = () => {
     "Les données métier sont éparpillées entre Excel, mails, têtes des collaborateurs et un logiciel vieillissant.",
     "Vous n'avez pas de vision claire sur votre rentabilité par projet, par client ou par activité.",
     "Vos équipes réinventent la roue à chaque dossier, faute de process partagés.",
-    "Un éditeur ERP vous a fait une proposition à 20, 50 ou 80 K€… sans que vous sachiez si c'est la bonne réponse.",
+    "Un éditeur ERP/CRM vous a fait une proposition à 20, 50 ou 80 K€… sans que vous sachiez si c'est la bonne réponse.",
     "Vous hésitez entre moderniser votre SI, structurer votre organisation, ou les deux — sans savoir par où commencer.",
   ];
 
   const whyItWorks = [
     "Je ne suis pas un éditeur.",
-    "Je connais les deux mondes : systèmes structurants (ERP, CRM) ET systèmes agiles et no-code (Notion, IA).",
+    "Je connais les deux mondes : systèmes structurants (ERP/CRM) ET systèmes agiles et no-code (Notion, IA).",
     "Je pense organisation avant outil. L'outil ne sauve jamais un process bancal.",
     "Je livre rapidement en 2 semaines, pas 3 mois. Vous décidez tant que l'élan est là.",
   ];
@@ -91,7 +91,7 @@ const CapDigital = () => {
       items: [
         "Cartographie SI actuelle : forces, faiblesses, risques",
         "Cartographie organisationnelle : process matures vs. immatures",
-        "Matrice de décision : ERP, Notion, ou les deux",
+        "Matrice de décision : ERP/CRM, Notion, ou les deux",
         "Feuille de route 12 mois priorisée et chiffrée",
         "KPI de succès recommandés",
         "Plan d'attaque 90 jours prêt à lancer",
@@ -146,12 +146,12 @@ const CapDigital = () => {
       a: "Au contraire. C'est précisément la situation typique dans laquelle Le Cap Digital apporte le plus de valeur. Je joue le rôle de Directrice de la Transformation Digitale à temps partagé.",
     },
     {
-      q: "Êtes-vous indépendante des éditeurs (ERP, CRM, etc.) ?",
+      q: "Êtes-vous indépendante des éditeurs (ERP/CRM, etc.) ?",
       a: "Mes recommandations sont guidées par votre intérêt. Je peux toutefois vous orienter vers des partenaires intégrateurs de confiance si besoin.",
     },
     {
       q: "Que se passe-t-il après les 2 semaines ?",
-      a: "Deux scénarios : (1) vous repartez avec votre feuille de route et la mettez en œuvre en interne ou avec d'autres partenaires — c'est très bien. (2) Vous choisissez de poursuivre avec l'un de mes accompagnements (ERP, Notion, Global, Suivi mensuel). Dans ce cas, 50% de la prestation de diagnostic seront déduits.",
+      a: "Deux scénarios : (1) vous repartez avec votre feuille de route et la mettez en œuvre en interne ou avec d'autres partenaires — c'est très bien. (2) Vous choisissez de poursuivre avec l'un de mes accompagnements (ERP/CRM, Notion, Global, Suivi mensuel). Dans ce cas, 50% de la prestation de diagnostic seront déduits.",
     },
     {
       q: "Confidentialité ?",
@@ -172,7 +172,7 @@ const CapDigital = () => {
         },
         areaServed: "France",
         description:
-          "Diagnostic stratégique SI + organisation pour PME, livré en 2 semaines. Feuille de route 12 mois, matrice de décision ERP / Notion.",
+          "Diagnostic stratégique SI + organisation pour PME, livré en 2 semaines. Feuille de route 12 mois, matrice de décision ERP/CRM / Notion.",
         offers: {
           "@type": "Offer",
           price: "2000",
@@ -197,11 +197,11 @@ const CapDigital = () => {
         <title>Le Cap Digital — Diagnostic 360° PME en 2 semaines</title>
         <meta
           name="description"
-          content="Avant d'engager 20 K€ dans un ERP, dérisquez votre décision. Diagnostic stratégique SI + organisation livré en 2 semaines."
+          content="Avant d'engager 20 K€ dans un ERP/CRM, dérisquez votre décision. Diagnostic stratégique SI + organisation livré en 2 semaines."
         />
         <meta
           name="keywords"
-          content="audit ERP PME, conseil Notion entreprise, directrice transformation digitale temps partagé"
+          content="audit ERP/CRM PME, conseil Notion entreprise, directrice transformation digitale temps partagé"
         />
         <link rel="canonical" href="https://christelle-picault.fr/le-cap-digital" />
 
@@ -299,7 +299,7 @@ const CapDigital = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Le Cap Digital : un diagnostic 360° stratégique de vos outils <strong className="text-foreground">ERP, facturation, Notion</strong> et de votre organisation. Livré
+                  Le Cap Digital : un diagnostic 360° stratégique de vos outils <strong className="text-foreground">ERP/CRM, facturation, Notion</strong> et de votre organisation. Livré
                   en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une feuille de route claire.
                 </p>
 
@@ -393,7 +393,7 @@ const CapDigital = () => {
                   la mauvaise direction.
                 </p>
                 <p className="text-muted-foreground">
-                  Un projet ERP raté coûte en moyenne 2 à 3 fois son budget initial — et 18 mois
+                  Un projet ERP/CRM raté coûte en moyenne 2 à 3 fois son budget initial — et 18 mois
                   de perte d'élan.
                 </p>
               </div>
@@ -596,7 +596,7 @@ const CapDigital = () => {
               les bons outils, et piloter la transformation sans s'égarer dans les modes.
             </p>
             <p className="text-muted-foreground mb-8">
-              Ma différence : je pense système avant outil. Avant de vous parler d'ERP ou de
+              Ma différence : je pense système avant outil. Avant de vous parler d'ERP/CRM ou de
               Notion, je regarde vos process, vos flux, vos données. Et je vous dis ce qui doit
               changer — même si ce n'est pas confortable.
             </p>
