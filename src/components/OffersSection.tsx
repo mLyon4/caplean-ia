@@ -32,8 +32,9 @@ const OffersSection = () => {
     },
     {
       icon: Puzzle,
-      title: "Transformation Digitale",
+      title: "Externalisez votre Direction Transformation Digitale — en temps partagé",
       description: "Diagnostic, pilotage de projets ERP/CRM, digitalisation des processus (automatisation, IA). Accompagnement personnalisé.",
+      link: "/direction-transformation-digitale-temps-partage-pme-erp-notion-ia",
       highlight: "Intervention possible d'un collectif d'experts.",
       color: "primary"
     }
