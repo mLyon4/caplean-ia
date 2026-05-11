@@ -94,7 +94,7 @@ const DirectionTransformation = () => {
       ideal: "PME 5-10 M€ en refonte complète",
       scope: "Pilotage ERP + Notion + IA + change",
       engagement: "6 mois minimum",
-      price: "10 000 € HT/mois",
+      price: "Sur devis",
       highlighted: true,
     },
   ];
