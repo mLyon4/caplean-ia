@@ -632,7 +632,7 @@ const CapDigital = () => {
                 Prêt à transformer le brouillard en plan d'action ?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Réservez votre entretien gratuit de 30 minutes. Nous regardons ensemble si Le Cap
+                Réservez votre entretien gratuit de 45 minutes. Nous regardons ensemble si Le Cap
                 Digital est fait pour vous.
               </p>
               <Button asChild className="btn-premium text-base px-10 py-6">
