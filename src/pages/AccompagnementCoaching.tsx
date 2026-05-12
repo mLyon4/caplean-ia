@@ -74,21 +74,21 @@ const AccompagnementCoaching = () => {
     {
       name: "Essentiel",
       volume: "4h/mois",
-      ideal: "PME 0,5-2 M€ qui veulent garder leur écosystème digital propre",
+      ideal: "Entreprise qui veut garder son écosystème digital propre",
       price: "490 € HT/mois",
     },
     {
       name: "Croissance",
-      volume: "10h/mois",
-      ideal: "PME 2-5 M€ en évolution digitale active",
-      price: "1 300 € HT/mois",
+      volume: "8h/mois",
+      ideal: "Entreprise en évolution digitale active",
+      price: "890 € HT/mois",
       highlighted: true,
     },
     {
       name: "Premium",
-      volume: "20h/mois",
-      ideal: "PME 5-10 M€ avec besoin de co-pilotage digital",
-      price: "2 400 € HT/mois",
+      volume: "16h/mois",
+      ideal: "Entreprise avec besoin de co-pilotage digital",
+      price: "1 690 € HT/mois",
     },
   ];
 
