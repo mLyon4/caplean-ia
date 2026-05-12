@@ -201,7 +201,7 @@ const AccompagnementCoaching = () => {
         name: "Accompagnement & Coaching sur-mesure Notion & Digital PME",
         serviceType: "Consulting & Coaching",
         areaServed: "France",
-        description: "Accompagnement digital sur-mesure pour PME : Suivi mensuel (à partir de 490 € HT/mois) ou Carnet d'heures (à partir de 700 € HT). Notion, IA, outils, formation Qualiopi.",
+        description: "Accompagnement digital sur-mesure pour PME : Suivi mensuel (à partir de 490 € HT/mois) ou Carnet d'heures (à partir de 690 € HT). Notion, IA, outils, formation Qualiopi.",
         offers: [
           { "@type": "Offer", name: "Suivi mensuel Essentiel", price: "490", priceCurrency: "EUR" },
           { "@type": "Offer", name: "Suivi mensuel Croissance", price: "1300", priceCurrency: "EUR" },
@@ -225,7 +225,7 @@ const AccompagnementCoaching = () => {
     <>
       <Helmet>
         <title>Accompagnement & Coaching sur-mesure Notion & Digital PME | Christelle Picault</title>
-        <meta name="description" content="Faites vivre votre transformation digitale : Suivi mensuel (à partir de 490 € HT/mois) ou Carnet d'heures (à partir de 700 € HT) — coaching Notion, IA et digital pour PME." />
+        <meta name="description" content="Faites vivre votre transformation digitale : Suivi mensuel (à partir de 490 € HT/mois) ou Carnet d'heures (à partir de 690 € HT) — coaching Notion, IA et digital pour PME." />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Accompagnement & Coaching sur-mesure — Notion, IA & Digital PME" />
         <meta property="og:description" content="Suivi mensuel ou Carnet d'heures : un partenaire fixe pour faire vivre votre digital, ou des sprints ciblés pour vous structurer." />
@@ -316,7 +316,7 @@ const AccompagnementCoaching = () => {
                     <h3 className="font-bold text-foreground">Le Carnet d'heures</h3>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">5h ou 10h de coaching Notion ou Digital, utilisables sur 6 mois.</p>
-                  <p className="text-primary font-bold">À partir de 700 € HT</p>
+                  <p className="text-primary font-bold">À partir de 690 € HT</p>
                 </div>
               </div>
             </div>
