@@ -531,6 +531,9 @@ const CapDigital = () => {
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🔒</span> 2 diagnostics ouverts par mois maximum
                 </li>
+                <li className="flex items-center gap-3 text-foreground/85">
+                  <span>💼</span> Prise en charge possible par certains OPCO
+                </li>
               </ul>
 
               <p className="text-sm text-muted-foreground italic">
