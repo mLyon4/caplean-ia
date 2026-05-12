@@ -433,6 +433,7 @@ const AccompagnementCoaching = () => {
                 </div>
               ))}
             </div>
+            <p className="text-center text-sm md:text-base text-muted-foreground mt-6 font-medium">Engagement minimum 3 mois</p>
 
             <div className="max-w-4xl mx-auto mt-12">
               <h3 className="text-xl md:text-2xl font-bold text-foreground text-center mb-6">Inclus dans toutes les formules Suivi</h3>
