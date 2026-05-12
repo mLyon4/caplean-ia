@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import ConsultanteNotion from "./pages/ConsultanteNotion";
 import CapDigital from "./pages/CapDigital";
 import DirectionTransformation from "./pages/DirectionTransformation";
+import AccompagnementCoaching from "./pages/AccompagnementCoaching";
 
 // Only load analytics dashboard in development mode
 const AnalyticsDashboard = import.meta.env.DEV 
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" element={<ConsultanteNotion />} />
               <Route path="/le-cap-digital" element={<CapDigital />} />
               <Route path="/direction-transformation-digitale-temps-partage-pme-erp-notion-ia" element={<DirectionTransformation />} />
+              <Route path="/accompagnement-coaching-notion-digital-pme-suivi-mensuel-carnet-heures" element={<AccompagnementCoaching />} />
               {/* Analytics debug route only available in development */}
               {import.meta.env.DEV && AnalyticsDashboard && (
                 <Route 
