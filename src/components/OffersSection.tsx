@@ -59,21 +59,16 @@ const OffersSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {offers.map((offer, index) => {
             const Icon = offer.icon;
-            const isPrimary = offer.color === 'primary';
             
             return (
               <div 
                 key={index} 
-                className="glass-premium rounded-[2rem] p-8 card-premium relative"
+                className="group glass-premium rounded-[2rem] p-8 card-premium relative flex flex-col h-full border border-secondary/10 hover:border-secondary/40 transition-all duration-300"
               >
-                <div className="text-center">
+                <div className="flex flex-col h-full text-center">
                   {/* Icon */}
-                  <div className={`icon-container w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 ${
-                    isPrimary 
-                      ? 'bg-gradient-to-br from-primary/20 to-primary/5' 
-                      : 'bg-gradient-to-br from-secondary/20 to-secondary/5'
-                  }`}>
-                    <Icon className={`h-10 w-10 ${isPrimary ? 'text-primary' : 'text-secondary'}`} />
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 bg-gradient-to-br from-secondary/25 to-secondary/5 ring-1 ring-secondary/20 group-hover:ring-secondary/40 transition-all">
+                    <Icon className="h-8 w-8 text-secondary" strokeWidth={1.75} />
                   </div>
                   
                   {/* Title */}
