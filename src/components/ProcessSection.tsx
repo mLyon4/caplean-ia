@@ -3,7 +3,10 @@ import {
   Search, 
   Target, 
   Settings, 
-  Users 
+  Users,
+  Sparkles,
+  CheckCircle2,
+  Compass
 } from "lucide-react";
 
 const ProcessSection = () => {
@@ -83,12 +86,57 @@ const ProcessSection = () => {
           ))}
         </div>
 
-        {/* Bottom Message */}
-        <div className="text-center mt-16">
-          <div className="max-w-2xl mx-auto p-6 bg-blue-light/20 rounded-2xl border border-primary/20">
-            <p className="text-lg text-foreground">
-              Une approche méthodique et personnalisée pour garantir le succès de votre transformation digitale
-            </p>
+        {/* Bottom Message — visual highlight */}
+        <div className="mt-20 max-w-5xl mx-auto">
+          <div className="relative overflow-hidden rounded-[2rem] p-10 md:p-14 bg-gradient-to-br from-primary via-primary to-[#2a3260] text-primary-foreground shadow-[0_30px_80px_-30px_hsl(var(--primary)/0.5)]">
+            {/* Decorative blurs */}
+            <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-secondary/30 blur-3xl" />
+            <div className="absolute -bottom-24 -left-16 w-80 h-80 rounded-full bg-secondary/20 blur-3xl" />
+            {/* Subtle dotted texture */}
+            <div
+              className="absolute inset-0 opacity-[0.08]"
+              style={{
+                backgroundImage:
+                  "radial-gradient(circle, currentColor 1px, transparent 1px)",
+                backgroundSize: "22px 22px",
+              }}
+            />
+
+            <div className="relative z-10 grid md:grid-cols-[auto_1fr_auto] items-center gap-8">
+              {/* Left icon */}
+              <div className="flex justify-center md:justify-start">
+                <div className="w-20 h-20 rounded-2xl bg-secondary/25 ring-1 ring-secondary/40 flex items-center justify-center backdrop-blur-sm">
+                  <Compass className="h-10 w-10 text-secondary" strokeWidth={1.75} />
+                </div>
+              </div>
+
+              {/* Message */}
+              <div className="text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 ring-1 ring-secondary/30 text-xs font-semibold tracking-wide uppercase mb-4">
+                  <Sparkles className="h-3.5 w-3.5 text-secondary" />
+                  <span className="text-secondary">Notre promesse</span>
+                </div>
+                <p className="text-2xl md:text-3xl font-bold leading-tight">
+                  Une approche <span className="text-secondary">méthodique</span> et <span className="text-secondary">personnalisée</span>
+                </p>
+                <p className="mt-3 text-base md:text-lg text-primary-foreground/80">
+                  pour garantir le succès de votre transformation digitale.
+                </p>
+              </div>
+
+              {/* Right pillars */}
+              <div className="flex md:flex-col gap-3 justify-center">
+                {["Méthode", "Sur-mesure", "Résultats"].map((label) => (
+                  <div
+                    key={label}
+                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 ring-1 ring-primary-foreground/20 backdrop-blur-sm text-sm font-medium"
+                  >
+                    <CheckCircle2 className="h-4 w-4 text-secondary" />
+                    {label}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
