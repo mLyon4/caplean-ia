@@ -123,6 +123,8 @@ const AccompagnementCoaching = () => {
   ];
 
   const trustReasons = [
+    "Certifiée PMP® — Project Management Professional",
+    "Plus de 20 ans d'expérience en ESN",
     "Certifiée Qualiopi — vos formations sont finançables",
     "Ambassadrice Notion — expertise pointue sur l'outil de référence",
     "Expertise Lean + Digital — je structure avant d'outiller",
