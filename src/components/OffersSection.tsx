@@ -108,10 +108,10 @@ const OffersSection = () => {
                   {offer.link && (
                     <Link 
                       to={offer.link} 
-                      className="inline-flex items-center gap-2 text-secondary hover:text-secondary-dark font-semibold transition-colors group"
+                      className="mt-auto inline-flex items-center justify-center gap-2 text-secondary hover:text-secondary-dark font-semibold transition-colors group/link"
                     >
                       En savoir plus 
-                      <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
                     </Link>
                   )}
                   
