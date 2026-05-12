@@ -13,8 +13,8 @@ const OffersSection = () => {
     },
     {
       icon: Database,
-      title: "Systèmes Notion personnalisés",
-      description: "Création d'espaces Notion sur mesure : gestion de projets, suivi commercial, tableaux de bord, automatisations, SIRH…",
+      title: "Accélérez la croissance de votre entreprise avec Notion",
+      description: "Un Espace Notion sur-mesure qui devient le quartier général digital de votre entreprise — adopté par vos équipes, piloté par vos KPI, prêt à grandir avec vous.",
       link: "/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme",
       badge: "Formations Qualiopi",
       color: "secondary"
