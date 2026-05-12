@@ -110,8 +110,8 @@ const AccompagnementCoaching = () => {
   ];
 
   const carnetFormulas = [
-    { name: "Carnet 5h", volume: "5 heures", price: "700 € HT", ideal: "Un démarrage, une formation ciblée, un sprint ponctuel" },
-    { name: "Carnet 10h", volume: "10 heures", price: "1 300 € HT", ideal: "Une structuration complète, une refonte de process, une montée en compétence équipe", highlighted: true },
+    { name: "Carnet 5h", volume: "5 heures", price: "690 € HT", ideal: "Un démarrage, une formation ciblée, un sprint ponctuel" },
+    { name: "Carnet 10h", volume: "10 heures", price: "1 290 € HT", ideal: "Une structuration complète, une refonte de process, une montée en compétence équipe", highlighted: true },
   ];
 
   const carnetModalities = [
