@@ -90,6 +90,11 @@ const Header = () => {
                     Direction Transformation Digitale
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
+                  <Link to="/accompagnement-coaching-notion-digital-pme-suivi-mensuel-carnet-heures">
+                    Accompagnement & Coaching
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
