@@ -431,11 +431,6 @@ const AccompagnementCoaching = () => {
                 </div>
               ))}
             </div>
-            <div className="max-w-4xl mx-auto mt-8 p-5 md:p-6 rounded-2xl bg-primary/5 border border-primary/20 text-center">
-              <p className="text-sm md:text-base text-foreground">
-                💡 Heures non consommées <strong>reportées sur le mois suivant</strong> (dans la limite de 2 mois). Vous ne perdez rien.
-              </p>
-            </div>
 
             <div className="max-w-4xl mx-auto mt-12">
               <h3 className="text-xl md:text-2xl font-bold text-foreground text-center mb-6">Inclus dans toutes les formules Suivi</h3>
