@@ -130,7 +130,7 @@ const AccompagnementCoaching = () => {
     "Expertise Lean + Digital — je structure avant d'outiller",
     "Orientation PME — je parle dirigeant, pas jargon technique",
     "Veille IA continue — vous restez à jour sans devoir suivre vous-même",
-    "Maximum 8 clients en Suivi mensuel simultané — pour garantir la réactivité",
+    "Maximum 8 clients en Suivi mensuel simultané -- pour garantir réactivité et qualité du suivi",
   ];
 
   const forSuivi = [
