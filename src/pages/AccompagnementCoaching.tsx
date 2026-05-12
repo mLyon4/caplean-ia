@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { trackCTAClick } from "@/lib/analytics";
 import Footer from "@/components/Footer";
+import LinkedInReviewsCarousel from "@/components/LinkedInReviewsCarousel";
 
 const CALENDLY_URL = "https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange";
 
