@@ -642,27 +642,6 @@ const AccompagnementCoaching = () => {
           </div>
         </section>
 
-        {/* Journey */}
-        <section className="py-14 md:py-28 relative">
-          <div className="container mx-auto px-4 md:px-6 relative z-10">
-            <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Le parcours-type Suivi mensuel sur <span className="text-gradient-secondary">12 mois</span>
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-7xl mx-auto">
-              {journeySteps.map((s, i) => (
-                <div key={i} className="glass-premium rounded-2xl p-6 card-premium">
-                  <div className="text-3xl mb-3">{s.emoji}</div>
-                  <p className="text-xs uppercase tracking-wider text-secondary font-bold mb-1">{s.week}</p>
-                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-3">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Testimonials */}
         <section className="py-14 md:py-28 relative">
           <div className="absolute inset-0 bg-muted/40" />
