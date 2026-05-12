@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Database, Puzzle, Compass, ArrowRight, Sparkles } from "lucide-react";
+import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
@@ -26,6 +26,13 @@ const OffersSection = () => {
       link: "/direction-transformation-digitale-temps-partage-pme-erp-notion-ia",
       highlight: "Intervention possible d'un collectif d'experts.",
       color: "primary"
+    },
+    {
+      icon: LifeBuoy,
+      title: "Faites vivre votre transformation digitale",
+      description: "Votre transformation digitale mérite mieux qu'un projet « one shot ». Faites-la vivre, à votre rythme — avec un partenaire fixe au mois, ou par sprints ciblés.",
+      link: "/accompagnement-coaching-notion-digital-pme-suivi-mensuel-carnet-heures",
+      color: "secondary"
     }
   ];
 
