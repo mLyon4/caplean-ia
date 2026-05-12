@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { trackCTAClick } from "@/lib/analytics";
 import Footer from "@/components/Footer";
+import LinkedInReviewsCarousel from "@/components/LinkedInReviewsCarousel";
 
 const CALENDLY_URL = "https://calendly.com/contact-christelle-picault/tout-commence-par-un-echange";
 
@@ -643,44 +644,11 @@ const AccompagnementCoaching = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="py-14 md:py-28 relative">
-          <div className="absolute inset-0 bg-muted/40" />
-          <div className="container mx-auto px-4 md:px-6 relative z-10">
-            <div className="text-center mb-10 md:mb-16">
-              <div className="flex items-center justify-center gap-2 md:gap-3 mb-4">
-                <Linkedin className="h-5 w-5 text-[#0077b5]" />
-                <a
-                  href="https://www.linkedin.com/services/page/99439232a0ba4b836b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm md:text-base text-[#0077b5] hover:underline font-medium"
-                >
-                  Voir tous les avis
-                </a>
-              </div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-                Ils m'ont fait <span className="text-gradient-secondary">confiance</span>
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-6xl mx-auto">
-              {testimonials.map((t, i) => (
-                <div key={i} className="glass-premium rounded-2xl md:rounded-[2rem] p-6 md:p-10 relative overflow-hidden card-premium">
-                  <div className="absolute top-4 right-4 md:top-6 md:right-6 text-secondary/10">
-                    <Quote className="h-12 w-12 md:h-20 md:w-20" />
-                  </div>
-                  <div className="flex gap-1 mb-4 md:mb-6 relative z-10">
-                    {[...Array(5)].map((_, k) => (
-                      <Star key={k} className="h-4 w-4 md:h-5 md:w-5 fill-secondary text-secondary" />
-                    ))}
-                  </div>
-                  <p className="text-sm md:text-lg text-foreground mb-5 md:mb-8 relative z-10 leading-relaxed">"{t.content}"</p>
-                  <div className="relative z-10">
-                    <p className="font-bold text-sm md:text-base text-foreground">{t.author}</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">{t.title}</p>
-                    <p className="text-xs md:text-sm text-secondary font-medium">{t.company}</p>
-                  </div>
-                </div>
-              ))}
+        <section className="py-14 md:py-28 relative overflow-hidden">
+          <div className="absolute inset-0 bg-muted/30" />
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-6xl mx-auto">
+              <LinkedInReviewsCarousel />
             </div>
           </div>
         </section>
