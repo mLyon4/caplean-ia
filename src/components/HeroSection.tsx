@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed reveal-up" style={{ animationDelay: '0.3s' }}>
-            Pilotage de projets ERP/CRM, Systèmes Notion sur mesure, automatisations IA et Lean BTP
+            Feuille de route claire, ERP/CRM bien choisi, Notion comme QG opérationnel, IA et Lean — pour les dirigeants de PME qui veulent reprendre le contrôle sans perdre de temps.
           </p>
 
           {/* CTA Buttons */}
