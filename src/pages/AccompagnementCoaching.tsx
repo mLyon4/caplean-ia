@@ -74,21 +74,21 @@ const AccompagnementCoaching = () => {
     {
       name: "Essentiel",
       volume: "4h/mois",
-      ideal: "PME 0,5-2 M€ qui veulent garder leur écosystème digital propre",
+      ideal: "Entreprise qui veut garder son écosystème digital propre",
       price: "490 € HT/mois",
     },
     {
       name: "Croissance",
-      volume: "10h/mois",
-      ideal: "PME 2-5 M€ en évolution digitale active",
-      price: "1 300 € HT/mois",
+      volume: "8h/mois",
+      ideal: "Entreprise en évolution digitale active",
+      price: "890 € HT/mois",
       highlighted: true,
     },
     {
       name: "Premium",
-      volume: "20h/mois",
-      ideal: "PME 5-10 M€ avec besoin de co-pilotage digital",
-      price: "2 400 € HT/mois",
+      volume: "16h/mois",
+      ideal: "Entreprise avec besoin de co-pilotage digital",
+      price: "1 690 € HT/mois",
     },
   ];
 
@@ -110,8 +110,8 @@ const AccompagnementCoaching = () => {
   ];
 
   const carnetFormulas = [
-    { name: "Carnet 5h", volume: "5 heures", price: "700 € HT", ideal: "Un démarrage, une formation ciblée, un sprint ponctuel" },
-    { name: "Carnet 10h", volume: "10 heures", price: "1 300 € HT", ideal: "Une structuration complète, une refonte de process, une montée en compétence équipe", highlighted: true },
+    { name: "Carnet 5h", volume: "5 heures", price: "690 € HT", ideal: "Un démarrage, une formation ciblée, un sprint ponctuel" },
+    { name: "Carnet 10h", volume: "10 heures", price: "1 290 € HT", ideal: "Une structuration complète, une refonte de process, une montée en compétence équipe", highlighted: true },
   ];
 
   const carnetModalities = [
@@ -123,6 +123,8 @@ const AccompagnementCoaching = () => {
   ];
 
   const trustReasons = [
+    "Certifiée PMP® — Project Management Professional",
+    "Plus de 20 ans d'expérience en ESN",
     "Certifiée Qualiopi — vos formations sont finançables",
     "Ambassadrice Notion — expertise pointue sur l'outil de référence",
     "Expertise Lean + Digital — je structure avant d'outiller",
@@ -431,6 +433,7 @@ const AccompagnementCoaching = () => {
                 </div>
               ))}
             </div>
+            <p className="text-center text-sm md:text-base text-muted-foreground mt-6 font-medium">Engagement minimum 3 mois</p>
 
             <div className="max-w-4xl mx-auto mt-12">
               <h3 className="text-xl md:text-2xl font-bold text-foreground text-center mb-6">Inclus dans toutes les formules Suivi</h3>
