@@ -323,7 +323,7 @@ const CapDigitalFlash = () => {
         <section className="relative py-10 md:py-16 lg:py-20">
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
-              <div className="lg:col-span-7 space-y-6">
+              <div className="lg:col-span-12 space-y-6">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] tracking-tight">
                   Diagnostic{" "}
                   <span className="relative inline-block">
@@ -369,14 +369,6 @@ const CapDigitalFlash = () => {
                 <p className="text-sm text-muted-foreground">
                   Aucun engagement. Satisfait ou remboursé.
                 </p>
-              </div>
-
-              <div className="lg:col-span-5 space-y-4">
-                <div className="p-6 rounded-2xl bg-card border border-border/50 shadow-sm">
-                  <p className="text-sm text-muted-foreground italic">
-                    « Ce diagnostic va changer ça. Et vous permettre d'accélérer votre développement. »
-                  </p>
-                </div>
               </div>
             </div>
           </div>
