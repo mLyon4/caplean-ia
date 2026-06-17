@@ -16,7 +16,6 @@ import {
   ShieldCheck,
   Layers,
   Clock,
-  RotateCcw,
   Wallet,
   Sparkles,
   BadgeCheck,
