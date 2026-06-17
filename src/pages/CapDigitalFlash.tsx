@@ -332,7 +332,7 @@ const CapDigitalFlash = () => {
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
-                  {" "}— 890 € HT
+                  {" "}- 100% à distance, sans immersion.
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
@@ -421,6 +421,80 @@ const CapDigitalFlash = () => {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* COMPARISON */}
+        <section className="py-20 bg-muted/30 border-y border-border/30">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
+              Diagnostic Flash vs Cap Digital — la différence
+            </h2>
+
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <p className="text-lg text-muted-foreground mb-6">
+                <strong className="text-foreground">Flash</strong> = vous me dites. Analyse à distance, sur la base de vos réponses. Pour clarifier et prioriser.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                <strong className="text-foreground">Cap Digital</strong> = je viens voir. Immersion terrain, entretiens de vos équipes, observation de vos process réels. Pour transformer.
+              </p>
+            </div>
+
+            <h3 className="text-xl font-bold text-foreground mb-8 text-center">
+              Flash ou complet ? La bonne offre selon votre moment :
+            </h3>
+
+            <div className="overflow-hidden rounded-2xl border border-border/50 bg-card shadow-sm">
+              {/* Header */}
+              <div className="grid grid-cols-3 bg-primary/[0.06]">
+                <div className="p-5 font-semibold text-foreground/70"></div>
+                <div className="p-5 font-bold text-secondary text-center text-lg border-l border-border/30">
+                  Flash — 890 €
+                </div>
+                <div className="p-5 font-bold text-primary text-center text-lg border-l border-border/30">
+                  Cap Digital — 2 000 €
+                </div>
+              </div>
+
+              {/* Row: Méthode */}
+              <div className="grid grid-cols-3 border-t border-border/30">
+                <div className="p-5 font-medium text-foreground bg-muted/20 flex items-center justify-center">
+                  Méthode
+                </div>
+                <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
+                  À distance, par questionnaire
+                </div>
+                <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
+                  Immersion terrain
+                </div>
+              </div>
+
+              {/* Row: Pour qui */}
+              <div className="grid grid-cols-3 border-t border-border/30">
+                <div className="p-5 font-medium text-foreground bg-muted/20 flex items-center justify-center">
+                  Pour qui
+                </div>
+                <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
+                  « Je veux y voir clair »
+                </div>
+                <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
+                  « Je veux transformer »
+                </div>
+              </div>
+
+              {/* Row: Livrable */}
+              <div className="grid grid-cols-3 border-t border-border/30">
+                <div className="p-5 font-medium text-foreground bg-muted/20 flex items-center justify-center">
+                  Livrable
+                </div>
+                <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
+                  Cap + plan 90 jours
+                </div>
+                <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
+                  Feuille de route 12 mois chiffrée
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
