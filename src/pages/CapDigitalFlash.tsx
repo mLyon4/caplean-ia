@@ -327,16 +327,15 @@ const CapDigitalFlash = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] tracking-tight">
                   Diagnostic{" "}
                   <span className="relative inline-block">
-                    <span className="text-secondary">360 Flash</span>
+                    <span className="text-secondary">Flash pour savoir par où commencer</span>
                     <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
-                  {" "}- 100% à distance, sans immersion.
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
-                  Vous dirigez une PME qui grandit. Et vous sentez que quelque chose coince.
+                  En 2 semaines et 100 % à distance, j'analyse votre organisation et vos outils - ERP/CRM, Notion, IA - via un questionnaire ciblé, et je vous remets un plan d'actions sur 90 jours pour enfin savoir par où commencer.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
