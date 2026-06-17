@@ -324,7 +324,7 @@ const CapDigitalFlash = () => {
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Le Diagnostic 360 Flash est 100 % indépendant et 100 % à distance. Pas d'immersion, pas de gros budget : juste une analyse lucide de votre organisation et un plan d'actions chiffré, en 2 semaines.
+                  Le Diagnostic 360 Flash se fait entièrement à distance. Pas d'immersion, pas de gros budget : juste une analyse lucide de votre organisation et un plan d'actions chiffré, en 2 semaines.
                 </p>
 
 
