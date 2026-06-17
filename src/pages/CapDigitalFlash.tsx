@@ -47,11 +47,7 @@ const CapDigitalFlash = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const benefits = [
-    "Un diagnostic 360° de vos 4 fonctions critiques en moins de 2 semaines",
-    "Un plan d'attaque clair avec feuille de route 90 jours priorisée et chiffrée",
-    "Satisfait ou remboursé",
-  ];
+  const benefits: string[] = [];
 
   const proofs = [
     { icon: BadgeCheck, label: "Certifiée Notion et Ambassadrice Notion et Osez IA" },
@@ -336,14 +332,6 @@ const CapDigitalFlash = () => {
                   Le Diagnostic 360 Flash est 100 % indépendant et 100 % à distance. Pas d'immersion, pas de gros budget : juste une analyse lucide de votre organisation et un plan d'actions chiffré, en 2 semaines.
                 </p>
 
-                <ul className="space-y-3">
-                  {benefits.map((b, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/90">{b}</span>
-                    </li>
-                  ))}
-                </ul>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button asChild className="btn-premium text-base px-8 py-6">
