@@ -51,7 +51,6 @@ const CapDigitalNotion = () => {
   }, []);
 
   const benefits = [
-    "Un diagnostic indépendant — pas une proposition orientée pour vous vendre une suite",
     "Un plan d'actions structuré en 3 niveaux : immédiat / 30 jours / 90 jours",
     "Un score de maturité Notion personnalisé avec axes d'amélioration concrets",
   ];
@@ -336,7 +335,7 @@ const CapDigitalNotion = () => {
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                   Le Cap Stratégique Notion : un diagnostic complet de votre espace Notion. Livré
-                  en <strong className="text-foreground">moins de 2 semaines</strong>. Vous repartez avec une vision claire et un cap précis.
+                  sous <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une vision claire et un cap précis.
                 </p>
 
                 <ul className="space-y-3">
