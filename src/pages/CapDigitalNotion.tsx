@@ -330,6 +330,10 @@ const CapDigitalNotion = () => {
                   {" "}pour débloquer votre croissance.
                 </h1>
 
+                <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
+                  Votre Notion ne vous fait plus gagner de temps et bloque votre développement.
+                </p>
+
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                   Le Cap Stratégique Notion : un diagnostic complet de votre espace Notion. Livré
                   en <strong className="text-foreground">moins de 2 semaines</strong>. Vous repartez avec une vision claire et un cap précis.
