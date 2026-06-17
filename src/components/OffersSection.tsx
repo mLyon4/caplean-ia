@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy, Search } from "lucide-react";
+import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy, Search, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
