@@ -137,11 +137,6 @@ const CapDigitalFlash = () => {
       title: "Livré en 2 semaines",
       desc: "Vous décidez tant que l'élan est là. Pas de process interminable.",
     },
-    {
-      icon: RotateCcw,
-      title: "Satisfait ou remboursé",
-      desc: "Vous prenez zero risque. Si le diagnostic ne vous apporte pas de valeur, on s'arrête là.",
-    },
   ];
 
   const process = [
@@ -232,7 +227,7 @@ const CapDigitalFlash = () => {
         <title>Cap Digital Flash - Diagnostic 360° PME en 2 semaines</title>
         <meta
           name="description"
-          content="Diagnostic 360° de vos 4 fonctions critiques. Matrice ERP/CRM vs Notion, feuille de route 90 jours. Livré en 2 semaines. Satisfait ou remboursé."
+          content="Diagnostic 360° de vos 4 fonctions critiques. Matrice ERP/CRM vs Notion, feuille de route 90 jours. Livré en 2 semaines."
         />
         <meta
           name="keywords"
@@ -348,7 +343,7 @@ const CapDigitalFlash = () => {
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Aucun engagement. Satisfait ou remboursé.
+                  Aucun engagement.
                 </p>
               </div>
             </div>
@@ -612,9 +607,6 @@ const CapDigitalFlash = () => {
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🎁</span> Bonus : 1 session Q&A de 30 min dans les 30 jours suivants
-                </li>
-                <li className="flex items-center gap-3 text-foreground/85">
-                  <span>✅</span> Satisfait ou remboursé
                 </li>
               </ul>
 
