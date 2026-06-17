@@ -560,38 +560,6 @@ const CapDigitalNotion = () => {
           </div>
         </section>
 
-        {/* ABOUT */}
-        <section className="py-20 bg-muted/20">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Christelle Picault
-            </h2>
-            <p className="text-lg text-secondary font-medium mb-6">
-              Certifiée Notion et Ambassadrice Notion et Osez IA · +25 espaces analysés
-            </p>
-            <p className="text-foreground/85 mb-4">
-              J'aide les dirigeants de PME, TPE et indépendants à débloquer leur croissance grâce à Notion.
-              Un espace bien structuré ne suffit pas — il faut qu'il serve votre stratégie et qu'il soit adopté par vos équipes.
-            </p>
-            <p className="text-muted-foreground mb-8">
-              Ma différence : je pense organisation avant outil. Avant de vous parler de Notion,
-              je regarde vos process, vos flux, vos données. Et je vous dis ce qui doit
-              changer — même si ce n'est pas confortable.
-            </p>
-            <ul className="grid sm:grid-cols-2 gap-3">
-              {[
-                "Certifiée Notion et Ambassadrice Notion et Osez IA",
-                "+25 espaces Notion analysés",
-                "Expertise terrain TPE, indépendants et PME",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-foreground/85">
-                  <BadgeCheck className="h-5 w-5 text-secondary mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
 
         {/* FINAL CTA */}
         <section className="py-20">
