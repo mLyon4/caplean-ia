@@ -14,7 +14,7 @@ const OffersSection = () => {
     {
       icon: Zap,
       title: "Diagnostic Cap Digital Flash",
-      description: "Diagnostic 360° de vos 4 fonctions critiques à distance.\nMatrice ERP/CRM vs Notion, feuille de route à 90 jours — livré sous 2 semaines.",
+      description: "Un diagnostic 100% à distance avec interview du dirigeant et questionnaires en ligne.\nUne analyse pragmatique de votre organisation et un plan d'actions à 90 jours, livré sous 2 semaines.",
       link: "/cap-digital-flash",
       color: "secondary"
     },
