@@ -336,7 +336,7 @@ const CapDigitalFlash = () => {
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
-                  En 2 semaines et 100 % à distance, j'analyse votre organisation et vos outils - ERP/CRM, Notion, IA - via un questionnaire ciblé, et je vous remets un plan d'actions sur 90 jours pour enfin savoir par où commencer.
+                  En 2 semaines et 100 % à distance, j'analyse votre organisation et vos outils - ERP/CRM, Notion, IA - via des questionnaires ciblés, et je vous remets un plan d'actions sur 90 jours pour enfin savoir par où commencer.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
