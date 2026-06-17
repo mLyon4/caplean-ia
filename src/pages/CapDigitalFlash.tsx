@@ -336,7 +336,7 @@ const CapDigitalFlash = () => {
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
-                  Vous dirigez une PME qui grandit. Et vous sentez que quelque thing coince.
+                  Vous dirigez une PME qui grandit. Et vous sentez que quelque chose coince.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
