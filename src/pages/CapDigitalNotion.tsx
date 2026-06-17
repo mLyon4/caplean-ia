@@ -67,12 +67,6 @@ const CapDigitalNotion = () => {
     "Votre Notion ne vous fait plus gagner de temps et bloque votre développement.",
   ];
 
-  const whyItWorks = [
-    "Je ne suis pas un éditeur. Mes recommandations sont indépendantes et orientées résultats.",
-    "Je connais les deux mondes : systèmes structurants (ERP/CRM) ET systèmes agiles et no-code (Notion, IA).",
-    "Je pense organisation avant outil. L'outil ne sauve jamais un process bancal.",
-    "Je livre en moins de 2 semaines, pas 3 mois. Vous décidez tant que l'élan est là.",
-  ];
 
   const phases = [
     {
@@ -397,43 +391,6 @@ const CapDigitalNotion = () => {
         </section>
 
 
-        {/* SOLUTION */}
-        <section className="py-20 bg-muted/20">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Le Cap Stratégique Notion : transformer le brouillard en plan d'action.
-            </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Je fais un diagnostic complet de votre espace Notion.
-              J'analyse votre structure, vos bases de données, vos flux d'information.
-              Je cartographie ce qui fonctionne et ce qui freine votre développement.
-              Et je vous remets un diagnostic stratégique avec un plan d'actions actionnable sur 3 niveaux :
-            </p>
-            <ul className="space-y-2 mb-10 text-foreground/85">
-              <li className="flex items-start gap-2">
-                <span className="text-secondary mt-1">•</span>
-                <span>Actions immédiates — ce qui peut être fait demain</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-secondary mt-1">•</span>
-                <span>Actions 30 jours — le plan court terme pour stabiliser</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-secondary mt-1">•</span>
-                <span>Actions 90 jours — la feuille de route pour structurer durablement</span>
-              </li>
-            </ul>
-            <h3 className="text-2xl font-bold text-foreground mb-6">Pourquoi ça marche</h3>
-            <ul className="space-y-3">
-              {whyItWorks.map((w, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
-                  <span className="text-foreground/85">{w}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
 
         {/* WHAT'S INCLUDED / PHASES */}
         <section className="py-20">
