@@ -64,14 +64,14 @@ const CapDigitalFlash = () => {
     "Vos données métier sont éparpillées entre Excel, mails, têtes des collaborateurs et un logiciel vieillissant.",
     "Vous n'avez pas de vision claire sur votre rentabilité par projet, par client ou par activité.",
     "Vos équipes réinventent la roue à chaque dossier, faute de process partagés.",
-    "Vous hésitez entre moderniser votre SI, structurer votre organisation, ou les deux — sans savoir par où commencer.",
+    "Vous hésitez entre moderniser votre SI, structurer votre organisation, ou les deux - sans savoir par où commencer.",
   ];
 
   const phases = [
     {
       icon: Phone,
       tag: "J",
-      title: "Cadrage — 60 min",
+      title: "Cadrage - 60 min",
       items: [
         "Je vérifie que c'est le bon point d'entrée, sinon je vous le dis franchement.",
       ],
@@ -95,7 +95,7 @@ const CapDigitalFlash = () => {
     {
       icon: Presentation,
       tag: "J+8 à J+14",
-      title: "Restitution — 45 min",
+      title: "Restitution - 45 min",
       items: [
         "Vous repartez avec un plan d'attaque, avec moi ou sans moi.",
       ],
@@ -106,7 +106,7 @@ const CapDigitalFlash = () => {
     {
       icon: FileText,
       title: "Rapport d'analyse complet",
-      desc: "Forces, blocages, risques — un diagnostic structuré et actionnable.",
+      desc: "Forces, blocages, risques - un diagnostic structuré et actionnable.",
     },
     {
       icon: BarChart3,
@@ -167,18 +167,18 @@ const CapDigitalFlash = () => {
     {
       icon: Presentation,
       title: "Restitution + décision",
-      desc: "On se retrouve 45 min. Vous repartez avec votre plan d'attaque. Vous décidez de la suite — avec moi ou sans moi.",
+      desc: "On se retrouve 45 min. Vous repartez avec votre plan d'attaque. Vous décidez de la suite - avec moi ou sans moi.",
     },
   ];
 
   const faq = [
     {
       q: "Pourquoi 890 € et pas un audit gratuit ?",
-      a: "Parce qu'un diagnostic gratuit serait nécessairement superficiel — ou orienté pour vous vendre une suite. Le Cap Digital Flash est une mission à part entière, avec un livrable indépendant et actionnable.",
+      a: "Parce qu'un diagnostic gratuit serait nécessairement superficiel - ou orienté pour vous vendre une suite. Le Cap Digital Flash est une mission à part entière, avec un livrable indépendant et actionnable.",
     },
     {
       q: "Mon entreprise est trop petite / trop grosse ?",
-      a: "Le Cap Digital Flash est calibré pour des PME de 1 à 10 M€ de CA, typiquement 10 à 80 collaborateurs. En dessous, l'investissement n'est pas justifié. Au-dessus, l'approche reste pertinente mais le périmètre doit être adapté — on en parle lors de l'entretien gratuit.",
+      a: "Le Cap Digital Flash est calibré pour des PME de 1 à 10 M€ de CA, typiquement 10 à 80 collaborateurs. En dessous, l'investissement n'est pas justifié. Au-dessus, l'approche reste pertinente mais le périmètre doit être adapté - on en parle lors de l'entretien gratuit.",
     },
     {
       q: "Je n'ai pas de DSI ni de service informatique. C'est un problème ?",
@@ -190,7 +190,7 @@ const CapDigitalFlash = () => {
     },
     {
       q: "Que se passe-t-il après les 2 semaines ?",
-      a: "Deux scénarios : (1) vous repartez avec votre plan d'attaque et le mettez en œuvre en interne ou avec d'autres partenaires — c'est très bien. (2) Vous choisissez de poursuivre avec l'un de mes accompagnements (ERP/CRM, Notion, Global, Suivi mensuel).",
+      a: "Deux scénarios : (1) vous repartez avec votre plan d'attaque et le mettez en œuvre en interne ou avec d'autres partenaires - c'est très bien. (2) Vous choisissez de poursuivre avec l'un de mes accompagnements (ERP/CRM, Notion, Global, Suivi mensuel).",
     },
     {
       q: "Confidentialité ?",
@@ -203,7 +203,7 @@ const CapDigitalFlash = () => {
     "@graph": [
       {
         "@type": "Service",
-        name: "Cap Digital Flash — Diagnostic 360° PME",
+        name: "Cap Digital Flash - Diagnostic 360° PME",
         provider: {
           "@type": "Person",
           name: "Christelle Picault",
@@ -233,7 +233,7 @@ const CapDigitalFlash = () => {
   return (
     <>
       <Helmet>
-        <title>Cap Digital Flash — Diagnostic 360° PME en 2 semaines</title>
+        <title>Cap Digital Flash - Diagnostic 360° PME en 2 semaines</title>
         <meta
           name="description"
           content="Diagnostic 360° de vos 4 fonctions critiques. Matrice ERP/CRM vs Notion, feuille de route 90 jours. Livré en 2 semaines. Satisfait ou remboursé."
@@ -245,7 +245,7 @@ const CapDigitalFlash = () => {
         <link rel="canonical" href="https://christelle-picault.fr/cap-digital-flash" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cap Digital Flash — Diagnostic 360° en 2 semaines" />
+        <meta property="og:title" content="Cap Digital Flash - Diagnostic 360° en 2 semaines" />
         <meta
           property="og:description"
           content="Diagnostic 360° de 4 fonctions critiques. Matrice ERP/CRM vs Notion, feuille de route 90 jours. Livré en 2 semaines."
@@ -254,7 +254,7 @@ const CapDigitalFlash = () => {
         <meta property="og:locale" content="fr_FR" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cap Digital Flash — Diagnostic 360° en 2 semaines" />
+        <meta name="twitter:title" content="Cap Digital Flash - Diagnostic 360° en 2 semaines" />
         <meta
           name="twitter:description"
           content="Diagnostic 360° de 4 fonctions critiques. Livré en 2 semaines."
@@ -327,15 +327,16 @@ const CapDigitalFlash = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] tracking-tight">
                   Diagnostic{" "}
                   <span className="relative inline-block">
-                    <span className="text-secondary">Flash pour savoir par où commencer</span>
+                    <span className="text-secondary">Flash</span>
                     <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
-                  </span>
+                  </span>{" "}
+                  pour savoir par où commencer
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
-                  En 2 semaines et 100 % à distance, j'analyse votre organisation et vos outils - ERP/CRM, Notion, IA - via un questionnaire ciblé, et je vous remets un plan d'actions sur 90 jours pour enfin savoir par où commencer.
+                  En 2 semaines et 100 % à distance, j'analyse votre organisation et vos outils - ERP/CRM, Notion, IA - via des questionnaires ciblés, et je vous remets un plan d'actions sur 90 jours pour enfin savoir par où commencer.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
@@ -427,7 +428,7 @@ const CapDigitalFlash = () => {
         <section className="py-20 bg-muted/30 border-y border-border/30">
           <div className="container mx-auto px-6 max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
-              Diagnostic Flash vs Cap Digital — la différence
+              Diagnostic Flash vs Cap Digital - la différence
             </h2>
 
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -448,10 +449,10 @@ const CapDigitalFlash = () => {
               <div className="grid grid-cols-3 bg-primary/[0.06]">
                 <div className="p-5 font-semibold text-foreground/70"></div>
                 <div className="p-5 font-bold text-secondary text-center text-lg border-l border-border/30">
-                  Flash — 890 €
+                  Flash - 890 €
                 </div>
                 <div className="p-5 font-bold text-primary text-center text-lg border-l border-border/30">
-                  Cap Digital — 2 000 €
+                  Cap Digital - 2 000 €
                 </div>
               </div>
 
@@ -502,7 +503,7 @@ const CapDigitalFlash = () => {
           <div className="container mx-auto px-6 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Déroulement — en moins de 2 semaines
+                Déroulement - en moins de 2 semaines
               </h2>
               <p className="text-muted-foreground">Le détail concret, étape par étape.</p>
             </div>
