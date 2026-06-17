@@ -82,7 +82,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
                   <Link to="/cap-digital-flash">
-                    Cap Digital Flash
+                    Cap Digital - Diagnostic Flash
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
@@ -189,7 +189,7 @@ const Header = () => {
                     className="font-medium text-foreground hover:text-primary px-4 py-3 rounded-xl hover:bg-primary/5 transition-all"
                     onClick={() => setIsOpen(false)}
                   >
-                    → Cap Digital Flash
+                    → Cap Digital - Diagnostic Flash
                   </Link>
                   <Link 
                     to="/audit-strategique-notion"
