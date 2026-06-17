@@ -416,11 +416,13 @@ const CapDigitalFlash = () => {
               {/* Header */}
               <div className="grid grid-cols-3 bg-primary/[0.06]">
                 <div className="p-5 font-semibold text-foreground/70"></div>
-                <div className="p-5 font-bold text-secondary text-center text-lg border-l border-border/30">
-                  Diagnostic Flash - 890 €
+                <div className="p-5 font-bold text-secondary text-center text-lg border-l border-border/30 flex flex-col items-center justify-center gap-1">
+                  <span>Diagnostic Flash</span>
+                  <span className="text-base">890 €</span>
                 </div>
-                <div className="p-5 font-bold text-primary text-center text-lg border-l border-border/30">
-                  Diagnostic Cap Digital 360 - 2 000 €
+                <div className="p-5 font-bold text-primary text-center text-lg border-l border-border/30 flex flex-col items-center justify-center gap-1">
+                  <span>Diagnostic Cap Digital 360</span>
+                  <span className="text-base">2 000 €</span>
                 </div>
               </div>
 
