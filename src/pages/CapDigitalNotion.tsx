@@ -57,16 +57,14 @@ const CapDigitalNotion = () => {
   ];
 
   const proofs = [
-    { icon: BadgeCheck, label: "Consultante certifiée Notion" },
-    { icon: Sparkles, label: "+100 espaces Notion analysés" },
+    { icon: BadgeCheck, label: "Certifiée Notion et Ambassadrice Notion et Osez IA" },
+    { icon: Sparkles, label: "+25 espaces Notion analysés" },
     { icon: Building2, label: "Expertise terrain TPE, indépendants et PME" },
-    { icon: GraduationCap, label: "Ambassadrice Osez l'IA" },
   ];
 
   const problems = [
     "Vos collaborateurs se perdent. L'information est éparpillée.",
-    "Les process n'existent que dans les têtes. Personne ne sait où est la vérité.",
-    "Votre outil est censé vous libérer — il vous ralentit.",
+    "Les process n'existent que dans les têtes. Votre outil est censé vous libérer - il vous ralentit.",
     "Votre Notion ne vous fait plus gagner de temps et bloque votre développement.",
   ];
 
@@ -81,40 +79,33 @@ const CapDigitalNotion = () => {
     {
       icon: Phone,
       tag: "J",
-      title: "Appel de découverte — 45 min",
+      title: "Appel de découverte - 45 min (J)",
       items: [
-        "On cadre ensemble votre contexte, vos enjeux, vos objectifs.",
-        "Je comprends comment votre équipe travaille et ce qui vous pose problème aujourd'hui.",
+        "On cadre ensemble votre contexte, vos enjeux, vos objectifs. Je comprends comment votre équipe travaille et ce qui vous pose problème aujourd'hui.",
       ],
     },
     {
       icon: Search,
       tag: "J+1 à J+7",
-      title: "Analyse approfondie de votre espace",
+      title: "Analyse approfondie de votre espace (J+1 à J+7)",
       items: [
-        "J'explore votre Notion en profondeur : structure, bases de données, flux d'information.",
-        "Cohérence des process, usage réel vs usage prévu.",
-        "Je cartographie ce qui fonctionne et ce qui freine votre développement.",
+        "J'explore votre Notion en profondeur : structure, bases de données, flux d'information, cohérence des process, usage réel vs usage prévu. Je cartographie ce qui fonctionne et ce qui freine votre développement.",
       ],
     },
     {
       icon: FileText,
       tag: "J+10",
-      title: "Livraison du diagnostic complet",
+      title: "Livraison du diagnostic complet (J+10)",
       items: [
-        "Page Notion dédiée avec l'intégralité du diagnostic.",
-        "Points forts, points bloquants, priorités identifiées.",
-        "Plan d'actions structuré en 3 niveaux : immédiat / 30 jours / 90 jours.",
+        "Vous recevez une page Notion dédiée avec l'intégralité du diagnostic : points forts, points bloquants, priorités identifiées et plan d'actions structuré en 3 niveaux - immédiat, 30 jours, 90 jours.",
       ],
     },
     {
       icon: Presentation,
       tag: "J+10 à J+14",
-      title: "Réunion de restitution — 45 min",
+      title: "Réunion de restitution - 45 min (J+10 à J+14)",
       items: [
-        "On parcourt les résultats ensemble.",
-        "Je réponds à vos questions et vous explique chaque recommandation.",
-        "Vous repartez avec une vision claire et un cap précis.",
+        "On parcourt les résultats ensemble. Je réponds à vos questions et vous explique chaque recommandation. Vous repartez avec une vision claire et un cap précis.",
       ],
     },
   ];
@@ -123,32 +114,32 @@ const CapDigitalNotion = () => {
     {
       icon: FileText,
       title: "Page Notion avec diagnostic structuré",
-      desc: "Points forts, points bloquants, priorités identifiées",
+      desc: "Points forts, points bloquants, priorités",
     },
     {
       icon: Target,
-      title: "Plan d'actions en 3 niveaux",
-      desc: "Immédiat / 30 jours / 90 jours — priorisé et actionnable",
+      title: "Plan d'actions en 3 niveaux : immédiat / 30 jours / 90 jours",
+      desc: "Plan d'actions en 3 niveaux : immédiat / 30 jours / 90 jours",
     },
     {
       icon: BarChart3,
-      title: "Score de maturité Notion personnalisé",
-      desc: "Sur 10, avec axes d'amélioration concrets",
+      title: "Score de maturité Notion personnalisé (sur 10) avec axes d'amélioration",
+      desc: "Score de maturité Notion personnalisé (sur 10) avec axes d'amélioration",
     },
     {
       icon: Wallet,
-      title: "Proposition d'accompagnement chiffrée",
-      desc: "Si vous souhaitez aller plus loin après l'audit",
+      title: "Proposition d'accompagnement chiffrée si vous souhaitez aller plus loin",
+      desc: "Proposition d'accompagnement chiffrée si vous souhaitez aller plus loin",
     },
     {
       icon: ClipboardCheck,
-      title: "Template de suivi des actions post-audit",
-      desc: "Bonus offert pour piloter votre plan d'actions",
+      title: "Bonus : template de suivi des actions post-audit offert",
+      desc: "Bonus : template de suivi des actions post-audit offert",
     },
     {
       icon: MessageSquare,
-      title: "1 session Q&A de 30 min",
-      desc: "Dans les 30 jours suivant l'audit — bonus inclus",
+      title: "Bonus : 1 session Q&A de 30 min dans les 30 jours suivant l'audit",
+      desc: "Bonus : 1 session Q&A de 30 min dans les 30 jours suivant l'audit",
     },
   ];
 
@@ -575,7 +566,7 @@ const CapDigitalNotion = () => {
                   Tarif & disponibilité
                 </h2>
               </div>
-              <div className="text-5xl font-bold text-secondary mb-2">890 € HT</div>
+              <div className="text-5xl font-bold text-secondary mb-2">L'Audit Stratégique Notion - 890 € HT</div>
               <p className="text-muted-foreground mb-6">Forfait tout inclus</p>
 
               <ul className="space-y-3 mb-8">
@@ -586,7 +577,7 @@ const CapDigitalNotion = () => {
                   <span>🎯</span> Proposition d'accompagnement chiffrée si vous souhaitez aller plus loin
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
-                  <span>🔒</span> Maximum 4 audits ouverts par mois
+                  <span>🔒</span> Maximum 3 clients/mois pour maintenir un niveau d'analyse exigeant
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🎁</span> Bonus : template de suivi post-audit + 1 session Q&A de 30 min
@@ -594,7 +585,7 @@ const CapDigitalNotion = () => {
               </ul>
 
               <p className="text-sm text-muted-foreground italic">
-                Pourquoi seulement 4 par mois ? Parce que je m'engage personnellement sur la
+                Pourquoi seulement 3 par mois ? Parce que je m'engage personnellement sur la
                 qualité de l'analyse. Ce n'est pas un audit standardisé : c'est un diagnostic
                 stratégique personnalisé.
               </p>
@@ -649,7 +640,7 @@ const CapDigitalNotion = () => {
               Christelle Picault
             </h2>
             <p className="text-lg text-secondary font-medium mb-6">
-              Consultante certifiée Notion · +100 espaces analysés
+              Certifiée Notion et Ambassadrice Notion et Osez IA · +25 espaces analysés
             </p>
             <p className="text-foreground/85 mb-4">
               J'aide les dirigeants de PME, TPE et indépendants à débloquer leur croissance grâce à Notion.
@@ -662,9 +653,8 @@ const CapDigitalNotion = () => {
             </p>
             <ul className="grid sm:grid-cols-2 gap-3">
               {[
-                "Consultante certifiée Notion",
-                "Ambassadrice Osez l'IA",
-                "+100 espaces Notion analysés",
+                "Certifiée Notion et Ambassadrice Notion et Osez IA",
+                "+25 espaces Notion analysés",
                 "Expertise terrain TPE, indépendants et PME",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-foreground/85">
@@ -701,7 +691,7 @@ const CapDigitalNotion = () => {
                 </a>
               </Button>
               <p className="text-sm text-muted-foreground mt-6">
-                4 audits ouverts par mois maximum. Le prochain créneau est disponible
+                3 audits ouverts par mois maximum. Le prochain créneau est disponible
                 sous 2 à 3 semaines.
               </p>
             </aside>
