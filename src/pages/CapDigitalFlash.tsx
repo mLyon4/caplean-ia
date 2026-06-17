@@ -454,7 +454,7 @@ const CapDigitalFlash = () => {
                   Méthode
                 </div>
                 <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
-                  À distance, par questionnaire
+                  À distance, par questionnaires
                 </div>
                 <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
                   Immersion terrain
