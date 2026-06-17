@@ -58,6 +58,7 @@ const CapDigitalFlash = () => {
   const problems = [
     "Vos données métier sont éparpillées entre Excel, mails, têtes des collaborateurs et un logiciel vieillissant.",
     "Vous n'avez pas de vision claire sur votre rentabilité par projet, par client ou par activité.",
+    "L'IA va vite, tout le monde en parle - et vous ne savez pas par où commencer.",
     "Vos équipes réinventent la roue à chaque dossier, faute de process partagés.",
     "Vous hésitez entre moderniser votre SI, structurer votre organisation, ou les deux - sans savoir par où commencer.",
   ];
