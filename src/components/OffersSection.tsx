@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy } from "lucide-react";
+import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
@@ -9,6 +9,13 @@ const OffersSection = () => {
       title: "Diagnostic Cap Digital 360°",
       description: "Un diagnostic stratégique de vos outils ERP/CRM, facturation, Notion et de votre organisation.\nUne feuille de route claire avant d'investir dans une transformation digitale.",
       link: "/le-cap-digital",
+      color: "secondary"
+    },
+    {
+      icon: Search,
+      title: "Audit Stratégique Notion",
+      description: "Votre Notion ne vous fait plus gagner de temps et bloque votre développement.\nDiagnostic complet de votre espace en moins de 2 semaines. Plan d'actions en 3 niveaux, score de maturité, et proposition d'accompagnement chiffrée.",
+      link: "/audit-strategique-notion",
       color: "secondary"
     },
     {
