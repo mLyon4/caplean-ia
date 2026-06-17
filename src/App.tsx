@@ -36,6 +36,7 @@ const App = () => (
               <Route path="/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme" element={<ConsultanteNotion />} />
               <Route path="/le-cap-digital" element={<CapDigital />} />
               <Route path="/audit-strategique-notion" element={<CapDigitalNotion />} />
+              <Route path="/cap-digital-flash" element={<CapDigitalFlash />} />
               <Route path="/direction-transformation-digitale-temps-partage-pme-erp-notion-ia" element={<DirectionTransformation />} />
               <Route path="/accompagnement-coaching-notion-digital-pme-suivi-mensuel-carnet-heures" element={<AccompagnementCoaching />} />
               {/* Analytics debug route only available in development */}
