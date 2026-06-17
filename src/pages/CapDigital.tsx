@@ -47,6 +47,7 @@ const CapDigital = () => {
 
   const benefits = [
     "Une décision dérisquée avant tout investissement lourd",
+    "L'IA enfin utile : où l'activer concrètement pour gagner du temps, où l'éviter",
     "Une feuille de route 12 mois priorisée, chiffrée, actionnable",
     "50% du diagnostic déduit si vous poursuivez l'accompagnement",
   ];
@@ -299,8 +300,8 @@ const CapDigital = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Le Cap Digital : un diagnostic 360° stratégique de vos outils <strong className="text-foreground">ERP/CRM, facturation, Notion</strong> et de votre organisation. Livré
-                  en <strong className="text-foreground">2 semaines</strong>. Vous repartez avec une feuille de route claire.
+                  Le Cap Digital : un diagnostic 360° stratégique de vos outils - <strong className="text-foreground">ERP/CRM, facturation, Notion et IA</strong> - et de votre organisation.
+                  Vous repartez avec une feuille de route claire.
                 </p>
 
                 <ul className="space-y-3">
