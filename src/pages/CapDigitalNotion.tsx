@@ -51,7 +51,6 @@ const CapDigitalNotion = () => {
   }, []);
 
   const benefits = [
-    "Un diagnostic indépendant — pas une proposition orientée pour vous vendre une suite",
     "Un plan d'actions structuré en 3 niveaux : immédiat / 30 jours / 90 jours",
     "Un score de maturité Notion personnalisé avec axes d'amélioration concrets",
   ];
