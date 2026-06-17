@@ -498,7 +498,7 @@ const CapDigitalNotion = () => {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-3 text-foreground/85">
-                  <span>⏱️</span> Livré en moins de 2 semaines après l'appel de découverte
+                  <span>⏱️</span> Livré en 2 semaines
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🎯</span> Proposition d'accompagnement chiffrée si vous souhaitez aller plus loin
