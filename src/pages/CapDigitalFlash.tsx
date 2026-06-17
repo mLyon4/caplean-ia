@@ -428,7 +428,7 @@ const CapDigitalFlash = () => {
         <section className="py-20 bg-muted/30 border-y border-border/30">
           <div className="container mx-auto px-6 max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
-              Diagnostic Flash vs Cap Digital Black — la différence
+              Diagnostic Flash vs Cap Digital — la différence
             </h2>
 
             <div className="max-w-3xl mx-auto text-center mb-12">
