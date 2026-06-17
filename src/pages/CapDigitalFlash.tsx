@@ -325,15 +325,7 @@ const CapDigitalFlash = () => {
             <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-12 space-y-6">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] tracking-tight">
-                  Diagnostic{" "}
-                  <span className="relative inline-block">
-                    <span className="text-secondary">Flash</span>
-                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
-                      <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
-                    </svg>
-                  </span>
-                  <br />
-                  pour savoir par où commencer
+                  Posez le bon diagnostic pour vous mettre en mouvement.
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
