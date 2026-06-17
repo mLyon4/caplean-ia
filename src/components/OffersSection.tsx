@@ -12,6 +12,13 @@ const OffersSection = () => {
       color: "secondary"
     },
     {
+      icon: Zap,
+      title: "Diagnostic Cap Digital Flash",
+      description: "Diagnostic 360° de vos 4 fonctions critiques à distance.\nMatrice ERP/CRM vs Notion, feuille de route à 90 jours — livré sous 2 semaines.",
+      link: "/cap-digital-flash",
+      color: "secondary"
+    },
+    {
       icon: Search,
       title: "Audit Stratégique Notion",
       description: "Votre Notion ne vous fait plus gagner de temps et bloque votre développement.\nDiagnostic complet de votre espace en moins de 2 semaines. Plan d'actions en 3 niveaux, score de maturité, et proposition d'accompagnement chiffrée.",
