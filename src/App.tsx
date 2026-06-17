@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import ConsultanteNotion from "./pages/ConsultanteNotion";
 import CapDigital from "./pages/CapDigital";
 import CapDigitalNotion from "./pages/CapDigitalNotion";
+import CapDigitalFlash from "./pages/CapDigitalFlash";
 import DirectionTransformation from "./pages/DirectionTransformation";
 import AccompagnementCoaching from "./pages/AccompagnementCoaching";
 
