@@ -323,7 +323,7 @@ const CapDigitalNotion = () => {
                   Posez le bon{" "}
                   <span className="relative inline-block">
                     <span className="text-secondary">diagnostic Notion</span>
-                    <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
+                    <svg className="absolute -bottom-4 left-0 w-full" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none">
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
@@ -393,39 +393,6 @@ const CapDigitalNotion = () => {
           </div>
         </section>
 
-        {/* PROBLEM */}
-        <section className="py-20">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Votre Notion ne vous fait plus gagner de temps et bloque votre développement.
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Votre entreprise tourne. Vos équipes sont engagées. Mais en coulisses :
-            </p>
-            <ul className="space-y-4 mb-10">
-              {problems.map((p, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border/50"
-                >
-                  <span className="text-secondary font-bold mt-0.5">•</span>
-                  <span className="text-foreground/85">{p}</span>
-                </li>
-              ))}
-            </ul>
-            <aside className="p-6 rounded-2xl bg-destructive/5 border border-destructive/20 flex gap-4">
-              <AlertTriangle className="h-6 w-6 text-destructive flex-shrink-0 mt-1" />
-              <div>
-                <p className="font-semibold text-foreground mb-2">
-                  Le vrai risque, ce n'est pas de ne rien faire. C'est de continuer à investir du temps dans un outil qui freine votre croissance.
-                </p>
-                <p className="text-muted-foreground">
-                  Un espace Notion mal structuré coûte en moyenne 2 à 3 heures par semaine et collaborateur — et empêche vos équipes de se concentrer sur ce qui crée de la valeur.
-                </p>
-              </div>
-            </aside>
-          </div>
-        </section>
 
         {/* SOLUTION */}
         <section className="py-20 bg-muted/20">
@@ -675,7 +642,7 @@ const CapDigitalNotion = () => {
                 Prêt à débloquer votre croissance avec Notion ?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Réservez votre entretien gratuit de 45 minutes. Nous regardons ensemble si l'Audit
+                Réservez votre entretien gratuit de 45 minutes. Nous regardons ensemble si le Cap
                 Stratégique Notion est fait pour vous.
               </p>
               <Button asChild className="btn-premium text-base px-10 py-6">
