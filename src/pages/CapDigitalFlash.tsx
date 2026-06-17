@@ -328,12 +328,12 @@ const CapDigitalFlash = () => {
                   Posez le bon diagnostic pour vous mettre en mouvement.
                 </h1>
 
-                <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
-                  En 2 semaines et 100 % à distance, j'analyse votre organisation et vos outils - ERP/CRM, Notion, IA - via des questionnaires ciblés, et je vous remets un plan d'actions sur 90 jours pour enfin savoir par où commencer.
+                <p className="text-xl md:text-2xl font-medium text-foreground max-w-3xl">
+                  Votre éditeur vous vend son logiciel. Les gourous de l'IA, leur outil miracle. Moi, je n'ai rien à vous vendre - sauf la bonne direction.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Un diagnostic 360° de vos <strong className="text-foreground">4 fonctions critiques</strong> en moins de <strong className="text-foreground">2 semaines</strong>. Vous repartez avec un plan d'attaque clair.
+                  Le Diagnostic 360 Flash est 100 % indépendant et 100 % à distance. Pas d'immersion, pas de gros budget : juste une analyse lucide de votre organisation et un plan d'actions chiffré, en 2 semaines.
                 </p>
 
                 <ul className="space-y-3">
