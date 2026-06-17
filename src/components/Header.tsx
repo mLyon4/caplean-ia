@@ -173,6 +173,20 @@ const Header = () => {
                     </a>
                   ))}
                   <Link 
+                    to="/le-cap-digital"
+                    className="font-medium text-foreground hover:text-primary px-4 py-3 rounded-xl hover:bg-primary/5 transition-all"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    → Cap Digital
+                  </Link>
+                  <Link 
+                    to="/audit-strategique-notion"
+                    className="font-medium text-foreground hover:text-primary px-4 py-3 rounded-xl hover:bg-primary/5 transition-all"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    → Audit Stratégique Notion
+                  </Link>
+                  <Link 
                     to="/consultante-notion-certifiee-notion-service-specialist-lyon-structuration-pilotage-pme"
                     className="font-medium text-secondary hover:text-secondary-dark px-4 py-3 rounded-xl hover:bg-secondary/5 transition-all"
                     onClick={() => setIsOpen(false)}
