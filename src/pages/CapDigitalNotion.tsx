@@ -373,12 +373,6 @@ const CapDigitalNotion = () => {
               </div>
 
               <div className="lg:col-span-5 space-y-4">
-                <div className="p-6 rounded-2xl bg-gradient-to-br from-secondary/10 to-primary/5 border border-secondary/20">
-                  <p className="text-foreground font-medium leading-relaxed">
-                    <span className="text-secondary font-bold">Satisfaction garantie ou remboursement intégral.</span>{" "}
-                    Si l'audit ne vous apporte pas de valeur claire, je vous rembourse.
-                  </p>
-                </div>
                 <div className="p-6 rounded-2xl bg-card border border-border/50 shadow-sm">
                   <p className="text-sm text-muted-foreground italic">
                     « Ce diagnostic va changer ça. Et vous permettre d'accélérer votre développement. »
@@ -596,9 +590,6 @@ const CapDigitalNotion = () => {
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🎁</span> Bonus : template de suivi post-audit + 1 session Q&A de 30 min
-                </li>
-                <li className="flex items-center gap-3 text-foreground/85">
-                  <span>🛡️</span> Satisfaction garantie ou remboursement intégral
                 </li>
               </ul>
 
