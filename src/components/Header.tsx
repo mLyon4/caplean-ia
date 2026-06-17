@@ -81,6 +81,11 @@ const Header = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
+                  <Link to="/cap-digital-flash">
+                    Cap Digital Flash - Diagnostic 360°
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="rounded-lg cursor-pointer">
                   <Link to="/audit-strategique-notion">
                     Audit Stratégique Notion
                   </Link>
