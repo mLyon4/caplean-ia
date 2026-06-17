@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy, Search } from "lucide-react";
+import { Database, Puzzle, Compass, ArrowRight, Sparkles, LifeBuoy, Search, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OffersSection = () => {
@@ -9,6 +9,13 @@ const OffersSection = () => {
       title: "Diagnostic Cap Digital 360°",
       description: "Un diagnostic stratégique de vos outils ERP/CRM, facturation, Notion et de votre organisation.\nUne feuille de route claire avant d'investir dans une transformation digitale.",
       link: "/le-cap-digital",
+      color: "secondary"
+    },
+    {
+      icon: Zap,
+      title: "Diagnostic Cap Digital Flash",
+      description: "Diagnostic 360° de vos 4 fonctions critiques à distance.\nMatrice ERP/CRM vs Notion, feuille de route à 90 jours — livré sous 2 semaines.",
+      link: "/cap-digital-flash",
       color: "secondary"
     },
     {
