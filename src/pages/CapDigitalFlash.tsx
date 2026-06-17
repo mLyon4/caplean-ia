@@ -417,10 +417,10 @@ const CapDigitalFlash = () => {
               <div className="grid grid-cols-3 bg-primary/[0.06]">
                 <div className="p-5 font-semibold text-foreground/70"></div>
                 <div className="p-5 font-bold text-secondary text-center text-lg border-l border-border/30">
-                  Flash - 890 €
+                  Diagnostic Flash - 890 €
                 </div>
                 <div className="p-5 font-bold text-primary text-center text-lg border-l border-border/30">
-                  Cap Digital - 2 000 €
+                  Diagnostic Cap Digital 360 - 2 000 €
                 </div>
               </div>
 
@@ -433,7 +433,7 @@ const CapDigitalFlash = () => {
                   À distance, par questionnaires
                 </div>
                 <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
-                  Immersion terrain
+                  Immersion via interviews équipes
                 </div>
               </div>
 
