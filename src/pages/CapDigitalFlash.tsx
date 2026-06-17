@@ -433,7 +433,7 @@ const CapDigitalFlash = () => {
                   À distance, par questionnaires
                 </div>
                 <div className="p-5 text-muted-foreground text-center border-l border-border/30 flex items-center justify-center">
-                  Immersion terrain
+                  Immersion via interviews équipes
                 </div>
               </div>
 
