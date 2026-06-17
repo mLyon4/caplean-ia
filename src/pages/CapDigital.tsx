@@ -47,6 +47,7 @@ const CapDigital = () => {
 
   const benefits = [
     "Une décision dérisquée avant tout investissement lourd",
+    "L'IA enfin utile : où l'activer concrètement pour gagner du temps, où l'éviter",
     "Une feuille de route 12 mois priorisée, chiffrée, actionnable",
     "50% du diagnostic déduit si vous poursuivez l'accompagnement",
   ];
