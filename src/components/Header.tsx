@@ -185,6 +185,13 @@ const Header = () => {
                     → Cap Digital
                   </Link>
                   <Link 
+                    to="/cap-digital-flash"
+                    className="font-medium text-foreground hover:text-primary px-4 py-3 rounded-xl hover:bg-primary/5 transition-all"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    → Cap Digital Flash
+                  </Link>
+                  <Link 
                     to="/audit-strategique-notion"
                     className="font-medium text-foreground hover:text-primary px-4 py-3 rounded-xl hover:bg-primary/5 transition-all"
                     onClick={() => setIsOpen(false)}
