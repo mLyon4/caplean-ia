@@ -493,7 +493,7 @@ const CapDigitalNotion = () => {
                   Tarif & disponibilité
                 </h2>
               </div>
-              <div className="text-5xl font-bold text-secondary mb-2">Le Cap Stratégique Notion 890 € HT</div>
+              <div className="text-5xl font-bold text-secondary mb-2">Le Cap Stratégique Notion<br />890 € HT</div>
               <p className="text-muted-foreground mb-6">Forfait tout inclus</p>
 
               <ul className="space-y-3 mb-8">
