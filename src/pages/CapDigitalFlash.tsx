@@ -332,7 +332,7 @@ const CapDigitalFlash = () => {
                       <path d="M2 8C50 2 150 2 198 8" stroke="hsl(13, 65%, 83%)" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </span>
-                  {" "}— 890 € HT
+                  {" "}- 100% à distance, sans immersion.
                 </h1>
 
                 <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl">
