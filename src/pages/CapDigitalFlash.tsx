@@ -420,7 +420,7 @@ const CapDigitalFlash = () => {
                   Diagnostic Flash - 890 €
                 </div>
                 <div className="p-5 font-bold text-primary text-center text-lg border-l border-border/30">
-                  Cap Digital - 2 000 €
+                  Diagnostic Cap Digital 360 - 2 000 €
                 </div>
               </div>
 
