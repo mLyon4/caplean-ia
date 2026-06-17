@@ -16,7 +16,6 @@ import {
   ShieldCheck,
   Layers,
   Clock,
-  RotateCcw,
   Wallet,
   Sparkles,
   BadgeCheck,
@@ -47,11 +46,7 @@ const CapDigitalFlash = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const benefits = [
-    "Un diagnostic 360° de vos 4 fonctions critiques en moins de 2 semaines",
-    "Un plan d'attaque clair avec feuille de route 90 jours priorisée et chiffrée",
-    "Satisfait ou remboursé",
-  ];
+  const benefits: string[] = [];
 
   const proofs = [
     { icon: BadgeCheck, label: "Certifiée Notion et Ambassadrice Notion et Osez IA" },
@@ -140,11 +135,6 @@ const CapDigitalFlash = () => {
       icon: Clock,
       title: "Livré en 2 semaines",
       desc: "Vous décidez tant que l'élan est là. Pas de process interminable.",
-    },
-    {
-      icon: RotateCcw,
-      title: "Satisfait ou remboursé",
-      desc: "Vous prenez zero risque. Si le diagnostic ne vous apporte pas de valeur, on s'arrête là.",
     },
   ];
 
@@ -236,7 +226,7 @@ const CapDigitalFlash = () => {
         <title>Cap Digital Flash - Diagnostic 360° PME en 2 semaines</title>
         <meta
           name="description"
-          content="Diagnostic 360° de vos 4 fonctions critiques. Matrice ERP/CRM vs Notion, feuille de route 90 jours. Livré en 2 semaines. Satisfait ou remboursé."
+          content="Diagnostic 360° de vos 4 fonctions critiques. Matrice ERP/CRM vs Notion, feuille de route 90 jours. Livré en 2 semaines."
         />
         <meta
           name="keywords"
@@ -336,14 +326,6 @@ const CapDigitalFlash = () => {
                   Le Diagnostic 360 Flash est 100 % indépendant et 100 % à distance. Pas d'immersion, pas de gros budget : juste une analyse lucide de votre organisation et un plan d'actions chiffré, en 2 semaines.
                 </p>
 
-                <ul className="space-y-3">
-                  {benefits.map((b, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/90">{b}</span>
-                    </li>
-                  ))}
-                </ul>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button asChild className="btn-premium text-base px-8 py-6">
@@ -360,7 +342,7 @@ const CapDigitalFlash = () => {
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Aucun engagement. Satisfait ou remboursé.
+                  Aucun engagement.
                 </p>
               </div>
             </div>
@@ -624,9 +606,6 @@ const CapDigitalFlash = () => {
                 </li>
                 <li className="flex items-center gap-3 text-foreground/85">
                   <span>🎁</span> Bonus : 1 session Q&A de 30 min dans les 30 jours suivants
-                </li>
-                <li className="flex items-center gap-3 text-foreground/85">
-                  <span>✅</span> Satisfait ou remboursé
                 </li>
               </ul>
 
